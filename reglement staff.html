@@ -1,179 +1,244 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Règlement Staff - Solarys RP</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
+:root{
+    --pink:#ff00aa;
+    --blue:#0066ff;
+    --dark:#050816;
+    --card:#0a1025cc;
+}
 
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
 }
 
 body{
-    background:#050505;
+    font-family:'Poppins',sans-serif;
     color:white;
+    background:
+        linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.75)),
+        url("images/solarys-background.png");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
 }
 
-.hero{
-    background:linear-gradient(90deg,#ff43b5,#6ea8ff);
-    text-align:center;
-    padding:90px 20px;
+/* NAVBAR */
+
+.navbar{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(0,0,0,.85);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(255,255,255,.08);
 }
 
-.hero h1{
-    font-size:4rem;
-    font-weight:700;
-}
-
-.hero p{
-    margin-top:15px;
-    font-size:1.2rem;
-}
-
-.container{
-    width:95%;
+.nav-container{
     max-width:1400px;
     margin:auto;
-    padding:40px 0 80px;
+    padding:15px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-family:'Orbitron',sans-serif;
+    font-size:2rem;
+    color:var(--pink);
+    text-decoration:none;
+    text-shadow:
+        0 0 10px var(--pink),
+        0 0 20px var(--pink);
+}
+
+.nav-links{
+    display:flex;
+    gap:30px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:var(--pink);
+}
+
+/* HERO */
+
+.hero{
+    height:400px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.hero-content h1{
+    font-family:'Orbitron',sans-serif;
+    font-size:4rem;
+    text-transform:uppercase;
+    letter-spacing:3px;
+
+    text-shadow:
+        0 0 15px var(--pink),
+        0 0 25px var(--pink),
+        0 0 35px var(--blue);
+}
+
+.hero-content p{
+    margin-top:15px;
+    color:#d7d7d7;
+}
+
+/* CONTENT */
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:40px 20px 80px;
 }
 
 .rule-card{
-    background:#0b0b0b;
+    background:var(--card);
+    backdrop-filter:blur(10px);
     border:1px solid rgba(255,255,255,.08);
-    border-radius:18px;
-    margin-bottom:20px;
-    overflow:hidden;
+    border-radius:20px;
+    padding:30px;
+    margin-bottom:25px;
     transition:.3s;
 }
 
 .rule-card:hover{
-    border-color:rgba(255,255,255,.15);
+    border-color:rgba(255,0,170,.4);
+    box-shadow:
+        0 0 20px rgba(255,0,170,.2),
+        0 0 30px rgba(0,102,255,.15);
 }
 
-.rule-card summary{
-    cursor:pointer;
+.rule-card h2{
+    font-family:'Orbitron',sans-serif;
+    color:white;
+    margin-bottom:15px;
+}
+
+.rule-card ul{
+    margin-left:20px;
+}
+
+.rule-card li{
+    margin:10px 0;
+}
+
+.rule-card li::marker{
+    color:var(--pink);
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
     padding:30px;
-    font-size:1.8rem;
-    font-weight:600;
-    list-style:none;
-}
-
-.rule-card summary::-webkit-details-marker{
-    display:none;
-}
-
-.rule-content{
-    padding:25px 30px;
+    background:rgba(0,0,0,.8);
     border-top:1px solid rgba(255,255,255,.08);
 }
 
-.rule-content ul{
-    padding-left:20px;
-}
+@media(max-width:768px){
 
-.rule-content li{
-    margin-bottom:12px;
-    line-height:1.8;
-}
-
-@media(max-width:900px){
-
-.hero h1{
+.hero-content h1{
     font-size:2.5rem;
 }
 
-.rule-card summary{
-    font-size:1.3rem;
+.nav-links{
+    display:none;
 }
 
 }
-
 </style>
-
 </head>
 
 <body>
 
-<header class="hero">
-    <h1>RÈGLEMENT STAFF</h1>
-    <p>Règles principales à respecter pour tous les membres de l’équipe staff.</p>
-</header>
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="#" class="logo">SOLARYS</a>
+
+        <div class="nav-links">
+            <a href="index.html">Accueil</a>
+            <a href="reglement.html">Règlement</a>
+            <a href="reglement staff.html">Staff</a>
+            <a href="#">Discord</a>
+            <a href="#">Boutique</a>
+        </div>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Règlement Staff</h1>
+        <p>Les règles et obligations de l'équipe Solarys RP</p>
+    </div>
+</section>
 
 <div class="container">
 
-    <details class="rule-card" open>
-        <summary>🛡️ RÔLE DU STAFF</summary>
+    <div class="rule-card">
+        <h2>1. Principe Général</h2>
+        <p>
+            Le staff représente l'image de Solarys RP.
+            Chaque membre doit adopter un comportement exemplaire,
+            professionnel et respectueux.
+        </p>
+    </div>
 
-        <div class="rule-content">
+    <div class="rule-card">
+        <h2>2. Comportement</h2>
+        <ul>
+            <li>Respecter tous les joueurs.</li>
+            <li>Ne jamais abuser de ses permissions.</li>
+            <li>Rester impartial lors des tickets.</li>
+            <li>Garder son calme en toute circonstance.</li>
+        </ul>
+    </div>
 
-            <ul>
-                <li>Le Staff encadre le serveur et garantit une expérience RP sérieuse et agréable.</li>
-                <li>Il est interdit d’utiliser ses permissions pour obtenir un avantage RP ou favoriser un joueur.</li>
-                <li>Le Staff doit rester neutre, calme et professionnel en toutes circonstances.</li>
-                <li>Avant toute décision, il doit analyser le contexte et vérifier les preuves disponibles.</li>
-                <li>Une scène RP ne doit être interrompue qu’en cas d’abus, bug ou conflit HRP.</li>
-                <li>Les décisions doivent être cohérentes avec le règlement et l’historique du joueur.</li>
-                <li>Un Staff impliqué dans une situation doit laisser un autre membre gérer le dossier.</li>
-                <li>Les informations internes, tickets et discussions staff sont confidentielles.</li>
-                <li>Le rôle du Staff est de maintenir un RP stable, équitable et immersif.</li>
-            </ul>
+    <div class="rule-card">
+        <h2>3. Obligations</h2>
+        <ul>
+            <li>Être actif sur le serveur.</li>
+            <li>Connaître le règlement général.</li>
+            <li>Participer aux réunions staff.</li>
+            <li>Signaler les problèmes importants.</li>
+        </ul>
+    </div>
 
-        </div>
-    </details>
-
-    <details class="rule-card">
-        <summary>🎫 REPORTS IG</summary>
-
-        <div class="rule-content">
-
-            <ul>
-                <li>Les reports doivent être traités avec sérieux, calme et neutralité.</li>
-                <li>Le staff doit écouter toutes les parties avant de prendre une décision.</li>
-                <li>Les preuves et le contexte doivent toujours être vérifiés.</li>
-                <li>Il est interdit d’humilier ou de manquer de respect à un joueur.</li>
-                <li>Le report doit rester une discussion encadrée et constructive.</li>
-                <li>Les scènes RP en cours ne doivent pas être interrompues sans raison valable.</li>
-                <li>Les commandes staff doivent être utilisées uniquement si nécessaire.</li>
-                <li>L’abus de reports ou les fausses déclarations peuvent être sanctionnés.</li>
-                <li>Un staff impliqué dans la scène doit laisser un autre staff gérer le dossier.</li>
-                <li>La décision finale doit être clairement expliquée aux joueurs concernés.</li>
-                <li>Ne jamais humilier un joueur pendant un report.</li>
-            </ul>
-
-        </div>
-    </details>
-
-    <details class="rule-card">
-        <summary>🛠️ PERMISSIONS</summary>
-
-        <div class="rule-content">
-
-            <ul>
-                <li>Les permissions sont réservées à l’administration du serveur.</li>
-                <li>Il est interdit d’utiliser ses accès pour obtenir un avantage personnel.</li>
-                <li>Les commandes Revive, Heal, TP, Freeze, Give ou Spec doivent être justifiées.</li>
-                <li>Tout remboursement ou Give nécessite une preuve ou une validation.</li>
-                <li>Un staff ne doit jamais intervenir avec ses permissions dans une scène où il est impliqué.</li>
-                <li>Le Noclip, Spec ou TP ne doivent pas servir à espionner les joueurs.</li>
-                <li>Les permissions doivent être utilisées discrètement afin de préserver l’immersion.</li>
-                <li>En cas de doute, demander l’avis d’un haut staff avant d’agir.</li>
-                <li>Tout abus peut entraîner une sanction interne, une rétrogradation ou un retrait des accès.</li>
-            </ul>
-
-        </div>
-    </details>
+    <div class="rule-card">
+        <h2>4. Sanctions Staff</h2>
+        <ul>
+            <li>Avertissement verbal.</li>
+            <li>Avertissement écrit.</li>
+            <li>Suspension temporaire.</li>
+            <li>Retrait définitif du grade.</li>
+        </ul>
+    </div>
 
 </div>
+
+<footer>
+    © 2025 Solarys RP - Tous droits réservés
+</footer>
 
 </body>
 </html>
