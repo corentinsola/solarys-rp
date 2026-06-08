@@ -64,27 +64,39 @@ ul{
     border-radius:10px;
 }
 
-.home-btn:hover{
+.home-btn:hover
+    {
     opacity:0.8;
-}.menu-reglement{
-display:flex;
-justify-content:center;
-gap:15px;
-flex-wrap:wrap;
-margin-bottom:30px;
+}..menu-reglement{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-bottom:30px;
 }
 
 .menu-reglement a{
-background:linear-gradient(90deg,#ff4fd8,#6fa8ff);
-padding:12px 20px;
-border-radius:12px;
-text-decoration:none;
-color:white;
-font-weight:bold;
-transition:0.3s;
+    background:linear-gradient(90deg,#ff4fd8,#6fa8ff);
+    color:white;
+    text-decoration:none;
+    padding:14px 24px;
+    border-radius:14px;
+    font-weight:700;
+    font-size:18px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+
+    transition:all 0.3s ease;
 }
 
 .menu-reglement a:hover{
+    transform:translateY(-4px) scale(1.03);
+    box-shadow:0 8px 20px rgba(111,168,255,0.4);
+}
+
+.menu-reglement a:active{
+    transform:scale(0.98);
+}
 transform:translateY(-3px);
 }
 </style>
