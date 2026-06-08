@@ -1,238 +1,115 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Règlement Staff - Solarys RP</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Règlement Staff - Solarys RP</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="staff.css">
 
-<style>
-:root{
-    --pink:#ff00aa;
-    --blue:#0066ff;
-    --dark:#050816;
-    --card:#0a1025cc;
-}
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:'Poppins',sans-serif;
-    color:white;
-    background:
-        linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.75)),
-        url("images/solarys-background.png");
-    background-size:cover;
-    background-position:center;
-    background-attachment:fixed;
-}
-
-/* NAVBAR */
-
-.navbar{
-    position:sticky;
-    top:0;
-    z-index:1000;
-    background:rgba(0,0,0,.85);
-    backdrop-filter:blur(10px);
-    border-bottom:1px solid rgba(255,255,255,.08);
-}
-
-.nav-container{
-    max-width:1400px;
-    margin:auto;
-    padding:15px 30px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
-
-.logo{
-    font-family:'Orbitron',sans-serif;
-    font-size:2rem;
-    color:var(--pink);
-    text-decoration:none;
-    text-shadow:
-        0 0 10px var(--pink),
-        0 0 20px var(--pink);
-}
-
-.nav-links{
-    display:flex;
-    gap:30px;
-}
-
-.nav-links a{
-    color:white;
-    text-decoration:none;
-    transition:.3s;
-}
-
-.nav-links a:hover{
-    color:var(--pink);
-}
-
-/* HERO */
-
-.hero{
-    height:400px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-}
-
-.hero-content h1{
-    font-family:'Orbitron',sans-serif;
-    font-size:4rem;
-    text-transform:uppercase;
-    letter-spacing:3px;
-
-    text-shadow:
-        0 0 15px var(--pink),
-        0 0 25px var(--pink),
-        0 0 35px var(--blue);
-}
-
-.hero-content p{
-    margin-top:15px;
-    color:#d7d7d7;
-}
-
-/* CONTENT */
-
-.container{
-    max-width:1200px;
-    margin:auto;
-    padding:40px 20px 80px;
-}
-
-.rule-card{
-    background:var(--card);
-    backdrop-filter:blur(10px);
-    border:1px solid rgba(255,255,255,.08);
-    border-radius:20px;
-    padding:30px;
-    margin-bottom:25px;
-    transition:.3s;
-}
-
-.rule-card:hover{
-    border-color:rgba(255,0,170,.4);
-    box-shadow:
-        0 0 20px rgba(255,0,170,.2),
-        0 0 30px rgba(0,102,255,.15);
-}
-
-.rule-card h2{
-    font-family:'Orbitron',sans-serif;
-    color:white;
-    margin-bottom:15px;
-}
-
-.rule-card ul{
-    margin-left:20px;
-}
-
-.rule-card li{
-    margin:10px 0;
-}
-
-.rule-card li::marker{
-    color:var(--pink);
-}
-
-/* FOOTER */
-
-footer{
-    text-align:center;
-    padding:30px;
-    background:rgba(0,0,0,.8);
-    border-top:1px solid rgba(255,255,255,.08);
-}
-
-@media(max-width:768px){
-
-.hero-content h1{
-    font-size:2.5rem;
-}
-
-.nav-links{
-    display:none;
-}
-
-}
-</style>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<nav class="navbar">
-    <div class="nav-container">
-        <a href="#" class="logo">SOLARYS</a>
+<div class="bg-overlay"></div>
 
-        <div class="nav-links">
-            <a href="index.html">Accueil</a>
-            <a href="reglement.html">Règlement</a>
-            <a href="reglement staff.html">Staff</a>
-            <a href="#">Discord</a>
-            <a href="#">Boutique</a>
-        </div>
+<header>
+
+    <div class="logo">
+        SOLARYS
     </div>
-</nav>
+
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="#">Règlement</a>
+        <a class="active" href="#">Staff</a>
+        <a href="#">Boutique</a>
+        <a href="#">Discord</a>
+    </nav>
+
+</header>
 
 <section class="hero">
-    <div class="hero-content">
-        <h1>Règlement Staff</h1>
-        <p>Les règles et obligations de l'équipe Solarys RP</p>
-    </div>
+
+    <h1>RÈGLEMENT STAFF</h1>
+
+    <p>
+        Bienvenue dans l'équipe Staff de Solarys RP.
+        Ce règlement garantit une expérience de jeu juste,
+        professionnelle et immersive.
+    </p>
+
 </section>
 
 <div class="container">
 
-    <div class="rule-card">
-        <h2>1. Principe Général</h2>
-        <p>
-            Le staff représente l'image de Solarys RP.
-            Chaque membre doit adopter un comportement exemplaire,
-            professionnel et respectueux.
-        </p>
-    </div>
+    <aside class="sidebar">
 
-    <div class="rule-card">
-        <h2>2. Comportement</h2>
-        <ul>
-            <li>Respecter tous les joueurs.</li>
-            <li>Ne jamais abuser de ses permissions.</li>
-            <li>Rester impartial lors des tickets.</li>
-            <li>Garder son calme en toute circonstance.</li>
-        </ul>
-    </div>
+        <div class="menu-item active">
+            01. Généralités
+        </div>
 
-    <div class="rule-card">
-        <h2>3. Obligations</h2>
-        <ul>
-            <li>Être actif sur le serveur.</li>
-            <li>Connaître le règlement général.</li>
-            <li>Participer aux réunions staff.</li>
-            <li>Signaler les problèmes importants.</li>
-        </ul>
-    </div>
+        <div class="menu-item">
+            02. Comportement
+        </div>
 
-    <div class="rule-card">
-        <h2>4. Sanctions Staff</h2>
-        <ul>
-            <li>Avertissement verbal.</li>
-            <li>Avertissement écrit.</li>
-            <li>Suspension temporaire.</li>
-            <li>Retrait définitif du grade.</li>
-        </ul>
-    </div>
+        <div class="menu-item">
+            03. Obligations
+        </div>
+
+        <div class="menu-item">
+            04. Sanctions
+        </div>
+
+    </aside>
+
+    <main class="content">
+
+        <section class="card">
+            <h2>01. Généralités</h2>
+
+            <ul>
+                <li>Le staff représente Solarys RP à tout moment.</li>
+                <li>Comportement exemplaire et professionnel.</li>
+                <li>Respect des joueurs et de l'équipe.</li>
+                <li>Neutralité dans toutes les décisions.</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>02. Comportement</h2>
+
+            <ul>
+                <li>Respecter tous les joueurs.</li>
+                <li>Ne jamais abuser de ses permissions.</li>
+                <li>Rester impartial lors des tickets.</li>
+                <li>Garder son calme en toute circonstance.</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>03. Obligations</h2>
+
+            <ul>
+                <li>Être actif sur le serveur.</li>
+                <li>Connaître le règlement général.</li>
+                <li>Participer aux réunions staff.</li>
+                <li>Signaler les problèmes importants.</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>04. Sanctions Staff</h2>
+
+            <ul>
+                <li>Avertissement verbal.</li>
+                <li>Avertissement écrit.</li>
+                <li>Suspension temporaire.</li>
+                <li>Retrait définitif du grade.</li>
+            </ul>
+        </section>
+
+    </main>
 
 </div>
 
