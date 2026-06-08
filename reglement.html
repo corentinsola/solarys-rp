@@ -30,20 +30,26 @@ header h1{
     max-width:1200px;
     margin:auto;
     padding:30px;
-}
-
 .section{
     background:#151515;
-    border:1px solid rgba(255,255,255,0.1);
-    border-radius:15px;
-    padding:25px;
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:20px;
+    padding:35px;
     margin-bottom:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.35);
+    transition:0.3s;
 }
-
+.section:hover{
+    transform:translateY(-4px);
 h2{
     color:#8fc7ff;
+    font-size:32px;
+    margin-bottom:20px;
 }
-
+li{
+    margin-bottom:12px;
+    font-size:18px;
+}
 ul{
     padding-left:25px;
 }
@@ -60,6 +66,26 @@ ul{
 
 .home-btn:hover{
     opacity:0.8;
+}.menu-reglement{
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+margin-bottom:30px;
+}
+
+.menu-reglement a{
+background:linear-gradient(90deg,#ff4fd8,#6fa8ff);
+padding:12px 20px;
+border-radius:12px;
+text-decoration:none;
+color:white;
+font-weight:bold;
+transition:0.3s;
+}
+
+.menu-reglement a:hover{
+transform:translateY(-3px);
 }
 </style>
 </head>
@@ -72,11 +98,21 @@ ul{
 </header>
 
 <div class="container">
+<div class="menu-reglement">
 
+<a href="#hrp">📜 HRP</a>
+
+<a href="#notions">📚 Notions RP</a>
+
+<a href="#lexique">📖 Lexique</a>
+
+<a href="#faq">❓ FAQ</a>
+
+</div>
 <a href="index.html" class="home-btn">← Retour à l'accueil</a>
 
 <div class="section">
-<h2>📜 Règlement HRP</h2>
+<h2 id="hrp">📜 Règlement HRP</h2>
 
 <p>Le respect est obligatoire envers tous les joueurs et membres du staff.</p>
 
@@ -175,7 +211,7 @@ Sanctions possibles :
 
 <div class="section">
 
-<h2>📚 NOTIONS PRINCIPALES</h2>
+<h2 id="notions">📚 NOTIONS PRINCIPALES</h2>
 
 <ul>
 <li><strong>Mass RP :</strong> prendre en compte la population invisible autour de vous.</li>
@@ -209,7 +245,7 @@ Sanctions possibles :
 </div>
 <div class="section">
 
-<h2>📖 LEXIQUE RP</h2>
+<h2 id="lexique">📖 LEXIQUE RP</h2>
 
 <ul>
 <li><strong>J'ai un bug :</strong> 🧠 J'ai un mal de tête.</li>
@@ -261,7 +297,7 @@ Le but principal reste de s'amuser ensemble.
 
 <div class="section">
 
-<h2>❓ Questions fréquentes</h2>
+<h2 id="faq">❓ Questions fréquentes</h2>
 
 <ul>
 <li><strong>Je peux contester une sanction ?</strong> Oui, via ticket avec preuves.</li>
