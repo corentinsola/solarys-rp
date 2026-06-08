@@ -1,0 +1,82 @@
+<!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Règlement Illégal - Solarys RP</title>
+<style>
+body{margin:0;background:#050505;color:#fff;font-family:Segoe UI,Arial,sans-serif}
+.hero{background:linear-gradient(90deg,#ff43b5,#6ea8ff);padding:70px 20px;text-align:center}
+.hero h1{margin:0;font-size:64px}.hero p{font-size:22px}
+.wrap{max-width:1400px;margin:auto;padding:24px}
+details{background:#0b0b0b;border:1px solid #222;border-radius:18px;margin:14px 0}
+summary{cursor:pointer;padding:24px;font-size:30px;font-weight:700}
+.content{padding:0 24px 24px;line-height:1.8}
+li{margin:8px 0}
+</style></head><body>
+<div class="hero"><h1>REGLEMENT ILLEGAL</h1><p>Merci de respecter l'ensemble des règles du serveur.</p></div>
+<div class="wrap">
+<details open><summary>🚫 REGLEMENT ILLEGAL</summary><div class="content"><ul>
+<li>Discord illégal réservé à la gestion des groupes, annonces internes et recrutements.</li>
+<li>Interdiction d'utiliser Discord pendant une scène RP.</li>
+<li>Interdiction du StreamHack, leaks, partage d'informations HRP et harcèlement.</li>
+<li>Les informations Discord ne peuvent pas être utilisées en jeu sans scène RP cohérente.</li>
+<li>Les convois sont interdits sauf exception validée.</li>
+</ul></div></details>
+
+<details><summary>📖 INTRODUCTION</summary><div class="content"><ul>
+<li>Privilégier les scènes immersives et le fair-play.</li>
+<li>Le Full WIN et la recherche exclusive de Gunfight sont interdits.</li>
+<li>Les actions doivent rester cohérentes avec votre personnage.</li>
+</ul></div></details>
+
+<details><summary>⚠️ GENERAL</summary><div class="content"><ul>
+<li>Fear RP obligatoire.</li>
+<li>Les quartiers ne sont pas des zones de non-droit.</li>
+<li>Respect du Mass RP.</li>
+<li>Les conflits doivent évoluer progressivement en RP.</li>
+<li>Farm interdit entre 21h00 et 01h00.</li>
+</ul></div></details>
+
+<details><summary>🎭 PRISE D'OTAGE</summary><div class="content"><ul>
+<li>Une raison RP cohérente est obligatoire.</li>
+<li>Négociations sérieuses et fair-play obligatoire.</li>
+<li>Le Full Win est interdit.</li>
+<li>Les exécutions immédiates sans développement RP sont interdites.</li>
+</ul></div></details>
+
+<details><summary>🧪 DROGUES ET LABORATOIRES</summary><div class="content"><ul>
+<li>Les laboratoires doivent rester rares et cohérents.</li>
+<li>Camping de points illégaux interdit.</li>
+<li>Métagaming et leaks concernant les laboratoires interdits.</li>
+<li>Les scènes doivent rester immersives et équilibrées.</li>
+</ul></div></details>
+
+<details><summary>⚔️ GUERRE ENTRE GROUPES</summary><div class="content"><ul>
+<li>Alliances entre groupes interdites.</li>
+<li>Les alliances commerciales sont autorisées.</li>
+<li>Le loot de guerre nécessite validation Staff.</li>
+</ul></div></details>
+
+<details><summary>🔫 ARMES</summary><div class="content"><ul>
+<li>Le Gunfight ne doit jamais être la première solution.</li>
+<li>Fear RP obligatoire lorsqu'une arme est pointée sur vous.</li>
+<li>Drive-by abusifs interdits.</li>
+<li>Les armes lourdes doivent rester rares et cohérentes.</li>
+</ul></div></details>
+
+<details><summary>🏦 BRACAGES</summary><div class="content"><ul>
+<li>Braquages préparés sérieusement.</li>
+<li>Négociations obligatoires.</li>
+<li>Full Win interdit.</li>
+<li>Maze Bank considérée comme un évènement majeur.</li>
+</ul></div></details>
+
+<details><summary>💰 LOOT • ARNAQUE • VOL</summary><div class="content"><ul>
+<li>Construction RP obligatoire.</li>
+<li>Fair-play requis.</li>
+<li>Les comportements humiliants sont interdits.</li>
+</ul></div></details>
+
+<details><summary>🛡️ DEPLOIEMENT DU SRT</summary><div class="content"><p>Déploiement exceptionnel sous autorisation des autorités compétentes.</p></div></details>
+<details><summary>🕵️ CORRUPTION</summary><div class="content"><p>Dossier obligatoire, cohérence RP et validation requise.</p></div></details>
+<details><summary>⚖️ LOI RICO</summary><div class="content"><p>Applicable après constitution et validation d'un dossier complet.</p></div></details>
+<details><summary>☠️ MORT RP & WIPE</summary><div class="content"><ul><li>Validation Staff obligatoire.</li><li>Dossier complet requis.</li><li>Évènements rares et marquants.</li></ul></div></details>
+</div></body></html>
