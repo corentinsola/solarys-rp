@@ -4,235 +4,390 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Règlement SOLARYS RP</title>
+<title>Règlement Legal - Solarys RP</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
-body{
+
+*{
     margin:0;
-    font-family:Arial, sans-serif;
-    background:#0d0d0d;
-    color:white;
-    line-height:1.7;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
 }
 
-header{
-    background:linear-gradient(90deg,#ff4fd8,#6fa8ff);
-    padding:30px;
+body{
+    background:#050505;
+    color:white;
+}
+
+/* HEADER */
+
+.hero{
+    background:linear-gradient(90deg,#ff43b5,#6ea8ff);
+    padding:80px 20px;
     text-align:center;
 }
 
-header h1{
-    margin:0;
-    font-size:3rem;
+.hero h1{
+    font-size:4rem;
+    font-weight:700;
+    letter-spacing:2px;
 }
 
+.hero p{
+    margin-top:20px;
+    font-size:1.2rem;
+    opacity:.9;
+}
+
+/* CONTENT */
+
 .container{
-    max-width:1200px;
+    width:95%;
+    max-width:1400px;
     margin:auto;
-    padding:30px;
-.section{
-    background:#151515;
-    border:1px solid rgba(255,255,255,0.08);
-    border-radius:20px;
-    padding:35px;
+    padding:40px 0 80px;
+}
+
+/* ACCORDION */
+
+.accordion{
+    background:#0b0b0b;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:18px;
     margin-bottom:25px;
-    box-shadow:0 10px 30px rgba(0,0,0,0.35);
-    transition:0.3s;
+    overflow:hidden;
+    transition:.3s;
 }
-.section:hover{
-    transform:translateY(-4px);
-h2{
-    color:#8fc7ff;
-    font-size:32px;
-    margin-bottom:20px;
+
+.accordion:hover{
+    border-color:rgba(255,255,255,.15);
 }
-li{
-    margin-bottom:12px;
-    font-size:18px;
+
+.accordion-header{
+    width:100%;
+    background:none;
+    border:none;
+    color:white;
+    cursor:pointer;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:30px;
 }
-ul{
+
+.left{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.icon{
+    font-size:2rem;
+}
+
+.title{
+    font-size:2rem;
+    font-weight:600;
+}
+
+.arrow{
+    font-size:2rem;
+    transition:.3s;
+}
+
+.accordion.active .arrow{
+    transform:rotate(180deg);
+}
+
+.accordion-content{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .5s ease;
+}
+
+.content{
+    padding:30px;
+    border-top:1px solid rgba(255,255,255,.08);
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+}
+
+.grid ul{
     padding-left:25px;
 }
 
-.home-btn{
-    display:inline-block;
-    margin-bottom:25px;
-    padding:12px 25px;
-    background:linear-gradient(90deg,#ff4fd8,#6fa8ff);
-    color:white;
-    text-decoration:none;
-    border-radius:10px;
+.grid li{
+    margin-bottom:15px;
+    line-height:1.8;
 }
 
-.home-btn:hover
-    {
-    opacity:0.8;
-.menu-reglement{
-    display:flex;
-    justify-content:center;
-    gap:15px;
-    flex-wrap:wrap;
-    margin-bottom:30px;
-
-    position:sticky;
-    top:15px;
-    z-index:1000;
-
-    background:rgba(15,15,15,0.85);
-    padding:15px;
-    border-radius:20px;
-    backdrop-filter:blur(10px);
+.grid p{
+    margin-bottom:20px;
+    line-height:1.8;
 }
 
-.menu-reglement a{
-    background:linear-gradient(90deg,#ff4fd8,#6fa8ff);
-    color:white;
-    text-decoration:none;
-    padding:16px 28px;
-    min-width:160px;
-text-align:center;
-    border-radius:14px;
-    font-weight:bold;
-    font-size:18px;
+/* MOBILE */
 
-    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+@media(max-width:900px){
 
-    transition:all 0.3s ease;
+.hero h1{
+    font-size:2.5rem;
 }
 
-.menu-reglement a:hover{
-    transform:translateY(-4px) scale(1.03);
-    box-shadow:0 8px 20px rgba(111,168,255,0.4);
-filter:brightness(1.1);
+.grid{
+    grid-template-columns:1fr;
 }
 
-.menu-reglement a:active{
-    transform:scale(0.98);
+.title{
+    font-size:1.4rem;
 }
-transform:translateY(-3px);
+
 }
+
 </style>
 </head>
-
 <body>
 
-<header>
-<h1>RÈGLEMENT SOLARYS RP</h1>
-<p>Merci de respecter l'ensemble des règles du serveur.</p>
+<header class="hero">
+    <h1>REGLEMENT LEGAL</h1>
+    <p>Merci de respecter l'ensemble des règles du serveur.</p>
 </header>
 
 <div class="container">
 
+<!-- SAMD -->
 
-<div >
+<div class="accordion active">
 
-<div class="section">
-<div class="section">
+<button class="accordion-header">
 
-<h2 id="notions">📚 NOTIONS PRINCIPALES</h2>
-
-<ul>
-<li><strong>Mass RP :</strong> prendre en compte la population invisible autour de vous.</li>
-<li><strong>RolePlay :</strong> Le RolePlay, c’est le fait d’incarner un personnage dans un univers fictif.</li>
-<li><strong>HRP :</strong> Tout ce qui est en dehors du jeu ou du personnage.</li>
-<li><strong>Metagaming :</strong> Utiliser des informations obtenues hors RP en jeu.</li>
-<li><strong>Powergaming :</strong> Faire des actions impossibles ou irréalistes.</li>
-<li><strong>No Fear RP :</strong> Ne pas avoir peur face à une arme.</li>
-<li><strong>Force RP :</strong> Forcer une action à un joueur sans lui laisser de choix.</li>
-<li><strong>Freekill :</strong> Tuer quelqu’un sans raison RP valable.</li>
-<li><strong>Revenge Kill (RK) :</strong> Se venger après une mort RP.</li>
-<li><strong>New Life Rule (NLR) :</strong> Après une mort RP, tu oublies la scène.</li>
-<li><strong>Win RP :</strong> Chercher à gagner à tout prix.</li>
-<li><strong>Pain RP :</strong> Jouer la douleur de ton personnage.</li>
-<li><strong>Car Kill (CK) :</strong> Écraser quelqu’un volontairement sans raison RP.</li>
-<li><strong>Bunny Hop :</strong> Sauter partout pour aller plus vite.</li>
-<li><strong>No RP :</strong> Ne pas jouer son rôle.</li>
-<li><strong>Scene RP :</strong> Une scène immersive entre joueurs.</li>
-<li><strong>Usebug / Exploit :</strong> Utiliser un bug à son avantage.</li>
-<li><strong>Streamhack :</strong> Regarder un stream pour trouver quelqu’un.</li>
-<li><strong>Cop Bait :</strong> Provoquer la police sans raison.</li>
-<li><strong>AFK Abusif :</strong> Être absent durant une scène RP.</li>
-<li><strong>Fair Play :</strong> Respecter les autres joueurs.</li>
-<li><strong>Cohérence RP :</strong> Ton personnage doit rester logique.</li>
-<li><strong>Background RP :</strong> Histoire de ton personnage.</li>
-<li><strong>Drive-By :</strong> Tirer depuis un véhicule.</li>
-<li><strong>Chicken Run :</strong> Courir dans tous les sens pour éviter les tirs.</li>
-<li><strong>Refus RP :</strong> Refuser de jouer une scène.</li>
-</ul>
-
+<div class="left">
+<span class="icon">📜</span>
+<span class="title">RELATION SAMD</span>
 </div>
-<div class="section">
-<h2 id="lexique">📖 LEXIQUE RP</h2>
+
+<span class="arrow">⌃</span>
+
+</button>
+
+<div class="accordion-content" style="max-height:1000px">
+
+<div class="content">
+
+<div class="grid">
+
+<div>
+
+<p>SAMD veut dire San Andreas Medical Department.</p>
+
+<p>C’est le service médical / les EMS :</p>
 
 <ul>
-<li><strong>J'ai un bug :</strong> 🧠 J'ai un mal de tête.</li>
-<li><strong>J'ai crash :</strong> 😵 Je me suis évanoui.</li>
-<li><strong>Je freeze :</strong> 🧊 Je suis paralysé / figé.</li>
-<li><strong>J'ai des lags :</strong> 🌫️ J'ai des vertiges.</li>
-<li><strong>Je vais déco :</strong> 😴 Je vais dormir.</li>
-<li><strong>Je reviens :</strong> 🔄 Je reviens de mon repos.</li>
-<li><strong>Va Discord :</strong> 📱 Appelle-moi.</li>
-<li><strong>Je t'écris en MP :</strong> 💬 Je t'envoie un message.</li>
-<li><strong>Active ton micro :</strong> 🎤 Parle plus fort.</li>
-<li><strong>Mute :</strong> 🤫 Silence.</li>
-<li><strong>J'appelle un staff :</strong> 📞 J'appelle un responsable.</li>
-<li><strong>Ticket :</strong> 📝 Demande officielle.</li>
-<li><strong>Ban / Kick :</strong> 🚫 Expulsé de la ville.</li>
-<li><strong>AFK :</strong> 🚶 Je suis absent.</li>
-<li><strong>Je suis nouveau :</strong> 🆕 Je viens d'arriver en ville.</li>
+<li>ambulanciers ;</li>
+<li>médecins ;</li>
+<li>secours ;</li>
+<li>réanimation des joueurs blessés ;</li>
+<li>transport à l’hôpital ;</li>
+<li>gestion des scènes d’accident.</li>
 </ul>
 
 </div>
 
-<div class="section">
-
-<h2>🎮 Jouer sans excès</h2>
-
-<p>
-Ne prenez pas le RP trop au sérieux. Gardez toujours en tête qu'il s'agit d'un jeu et d'une communauté.
-</p>
+<div>
 
 <ul>
-<li>Les insultes légères sont tolérées pour l'immersion.</li>
-<li>Les insultes répétées ou agressives peuvent être sanctionnées.</li>
-<li>Respectez toujours les autres joueurs.</li>
+<li>Vous devez respecter les arrêts médicaux ordonnés par le SAMD après avoir été soigné.</li>
+
+<li>Lors d’une intervention EMS, décrivez vos blessures via des /me cohérents.</li>
+
+<li>Si le SAMD estime qu’une hospitalisation ou des soins supplémentaires sont nécessaires, vous devez suivre la scène RP.</li>
+
+<li>Dans un hôpital, vous êtes soumis aux ordres du personnel médical.</li>
+
+<li>Le refus systématique de soins uniquement pour éviter des conséquences RP est interdit.</li>
 </ul>
 
 </div>
 
-<div class="section">
+</div>
 
-<h2>🧠 Garder du recul</h2>
-
-<p>
-Ne confondez jamais RP et réalité.
-Les propos tenus en jeu ne visent pas la personne derrière l'écran.
-Le but principal reste de s'amuser ensemble.
-</p>
+</div>
+</div>
 
 </div>
 
-<div class="section">
+<!-- SASP RELATION -->
 
-<h2 id="faq">❓ Questions fréquentes</h2>
+<div class="accordion">
+
+<button class="accordion-header">
+
+<div class="left">
+<span class="icon">🛡️</span>
+<span class="title">RELATION SASP</span>
+</div>
+
+<span class="arrow">⌄</span>
+
+</button>
+
+<div class="accordion-content">
+
+<div class="content">
+
+<p>SASP veut dire San Andreas State Police.</p>
+
+<p>C’est la police d’État dans l’univers de GTA RP.</p>
+
+<p>En général, la SASP :</p>
 
 <ul>
-<li><strong>Je peux contester une sanction ?</strong> Oui, via ticket avec preuves.</li>
-
-<li><strong>Signaler un joueur ou un staff ?</strong> Ticket Discord avec preuve et contexte.</li>
-
-<li><strong>Créer un groupe ?</strong> Ticket "Illégal" auprès d'un Référent.</li>
-
-<li><strong>Accessible aux débutants ?</strong> Oui, tutoriel en jeu et staff disponible.</li>
-
-<li><strong>Je peux utiliser une info Discord en jeu ?</strong> Non, sauf si elle a été obtenue RP.</li>
-
-<li><strong>Comment rejoindre le serveur ?</strong> Discord → FIVEM → SYNJ LIFE.</li>
+<li>fait les patrouilles ;</li>
+<li>gère les poursuites ;</li>
+<li>applique les lois ;</li>
+<li>intervient sur les grosses scènes criminelles ;</li>
+<li>travaille avec d’autres unités comme SWAT ou les shérifs selon les serveurs RP.</li>
 </ul>
 
 </div>
+
 </div>
 
-</body>
+</div>
+
+<!-- SASP -->
+
+<div class="accordion">
+
+<button class="accordion-header">
+
+<div class="left">
+<span class="icon">⚖️</span>
+<span class="title">SASP</span>
+</div>
+
+<span class="arrow">⌄</span>
+
+</button>
+
+<div class="accordion-content">
+
+<div class="content">
+
+<ul>
+<li>Chaque arrestation doit avoir une trace écrite.</li>
+<li>Les droits Miranda doivent être lus clairement.</li>
+<li>Un citoyen peut invoquer son droit au silence.</li>
+<li>Interdiction de fouille sans raison RP cohérente.</li>
+<li>L'argent sale reste de l'argent RP tant qu'aucune preuve ne démontre son origine.</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- RIPOUX -->
+
+<div class="accordion">
+
+<button class="accordion-header">
+
+<div class="left">
+<span class="icon">🕵️</span>
+<span class="title">RIPOUX ET INDIC</span>
+</div>
+
+<span class="arrow">⌄</span>
+
+</button>
+
+<div class="accordion-content">
+
+<div class="content">
+
+<ul>
+<li>Toute corruption doit être validée par dossier complet.</li>
+<li>Les indics doivent être validés par des hauts gradés.</li>
+<li>Un indic accepte les risques liés à son rôle.</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ENTREPRISE -->
+
+<div class="accordion">
+
+<button class="accordion-header">
+
+<div class="left">
+<span class="icon">💼</span>
+<span class="title">ENTREPRISE</span>
+</div>
+
+<span class="arrow">⌄</span>
+
+</button>
+
+<div class="accordion-content">
+
+<div class="content">
+
+<ul>
+<li>Scène de recrutement obligatoire.</li>
+<li>Respect de la grille tarifaire.</li>
+<li>Transactions enregistrées.</li>
+<li>Véhicules de fonction non personnels.</li>
+<li>Comportement RP sérieux obligatoire.</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+const accordions = document.querySelectorAll(".accordion");
+
+accordions.forEach(item => {
+
+const button = item.querySelector(".accordion-header");
+
+button.addEventListener("click", () => {
+
+item.classList.toggle("active");
+
+const content = item.querySelector(".accordion-content");
+
+if(content.style.maxHeight){
+content.style.maxHeight = null;
+}else{
+content.style.maxHeight = content.scrollHeight + "px";
+}
+
+});
+
+});
+
+</script>
+
 </body>
 </html>
