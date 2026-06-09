@@ -1,12 +1,13 @@
+```html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Règlement Legal - Solarys RP</title>
+<title>Règlement Légal - Solarys RP</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 
@@ -20,50 +21,62 @@
 body{
     background:#050505;
     color:white;
+    overflow-x:hidden;
 }
 
-/* HEADER */
+/* ==========================
+BANNIÈRE SOLARYS
+========================== */
 
 .hero{
-    background:linear-gradient(90deg,#ff43b5,#6ea8ff);
-    padding:80px 20px;
+    background:linear-gradient(
+        90deg,
+        #ff4fd8 0%,
+        #b56dff 50%,
+        #6fa8ff 100%
+    );
+    padding:90px 20px;
     text-align:center;
 }
 
 .hero h1{
     font-size:4rem;
-    font-weight:700;
-    letter-spacing:2px;
+    font-weight:800;
+    margin-bottom:15px;
 }
 
 .hero p{
-    margin-top:20px;
     font-size:1.2rem;
     opacity:.9;
 }
 
-/* CONTENT */
+/* ==========================
+CONTENEUR
+========================== */
 
 .container{
     width:95%;
-    max-width:1400px;
+    max-width:1600px;
     margin:auto;
     padding:40px 0 80px;
 }
 
-/* ACCORDION */
+/* ==========================
+BLOCS
+========================== */
 
 .accordion{
     background:#0b0b0b;
     border:1px solid rgba(255,255,255,.08);
-    border-radius:18px;
-    margin-bottom:25px;
+    border-radius:28px;
+    margin-bottom:20px;
     overflow:hidden;
     transition:.3s;
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
 }
 
 .accordion:hover{
-    border-color:rgba(255,255,255,.15);
+    border-color:rgba(181,109,255,.35);
 }
 
 .accordion-header{
@@ -72,18 +85,15 @@ body{
     border:none;
     color:white;
     cursor:pointer;
-
+    padding:32px;
     display:flex;
-    justify-content:space-between;
     align-items:center;
-
-    padding:30px;
 }
 
 .left{
     display:flex;
     align-items:center;
-    gap:15px;
+    gap:18px;
 }
 
 .icon{
@@ -92,46 +102,41 @@ body{
 
 .title{
     font-size:2rem;
-    font-weight:600;
-}
-
-.arrow{
-    font-size:2rem;
-    transition:.3s;
-}
-
-.accordion.active .arrow{
-    transform:rotate(180deg);
+    font-weight:700;
 }
 
 .accordion-content{
     max-height:0;
     overflow:hidden;
-    transition:max-height .5s ease;
+    transition:max-height .4s ease;
 }
 
 .content{
-    padding:30px;
-    border-top:1px solid rgba(255,255,255,.08);
+    padding:0 35px 35px;
+    border-top:1px solid rgba(255,255,255,.06);
 }
 
 .grid{
     display:grid;
     grid-template-columns:1fr 1fr;
     gap:50px;
+    padding-top:25px;
 }
 
-.grid ul{
+.grid ul,
+.content ul{
     padding-left:25px;
 }
 
-.grid li{
-    margin-bottom:15px;
+.grid li,
+.content li{
+    margin-bottom:12px;
     line-height:1.8;
 }
 
-.grid p{
-    margin-bottom:20px;
+.grid p,
+.content p{
+    margin-bottom:18px;
     line-height:1.8;
 }
 
@@ -148,7 +153,7 @@ body{
 }
 
 .title{
-    font-size:1.4rem;
+    font-size:1.3rem;
 }
 
 }
@@ -158,28 +163,24 @@ body{
 <body>
 
 <header class="hero">
-    <h1>REGLEMENT LEGAL</h1>
+    <h1>RÈGLEMENT LÉGAL</h1>
     <p>Merci de respecter l'ensemble des règles du serveur.</p>
 </header>
 
 <div class="container">
 
-<!-- SAMD -->
+<!-- RELATION SAMD -->
 
 <div class="accordion active">
 
 <button class="accordion-header">
-
 <div class="left">
 <span class="icon">📜</span>
 <span class="title">RELATION SAMD</span>
 </div>
-
-<span class="arrow">⌃</span>
-
 </button>
 
-<div class="accordion-content" style="max-height:1000px">
+<div class="accordion-content" style="max-height:1200px">
 
 <div class="content">
 
@@ -189,15 +190,15 @@ body{
 
 <p>SAMD veut dire San Andreas Medical Department.</p>
 
-<p>C’est le service médical / les EMS :</p>
+<p>C'est le service médical / les EMS :</p>
 
 <ul>
-<li>ambulanciers ;</li>
-<li>médecins ;</li>
-<li>secours ;</li>
-<li>réanimation des joueurs blessés ;</li>
-<li>transport à l’hôpital ;</li>
-<li>gestion des scènes d’accident.</li>
+<li>Ambulanciers</li>
+<li>Médecins</li>
+<li>Secours</li>
+<li>Réanimation des joueurs blessés</li>
+<li>Transport à l'hôpital</li>
+<li>Gestion des scènes d'accident</li>
 </ul>
 
 </div>
@@ -205,15 +206,11 @@ body{
 <div>
 
 <ul>
-<li>Vous devez respecter les arrêts médicaux ordonnés par le SAMD après avoir été soigné.</li>
-
-<li>Lors d’une intervention EMS, décrivez vos blessures via des /me cohérents.</li>
-
-<li>Si le SAMD estime qu’une hospitalisation ou des soins supplémentaires sont nécessaires, vous devez suivre la scène RP.</li>
-
-<li>Dans un hôpital, vous êtes soumis aux ordres du personnel médical.</li>
-
-<li>Le refus systématique de soins uniquement pour éviter des conséquences RP est interdit.</li>
+<li>Respect obligatoire des arrêts médicaux.</li>
+<li>Décrire ses blessures via des /me cohérents.</li>
+<li>Suivre les hospitalisations RP demandées.</li>
+<li>Respecter les consignes du personnel médical.</li>
+<li>Le refus systématique de soins est interdit.</li>
 </ul>
 
 </div>
@@ -221,41 +218,34 @@ body{
 </div>
 
 </div>
-</div>
 
 </div>
 
-<!-- SASP RELATION -->
+</div>
+
+<!-- RELATION SASP -->
 
 <div class="accordion">
 
 <button class="accordion-header">
-
 <div class="left">
 <span class="icon">🛡️</span>
 <span class="title">RELATION SASP</span>
 </div>
-
-<span class="arrow">⌄</span>
-
 </button>
 
 <div class="accordion-content">
 
 <div class="content">
 
-<p>SASP veut dire San Andreas State Police.</p>
-
-<p>C’est la police d’État dans l’univers de GTA RP.</p>
-
-<p>En général, la SASP :</p>
+<p>SASP signifie San Andreas State Police.</p>
 
 <ul>
-<li>fait les patrouilles ;</li>
-<li>gère les poursuites ;</li>
-<li>applique les lois ;</li>
-<li>intervient sur les grosses scènes criminelles ;</li>
-<li>travaille avec d’autres unités comme SWAT ou les shérifs selon les serveurs RP.</li>
+<li>Patrouilles et contrôles.</li>
+<li>Poursuites routières.</li>
+<li>Application des lois.</li>
+<li>Interventions criminelles.</li>
+<li>Travail avec les unités spécialisées.</li>
 </ul>
 
 </div>
@@ -269,14 +259,10 @@ body{
 <div class="accordion">
 
 <button class="accordion-header">
-
 <div class="left">
 <span class="icon">⚖️</span>
-<span class="title">SASP</span>
+<span class="title">RÈGLEMENT SASP</span>
 </div>
-
-<span class="arrow">⌄</span>
-
 </button>
 
 <div class="accordion-content">
@@ -284,11 +270,11 @@ body{
 <div class="content">
 
 <ul>
-<li>Chaque arrestation doit avoir une trace écrite.</li>
-<li>Les droits Miranda doivent être lus clairement.</li>
-<li>Un citoyen peut invoquer son droit au silence.</li>
-<li>Interdiction de fouille sans raison RP cohérente.</li>
-<li>L'argent sale reste de l'argent RP tant qu'aucune preuve ne démontre son origine.</li>
+<li>Chaque arrestation doit être justifiée RP.</li>
+<li>Les droits Miranda doivent être lus.</li>
+<li>Respect du droit au silence.</li>
+<li>Pas de fouille sans raison RP.</li>
+<li>Rapports obligatoires pour les grosses affaires.</li>
 </ul>
 
 </div>
@@ -302,14 +288,10 @@ body{
 <div class="accordion">
 
 <button class="accordion-header">
-
 <div class="left">
 <span class="icon">🕵️</span>
 <span class="title">RIPOUX ET INDIC</span>
 </div>
-
-<span class="arrow">⌄</span>
-
 </button>
 
 <div class="accordion-content">
@@ -317,9 +299,10 @@ body{
 <div class="content">
 
 <ul>
-<li>Toute corruption doit être validée par dossier complet.</li>
-<li>Les indics doivent être validés par des hauts gradés.</li>
-<li>Un indic accepte les risques liés à son rôle.</li>
+<li>Toute corruption doit être validée.</li>
+<li>Les indics doivent être autorisés.</li>
+<li>Les risques RP doivent être assumés.</li>
+<li>Abus de pouvoir interdit.</li>
 </ul>
 
 </div>
@@ -333,14 +316,10 @@ body{
 <div class="accordion">
 
 <button class="accordion-header">
-
 <div class="left">
 <span class="icon">💼</span>
 <span class="title">ENTREPRISE</span>
 </div>
-
-<span class="arrow">⌄</span>
-
 </button>
 
 <div class="accordion-content">
@@ -349,10 +328,10 @@ body{
 
 <ul>
 <li>Scène de recrutement obligatoire.</li>
-<li>Respect de la grille tarifaire.</li>
+<li>Respect des tarifs annoncés.</li>
 <li>Transactions enregistrées.</li>
-<li>Véhicules de fonction non personnels.</li>
-<li>Comportement RP sérieux obligatoire.</li>
+<li>Véhicules de fonction réservés au travail.</li>
+<li>Comportement professionnel obligatoire.</li>
 </ul>
 
 </div>
@@ -373,8 +352,6 @@ const button = item.querySelector(".accordion-header");
 
 button.addEventListener("click", () => {
 
-item.classList.toggle("active");
-
 const content = item.querySelector(".accordion-content");
 
 if(content.style.maxHeight){
@@ -391,3 +368,4 @@ content.style.maxHeight = content.scrollHeight + "px";
 
 </body>
 </html>
+```
