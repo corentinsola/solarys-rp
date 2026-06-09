@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Règlement Solarys RP</title>
+<title>Règlement Legal - Solarys RP</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 
@@ -15,228 +14,229 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
 }
 
 body{
     background:#050505;
     color:white;
-    font-family:'Poppins',sans-serif;
-    overflow-x:hidden;
 }
 
-/* ==========================
-BANNIERE SOLARYS
-========================== */
+/* HEADER */
 
 .hero{
-
-    background:linear-gradient(
-    90deg,
-    #ff4fd8 0%,
-    #be7dff 50%,
-    #6fa8ff 100%
-    );
-
-    text-align:center;
-
+    background:linear-gradient(90deg,#ff43b5,#6ea8ff);
     padding:80px 20px;
+    text-align:center;
 }
 
 .hero h1{
-
-    font-size:72px;
-
-    font-weight:800;
-
-    margin-bottom:15px;
+    font-size:4rem;
+    font-weight:700;
+    letter-spacing:2px;
 }
 
 .hero p{
-
-    font-size:24px;
-
-    opacity:.95;
+    margin-top:20px;
+    font-size:1.2rem;
+    opacity:.9;
 }
 
-/* ==========================
-CONTENEUR
-========================== */
+/* CONTENT */
 
 .container{
-
     width:95%;
-
-    max-width:1800px;
-
-    margin:40px auto;
+    max-width:1400px;
+    margin:auto;
+    padding:40px 0 80px;
 }
 
-/* ==========================
-ACCORDIONS
-========================== */
+/* ACCORDION */
 
 .accordion{
-
     background:#0b0b0b;
-
-    border:1px solid rgba(190,125,255,.35);
-
-    border-radius:30px;
-
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:18px;
+    margin-bottom:25px;
     overflow:hidden;
-
-    margin-bottom:18px;
-
-    box-shadow:
-    0 0 0 1px rgba(255,255,255,.02),
-    0 15px 40px rgba(0,0,0,.45);
-
     transition:.3s;
 }
 
 .accordion:hover{
-
-    transform:translateY(-2px);
-
-    border-color:#ff4fd8;
+    border-color:rgba(255,255,255,.15);
 }
 
 .accordion-header{
-
     width:100%;
-
     background:none;
-
     border:none;
-
     color:white;
-
     cursor:pointer;
 
-    padding:32px 40px;
-
     display:flex;
-
+    justify-content:space-between;
     align-items:center;
+
+    padding:30px;
 }
 
 .left{
-
     display:flex;
-
     align-items:center;
-
-    gap:25px;
+    gap:15px;
 }
 
-.emoji{
-
-    font-size:42px;
+.icon{
+    font-size:2rem;
 }
 
-.left h2{
+.title{
+    font-size:2rem;
+    font-weight:600;
+}
 
-    font-size:28px;
+.arrow{
+    font-size:2rem;
+    transition:.3s;
+}
 
-    font-weight:700;
+.accordion.active .arrow{
+    transform:rotate(180deg);
 }
 
 .accordion-content{
-
     max-height:0;
-
     overflow:hidden;
-
-    transition:max-height .45s ease;
-}
-
-.accordion.active .accordion-content{
-
-    max-height:3000px;
+    transition:max-height .5s ease;
 }
 
 .content{
-
-    padding:0 50px 40px;
+    padding:30px;
+    border-top:1px solid rgba(255,255,255,.08);
 }
 
-.content p{
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+}
 
-    font-size:20px;
+.grid ul{
+    padding-left:25px;
+}
 
+.grid li{
+    margin-bottom:15px;
     line-height:1.8;
+}
 
+.grid p{
     margin-bottom:20px;
+    line-height:1.8;
 }
 
-.content ul{
+/* MOBILE */
 
-    padding-left:30px;
-}
-
-.content li{
-
-    font-size:20px;
-
-    line-height:1.9;
-
-    margin-bottom:5px;
-}
-
-/* ==========================
-MOBILE
-========================== */
-
-@media(max-width:768px){
+@media(max-width:900px){
 
 .hero h1{
-    font-size:42px;
+    font-size:2.5rem;
 }
 
-.hero p{
-    font-size:18px;
+.grid{
+    grid-template-columns:1fr;
 }
 
-.left h2{
-    font-size:20px;
-}
-
-.emoji{
-    font-size:30px;
-}
-
-.content li,
-.content p{
-    font-size:16px;
+.title{
+    font-size:1.4rem;
 }
 
 }
 
 </style>
 </head>
-
 <body>
 
 <header class="hero">
-
-<h1>RÈGLEMENT SOLARYS RP</h1>
-
-<p>Merci de respecter l'ensemble des règles du serveur.</p>
-
+    <h1>REGLEMENT LEGAL</h1>
+    <p>Merci de respecter l'ensemble des règles du serveur.</p>
 </header>
 
 <div class="container">
 
-<!-- HRP -->
+<!-- SAMD -->
 
 <div class="accordion active">
 
 <button class="accordion-header">
 
 <div class="left">
-<div class="emoji">📜</div>
-<h2>RÈGLEMENT HRP</h2>
+<span class="icon">📜</span>
+<span class="title">RELATION SAMD</span>
 </div>
+
+<span class="arrow">⌃</span>
+
+</button>
+
+<div class="accordion-content" style="max-height:1000px">
+
+<div class="content">
+
+<div class="grid">
+
+<div>
+
+<p>SAMD veut dire San Andreas Medical Department.</p>
+
+<p>C’est le service médical / les EMS :</p>
+
+<ul>
+<li>ambulanciers ;</li>
+<li>médecins ;</li>
+<li>secours ;</li>
+<li>réanimation des joueurs blessés ;</li>
+<li>transport à l’hôpital ;</li>
+<li>gestion des scènes d’accident.</li>
+</ul>
+
+</div>
+
+<div>
+
+<ul>
+<li>Vous devez respecter les arrêts médicaux ordonnés par le SAMD après avoir été soigné.</li>
+
+<li>Lors d’une intervention EMS, décrivez vos blessures via des /me cohérents.</li>
+
+<li>Si le SAMD estime qu’une hospitalisation ou des soins supplémentaires sont nécessaires, vous devez suivre la scène RP.</li>
+
+<li>Dans un hôpital, vous êtes soumis aux ordres du personnel médical.</li>
+
+<li>Le refus systématique de soins uniquement pour éviter des conséquences RP est interdit.</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+
+<!-- SASP RELATION -->
+
+<div class="accordion">
+
+<button class="accordion-header">
+
+<div class="left">
+<span class="icon">🛡️</span>
+<span class="title">RELATION SASP</span>
+</div>
+
+<span class="arrow">⌄</span>
 
 </button>
 
@@ -244,17 +244,18 @@ MOBILE
 
 <div class="content">
 
-<p>
-Le respect est obligatoire envers tous les joueurs et membres du staff.
-</p>
+<p>SASP veut dire San Andreas State Police.</p>
+
+<p>C’est la police d’État dans l’univers de GTA RP.</p>
+
+<p>En général, la SASP :</p>
 
 <ul>
-<li>Créer des scènes cohérentes</li>
-<li>Privilégier le dialogue</li>
-<li>Développer son personnage</li>
-<li>Favoriser le fair-play</li>
-<li>Interdiction de casser une scène RP avec du HRP</li>
-<li>Les discussions HRP doivent se faire hors du jeu</li>
+<li>fait les patrouilles ;</li>
+<li>gère les poursuites ;</li>
+<li>applique les lois ;</li>
+<li>intervient sur les grosses scènes criminelles ;</li>
+<li>travaille avec d’autres unités comme SWAT ou les shérifs selon les serveurs RP.</li>
 </ul>
 
 </div>
@@ -263,16 +264,18 @@ Le respect est obligatoire envers tous les joueurs et membres du staff.
 
 </div>
 
-<!-- DISCORD -->
+<!-- SASP -->
 
 <div class="accordion">
 
 <button class="accordion-header">
 
 <div class="left">
-<div class="emoji">💬</div>
-<h2>RÈGLEMENT DISCORD</h2>
+<span class="icon">⚖️</span>
+<span class="title">SASP</span>
 </div>
+
+<span class="arrow">⌄</span>
 
 </button>
 
@@ -281,12 +284,11 @@ Le respect est obligatoire envers tous les joueurs et membres du staff.
 <div class="content">
 
 <ul>
-<li>Respect obligatoire envers tous les membres</li>
-<li>Propos discriminatoires interdits</li>
-<li>Pseudos insultants interdits</li>
-<li>Usurpation d'identité staff interdite</li>
-<li>Tickets clairs et respectueux</li>
-<li>Micro correct obligatoire</li>
+<li>Chaque arrestation doit avoir une trace écrite.</li>
+<li>Les droits Miranda doivent être lus clairement.</li>
+<li>Un citoyen peut invoquer son droit au silence.</li>
+<li>Interdiction de fouille sans raison RP cohérente.</li>
+<li>L'argent sale reste de l'argent RP tant qu'aucune preuve ne démontre son origine.</li>
 </ul>
 
 </div>
@@ -295,16 +297,18 @@ Le respect est obligatoire envers tous les joueurs et membres du staff.
 
 </div>
 
-<!-- PACKS -->
+<!-- RIPOUX -->
 
 <div class="accordion">
 
 <button class="accordion-header">
 
 <div class="left">
-<div class="emoji">🎮</div>
-<h2>PACKS GRAPHIQUES</h2>
+<span class="icon">🕵️</span>
+<span class="title">RIPOUX ET INDIC</span>
 </div>
+
+<span class="arrow">⌄</span>
 
 </button>
 
@@ -313,15 +317,9 @@ Le respect est obligatoire envers tous les joueurs et membres du staff.
 <div class="content">
 
 <ul>
-<li>No Props</li>
-<li>No Water</li>
-<li>No Bush</li>
-<li>Crosshair externe</li>
-<li>Tracers</li>
-<li>Hit Effects</li>
-<li>Kill Effects</li>
-<li>Blood Effects</li>
-<li>Réduction du recul</li>
+<li>Toute corruption doit être validée par dossier complet.</li>
+<li>Les indics doivent être validés par des hauts gradés.</li>
+<li>Un indic accepte les risques liés à son rôle.</li>
 </ul>
 
 </div>
@@ -330,16 +328,18 @@ Le respect est obligatoire envers tous les joueurs et membres du staff.
 
 </div>
 
-<!-- REMBOURSEMENTS -->
+<!-- ENTREPRISE -->
 
 <div class="accordion">
 
 <button class="accordion-header">
 
 <div class="left">
-<div class="emoji">💰</div>
-<h2>REMBOURSEMENTS</h2>
+<span class="icon">💼</span>
+<span class="title">ENTREPRISE</span>
 </div>
+
+<span class="arrow">⌄</span>
 
 </button>
 
@@ -348,73 +348,11 @@ Le respect est obligatoire envers tous les joueurs et membres du staff.
 <div class="content">
 
 <ul>
-<li>Aucun remboursement lors des reboots</li>
-<li>Aucune erreur bancaire remboursée</li>
-<li>Preuves obligatoires</li>
-</ul>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- STREAMERS -->
-
-<div class="accordion">
-
-<button class="accordion-header">
-
-<div class="left">
-<div class="emoji">🎥</div>
-<h2>STREAMERS & CRÉATEURS</h2>
-</div>
-
-</button>
-
-<div class="accordion-content">
-
-<div class="content">
-
-<ul>
-<li>Streamer est autorisé</li>
-<li>Le streamhack est interdit</li>
-<li>Le metagaming via le chat est interdit</li>
-<li>Respect obligatoire de la communauté</li>
-</ul>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- INTERDICTIONS -->
-
-<div class="accordion">
-
-<button class="accordion-header">
-
-<div class="left">
-<div class="emoji">🚫</div>
-<h2>INTERDICTIONS GÉNÉRALES</h2>
-</div>
-
-</button>
-
-<div class="accordion-content">
-
-<div class="content">
-
-<ul>
-<li>Racisme</li>
-<li>Homophobie</li>
-<li>Sexisme</li>
-<li>Discrimination</li>
-<li>RP sexuel</li>
-<li>Utilisation de bugs</li>
-<li>Streamhack</li>
-<li>Publicité pour d'autres serveurs</li>
+<li>Scène de recrutement obligatoire.</li>
+<li>Respect de la grille tarifaire.</li>
+<li>Transactions enregistrées.</li>
+<li>Véhicules de fonction non personnels.</li>
+<li>Comportement RP sérieux obligatoire.</li>
 </ul>
 
 </div>
@@ -427,13 +365,23 @@ Le respect est obligatoire envers tous les joueurs et membres du staff.
 
 <script>
 
-document.querySelectorAll('.accordion-header').forEach(header => {
+const accordions = document.querySelectorAll(".accordion");
 
-header.addEventListener('click', () => {
+accordions.forEach(item => {
 
-const accordion = header.parentElement;
+const button = item.querySelector(".accordion-header");
 
-accordion.classList.toggle('active');
+button.addEventListener("click", () => {
+
+item.classList.toggle("active");
+
+const content = item.querySelector(".accordion-content");
+
+if(content.style.maxHeight){
+content.style.maxHeight = null;
+}else{
+content.style.maxHeight = content.scrollHeight + "px";
+}
 
 });
 
