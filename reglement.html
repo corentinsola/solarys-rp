@@ -1,132 +1,208 @@
+```html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Règlement SOLARYS RP</title>
+<title>Règlement Solarys RP</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
 body{
-    margin:0;
-    font-family:Arial, sans-serif;
-    background:#0d0d0d;
-    color:white;
-    line-height:1.7;
+background:#050505;
+font-family:'Poppins',sans-serif;
+color:white;
 }
 
-header{
-    background:linear-gradient(90deg,#ff4fd8,#6fa8ff);
-    padding:30px;
-    text-align:center;
+/* =======================
+BANNIERE SOLARYS
+======================= */
+
+.hero{
+background:linear-gradient(
+90deg,
+#ff4fd8 0%,
+#bc7dff 50%,
+#6fa8ff 100%
+);
+
+padding:80px 20px;
+text-align:center;
 }
 
-header h1{
-    margin:0;
-    font-size:3rem;
+.hero h1{
+font-size:72px;
+font-weight:800;
+margin-bottom:15px;
 }
+
+.hero p{
+font-size:24px;
+}
+
+/* =======================
+CONTENEUR
+======================= */
 
 .container{
-    max-width:1200px;
-    margin:auto;
-    padding:30px;
-.section{
-    background:#151515;
-    border:1px solid rgba(255,255,255,0.08);
-    border-radius:20px;
-    padding:35px;
-    margin-bottom:25px;
-    box-shadow:0 10px 30px rgb
-    a(0,0,0,0.35);
-    transition:0.3s;
-}
-.section:hover{
-    transform:translateY(-4px);
-h2{
-    color:#8fc7ff;
-    font-size:32px;
-    margin-bottom:20px;
-}
-li{
-    margin-bottom:12px;
-    font-size:18px;
-}
-ul{
-    padding-left:25px;
+width:95%;
+max-width:1800px;
+margin:40px auto;
 }
 
-.home-btn{
-    display:inline-block;
-    margin-bottom:25px;
-    padding:12px 25px;
-    background:linear-gradient(90deg,#ff4fd8,#6fa8ff);
-    color:white;
-    text-decoration:none;
-    border-radius:10px;
+/* =======================
+ACCORDION
+======================= */
+
+.accordion{
+
+background:#0b0b0b;
+
+border:1px solid rgba(255,255,255,.08);
+
+border-radius:30px;
+
+margin-bottom:20px;
+
+overflow:hidden;
+
+box-shadow:
+0 0 0 1px rgba(255,255,255,.02),
+0 15px 40px rgba(0,0,0,.45);
+
+transition:.3s;
 }
 
-.home-btn:hover
-    {
-    opacity:0.8;
-.menu-reglement{
-    display:flex;
-    justify-content:center;
-    gap:15px;
-    flex-wrap:wrap;
-    margin-bottom:30px;
-
-    position:sticky;
-    top:15px;
-    z-index:1000;
-
-    background:rgba(15,15,15,0.85);
-    padding:15px;
-    border-radius:20px;
-    backdrop-filter:blur(10px);
+.accordion:hover{
+border-color:rgba(188,125,255,.35);
 }
 
-.menu-reglement a{
-    background:linear-gradient(90deg,#ff4fd8,#6fa8ff);
-    color:white;
-    text-decoration:none;
-    padding:16px 28px;
-    min-width:160px;
-text-align:center;
-    border-radius:14px;
-    font-weight:bold;
-    font-size:18px;
+.accordion-header{
 
-    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+width:100%;
 
-    transition:all 0.3s ease;
+background:none;
+
+border:none;
+
+cursor:pointer;
+
+color:white;
+
+padding:35px 45px;
+
+display:flex;
+
+align-items:center;
 }
 
-.menu-reglement a:hover{
-    transform:translateY(-4px) scale(1.03);
-    box-shadow:0 8px 20px rgba(111,168,255,0.4);
-filter:brightness(1.1);
+.left{
+display:flex;
+align-items:center;
+gap:20px;
 }
 
-.menu-reglement a:active{
-    transform:scale(0.98);
+.emoji{
+font-size:42px;
 }
-transform:translateY(-3px);
+
+.left h2{
+font-size:30px;
+font-weight:700;
 }
+
+.accordion-content{
+max-height:0;
+overflow:hidden;
+transition:max-height .4s ease;
+}
+
+.accordion.active .accordion-content{
+max-height:3000px;
+}
+
+.content{
+padding:0 55px 45px;
+}
+
+.content ul{
+padding-left:25px;
+}
+
+.content li{
+margin-bottom:10px;
+font-size:20px;
+line-height:1.8;
+}
+
+.content p{
+font-size:20px;
+line-height:1.9;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:38px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.left h2{
+font-size:20px;
+}
+
+.content li,
+.content p{
+font-size:16px;
+}
+
+}
+
 </style>
 </head>
 
 <body>
 
-<header>
+<header class="hero">
+
 <h1>RÈGLEMENT SOLARYS RP</h1>
+
 <p>Merci de respecter l'ensemble des règles du serveur.</p>
+
 </header>
 
 <div class="container">
 
+<!-- HRP -->
 
-<div class="section">
-<h2 id="hrp">📜 Règlement HRP</h2>
+<div class="accordion active">
+
+<button class="accordion-header">
+
+<div class="left">
+<div class="emoji">📜</div>
+<h2>RÈGLEMENT HRP</h2>
+</div>
+
+</button>
+
+<div class="accordion-content">
+
+<div class="content">
 
 <p>Le respect est obligatoire envers tous les joueurs et membres du staff.</p>
 
@@ -138,23 +214,61 @@ transform:translateY(-3px);
 <li>Interdiction de casser une scène RP avec du HRP</li>
 <li>Les discussions HRP doivent se faire hors du jeu</li>
 </ul>
+
 </div>
 
-<div class="section">
-<h2>💬 Règlement Discord</h2>
+</div>
+
+</div>
+
+<!-- DISCORD -->
+
+<div class="accordion">
+
+<button class="accordion-header">
+
+<div class="left">
+<div class="emoji">💬</div>
+<h2>RÈGLEMENT DISCORD</h2>
+</div>
+
+</button>
+
+<div class="accordion-content">
+
+<div class="content">
 
 <ul>
 <li>Respect obligatoire envers tous les membres</li>
-<li>Interdiction des propos racistes, sexistes, homophobes ou discriminatoires</li>
+<li>Propos discriminatoires interdits</li>
 <li>Pseudos insultants interdits</li>
 <li>Usurpation d'identité staff interdite</li>
 <li>Tickets clairs et respectueux</li>
-<li>Micro correct obligatoire en vocal</li>
+<li>Micro correct obligatoire</li>
 </ul>
+
 </div>
 
-<div class="section">
-<h2>🎮 Règlement Packs Graphiques</h2>
+</div>
+
+</div>
+
+<!-- PACKS -->
+
+<div class="accordion">
+
+<button class="accordion-header">
+
+<div class="left">
+<div class="emoji">🎮</div>
+<h2>PACKS GRAPHIQUES</h2>
+</div>
+
+</button>
+
+<div class="accordion-content">
+
+<div class="content">
 
 <ul>
 <li>No Props</li>
@@ -165,66 +279,126 @@ transform:translateY(-3px);
 <li>Hit Effects</li>
 <li>Kill Effects</li>
 <li>Blood Effects</li>
-<li>Modification abusive de FOV</li>
-<li>Suppression de végétation</li>
-<li>Full Stamina</li>
 <li>Réduction de recul</li>
 </ul>
 
-<p>
-Sanctions possibles :
-⚠️ Warn
-⛓️ Jail/TIG
-🔨 Bannissement temporaire
-⛔ Bannissement définitif
-</p>
 </div>
 
-<div class="section">
-<h2>💰 Règlement Remboursement</h2>
+</div>
+
+</div>
+
+<!-- REMBOURSEMENTS -->
+
+<div class="accordion">
+
+<button class="accordion-header">
+
+<div class="left">
+<div class="emoji">💰</div>
+<h2>REMBOURSEMENTS</h2>
+</div>
+
+</button>
+
+<div class="accordion-content">
+
+<div class="content">
 
 <ul>
 <li>Aucun remboursement lors des reboots</li>
-<li>Aucune erreur de virement remboursée</li>
-<li>Aucune perte liée à l'inactivité remboursée</li>
-<li>Preuves obligatoires pour toute demande</li>
+<li>Erreur de virement non remboursée</li>
+<li>Preuves obligatoires</li>
 </ul>
+
 </div>
 
-<div class="section">
-<h2>🎥 Streamers & Créateurs</h2>
+</div>
+
+</div>
+
+<!-- STREAMERS -->
+
+<div class="accordion">
+
+<button class="accordion-header">
+
+<div class="left">
+<div class="emoji">🎥</div>
+<h2>STREAMERS & CRÉATEURS</h2>
+</div>
+
+</button>
+
+<div class="accordion-content">
+
+<div class="content">
 
 <ul>
-<li>Streamer vos sessions RP est autorisé</li>
+<li>Streamer est autorisé</li>
 <li>Le streamhack est interdit</li>
 <li>Le metagaming via le chat est interdit</li>
-<li>Les interventions staff ne doivent pas être diffusées</li>
-<li>Respect obligatoire envers la communauté</li>
+<li>Respect de la communauté obligatoire</li>
 </ul>
+
 </div>
 
-<div class="section">
-<h2>🚫 Interdictions Générales</h2>
+</div>
+
+</div>
+
+<!-- INTERDICTIONS -->
+
+<div class="accordion">
+
+<button class="accordion-header">
+
+<div class="left">
+<div class="emoji">🚫</div>
+<h2>INTERDICTIONS GÉNÉRALES</h2>
+</div>
+
+</button>
+
+<div class="accordion-content">
+
+<div class="content">
 
 <ul>
 <li>Racisme</li>
 <li>Homophobie</li>
 <li>Sexisme</li>
 <li>Discrimination</li>
-<li>Contenus haineux ou choquants</li>
 <li>RP sexuel</li>
-<li>Utilisation de bugs ou glitches</li>
 <li>Streamhack</li>
-<li>Vocaux externes pendant une session RP</li>
+<li>Utilisation de bugs</li>
 <li>Publicité pour d'autres serveurs</li>
 </ul>
+
 </div>
 
 </div>
+
 </div>
 
-<div class="section">
+</div>
 
+<script>
+
+document.querySelectorAll('.accordion-header').forEach(header => {
+
+header.addEventListener('click', () => {
+
+const accordion = header.parentElement;
+
+accordion.classList.toggle('active');
+
+});
+
+});
+
+</script>
 
 </body>
 </html>
+```
