@@ -1,57 +1,317 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>SOLARYS RP</title>
+<title>Notions RP - Solarys RP</title>
 
-    <link rel="stylesheet" href="assets/css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#050505;
+color:white;
+overflow-x:hidden;
+}
+
+.hero{
+background:linear-gradient(
+90deg,
+#ff4fd8 0%,
+#bc7bff 50%,
+#6fa8ff 100%
+);
+padding:70px 20px;
+text-align:center;
+}
+
+.hero h1{
+font-size:72px;
+font-weight:800;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:26px;
+}
+
+.container{
+width:95%;
+max-width:1800px;
+margin:40px auto;
+}
+
+.accordion{
+background:#0b0b0b;
+border:1px solid rgba(255,255,255,.08);
+border-radius:30px;
+margin-bottom:20px;
+overflow:hidden;
+box-shadow:
+0 0 0 1px rgba(255,255,255,.03),
+0 10px 35px rgba(0,0,0,.35);
+}
+
+.accordion-header{
+width:100%;
+background:none;
+border:none;
+color:white;
+cursor:pointer;
+padding:35px 45px;
+display:flex;
+align-items:center;
+}
+
+.accordion-header:hover{
+background:rgba(255,255,255,.02);
+}
+
+.left{
+display:flex;
+align-items:center;
+gap:20px;
+}
+
+.emoji{
+font-size:38px;
+}
+
+.left h2{
+font-size:28px;
+font-weight:700;
+}
+
+.accordion-content{
+max-height:0;
+overflow:hidden;
+transition:max-height .4s ease;
+}
+
+.accordion.active .accordion-content{
+max-height:5000px;
+}
+
+.content{
+padding:0 50px 40px;
+}
+
+.content ul{
+padding-left:25px;
+}
+
+.content li{
+margin-bottom:10px;
+font-size:20px;
+line-height:1.8;
+}
+
+.content p{
+font-size:20px;
+line-height:1.9;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:40px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.left h2{
+font-size:20px;
+}
+
+.content li,
+.content p{
+font-size:16px;
+}
+
+}
+
+</style>
 </head>
 
 <body>
 
-    <div class="overlay"></div>
+<header class="hero">
 
-    <header>
-        <div class="logo">SOLARYS</div>
+<h1>RÈGLEMENT SOLARYS RP</h1>
 
-        <nav>
-            <a href="reglement.html">Règlement</a>
+<p>Merci de respecter l'ensemble des règles du serveur.</p>
 
-            <a href="#" class="status">
-                <span class="dot"></span>
-                Serveur en ligne
-            </a>
-        </nav>
-    </header>
+</header>
 
-    <main>
+<div class="container">
 
-        <span class="welcome">
-            BIENVENUE
-        </span>
+<!-- NOTIONS -->
 
-        <h1>SOLARYS RP</h1>
+<div class="accordion active">
 
-        <p>
-            Serveur FiveM RolePlay Nouvelle Génération.<br>
-            Rejoignez une communauté immersive, sérieuse et active.
-        </p>
+<button class="accordion-header">
 
-        <div class="buttons">
+<div class="left">
+<div class="emoji">📚</div>
+<h2>NOTIONS PRINCIPALES</h2>
+</div>
 
-            <a href="reglement.html" class="btn-secondary">
-                Consulter le règlement
-            </a>
+</button>
 
-        </div>
+<div class="accordion-content">
 
-    </main>
+<div class="content">
 
-    <script src="assets/js/script.js"></script>
+<ul>
+<li><strong>Mass RP :</strong> prendre en compte la population invisible autour de vous.</li>
+<li><strong>RolePlay :</strong> Incarner un personnage dans un univers fictif.</li>
+<li><strong>HRP :</strong> Tout ce qui est hors du jeu.</li>
+<li><strong>Metagaming :</strong> Utiliser une information obtenue hors RP.</li>
+<li><strong>Powergaming :</strong> Réaliser une action irréaliste.</li>
+<li><strong>No Fear RP :</strong> Ne pas craindre une arme.</li>
+<li><strong>Force RP :</strong> Forcer une action à un joueur.</li>
+<li><strong>Freekill :</strong> Tuer sans raison RP valable.</li>
+</ul>
+
+</div>
+</div>
+</div>
+
+<!-- LEXIQUE -->
+
+<div class="accordion">
+
+<button class="accordion-header">
+
+<div class="left">
+<div class="emoji">📖</div>
+<h2>LEXIQUE RP</h2>
+</div>
+
+</button>
+
+<div class="accordion-content">
+
+<div class="content">
+
+<ul>
+<li>🧠 J'ai un bug = J'ai un mal de tête</li>
+<li>😵 J'ai crash = Je me suis évanoui</li>
+<li>🧊 Je freeze = Je suis figé</li>
+<li>😴 Je déco = Je vais dormir</li>
+</ul>
+
+</div>
+</div>
+</div>
+
+<!-- JOUER -->
+
+<div class="accordion">
+
+<button class="accordion-header">
+
+<div class="left">
+<div class="emoji">🎮</div>
+<h2>JOUER SANS EXCÈS</h2>
+</div>
+
+</button>
+
+<div class="accordion-content">
+
+<div class="content">
+
+<p>
+Le RP est un jeu. Respectez les autres joueurs et gardez toujours une attitude fair-play.
+</p>
+
+</div>
+</div>
+</div>
+
+<!-- RECUL -->
+
+<div class="accordion">
+
+<button class="accordion-header">
+
+<div class="left">
+<div class="emoji">🧠</div>
+<h2>GARDER DU RECUL</h2>
+</div>
+
+</button>
+
+<div class="accordion-content">
+
+<div class="content">
+
+<p>
+Ne mélangez jamais le RP et la réalité. Les conflits RP restent dans le jeu.
+</p>
+
+</div>
+</div>
+</div>
+
+<!-- FAQ -->
+
+<div class="accordion">
+
+<button class="accordion-header">
+
+<div class="left">
+<div class="emoji">❓</div>
+<h2>QUESTIONS FRÉQUENTES</h2>
+</div>
+
+</button>
+
+<div class="accordion-content">
+
+<div class="content">
+
+<ul>
+<li>Comment signaler un joueur ? → Ticket Discord.</li>
+<li>Comment rejoindre un groupe ? → Faire une candidature RP.</li>
+<li>Puis-je contester une sanction ? → Oui via ticket.</li>
+</ul>
+
+</div>
+</div>
+</div>
+
+</div>
+
+<script>
+
+document.querySelectorAll(".accordion-header").forEach(header => {
+
+header.addEventListener("click", () => {
+
+const accordion = header.parentElement;
+
+accordion.classList.toggle("active");
+
+});
+
+});
+
+</script>
 
 </body>
-
 </html>
+```
+
