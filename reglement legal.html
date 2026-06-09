@@ -1,374 +1,81 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Règlement Légal - Solarys RP</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-<style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
-}
-
-body{
-    background:#050505;
-    color:white;
-    overflow-x:hidden;
-}
-
-/* ==========================
-BANNIÈRE SOLARYS
-========================== */
-
-.hero{
-    background:linear-gradient(
-        90deg,
-        #ff4fd8 0%,
-        #b56dff 50%,
-        #6fa8ff 100%
-    );
-    padding:90px 20px;
-    text-align:center;
-}
-
-.hero h1{
-    font-size:4rem;
-    font-weight:800;
-    margin-bottom:15px;
-}
-
-.hero p{
-    font-size:1.2rem;
-    opacity:.9;
-}
-
-/* ==========================
-CONTENEUR
-========================== */
-
-.container{
-    width:95%;
-    max-width:1600px;
-    margin:auto;
-    padding:40px 0 80px;
-}
-
-/* ==========================
-BLOCS
-========================== */
-
-.accordion{
-    background:#0b0b0b;
-    border:1px solid rgba(255,255,255,.08);
-    border-radius:28px;
-    margin-bottom:20px;
-    overflow:hidden;
-    transition:.3s;
-    box-shadow:0 15px 40px rgba(0,0,0,.35);
-}
-
-.accordion:hover{
-    border-color:rgba(181,109,255,.35);
-}
-
-.accordion-header{
-    width:100%;
-    background:none;
-    border:none;
-    color:white;
-    cursor:pointer;
-    padding:32px;
-    display:flex;
-    align-items:center;
-}
-
-.left{
-    display:flex;
-    align-items:center;
-    gap:18px;
-}
-
-.icon{
-    font-size:2rem;
-}
-
-.title{
-    font-size:2rem;
-    font-weight:700;
-}
-
-.accordion-content{
-    max-height:0;
-    overflow:hidden;
-    transition:max-height .4s ease;
-}
-
-.content{
-    padding:0 35px 35px;
-    border-top:1px solid rgba(255,255,255,.06);
-}
-
-.grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:50px;
-    padding-top:25px;
-}
-
-.grid ul,
-.content ul{
-    padding-left:25px;
-}
-
-.grid li,
-.content li{
-    margin-bottom:12px;
-    line-height:1.8;
-}
-
-.grid p,
-.content p{
-    margin-bottom:18px;
-    line-height:1.8;
-}
-
-/* MOBILE */
-
-@media(max-width:900px){
-
-.hero h1{
-    font-size:2.5rem;
-}
-
-.grid{
-    grid-template-columns:1fr;
-}
-
-.title{
-    font-size:1.3rem;
-}
-
-}
-
-</style>
-</head>
-<body>
-
 <header class="hero">
-    
-    <h1>RÈGLEMENT LÉGAL</h1>
+    <div class="hero-overlay"></div>
 
-<p>Les bases essentielles du RolePlay sur Solarys RP.</p></h1>
-<p>Merci de respecter l'ensemble des règles du serveur.</p>
+    <div class="hero-content">
+        <h1>RÈGLEMENT LÉGAL</h1>
 
+        <p>
+            Les bases essentielles du RolePlay sur Solarys RP.<br>
+            Merci de respecter l'ensemble des règles du serveur.
+        </p>
+    </div>
 </header>
 
-<div class="container">
+<style>
+.hero {
+    position: relative;
+    height: 320px; /* Hauteur réduite */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
 
-<!-- RELATION SAMD -->
-
-<div class="accordion active">
-
-<button class="accordion-header">
-<div class="left">
-<span class="icon">📜</span>
-<span class="title">RELATION SAMD</span>
-</div>
-</button>
-
-<div class="accordion-content" style="max-height:1200px">
-
-<div class="content">
-
-<div class="grid">
-
-<div>
-
-<p>SAMD veut dire San Andreas Medical Department.</p>
-
-<p>C'est le service médical / les EMS :</p>
-
-<ul>
-<li>Ambulanciers</li>
-<li>Médecins</li>
-<li>Secours</li>
-<li>Réanimation des joueurs blessés</li>
-<li>Transport à l'hôpital</li>
-<li>Gestion des scènes d'accident</li>
-</ul>
-
-</div>
-
-<div>
-
-<ul>
-<li>Respect obligatoire des arrêts médicaux.</li>
-<li>Décrire ses blessures via des /me cohérents.</li>
-<li>Suivre les hospitalisations RP demandées.</li>
-<li>Respecter les consignes du personnel médical.</li>
-<li>Le refus systématique de soins est interdit.</li>
-</ul>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- RELATION SASP -->
-
-<div class="accordion">
-
-<button class="accordion-header">
-<div class="left">
-<span class="icon">🛡️</span>
-<span class="title">RELATION SASP</span>
-</div>
-</button>
-
-<div class="accordion-content">
-
-<div class="content">
-
-<p>SASP signifie San Andreas State Police.</p>
-
-<ul>
-<li>Patrouilles et contrôles.</li>
-<li>Poursuites routières.</li>
-<li>Application des lois.</li>
-<li>Interventions criminelles.</li>
-<li>Travail avec les unités spécialisées.</li>
-</ul>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- SASP -->
-
-<div class="accordion">
-
-<button class="accordion-header">
-<div class="left">
-<span class="icon">⚖️</span>
-<span class="title">RÈGLEMENT SASP</span>
-</div>
-</button>
-
-<div class="accordion-content">
-
-<div class="content">
-
-<ul>
-<li>Chaque arrestation doit être justifiée RP.</li>
-<li>Les droits Miranda doivent être lus.</li>
-<li>Respect du droit au silence.</li>
-<li>Pas de fouille sans raison RP.</li>
-<li>Rapports obligatoires pour les grosses affaires.</li>
-</ul>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- RIPOUX -->
-
-<div class="accordion">
-
-<button class="accordion-header">
-<div class="left">
-<span class="icon">🕵️</span>
-<span class="title">RIPOUX ET INDIC</span>
-</div>
-</button>
-
-<div class="accordion-content">
-
-<div class="content">
-
-<ul>
-<li>Toute corruption doit être validée.</li>
-<li>Les indics doivent être autorisés.</li>
-<li>Les risques RP doivent être assumés.</li>
-<li>Abus de pouvoir interdit.</li>
-</ul>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- ENTREPRISE -->
-
-<div class="accordion">
-
-<button class="accordion-header">
-<div class="left">
-<span class="icon">💼</span>
-<span class="title">ENTREPRISE</span>
-</div>
-</button>
-
-<div class="accordion-content">
-
-<div class="content">
-
-<ul>
-<li>Scène de recrutement obligatoire.</li>
-<li>Respect des tarifs annoncés.</li>
-<li>Transactions enregistrées.</li>
-<li>Véhicules de fonction réservés au travail.</li>
-<li>Comportement professionnel obligatoire.</li>
-</ul>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<script>
-
-const accordions = document.querySelectorAll(".accordion");
-
-accordions.forEach(item => {
-
-const button = item.querySelector(".accordion-header");
-
-button.addEventListener("click", () => {
-
-const content = item.querySelector(".accordion-content");
-
-if(content.style.maxHeight){
-content.style.maxHeight = null;
-}else{
-content.style.maxHeight = content.scrollHeight + "px";
+    background-image: url("images/sasp-banner.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-});
+.hero-overlay {
+    position: absolute;
+    inset: 0;
 
-});
+    background:
+        linear-gradient(
+            90deg,
+            rgba(255, 0, 170, 0.45),
+            rgba(90, 120, 255, 0.45)
+        );
 
-</script>
+    backdrop-filter: blur(2px);
+}
 
-</body>
-</html>
-```
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+}
+
+.hero h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.hero p {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .hero {
+        height: 250px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
+</style>
