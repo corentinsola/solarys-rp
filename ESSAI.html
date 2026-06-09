@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Notions RP - Solarys RP</title>
+<title>Règlement Solarys RP</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
@@ -17,21 +18,27 @@ box-sizing:border-box;
 }
 
 body{
-font-family:'Poppins',sans-serif;
 background:#050505;
+font-family:'Poppins',sans-serif;
 color:white;
 overflow-x:hidden;
 }
 
+/* ==========================
+BANNIERE SOLARYS
+========================== */
+
 .hero{
+
 background:linear-gradient(
 90deg,
 #ff4fd8 0%,
-#bc7bff 50%,
+#be7dff 50%,
 #6fa8ff 100%
 );
-padding:70px 20px;
+
 text-align:center;
+padding:80px 20px;
 }
 
 .hero h1{
@@ -41,8 +48,13 @@ margin-bottom:15px;
 }
 
 .hero p{
-font-size:26px;
+font-size:24px;
+font-weight:400;
 }
+
+/* ==========================
+CONTENEUR
+========================== */
 
 .container{
 width:95%;
@@ -50,30 +62,50 @@ max-width:1800px;
 margin:40px auto;
 }
 
+/* ==========================
+BLOCS
+========================== */
+
 .accordion{
+
 background:#0b0b0b;
+
 border:1px solid rgba(255,255,255,.08);
+
 border-radius:30px;
-margin-bottom:20px;
+
 overflow:hidden;
+
+margin-bottom:20px;
+
 box-shadow:
-0 0 0 1px rgba(255,255,255,.03),
-0 10px 35px rgba(0,0,0,.35);
+0 0 0 1px rgba(255,255,255,.02),
+0 15px 40px rgba(0,0,0,.45);
+
+transition:.3s;
+}
+
+.accordion:hover{
+border-color:rgba(190,125,255,.35);
 }
 
 .accordion-header{
-width:100%;
-background:none;
-border:none;
-color:white;
-cursor:pointer;
-padding:35px 45px;
-display:flex;
-align-items:center;
-}
 
-.accordion-header:hover{
-background:rgba(255,255,255,.02);
+width:100%;
+
+background:none;
+
+border:none;
+
+cursor:pointer;
+
+padding:35px 45px;
+
+display:flex;
+
+align-items:center;
+
+color:white;
 }
 
 .left{
@@ -83,11 +115,11 @@ gap:20px;
 }
 
 .emoji{
-font-size:38px;
+font-size:42px;
 }
 
 .left h2{
-font-size:28px;
+font-size:30px;
 font-weight:700;
 }
 
@@ -98,11 +130,17 @@ transition:max-height .4s ease;
 }
 
 .accordion.active .accordion-content{
-max-height:5000px;
+max-height:3000px;
 }
 
 .content{
-padding:0 50px 40px;
+padding:0 55px 45px;
+}
+
+.content p{
+font-size:20px;
+line-height:1.8;
+margin-bottom:20px;
 }
 
 .content ul{
@@ -110,20 +148,19 @@ padding-left:25px;
 }
 
 .content li{
-margin-bottom:10px;
 font-size:20px;
 line-height:1.8;
+margin-bottom:8px;
 }
 
-.content p{
-font-size:20px;
-line-height:1.9;
-}
+/* ==========================
+MOBILE
+========================== */
 
 @media(max-width:768px){
 
 .hero h1{
-font-size:40px;
+font-size:42px;
 }
 
 .hero p{
@@ -148,9 +185,7 @@ font-size:16px;
 
 <header class="hero">
 
-<h1><h1>NOTIONS RP</h1>
-
-<p>Les bases essentielles du RolePlay sur Solarys RP.</p></h1>
+<h1>RÈGLEMENT SOLARYS RP</h1>
 
 <p>Merci de respecter l'ensemble des règles du serveur.</p>
 
@@ -158,15 +193,15 @@ font-size:16px;
 
 <div class="container">
 
-<!-- NOTIONS -->
+<!-- HRP -->
 
 <div class="accordion active">
 
 <button class="accordion-header">
 
 <div class="left">
-<div class="emoji">📚</div>
-<h2>NOTIONS PRINCIPALES</h2>
+<div class="emoji">📜</div>
+<h2>RÈGLEMENT HRP</h2>
 </div>
 
 </button>
@@ -175,30 +210,34 @@ font-size:16px;
 
 <div class="content">
 
+<p>
+Le respect est obligatoire envers tous les joueurs et membres du staff.
+</p>
+
 <ul>
-<li><strong>Mass RP :</strong> prendre en compte la population invisible autour de vous.</li>
-<li><strong>RolePlay :</strong> Incarner un personnage dans un univers fictif.</li>
-<li><strong>HRP :</strong> Tout ce qui est hors du jeu.</li>
-<li><strong>Metagaming :</strong> Utiliser une information obtenue hors RP.</li>
-<li><strong>Powergaming :</strong> Réaliser une action irréaliste.</li>
-<li><strong>No Fear RP :</strong> Ne pas craindre une arme.</li>
-<li><strong>Force RP :</strong> Forcer une action à un joueur.</li>
-<li><strong>Freekill :</strong> Tuer sans raison RP valable.</li>
+<li>Créer des scènes cohérentes</li>
+<li>Privilégier le dialogue</li>
+<li>Développer son personnage</li>
+<li>Favoriser le fair-play</li>
+<li>Interdiction de casser une scène RP avec du HRP</li>
+<li>Les discussions HRP doivent se faire hors du jeu</li>
 </ul>
 
 </div>
-</div>
+
 </div>
 
-<!-- LEXIQUE -->
+</div>
+
+<!-- DISCORD -->
 
 <div class="accordion">
 
 <button class="accordion-header">
 
 <div class="left">
-<div class="emoji">📖</div>
-<h2>LEXIQUE RP</h2>
+<div class="emoji">💬</div>
+<h2>RÈGLEMENT DISCORD</h2>
 </div>
 
 </button>
@@ -208,17 +247,21 @@ font-size:16px;
 <div class="content">
 
 <ul>
-<li>🧠 J'ai un bug = J'ai un mal de tête</li>
-<li>😵 J'ai crash = Je me suis évanoui</li>
-<li>🧊 Je freeze = Je suis figé</li>
-<li>😴 Je déco = Je vais dormir</li>
+<li>Respect obligatoire envers tous les membres</li>
+<li>Interdiction des propos discriminatoires</li>
+<li>Pseudos insultants interdits</li>
+<li>Usurpation d'identité staff interdite</li>
+<li>Tickets clairs et respectueux</li>
+<li>Micro correct obligatoire</li>
 </ul>
 
 </div>
-</div>
+
 </div>
 
-<!-- JOUER -->
+</div>
+
+<!-- PACKS -->
 
 <div class="accordion">
 
@@ -226,57 +269,7 @@ font-size:16px;
 
 <div class="left">
 <div class="emoji">🎮</div>
-<h2>JOUER SANS EXCÈS</h2>
-</div>
-
-</button>
-
-<div class="accordion-content">
-
-<div class="content">
-
-<p>
-Le RP est un jeu. Respectez les autres joueurs et gardez toujours une attitude fair-play.
-</p>
-
-</div>
-</div>
-</div>
-
-<!-- RECUL -->
-
-<div class="accordion">
-
-<button class="accordion-header">
-
-<div class="left">
-<div class="emoji">🧠</div>
-<h2>GARDER DU RECUL</h2>
-</div>
-
-</button>
-
-<div class="accordion-content">
-
-<div class="content">
-
-<p>
-Ne mélangez jamais le RP et la réalité. Les conflits RP restent dans le jeu.
-</p>
-
-</div>
-</div>
-</div>
-
-<!-- FAQ -->
-
-<div class="accordion">
-
-<button class="accordion-header">
-
-<div class="left">
-<div class="emoji">❓</div>
-<h2>QUESTIONS FRÉQUENTES</h2>
+<h2>PACKS GRAPHIQUES</h2>
 </div>
 
 </button>
@@ -286,26 +279,138 @@ Ne mélangez jamais le RP et la réalité. Les conflits RP restent dans le jeu.
 <div class="content">
 
 <ul>
-<li>Comment signaler un joueur ? → Ticket Discord.</li>
-<li>Comment rejoindre un groupe ? → Faire une candidature RP.</li>
-<li>Puis-je contester une sanction ? → Oui via ticket.</li>
+<li>No Props</li>
+<li>No Water</li>
+<li>No Bush</li>
+<li>Crosshair externe</li>
+<li>Tracers</li>
+<li>Hit Effects</li>
+<li>Kill Effects</li>
+<li>Blood Effects</li>
+<li>Réduction du recul</li>
+</ul>
+
+<p>
+⚠️ Warn<br>
+⛓️ Jail / TIG<br>
+🔨 Bannissement temporaire<br>
+⛔ Bannissement définitif
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- REMBOURSEMENTS -->
+
+<div class="accordion">
+
+<button class="accordion-header">
+
+<div class="left">
+<div class="emoji">💰</div>
+<h2>REMBOURSEMENTS</h2>
+</div>
+
+</button>
+
+<div class="accordion-content">
+
+<div class="content">
+
+<ul>
+<li>Aucun remboursement lors des reboots</li>
+<li>Aucune erreur de virement remboursée</li>
+<li>Aucune perte liée à l'inactivité remboursée</li>
+<li>Preuves obligatoires pour toute demande</li>
 </ul>
 
 </div>
+
 </div>
+
+</div>
+
+<!-- STREAMERS -->
+
+<div class="accordion">
+
+<button class="accordion-header">
+
+<div class="left">
+<div class="emoji">🎥</div>
+<h2>STREAMERS & CRÉATEURS</h2>
+</div>
+
+</button>
+
+<div class="accordion-content">
+
+<div class="content">
+
+<ul>
+<li>Streamer est autorisé</li>
+<li>Le streamhack est interdit</li>
+<li>Le metagaming via le chat est interdit</li>
+<li>Les interventions staff ne doivent pas être diffusées</li>
+<li>Respect obligatoire envers la communauté</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- INTERDICTIONS -->
+
+<div class="accordion">
+
+<button class="accordion-header">
+
+<div class="left">
+<div class="emoji">🚫</div>
+<h2>INTERDICTIONS GÉNÉRALES</h2>
+</div>
+
+</button>
+
+<div class="accordion-content">
+
+<div class="content">
+
+<ul>
+<li>Racisme</li>
+<li>Homophobie</li>
+<li>Sexisme</li>
+<li>Discrimination</li>
+<li>Contenus haineux ou choquants</li>
+<li>RP sexuel</li>
+<li>Utilisation de bugs ou glitches</li>
+<li>Streamhack</li>
+<li>Vocaux externes pendant une session RP</li>
+<li>Publicité pour d'autres serveurs</li>
+</ul>
+
+</div>
+
+</div>
+
 </div>
 
 </div>
 
 <script>
 
-document.querySelectorAll(".accordion-header").forEach(header => {
+document.querySelectorAll('.accordion-header').forEach(header => {
 
-header.addEventListener("click", () => {
+header.addEventListener('click', () => {
 
 const accordion = header.parentElement;
 
-accordion.classList.toggle("active");
+accordion.classList.toggle('active');
 
 });
 
@@ -315,4 +420,3 @@ accordion.classList.toggle("active");
 
 </body>
 </html>
-```
