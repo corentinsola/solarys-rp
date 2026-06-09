@@ -17,21 +17,21 @@
 }
 
 body{
-    background:#000;
+    background:#050505;
     color:white;
     font-family:'Poppins',sans-serif;
 }
 
-/* =======================
-   BANNIERE SOLARYS
-======================= */
+/* =========================
+   BANNIÈRE SOLARYS
+========================= */
 
 .hero{
     background:linear-gradient(
         90deg,
-        #ff4fcf 0%,
-        #b67cff 50%,
-        #6aa7ff 100%
+        #ff4fd8 0%,
+        #be7dff 50%,
+        #6fa8ff 100%
     );
 
     text-align:center;
@@ -39,19 +39,18 @@ body{
 }
 
 .hero h1{
-    font-size:70px;
+    font-size:72px;
     font-weight:800;
-    margin-bottom:20px;
+    margin-bottom:15px;
 }
 
 .hero p{
-    font-size:26px;
-    opacity:.95;
+    font-size:24px;
 }
 
-/* =======================
-   CONTENU
-======================= */
+/* =========================
+   CONTENEUR
+========================= */
 
 .container{
     width:95%;
@@ -59,20 +58,31 @@ body{
     margin:40px auto;
 }
 
-/* =======================
-   ACCORDEON
-======================= */
+/* =========================
+   BLOCS CLIQUABLES
+========================= */
 
 .accordion{
-    margin-bottom:25px;
 
-    background:#070707;
+    background:#0a0a0a;
 
     border:1px solid rgba(255,255,255,.08);
 
-    border-radius:25px;
+    border-radius:30px;
 
     overflow:hidden;
+
+    margin-bottom:20px;
+
+    transition:.3s;
+
+    box-shadow:
+    0 0 0 1px rgba(255,255,255,.02),
+    0 15px 40px rgba(0,0,0,.45);
+}
+
+.accordion:hover{
+    border-color:rgba(190,125,255,.30);
 }
 
 .accordion-header{
@@ -87,19 +97,13 @@ body{
 
     cursor:pointer;
 
+    text-align:left;
+
+    padding:35px 45px;
+
     display:flex;
 
-    justify-content:space-between;
-
     align-items:center;
-
-    padding:35px 40px;
-
-    transition:.3s;
-}
-
-.accordion-header:hover{
-    background:rgba(255,255,255,.03);
 }
 
 .left{
@@ -108,70 +112,52 @@ body{
     gap:20px;
 }
 
-.left span:first-child{
-    font-size:40px;
+.emoji{
+    font-size:42px;
 }
 
 .left h2{
-    font-size:28px;
+    font-size:30px;
     font-weight:700;
 }
 
-.icon{
-    font-size:40px;
-    transition:.3s;
-}
-
-.accordion.active .icon{
-    transform:rotate(45deg);
-}
-
 .accordion-content{
-
     max-height:0;
-
     overflow:hidden;
-
     transition:max-height .4s ease;
 }
 
 .accordion.active .accordion-content{
-    max-height:2000px;
+    max-height:3000px;
 }
 
 .content{
-    padding:10px 50px 40px;
+    padding:0 55px 45px;
 }
 
 .content ul{
-    line-height:2;
-    font-size:22px;
-}
-
-.content p{
-    font-size:22px;
-    line-height:1.8;
+    padding-left:25px;
 }
 
 .content li{
-    margin-bottom:5px;
+    margin-bottom:10px;
+    font-size:20px;
+    line-height:1.8;
 }
 
-/* Scrollbar */
-
-::-webkit-scrollbar{
-    width:10px;
+.content p{
+    font-size:20px;
+    line-height:1.9;
 }
 
-::-webkit-scrollbar-thumb{
-    background:#8b5cf6;
-    border-radius:20px;
+strong{
+    color:white;
 }
 
 @media(max-width:768px){
 
 .hero h1{
-    font-size:38px;
+    font-size:40px;
 }
 
 .hero p{
@@ -182,39 +168,67 @@ body{
     font-size:20px;
 }
 
-.content ul,
+.content li,
 .content p{
-    font-size:17px;
+    font-size:16px;
 }
 
 }
 
 </style>
 </head>
+
 <body>
 
 <header class="hero">
-
     <h1>RÈGLEMENT SOLARYS RP</h1>
-
     <p>Merci de respecter l'ensemble des règles du serveur.</p>
-
 </header>
 
 <div class="container">
 
-<!-- NOTIONS -->
+<!-- HRP -->
 
 <div class="accordion active">
 
 <button class="accordion-header">
 
 <div class="left">
-<span>📚</span>
-<h2>NOTIONS PRINCIPALES</h2>
+<div class="emoji">📜</div>
+<h2>RÈGLEMENT HRP</h2>
 </div>
 
-<span class="icon">+</span>
+</button>
+
+<div class="accordion-content">
+
+<div class="content">
+
+<p>Le respect est obligatoire envers tous les joueurs et membres du staff.</p>
+
+<ul>
+<li>Créer des scènes cohérentes</li>
+<li>Privilégier le dialogue</li>
+<li>Développer son personnage</li>
+<li>Favoriser le fair-play</li>
+<li>Interdiction de casser une scène RP avec du HRP</li>
+<li>Les discussions HRP doivent se faire hors du jeu</li>
+</ul>
+
+</div>
+</div>
+</div>
+
+<!-- DISCORD -->
+
+<div class="accordion">
+
+<button class="accordion-header">
+
+<div class="left">
+<div class="emoji">💬</div>
+<h2>RÈGLEMENT DISCORD</h2>
+</div>
 
 </button>
 
@@ -223,43 +237,28 @@ body{
 <div class="content">
 
 <ul>
-
-<li><strong>Mass RP :</strong> prendre en compte la population invisible autour de vous.</li>
-
-<li><strong>RolePlay :</strong> Incarner un personnage dans un univers fictif.</li>
-
-<li><strong>HRP :</strong> Tout ce qui est hors du jeu.</li>
-
-<li><strong>Metagaming :</strong> Utiliser des informations obtenues hors RP.</li>
-
-<li><strong>Powergaming :</strong> Réaliser des actions irréalistes.</li>
-
-<li><strong>No Fear RP :</strong> Ne pas craindre une arme ou une menace.</li>
-
-<li><strong>Force RP :</strong> Forcer une action à un joueur.</li>
-
-<li><strong>Freekill :</strong> Tuer sans raison RP valable.</li>
-
+<li>Respect obligatoire envers tous les membres</li>
+<li>Interdiction des propos racistes, sexistes ou discriminatoires</li>
+<li>Pseudos insultants interdits</li>
+<li>Usurpation d'identité staff interdite</li>
+<li>Tickets clairs et respectueux</li>
+<li>Micro correct obligatoire en vocal</li>
 </ul>
 
 </div>
-
+</div>
 </div>
 
-</div>
-
-<!-- INTRODUCTION -->
+<!-- PACKS -->
 
 <div class="accordion">
 
 <button class="accordion-header">
 
 <div class="left">
-<span>📖</span>
-<h2>INTRODUCTION</h2>
+<div class="emoji">🎮</div>
+<h2>PACKS GRAPHIQUES</h2>
 </div>
-
-<span class="icon">+</span>
 
 </button>
 
@@ -267,30 +266,42 @@ body{
 
 <div class="content">
 
+<ul>
+<li>No Props</li>
+<li>No Water</li>
+<li>No Bush</li>
+<li>Crosshair externe</li>
+<li>Tracers</li>
+<li>Hit Effects</li>
+<li>Kill Effects</li>
+<li>Blood Effects</li>
+<li>Modification abusive du FOV</li>
+<li>Suppression de végétation</li>
+<li>Full Stamina</li>
+<li>Réduction de recul</li>
+</ul>
+
 <p>
-Le règlement est présent afin de garantir
-une expérience RolePlay sérieuse, immersive
-et agréable pour tous les joueurs.
+⚠️ Warn<br>
+⛓️ Jail / TIG<br>
+🔨 Bannissement temporaire<br>
+⛔ Bannissement définitif
 </p>
 
 </div>
-
+</div>
 </div>
 
-</div>
-
-<!-- GENERAL -->
+<!-- REMBOURSEMENTS -->
 
 <div class="accordion">
 
 <button class="accordion-header">
 
 <div class="left">
-<span>⚠️</span>
-<h2>GÉNÉRAL</h2>
+<div class="emoji">💰</div>
+<h2>REMBOURSEMENTS</h2>
 </div>
-
-<span class="icon">+</span>
 
 </button>
 
@@ -299,31 +310,26 @@ et agréable pour tous les joueurs.
 <div class="content">
 
 <ul>
-<li>Respect obligatoire.</li>
-<li>Metagaming interdit.</li>
-<li>Powergaming interdit.</li>
-<li>No Fear RP interdit.</li>
-<li>Utilisation correcte du RP.</li>
+<li>Aucun remboursement lors des reboots</li>
+<li>Aucune erreur de virement remboursée</li>
+<li>Aucune perte liée à l'inactivité remboursée</li>
+<li>Preuves obligatoires pour toute demande</li>
 </ul>
 
 </div>
-
+</div>
 </div>
 
-</div>
-
-<!-- PRISE D'OTAGE -->
+<!-- STREAMERS -->
 
 <div class="accordion">
 
 <button class="accordion-header">
 
 <div class="left">
-<span>🎭</span>
-<h2>PRISE D'OTAGE</h2>
+<div class="emoji">🎥</div>
+<h2>STREAMERS & CRÉATEURS</h2>
 </div>
-
-<span class="icon">+</span>
 
 </button>
 
@@ -332,29 +338,27 @@ et agréable pour tous les joueurs.
 <div class="content">
 
 <ul>
-<li>Une raison RP est obligatoire.</li>
-<li>Les négociations doivent rester cohérentes.</li>
-<li>Le fair-play reste obligatoire.</li>
+<li>Streamer vos sessions RP est autorisé</li>
+<li>Le streamhack est interdit</li>
+<li>Le metagaming via le chat est interdit</li>
+<li>Les interventions staff ne doivent pas être diffusées</li>
+<li>Respect obligatoire envers la communauté</li>
 </ul>
 
 </div>
-
+</div>
 </div>
 
-</div>
-
-<!-- BRAQUAGES -->
+<!-- INTERDICTIONS -->
 
 <div class="accordion">
 
 <button class="accordion-header">
 
 <div class="left">
-<span>🎭</span>
-<h2>BRAQUAGES</h2>
+<div class="emoji">🚫</div>
+<h2>INTERDICTIONS GÉNÉRALES</h2>
 </div>
-
-<span class="icon">+</span>
 
 </button>
 
@@ -363,30 +367,35 @@ et agréable pour tous les joueurs.
 <div class="content">
 
 <ul>
-<li>Respect des limitations serveur.</li>
-<li>Préparation RP obligatoire.</li>
-<li>Interdiction d'abuser des mécaniques.</li>
+<li>Racisme</li>
+<li>Homophobie</li>
+<li>Sexisme</li>
+<li>Discrimination</li>
+<li>Contenus haineux ou choquants</li>
+<li>RP sexuel</li>
+<li>Utilisation de bugs ou glitches</li>
+<li>Streamhack</li>
+<li>Vocaux externes pendant une session RP</li>
+<li>Publicité pour d'autres serveurs</li>
 </ul>
 
 </div>
-
 </div>
-
 </div>
 
 </div>
 
 <script>
 
-document.querySelectorAll(".accordion-header").forEach(header => {
+document.querySelectorAll('.accordion-header').forEach(header => {
 
-header.addEventListener("click", () => {
+    header.addEventListener('click', () => {
 
-const accordion = header.parentElement;
+        const accordion = header.parentElement;
 
-accordion.classList.toggle("active");
+        accordion.classList.toggle('active');
 
-});
+    });
 
 });
 
