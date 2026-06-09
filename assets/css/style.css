@@ -220,11 +220,16 @@ p{
    BUTTONS
 ========================= */
 
-.buttons{
-    display:flex;
-    gap:25px;
-    flex-wrap:wrap;
-    justify-content:center;
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.btn-secondary {
+    min-width: 420px;
+    text-align: center;
 }
 
 /* bouton principal */
