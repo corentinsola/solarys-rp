@@ -5,264 +5,169 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Règlement Légal - Solarys RP</title>
+<title>Notions RP - Solarys RP</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 body{
-    background:#050505;
-    color:white;
-    overflow-x:hidden;
+font-family:'Poppins',sans-serif;
+background:#050505;
+color:white;
+overflow-x:hidden;
 }
 
-/* ==========================
-BANNIÈRE SOLARYS
-========================== */
-
 .hero{
-    background:linear-gradient(
-        90deg,
-        #ff4fd8 0%,
-        #b56dff 50%,
-        #6fa8ff 100%
-    );
-    padding:90px 20px;
-    text-align:center;
+background:linear-gradient(
+90deg,
+#ff4fd8 0%,
+#bc7bff 50%,
+#6fa8ff 100%
+);
+padding:70px 20px;
+text-align:center;
 }
 
 .hero h1{
-    font-size:4rem;
-    font-weight:800;
-    margin-bottom:15px;
+font-size:72px;
+font-weight:800;
+margin-bottom:15px;
 }
 
 .hero p{
-    font-size:1.2rem;
-    opacity:.9;
+font-size:26px;
 }
-
-/* ==========================
-CONTENEUR
-========================== */
 
 .container{
-    width:95%;
-    max-width:1600px;
-    margin:auto;
-    padding:40px 0 80px;
+width:95%;
+max-width:1800px;
+margin:40px auto;
 }
-
-/* ==========================
-BLOCS
-========================== */
 
 .accordion{
-    background:#0b0b0b;
-    border:1px solid rgba(255,255,255,.08);
-    border-radius:28px;
-    margin-bottom:20px;
-    overflow:hidden;
-    transition:.3s;
-    box-shadow:0 15px 40px rgba(0,0,0,.35);
-}
-
-.accordion:hover{
-    border-color:rgba(181,109,255,.35);
+background:#0b0b0b;
+border:1px solid rgba(255,255,255,.08);
+border-radius:30px;
+margin-bottom:20px;
+overflow:hidden;
+box-shadow:
+0 0 0 1px rgba(255,255,255,.03),
+0 10px 35px rgba(0,0,0,.35);
 }
 
 .accordion-header{
-    width:100%;
-    background:none;
-    border:none;
-    color:white;
-    cursor:pointer;
-    padding:32px;
-    display:flex;
-    align-items:center;
+width:100%;
+background:none;
+border:none;
+color:white;
+cursor:pointer;
+padding:35px 45px;
+display:flex;
+align-items:center;
+}
+
+.accordion-header:hover{
+background:rgba(255,255,255,.02);
 }
 
 .left{
-    display:flex;
-    align-items:center;
-    gap:18px;
+display:flex;
+align-items:center;
+gap:20px;
 }
 
-.icon{
-    font-size:2rem;
+.emoji{
+font-size:38px;
 }
 
-.title{
-    font-size:2rem;
-    font-weight:700;
+.left h2{
+font-size:28px;
+font-weight:700;
 }
 
 .accordion-content{
-    max-height:0;
-    overflow:hidden;
-    transition:max-height .4s ease;
+max-height:0;
+overflow:hidden;
+transition:max-height .4s ease;
+}
+
+.accordion.active .accordion-content{
+max-height:5000px;
 }
 
 .content{
-    padding:0 35px 35px;
-    border-top:1px solid rgba(255,255,255,.06);
+padding:0 50px 40px;
 }
 
-.grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:50px;
-    padding-top:25px;
-}
-
-.grid ul,
 .content ul{
-    padding-left:25px;
+padding-left:25px;
 }
 
-.grid li,
 .content li{
-    margin-bottom:12px;
-    line-height:1.8;
+margin-bottom:10px;
+font-size:20px;
+line-height:1.8;
 }
 
-.grid p,
 .content p{
-    margin-bottom:18px;
-    line-height:1.8;
+font-size:20px;
+line-height:1.9;
 }
 
-/* MOBILE */
-
-@media(max-width:900px){
+@media(max-width:768px){
 
 .hero h1{
-    font-size:2.5rem;
+font-size:40px;
 }
 
-.grid{
-    grid-template-columns:1fr;
+.hero p{
+font-size:18px;
 }
 
-.title{
-    font-size:1.3rem;
+.left h2{
+font-size:20px;
+}
+
+.content li,
+.content p{
+font-size:16px;
 }
 
 }
 
 </style>
 </head>
+
 <body>
 
 <header class="hero">
-    <h1>RÈGLEMENT LÉGAL</h1>
-    <p>Merci de respecter l'ensemble des règles du serveur.</p>
+
+<h1>RÈGLEMENT SOLARYS RP</h1>
+
+<p>Merci de respecter l'ensemble des règles du serveur.</p>
+
 </header>
 
 <div class="container">
 
-<!-- RELATION SAMD -->
+<!-- NOTIONS -->
 
 <div class="accordion active">
 
 <button class="accordion-header">
+
 <div class="left">
-<span class="icon">📜</span>
-<span class="title">RELATION SAMD</span>
-</div>
-</button>
-
-<div class="accordion-content" style="max-height:1200px">
-
-<div class="content">
-
-<div class="grid">
-
-<div>
-
-<p>SAMD veut dire San Andreas Medical Department.</p>
-
-<p>C'est le service médical / les EMS :</p>
-
-<ul>
-<li>Ambulanciers</li>
-<li>Médecins</li>
-<li>Secours</li>
-<li>Réanimation des joueurs blessés</li>
-<li>Transport à l'hôpital</li>
-<li>Gestion des scènes d'accident</li>
-</ul>
-
+<div class="emoji">📚</div>
+<h2>NOTIONS PRINCIPALES</h2>
 </div>
 
-<div>
-
-<ul>
-<li>Respect obligatoire des arrêts médicaux.</li>
-<li>Décrire ses blessures via des /me cohérents.</li>
-<li>Suivre les hospitalisations RP demandées.</li>
-<li>Respecter les consignes du personnel médical.</li>
-<li>Le refus systématique de soins est interdit.</li>
-</ul>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- RELATION SASP -->
-
-<div class="accordion">
-
-<button class="accordion-header">
-<div class="left">
-<span class="icon">🛡️</span>
-<span class="title">RELATION SASP</span>
-</div>
-</button>
-
-<div class="accordion-content">
-
-<div class="content">
-
-<p>SASP signifie San Andreas State Police.</p>
-
-<ul>
-<li>Patrouilles et contrôles.</li>
-<li>Poursuites routières.</li>
-<li>Application des lois.</li>
-<li>Interventions criminelles.</li>
-<li>Travail avec les unités spécialisées.</li>
-</ul>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- SASP -->
-
-<div class="accordion">
-
-<button class="accordion-header">
-<div class="left">
-<span class="icon">⚖️</span>
-<span class="title">RÈGLEMENT SASP</span>
-</div>
 </button>
 
 <div class="accordion-content">
@@ -270,28 +175,31 @@ BLOCS
 <div class="content">
 
 <ul>
-<li>Chaque arrestation doit être justifiée RP.</li>
-<li>Les droits Miranda doivent être lus.</li>
-<li>Respect du droit au silence.</li>
-<li>Pas de fouille sans raison RP.</li>
-<li>Rapports obligatoires pour les grosses affaires.</li>
+<li><strong>Mass RP :</strong> prendre en compte la population invisible autour de vous.</li>
+<li><strong>RolePlay :</strong> Incarner un personnage dans un univers fictif.</li>
+<li><strong>HRP :</strong> Tout ce qui est hors du jeu.</li>
+<li><strong>Metagaming :</strong> Utiliser une information obtenue hors RP.</li>
+<li><strong>Powergaming :</strong> Réaliser une action irréaliste.</li>
+<li><strong>No Fear RP :</strong> Ne pas craindre une arme.</li>
+<li><strong>Force RP :</strong> Forcer une action à un joueur.</li>
+<li><strong>Freekill :</strong> Tuer sans raison RP valable.</li>
 </ul>
 
 </div>
-
+</div>
 </div>
 
-</div>
-
-<!-- RIPOUX -->
+<!-- LEXIQUE -->
 
 <div class="accordion">
 
 <button class="accordion-header">
+
 <div class="left">
-<span class="icon">🕵️</span>
-<span class="title">RIPOUX ET INDIC</span>
+<div class="emoji">📖</div>
+<h2>LEXIQUE RP</h2>
 </div>
+
 </button>
 
 <div class="accordion-content">
@@ -299,27 +207,77 @@ BLOCS
 <div class="content">
 
 <ul>
-<li>Toute corruption doit être validée.</li>
-<li>Les indics doivent être autorisés.</li>
-<li>Les risques RP doivent être assumés.</li>
-<li>Abus de pouvoir interdit.</li>
+<li>🧠 J'ai un bug = J'ai un mal de tête</li>
+<li>😵 J'ai crash = Je me suis évanoui</li>
+<li>🧊 Je freeze = Je suis figé</li>
+<li>😴 Je déco = Je vais dormir</li>
 </ul>
 
 </div>
-
+</div>
 </div>
 
-</div>
-
-<!-- ENTREPRISE -->
+<!-- JOUER -->
 
 <div class="accordion">
 
 <button class="accordion-header">
+
 <div class="left">
-<span class="icon">💼</span>
-<span class="title">ENTREPRISE</span>
+<div class="emoji">🎮</div>
+<h2>JOUER SANS EXCÈS</h2>
 </div>
+
+</button>
+
+<div class="accordion-content">
+
+<div class="content">
+
+<p>
+Le RP est un jeu. Respectez les autres joueurs et gardez toujours une attitude fair-play.
+</p>
+
+</div>
+</div>
+</div>
+
+<!-- RECUL -->
+
+<div class="accordion">
+
+<button class="accordion-header">
+
+<div class="left">
+<div class="emoji">🧠</div>
+<h2>GARDER DU RECUL</h2>
+</div>
+
+</button>
+
+<div class="accordion-content">
+
+<div class="content">
+
+<p>
+Ne mélangez jamais le RP et la réalité. Les conflits RP restent dans le jeu.
+</p>
+
+</div>
+</div>
+</div>
+
+<!-- FAQ -->
+
+<div class="accordion">
+
+<button class="accordion-header">
+
+<div class="left">
+<div class="emoji">❓</div>
+<h2>QUESTIONS FRÉQUENTES</h2>
+</div>
+
 </button>
 
 <div class="accordion-content">
@@ -327,38 +285,26 @@ BLOCS
 <div class="content">
 
 <ul>
-<li>Scène de recrutement obligatoire.</li>
-<li>Respect des tarifs annoncés.</li>
-<li>Transactions enregistrées.</li>
-<li>Véhicules de fonction réservés au travail.</li>
-<li>Comportement professionnel obligatoire.</li>
+<li>Comment signaler un joueur ? → Ticket Discord.</li>
+<li>Comment rejoindre un groupe ? → Faire une candidature RP.</li>
+<li>Puis-je contester une sanction ? → Oui via ticket.</li>
 </ul>
 
 </div>
-
 </div>
-
 </div>
 
 </div>
 
 <script>
 
-const accordions = document.querySelectorAll(".accordion");
+document.querySelectorAll(".accordion-header").forEach(header => {
 
-accordions.forEach(item => {
+header.addEventListener("click", () => {
 
-const button = item.querySelector(".accordion-header");
+const accordion = header.parentElement;
 
-button.addEventListener("click", () => {
-
-const content = item.querySelector(".accordion-content");
-
-if(content.style.maxHeight){
-content.style.maxHeight = null;
-}else{
-content.style.maxHeight = content.scrollHeight + "px";
-}
+accordion.classList.toggle("active");
 
 });
 
