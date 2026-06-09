@@ -14,54 +14,41 @@
 <style>
 .hero {
     position: relative;
-    height: 320px; /* Hauteur réduite */
+    height: 320px;
+
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    overflow: hidden;
-
-   background-image: url("https://corentinsola.github.io/solarys-rp/images/banniere-legal.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.hero-overlay {
-    position: absolute;
-    inset: 0;
 
     background:
         linear-gradient(
-            90deg,
-            rgba(255, 0, 170, 0.45),
-            rgba(90, 120, 255, 0.45)
-        );
+            rgba(255, 0, 180, 0.35),
+            rgba(90, 120, 255, 0.35)
+        ),
+        url("images/banniere-legal.png");
 
-    backdrop-filter: blur(2px);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    overflow: hidden;
 }
 
-.hero-content {
-    position: relative;
-    z-index: 2;
-    padding: 20px;
+.hero h1{
+    color:white;
+    font-size:4rem;
+    font-weight:800;
+    text-transform:uppercase;
+    text-shadow:0 4px 15px rgba(0,0,0,.6);
+    margin-bottom:20px;
 }
 
-.hero h1 {
-    margin: 0;
-    color: #fff;
-    font-size: 4rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    text-shadow: 0 0 20px rgba(0,0,0,0.5);
+.hero p{
+    color:white;
+    font-size:1.3rem;
+    text-shadow:0 2px 10px rgba(0,0,0,.6);
 }
-
-.hero p {
-    margin-top: 20px;
-    color: #fff;
-    font-size: 1.4rem;
-    line-height: 1.6;
-    text-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 /* Mobile */
