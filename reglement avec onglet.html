@@ -4,11 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Règlement Illégal - Solarys RP</title>
+<title>Règlement Solarys RP</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
-
-/* RESET */
 
 *{
     margin:0;
@@ -20,106 +20,196 @@ body{
     background:#000;
     color:#fff;
     font-family:'Poppins',sans-serif;
-    padding:40px;
 }
 
-/* CONTENEUR */
+/* =========================
+   BANNIERE
+========================= */
+
+.hero{
+    background:linear-gradient(
+        90deg,
+        #ff4dc4 0%,
+        #b788ff 50%,
+        #6aa8ff 100%
+    );
+
+    text-align:center;
+    padding:60px 20px 80px;
+}
+
+.hero h1{
+    font-size:70px;
+    font-weight:800;
+    margin-bottom:25px;
+}
+
+.hero p{
+    font-size:20px;
+    opacity:.95;
+}
+
+/* =========================
+   CONTENU
+========================= */
 
 .container{
+    width:95%;
     max-width:1800px;
-    margin:auto;
+    margin:40px auto;
 }
 
-/* ACCORDEON */
+/* =========================
+   ACCORDEON
+========================= */
 
-.accordion-item{
-    background:#050505;
-    border:1px solid rgba(255,255,255,0.08);
+.accordion{
+    margin-bottom:22px;
     border-radius:30px;
-    margin-bottom:25px;
     overflow:hidden;
-    transition:.3s;
+    border:1px solid rgba(255,255,255,.08);
+    background:#080808;
 }
 
 .accordion-header{
+
     width:100%;
-    background:none;
     border:none;
+    background:#080808;
     color:white;
-    padding:40px 50px;
-    cursor:pointer;
+
     display:flex;
     justify-content:space-between;
     align-items:center;
+
+    padding:35px 40px;
+
+    cursor:pointer;
 }
 
-.accordion-header span:first-child{
-    font-size:2.5rem;
+.left{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.emoji{
+    font-size:40px;
+}
+
+.title{
+    font-size:30px;
     font-weight:700;
 }
 
-.accordion-header:hover{
-    background:rgba(255,255,255,.03);
-}
-
 .icon{
-    font-size:3rem;
+    font-size:40px;
     transition:.3s;
 }
 
-.accordion-content{
-    max-height:0;
-    overflow:hidden;
-    transition:max-height .4s ease;
-}
-
-.accordion-content-inner{
-    padding:20px 60px 50px;
-}
-
-.accordion-content ul{
-    line-height:2;
-    font-size:1.3rem;
-}
-
-.accordion-content li{
-    margin-bottom:8px;
-}
-
-.accordion-item.active .accordion-content{
-    max-height:2000px;
-}
-
-.accordion-item.active .icon{
+.accordion.active .icon{
     transform:rotate(45deg);
 }
 
+.accordion-content{
+
+    max-height:0;
+    overflow:hidden;
+
+    transition:max-height .4s ease;
+}
+
+.accordion.active .accordion-content{
+    max-height:2000px;
+}
+
+.content{
+    padding:0 60px 50px;
+}
+
+.content ul{
+    margin-top:20px;
+    margin-left:20px;
+}
+
+.content li{
+    font-size:20px;
+    margin-bottom:12px;
+    line-height:1.8;
+}
+
+.content p{
+    font-size:20px;
+    line-height:1.8;
+}
+
 strong{
-    color:#ffffff;
+    font-weight:700;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:900px){
+
+.hero h1{
+    font-size:42px;
+}
+
+.title{
+    font-size:22px;
+}
+
+.content li,
+.content p{
+    font-size:17px;
+}
+
 }
 
 </style>
 </head>
 <body>
 
+<!-- BANNIERE -->
+
+<section class="hero">
+
+    <h1>RÈGLEMENT SOLARYS RP</h1>
+
+    <p>
+        Merci de respecter l'ensemble des règles du serveur.
+    </p>
+
+</section>
+
+<!-- CONTENU -->
+
 <div class="container">
 
     <!-- NOTIONS PRINCIPALES -->
 
-    <div class="accordion-item">
+    <div class="accordion active">
 
         <button class="accordion-header">
-            <span>📚 NOTIONS PRINCIPALES</span>
+
+            <div class="left">
+                <span class="emoji">📚</span>
+                <span class="title">NOTIONS PRINCIPALES</span>
+            </div>
+
             <span class="icon">+</span>
+
         </button>
 
         <div class="accordion-content">
-            <div class="accordion-content-inner">
+            <div class="content">
 
                 <ul>
                     <li><strong>Mass RP :</strong> prendre en compte la population invisible autour de vous.</li>
 
-                    <li><strong>RolePlay :</strong> Le RolePlay, c’est le fait d’incarner un personnage dans un univers fictif.</li>
+                    <li><strong>RolePlay :</strong> Le RolePlay, c'est le fait d'incarner un personnage dans un univers fictif.</li>
 
                     <li><strong>HRP :</strong> Tout ce qui est en dehors du jeu ou du personnage.</li>
 
@@ -131,7 +221,7 @@ strong{
 
                     <li><strong>Force RP :</strong> Forcer une action à un joueur sans lui laisser de choix.</li>
 
-                    <li><strong>Freekill :</strong> Tuer quelqu’un sans raison RP valable.</li>
+                    <li><strong>Freekill :</strong> Tuer quelqu'un sans raison RP valable.</li>
                 </ul>
 
             </div>
@@ -141,19 +231,24 @@ strong{
 
     <!-- INTRODUCTION -->
 
-    <div class="accordion-item">
+    <div class="accordion">
 
         <button class="accordion-header">
-            <span>📖 INTRODUCTION</span>
+
+            <div class="left">
+                <span class="emoji">📖</span>
+                <span class="title">INTRODUCTION</span>
+            </div>
+
             <span class="icon">+</span>
+
         </button>
 
         <div class="accordion-content">
-            <div class="accordion-content-inner">
+            <div class="content">
 
                 <p>
-                    Le règlement illégal encadre l'ensemble des activités
-                    criminelles présentes sur Solarys RP.
+                    Le règlement illégal encadre l'ensemble des activités criminelles du serveur.
                 </p>
 
             </div>
@@ -163,15 +258,21 @@ strong{
 
     <!-- GENERAL -->
 
-    <div class="accordion-item">
+    <div class="accordion">
 
         <button class="accordion-header">
-            <span>⚠️ GÉNÉRAL</span>
+
+            <div class="left">
+                <span class="emoji">⚠️</span>
+                <span class="title">GÉNÉRAL</span>
+            </div>
+
             <span class="icon">+</span>
+
         </button>
 
         <div class="accordion-content">
-            <div class="accordion-content-inner">
+            <div class="content">
 
                 <ul>
                     <li>Le fair-play est obligatoire.</li>
@@ -187,21 +288,52 @@ strong{
 
     <!-- PRISE D'OTAGE -->
 
-    <div class="accordion-item">
+    <div class="accordion">
 
         <button class="accordion-header">
-            <span>🎭 PRISE D'OTAGE</span>
+
+            <div class="left">
+                <span class="emoji">🎭</span>
+                <span class="title">PRISE D'OTAGE</span>
+            </div>
+
             <span class="icon">+</span>
+
         </button>
 
         <div class="accordion-content">
-            <div class="accordion-content-inner">
+            <div class="content">
 
-                <ul>
-                    <li>Une raison RP est obligatoire.</li>
-                    <li>Les négociations doivent rester cohérentes.</li>
-                    <li>Les otages doivent être traités correctement.</li>
-                </ul>
+                <p>
+                    Les prises d'otages doivent toujours avoir une raison RP cohérente.
+                </p>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- BRAQUAGES -->
+
+    <div class="accordion">
+
+        <button class="accordion-header">
+
+            <div class="left">
+                <span class="emoji">🎭</span>
+                <span class="title">BRAQUAGES</span>
+            </div>
+
+            <span class="icon">+</span>
+
+        </button>
+
+        <div class="accordion-content">
+            <div class="content">
+
+                <p>
+                    Les braquages doivent respecter les limites imposées par le règlement.
+                </p>
 
             </div>
         </div>
@@ -212,13 +344,374 @@ strong{
 
 <script>
 
-document.querySelectorAll('.accordion-header').forEach(button=>{
+document.querySelectorAll('.accordion-header').forEach(header => {
 
-    button.addEventListener('click',()=>{
+    header.addEventListener('click', () => {
 
-        const item = button.parentElement;
+        const accordion = header.parentElement;
 
-        item.classList.toggle('active');
+        accordion.classList.toggle('active');
+
+    });
+
+});
+
+</script>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Règlement Solarys RP</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#000;
+    color:#fff;
+    font-family:'Poppins',sans-serif;
+}
+
+/* =========================
+   BANNIERE
+========================= */
+
+.hero{
+    background:linear-gradient(
+        90deg,
+        #ff4dc4 0%,
+        #b788ff 50%,
+        #6aa8ff 100%
+    );
+
+    text-align:center;
+    padding:60px 20px 80px;
+}
+
+.hero h1{
+    font-size:70px;
+    font-weight:800;
+    margin-bottom:25px;
+}
+
+.hero p{
+    font-size:20px;
+    opacity:.95;
+}
+
+/* =========================
+   CONTENU
+========================= */
+
+.container{
+    width:95%;
+    max-width:1800px;
+    margin:40px auto;
+}
+
+/* =========================
+   ACCORDEON
+========================= */
+
+.accordion{
+    margin-bottom:22px;
+    border-radius:30px;
+    overflow:hidden;
+    border:1px solid rgba(255,255,255,.08);
+    background:#080808;
+}
+
+.accordion-header{
+
+    width:100%;
+    border:none;
+    background:#080808;
+    color:white;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:35px 40px;
+
+    cursor:pointer;
+}
+
+.left{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.emoji{
+    font-size:40px;
+}
+
+.title{
+    font-size:30px;
+    font-weight:700;
+}
+
+.icon{
+    font-size:40px;
+    transition:.3s;
+}
+
+.accordion.active .icon{
+    transform:rotate(45deg);
+}
+
+.accordion-content{
+
+    max-height:0;
+    overflow:hidden;
+
+    transition:max-height .4s ease;
+}
+
+.accordion.active .accordion-content{
+    max-height:2000px;
+}
+
+.content{
+    padding:0 60px 50px;
+}
+
+.content ul{
+    margin-top:20px;
+    margin-left:20px;
+}
+
+.content li{
+    font-size:20px;
+    margin-bottom:12px;
+    line-height:1.8;
+}
+
+.content p{
+    font-size:20px;
+    line-height:1.8;
+}
+
+strong{
+    font-weight:700;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:900px){
+
+.hero h1{
+    font-size:42px;
+}
+
+.title{
+    font-size:22px;
+}
+
+.content li,
+.content p{
+    font-size:17px;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<!-- BANNIERE -->
+
+<section class="hero">
+
+    <h1>RÈGLEMENT SOLARYS RP</h1>
+
+    <p>
+        Merci de respecter l'ensemble des règles du serveur.
+    </p>
+
+</section>
+
+<!-- CONTENU -->
+
+<div class="container">
+
+    <!-- NOTIONS PRINCIPALES -->
+
+    <div class="accordion active">
+
+        <button class="accordion-header">
+
+            <div class="left">
+                <span class="emoji">📚</span>
+                <span class="title">NOTIONS PRINCIPALES</span>
+            </div>
+
+            <span class="icon">+</span>
+
+        </button>
+
+        <div class="accordion-content">
+            <div class="content">
+
+                <ul>
+                    <li><strong>Mass RP :</strong> prendre en compte la population invisible autour de vous.</li>
+
+                    <li><strong>RolePlay :</strong> Le RolePlay, c'est le fait d'incarner un personnage dans un univers fictif.</li>
+
+                    <li><strong>HRP :</strong> Tout ce qui est en dehors du jeu ou du personnage.</li>
+
+                    <li><strong>Metagaming :</strong> Utiliser des informations obtenues hors RP en jeu.</li>
+
+                    <li><strong>Powergaming :</strong> Faire des actions impossibles ou irréalistes.</li>
+
+                    <li><strong>No Fear RP :</strong> Ne pas avoir peur face à une arme.</li>
+
+                    <li><strong>Force RP :</strong> Forcer une action à un joueur sans lui laisser de choix.</li>
+
+                    <li><strong>Freekill :</strong> Tuer quelqu'un sans raison RP valable.</li>
+                </ul>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- INTRODUCTION -->
+
+    <div class="accordion">
+
+        <button class="accordion-header">
+
+            <div class="left">
+                <span class="emoji">📖</span>
+                <span class="title">INTRODUCTION</span>
+            </div>
+
+            <span class="icon">+</span>
+
+        </button>
+
+        <div class="accordion-content">
+            <div class="content">
+
+                <p>
+                    Le règlement illégal encadre l'ensemble des activités criminelles du serveur.
+                </p>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- GENERAL -->
+
+    <div class="accordion">
+
+        <button class="accordion-header">
+
+            <div class="left">
+                <span class="emoji">⚠️</span>
+                <span class="title">GÉNÉRAL</span>
+            </div>
+
+            <span class="icon">+</span>
+
+        </button>
+
+        <div class="accordion-content">
+            <div class="content">
+
+                <ul>
+                    <li>Le fair-play est obligatoire.</li>
+                    <li>Le No Fear RP est interdit.</li>
+                    <li>Le Powergaming est interdit.</li>
+                    <li>Le Metagaming est interdit.</li>
+                </ul>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PRISE D'OTAGE -->
+
+    <div class="accordion">
+
+        <button class="accordion-header">
+
+            <div class="left">
+                <span class="emoji">🎭</span>
+                <span class="title">PRISE D'OTAGE</span>
+            </div>
+
+            <span class="icon">+</span>
+
+        </button>
+
+        <div class="accordion-content">
+            <div class="content">
+
+                <p>
+                    Les prises d'otages doivent toujours avoir une raison RP cohérente.
+                </p>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- BRAQUAGES -->
+
+    <div class="accordion">
+
+        <button class="accordion-header">
+
+            <div class="left">
+                <span class="emoji">🎭</span>
+                <span class="title">BRAQUAGES</span>
+            </div>
+
+            <span class="icon">+</span>
+
+        </button>
+
+        <div class="accordion-content">
+            <div class="content">
+
+                <p>
+                    Les braquages doivent respecter les limites imposées par le règlement.
+                </p>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+document.querySelectorAll('.accordion-header').forEach(header => {
+
+    header.addEventListener('click', () => {
+
+        const accordion = header.parentElement;
+
+        accordion.classList.toggle('active');
 
     });
 
