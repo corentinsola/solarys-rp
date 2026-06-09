@@ -1,305 +1,400 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Solarys RP - Règlement Staff</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
+<title>Règlement Staff - Solarys RP</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 
-html{
-scroll-behavior:smooth;
-}
-
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
 }
 
 body{
-font-family:'Rajdhani',sans-serif;
-background:#05050a;
-color:white;
-overflow-x:hidden;
+    background:#05010d;
+    color:white;
+    overflow-x:hidden;
 }
 
 body::before{
-content:"";
-position:fixed;
-inset:0;
-background:
-radial-gradient(circle at left,
-rgba(255,0,128,.20),
-transparent 40%),
+    content:'';
+    position:fixed;
+    inset:0;
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.75)),
+    url('https://images.unsplash.com/photo-1514565131-fce0801e5785?q=80&w=1920');
+    background-size:cover;
+    background-position:center;
+    z-index:-2;
+}
 
-radial-gradient(circle at right,
-rgba(0,120,255,.20),
-transparent 40%),
+body::after{
+    content:'';
+    position:fixed;
+    inset:0;
+    background:linear-gradient(
+        180deg,
+        rgba(130,0,255,.15),
+        rgba(255,0,150,.10)
+    );
+    z-index:-1;
+}
 
-#05050a;
-z-index:-1;
+/* HEADER */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:999;
+    backdrop-filter:blur(20px);
+    background:rgba(10,0,20,.75);
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 8%;
 }
 
 .logo{
-text-align:center;
-font-family:'Orbitron',sans-serif;
-font-size:80px;
-font-weight:900;
-margin-top:30px;
-
-background:linear-gradient(
-90deg,
-#ff008c,
-#ff4df7,
-#6a5cff,
-#00b7ff);
-
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
-
-text-shadow:
-0 0 15px #ff00ff,
-0 0 25px #00b7ff;
+    font-size:3rem;
+    font-weight:800;
+    background:linear-gradient(90deg,#ff4dd2,#7f7dff);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
 }
 
 nav{
-display:flex;
-justify-content:center;
-gap:30px;
-margin:25px 0;
-flex-wrap:wrap;
+    display:flex;
+    gap:40px;
 }
 
 nav a{
-text-decoration:none;
-color:white;
-font-size:20px;
-padding:10px 15px;
+    color:white;
+    text-decoration:none;
 }
 
-nav a:hover{
-color:#ff4df7;
+.status{
+    border:1px solid #00ffd5;
+    padding:12px 24px;
+    border-radius:40px;
 }
 
-.title{
-width:90%;
-max-width:1200px;
-margin:30px auto;
-padding:30px;
-text-align:center;
+/* HERO */
 
-border:1px solid #ff00aa;
-
-box-shadow:
-0 0 20px rgba(255,0,170,.4),
-0 0 30px rgba(0,120,255,.3);
+.hero{
+    text-align:center;
+    padding:120px 20px 60px;
 }
 
-.title h1{
-font-family:'Orbitron',sans-serif;
-font-size:60px;
-
-background:linear-gradient(
-90deg,
-#ff008c,
-#ff66ff,
-#00b7ff);
-
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
+.hero span{
+    letter-spacing:12px;
+    opacity:.8;
 }
 
-.intro{
-width:90%;
-max-width:1200px;
-margin:auto;
-padding:20px;
-text-align:center;
-font-size:24px;
+.hero h1{
+    font-size:7rem;
+    font-weight:800;
+
+    background:linear-gradient(
+        90deg,
+        #ff67ff,
+        #7aa8ff
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
 }
+
+.hero p{
+    max-width:900px;
+    margin:auto;
+    font-size:1.2rem;
+    margin-top:20px;
+}
+
+/* ACCORDION */
 
 .container{
-width:90%;
-max-width:1400px;
-margin:40px auto;
-display:grid;
-grid-template-columns:280px 1fr;
-gap:25px;
+    width:min(1200px,90%);
+    margin:auto;
 }
 
-.sidebar{
-display:flex;
-flex-direction:column;
-gap:15px;
+.accordion{
+    margin-top:15px;
+    border-radius:20px;
+    overflow:hidden;
+    border:1px solid rgba(255,255,255,.1);
+    background:rgba(255,255,255,.04);
+    backdrop-filter:blur(15px);
 }
 
-.sidebar a{
-text-decoration:none;
-color:white;
-padding:18px;
-border:1px solid #ff00aa;
-background:rgba(255,0,170,.05);
-transition:.3s;
+.accordion-header{
+    padding:25px;
+    cursor:pointer;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    font-size:1.2rem;
+    font-weight:600;
 }
 
-.sidebar a:hover{
-box-shadow:0 0 15px #ff00aa;
-transform:translateX(5px);
+.accordion-content{
+    display:none;
+    padding:25px;
+    border-top:1px solid rgba(255,255,255,.08);
+}
+
+.accordion.active .accordion-content{
+    display:block;
+}
+
+.accordion-content ul{
+    padding-left:20px;
+}
+
+.accordion-content li{
+    margin-bottom:10px;
+}
+
+/* SANCTIONS */
+
+.sanctions{
+    margin-top:50px;
+    padding:30px;
+    border-radius:25px;
+
+    border:1px solid rgba(255,170,0,.4);
+
+    background:rgba(255,140,0,.05);
+}
+
+.sanctions h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#ffb347;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
 }
 
 .card{
-margin-bottom:20px;
-padding:25px;
-border:1px solid #4a5cff;
-background:rgba(255,255,255,.02);
-box-shadow:0 0 15px rgba(0,120,255,.2);
+    padding:25px;
+    border-radius:20px;
+    text-align:center;
+    background:rgba(255,255,255,.05);
 }
 
-.card h2{
-font-family:'Orbitron',sans-serif;
-margin-bottom:15px;
-color:#ff4df7;
+.card h3{
+    margin-bottom:10px;
 }
 
-.card li{
-list-style:none;
-margin:10px 0;
-font-size:20px;
-}
-
-.card li::before{
-content:"◆ ";
-color:#ff00aa;
-}
+/* FOOTER */
 
 footer{
-text-align:center;
-padding:40px;
-margin-top:50px;
-border-top:1px solid #222;
+    margin-top:80px;
+    padding:50px 20px;
+    text-align:center;
+    border-top:1px solid rgba(255,255,255,.08);
+    background:rgba(0,0,0,.4);
 }
 
-@media(max-width:900px){
+@media(max-width:768px){
 
-.container{
-grid-template-columns:1fr;
+.hero h1{
+font-size:4rem;
 }
 
 .logo{
-font-size:50px;
+font-size:2rem;
 }
 
-.title h1{
-font-size:40px;
+nav{
+gap:15px;
 }
 
 }
 
 </style>
+
 </head>
 
 <body>
 
-<div class="logo">
-SOLARYS
-</div>
+<header>
+
+<div class="logo">SOLARYS</div>
 
 <nav>
-<a href="#">ACCUEIL</a>
-<a href="#">RÈGLEMENT</a>
-<a href="#">STAFF</a>
-<a href="#">BOUTIQUE</a>
-<a href="#">DISCORD</a>
+<a href="index.html">Accueil</a>
+<a href="reglement.html">Règlement</a>
+<a href="#">Discord</a>
+<div class="status">🟢 Serveur en ligne</div>
 </nav>
 
-<div class="title">
-<h1>RÈGLEMENT STAFF</h1>
-</div>
+</header>
 
-<div class="intro">
-Bienvenue dans l'équipe staff de Solarys RP.
-</div>
+<section class="hero">
+
+<span>RÈGLEMENT</span>
+
+<h1>STAFF</h1>
+
+<p>
+En tant que membre du Staff de Solarys RP,
+vous représentez le serveur.
+Vous vous engagez à respecter ces règles en toutes circonstances.
+</p>
+
+</section>
 
 <div class="container">
 
-<div class="sidebar">
-
-<a href="#g">01. Généralités</a>
-<a href="#c">02. Comportement</a>
-<a href="#m">03. Modération</a>
-<a href="#co">04. Communication</a>
-<a href="#cf">05. Confidentialité</a>
-<a href="#s">06. Sanctions</a>
-
+<div class="accordion active">
+<div class="accordion-header">
+🛡️ 1. Rôle du Staff
+<span>▼</span>
 </div>
-
-<div>
-
-<div class="card" id="g">
-<h2>01. Généralités</h2>
-
+<div class="accordion-content">
 <ul>
-<li>Le staff représente Solarys RP.</li>
-<li>Faire preuve d'exemplarité.</li>
-<li>Respect de tous les joueurs.</li>
-<li>Aucune forme d'abus.</li>
+<li>Être disponible et à l'écoute.</li>
+<li>Aider les joueurs avec professionnalisme.</li>
+<li>Garantir une expérience RP de qualité.</li>
+<li>Faire respecter les règles du serveur.</li>
 </ul>
 </div>
-
-<div class="card" id="c">
-<h2>02. Comportement</h2>
-
-<ul>
-<li>Respect et politesse.</li>
-<li>Rester neutre.</li>
-<li>Garder son calme.</li>
-<li>Éviter les conflits.</li>
-</ul>
 </div>
 
-<div class="card" id="m">
-<h2>03. Modération</h2>
-
+<div class="accordion">
+<div class="accordion-header">
+⚖️ 2. Neutralité et impartialité
+<span>▼</span>
+</div>
+<div class="accordion-content">
 <ul>
-<li>Appliquer les règles.</li>
-<li>Vérifier les preuves.</li>
-<li>Être disponible.</li>
-<li>Écouter les joueurs.</li>
+<li>Ne jamais favoriser un joueur.</li>
+<li>Rester neutre dans chaque ticket.</li>
+<li>Ne pas utiliser son rôle pour obtenir un avantage RP.</li>
 </ul>
 </div>
-
-<div class="card" id="co">
-<h2>04. Communication</h2>
-
-<ul>
-<li>Langage professionnel.</li>
-<li>Informations claires.</li>
-<li>Respect de la hiérarchie.</li>
-</ul>
 </div>
 
-<div class="card" id="cf">
-<h2>05. Confidentialité</h2>
-
+<div class="accordion">
+<div class="accordion-header">
+🔒 3. Confidentialité
+<span>▼</span>
+</div>
+<div class="accordion-content">
 <ul>
-<li>Ne pas divulguer les informations internes.</li>
-<li>Protection des données.</li>
-<li>Respect des accès privés.</li>
+<li>Les informations internes restent internes.</li>
+<li>Interdiction de divulguer les discussions Staff.</li>
 </ul>
 </div>
+</div>
 
-<div class="card" id="s">
-<h2>06. Sanctions</h2>
-
+<div class="accordion">
+<div class="accordion-header">
+🎮 4. Utilisation des permissions
+<span>▼</span>
+</div>
+<div class="accordion-content">
 <ul>
-<li>Avertissement verbal.</li>
-<li>Avertissement écrit.</li>
+<li>Aucune utilisation abusive des commandes Staff.</li>
+<li>Les permissions servent uniquement à la modération.</li>
+</ul>
+</div>
+</div>
+
+<div class="accordion">
+<div class="accordion-header">
+📋 5. Gestion des tickets
+<span>▼</span>
+</div>
+<div class="accordion-content">
+<ul>
+<li>Être respectueux avec chaque joueur.</li>
+<li>Écouter toutes les parties avant décision.</li>
+</ul>
+</div>
+</div>
+
+<div class="accordion">
+<div class="accordion-header">
+🤝 6. Comportement attendu
+<span>▼</span>
+</div>
+<div class="accordion-content">
+<ul>
+<li>Respect.</li>
+<li>Maturité.</li>
+<li>Exemplarité.</li>
+</ul>
+</div>
+</div>
+
+<div class="accordion">
+<div class="accordion-header">
+📅 7. Activité et présence
+<span>▼</span>
+</div>
+<div class="accordion-content">
+<ul>
+<li>Rester actif.</li>
+<li>Prévenir en cas d'absence prolongée.</li>
+</ul>
+</div>
+</div>
+
+<div class="accordion">
+<div class="accordion-header">
+⚠️ 8. Sanctions
+<span>▼</span>
+</div>
+<div class="accordion-content">
+<ul>
+<li>Avertissement.</li>
 <li>Suspension.</li>
-<li>Retrait du grade.</li>
+<li>Rétrogradation.</li>
+<li>Exclusion du Staff.</li>
 </ul>
+</div>
+</div>
+
+<div class="sanctions">
+
+<h2>⚠️ SANCTIONS STAFF</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>1er Manquement</h3>
+<p>Avertissement</p>
+</div>
+
+<div class="card">
+<h3>Récidive</h3>
+<p>Suspension temporaire</p>
+</div>
+
+<div class="card">
+<h3>Faute Grave</h3>
+<p>Exclusion du Staff</p>
+</div>
+
 </div>
 
 </div>
@@ -307,8 +402,34 @@ Bienvenue dans l'équipe staff de Solarys RP.
 </div>
 
 <footer>
-© 2025 SOLARYS RP
+
+<h2>SOLARYS RP</h2>
+
+<p>
+Serveur FiveM RolePlay Nouvelle Génération
+</p>
+
+<br>
+
+<p>
+© 2026 Solarys RP - Tous droits réservés.
+</p>
+
 </footer>
+
+<script>
+
+document.querySelectorAll(".accordion-header").forEach(header=>{
+
+header.addEventListener("click",()=>{
+
+header.parentElement.classList.toggle("active");
+
+});
+
+});
+
+</script>
 
 </body>
 </html>
