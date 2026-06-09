@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -11,166 +12,162 @@
 <style>
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 body{
-    background:#050505;
-    color:white;
-    font-family:'Poppins',sans-serif;
+background:#050505;
+font-family:'Poppins',sans-serif;
+color:white;
 }
 
-/* =========================
-   BANNIÈRE SOLARYS
-========================= */
+/* =======================
+BANNIERE SOLARYS
+======================= */
 
 .hero{
-    background:linear-gradient(
-        90deg,
-        #ff4fd8 0%,
-        #be7dff 50%,
-        #6fa8ff 100%
-    );
+background:linear-gradient(
+90deg,
+#ff4fd8 0%,
+#bc7dff 50%,
+#6fa8ff 100%
+);
 
-    text-align:center;
-    padding:80px 20px;
+padding:80px 20px;
+text-align:center;
 }
 
 .hero h1{
-    font-size:72px;
-    font-weight:800;
-    margin-bottom:15px;
+font-size:72px;
+font-weight:800;
+margin-bottom:15px;
 }
 
 .hero p{
-    font-size:24px;
+font-size:24px;
 }
 
-/* =========================
-   CONTENEUR
-========================= */
+/* =======================
+CONTENEUR
+======================= */
 
 .container{
-    width:95%;
-    max-width:1800px;
-    margin:40px auto;
+width:95%;
+max-width:1800px;
+margin:40px auto;
 }
 
-/* =========================
-   BLOCS CLIQUABLES
-========================= */
+/* =======================
+ACCORDION
+======================= */
 
 .accordion{
 
-    background:#0a0a0a;
+background:#0b0b0b;
 
-    border:1px solid rgba(255,255,255,.08);
+border:1px solid rgba(255,255,255,.08);
 
-    border-radius:30px;
+border-radius:30px;
 
-    overflow:hidden;
+margin-bottom:20px;
 
-    margin-bottom:20px;
+overflow:hidden;
 
-    transition:.3s;
+box-shadow:
+0 0 0 1px rgba(255,255,255,.02),
+0 15px 40px rgba(0,0,0,.45);
 
-    box-shadow:
-    0 0 0 1px rgba(255,255,255,.02),
-    0 15px 40px rgba(0,0,0,.45);
+transition:.3s;
 }
 
 .accordion:hover{
-    border-color:rgba(190,125,255,.30);
+border-color:rgba(188,125,255,.35);
 }
 
 .accordion-header{
 
-    width:100%;
+width:100%;
 
-    background:none;
+background:none;
 
-    border:none;
+border:none;
 
-    color:white;
+cursor:pointer;
 
-    cursor:pointer;
+color:white;
 
-    text-align:left;
+padding:35px 45px;
 
-    padding:35px 45px;
+display:flex;
 
-    display:flex;
-
-    align-items:center;
+align-items:center;
 }
 
 .left{
-    display:flex;
-    align-items:center;
-    gap:20px;
+display:flex;
+align-items:center;
+gap:20px;
 }
 
 .emoji{
-    font-size:42px;
+font-size:42px;
 }
 
 .left h2{
-    font-size:30px;
-    font-weight:700;
+font-size:30px;
+font-weight:700;
 }
 
 .accordion-content{
-    max-height:0;
-    overflow:hidden;
-    transition:max-height .4s ease;
+max-height:0;
+overflow:hidden;
+transition:max-height .4s ease;
 }
 
 .accordion.active .accordion-content{
-    max-height:3000px;
+max-height:3000px;
 }
 
 .content{
-    padding:0 55px 45px;
+padding:0 55px 45px;
 }
 
 .content ul{
-    padding-left:25px;
+padding-left:25px;
 }
 
 .content li{
-    margin-bottom:10px;
-    font-size:20px;
-    line-height:1.8;
+margin-bottom:10px;
+font-size:20px;
+line-height:1.8;
 }
 
 .content p{
-    font-size:20px;
-    line-height:1.9;
+font-size:20px;
+line-height:1.9;
 }
 
-strong{
-    color:white;
-}
+/* Mobile */
 
 @media(max-width:768px){
 
 .hero h1{
-    font-size:40px;
+font-size:38px;
 }
 
 .hero p{
-    font-size:18px;
+font-size:18px;
 }
 
 .left h2{
-    font-size:20px;
+font-size:20px;
 }
 
 .content li,
 .content p{
-    font-size:16px;
+font-size:16px;
 }
 
 }
@@ -181,8 +178,11 @@ strong{
 <body>
 
 <header class="hero">
-    <h1>RÈGLEMENT SOLARYS RP</h1>
-    <p>Merci de respecter l'ensemble des règles du serveur.</p>
+
+<h1>RÈGLEMENT SOLARYS RP</h1>
+
+<p>Merci de respecter l'ensemble des règles du serveur.</p>
+
 </header>
 
 <div class="container">
@@ -216,7 +216,9 @@ strong{
 </ul>
 
 </div>
+
 </div>
+
 </div>
 
 <!-- DISCORD -->
@@ -238,15 +240,17 @@ strong{
 
 <ul>
 <li>Respect obligatoire envers tous les membres</li>
-<li>Interdiction des propos racistes, sexistes ou discriminatoires</li>
+<li>Propos discriminatoires interdits</li>
 <li>Pseudos insultants interdits</li>
 <li>Usurpation d'identité staff interdite</li>
 <li>Tickets clairs et respectueux</li>
-<li>Micro correct obligatoire en vocal</li>
+<li>Micro correct obligatoire</li>
 </ul>
 
 </div>
+
 </div>
+
 </div>
 
 <!-- PACKS -->
@@ -275,21 +279,13 @@ strong{
 <li>Hit Effects</li>
 <li>Kill Effects</li>
 <li>Blood Effects</li>
-<li>Modification abusive du FOV</li>
-<li>Suppression de végétation</li>
-<li>Full Stamina</li>
 <li>Réduction de recul</li>
 </ul>
 
-<p>
-⚠️ Warn<br>
-⛓️ Jail / TIG<br>
-🔨 Bannissement temporaire<br>
-⛔ Bannissement définitif
-</p>
+</div>
 
 </div>
-</div>
+
 </div>
 
 <!-- REMBOURSEMENTS -->
@@ -311,13 +307,14 @@ strong{
 
 <ul>
 <li>Aucun remboursement lors des reboots</li>
-<li>Aucune erreur de virement remboursée</li>
-<li>Aucune perte liée à l'inactivité remboursée</li>
-<li>Preuves obligatoires pour toute demande</li>
+<li>Erreur de virement non remboursée</li>
+<li>Preuves obligatoires</li>
 </ul>
 
 </div>
+
 </div>
+
 </div>
 
 <!-- STREAMERS -->
@@ -338,15 +335,16 @@ strong{
 <div class="content">
 
 <ul>
-<li>Streamer vos sessions RP est autorisé</li>
+<li>Streamer est autorisé</li>
 <li>Le streamhack est interdit</li>
 <li>Le metagaming via le chat est interdit</li>
-<li>Les interventions staff ne doivent pas être diffusées</li>
-<li>Respect obligatoire envers la communauté</li>
+<li>Respect de la communauté obligatoire</li>
 </ul>
 
 </div>
+
 </div>
+
 </div>
 
 <!-- INTERDICTIONS -->
@@ -371,16 +369,16 @@ strong{
 <li>Homophobie</li>
 <li>Sexisme</li>
 <li>Discrimination</li>
-<li>Contenus haineux ou choquants</li>
 <li>RP sexuel</li>
-<li>Utilisation de bugs ou glitches</li>
 <li>Streamhack</li>
-<li>Vocaux externes pendant une session RP</li>
+<li>Utilisation de bugs</li>
 <li>Publicité pour d'autres serveurs</li>
 </ul>
 
 </div>
+
 </div>
+
 </div>
 
 </div>
@@ -389,13 +387,13 @@ strong{
 
 document.querySelectorAll('.accordion-header').forEach(header => {
 
-    header.addEventListener('click', () => {
+header.addEventListener('click', () => {
 
-        const accordion = header.parentElement;
+const accordion = header.parentElement;
 
-        accordion.classList.toggle('active');
+accordion.classList.toggle('active');
 
-    });
+});
 
 });
 
@@ -403,3 +401,4 @@ document.querySelectorAll('.accordion-header').forEach(header => {
 
 </body>
 </html>
+```
