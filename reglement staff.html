@@ -1,191 +1,313 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solarys RP - Règlement Staff</title>
 
-<title>Règlement Staff | Solarys RP</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="staff.css">
+<style>
 
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+html{
+scroll-behavior:smooth;
+}
 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Rajdhani',sans-serif;
+background:#05050a;
+color:white;
+overflow-x:hidden;
+}
+
+body::before{
+content:"";
+position:fixed;
+inset:0;
+background:
+radial-gradient(circle at left,
+rgba(255,0,128,.20),
+transparent 40%),
+
+radial-gradient(circle at right,
+rgba(0,120,255,.20),
+transparent 40%),
+
+#05050a;
+z-index:-1;
+}
+
+.logo{
+text-align:center;
+font-family:'Orbitron',sans-serif;
+font-size:80px;
+font-weight:900;
+margin-top:30px;
+
+background:linear-gradient(
+90deg,
+#ff008c,
+#ff4df7,
+#6a5cff,
+#00b7ff);
+
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+
+text-shadow:
+0 0 15px #ff00ff,
+0 0 25px #00b7ff;
+}
+
+nav{
+display:flex;
+justify-content:center;
+gap:30px;
+margin:25px 0;
+flex-wrap:wrap;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+font-size:20px;
+padding:10px 15px;
+}
+
+nav a:hover{
+color:#ff4df7;
+}
+
+.title{
+width:90%;
+max-width:1200px;
+margin:30px auto;
+padding:30px;
+text-align:center;
+
+border:1px solid #ff00aa;
+
+box-shadow:
+0 0 20px rgba(255,0,170,.4),
+0 0 30px rgba(0,120,255,.3);
+}
+
+.title h1{
+font-family:'Orbitron',sans-serif;
+font-size:60px;
+
+background:linear-gradient(
+90deg,
+#ff008c,
+#ff66ff,
+#00b7ff);
+
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.intro{
+width:90%;
+max-width:1200px;
+margin:auto;
+padding:20px;
+text-align:center;
+font-size:24px;
+}
+
+.container{
+width:90%;
+max-width:1400px;
+margin:40px auto;
+display:grid;
+grid-template-columns:280px 1fr;
+gap:25px;
+}
+
+.sidebar{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.sidebar a{
+text-decoration:none;
+color:white;
+padding:18px;
+border:1px solid #ff00aa;
+background:rgba(255,0,170,.05);
+transition:.3s;
+}
+
+.sidebar a:hover{
+box-shadow:0 0 15px #ff00aa;
+transform:translateX(5px);
+}
+
+.card{
+margin-bottom:20px;
+padding:25px;
+border:1px solid #4a5cff;
+background:rgba(255,255,255,.02);
+box-shadow:0 0 15px rgba(0,120,255,.2);
+}
+
+.card h2{
+font-family:'Orbitron',sans-serif;
+margin-bottom:15px;
+color:#ff4df7;
+}
+
+.card li{
+list-style:none;
+margin:10px 0;
+font-size:20px;
+}
+
+.card li::before{
+content:"◆ ";
+color:#ff00aa;
+}
+
+footer{
+text-align:center;
+padding:40px;
+margin-top:50px;
+border-top:1px solid #222;
+}
+
+@media(max-width:900px){
+
+.container{
+grid-template-columns:1fr;
+}
+
+.logo{
+font-size:50px;
+}
+
+.title h1{
+font-size:40px;
+}
+
+}
+
+</style>
 </head>
 
 <body>
 
-<div class="background"></div>
+<div class="logo">
+SOLARYS
+</div>
 
-<header>
+<nav>
+<a href="#">ACCUEIL</a>
+<a href="#">RÈGLEMENT</a>
+<a href="#">STAFF</a>
+<a href="#">BOUTIQUE</a>
+<a href="#">DISCORD</a>
+</nav>
 
-    <div class="logo">
-        SOLARYS
-    </div>
+<div class="title">
+<h1>RÈGLEMENT STAFF</h1>
+</div>
 
-    <div class="subtitle">
-        ROLEPLAY • COMMUNAUTÉ • IMMERSION
-    </div>
-
-    <nav>
-
-        <a href="index.html">
-            🏠 Accueil
-        </a>
-
-        <a href="reglement.html">
-            📜 Règlement
-        </a>
-
-        <a class="active" href="#">
-            ⚖️ Staff
-        </a>
-
-        <a href="boutique.html">
-            🛒 Boutique
-        </a>
-
-        <a href="https://discord.gg/TONDISCORD">
-            🎮 Discord
-        </a>
-
-    </nav>
-
-</header>
-
-<section class="hero">
-
-    <h1>RÈGLEMENT STAFF</h1>
-
-    <p>
-        Le staff de SOLARYS a pour mission d'assurer une expérience
-        de jeu juste, immersive et respectueuse pour tous les joueurs.
-    </p>
-
-</section>
+<div class="intro">
+Bienvenue dans l'équipe staff de Solarys RP.
+</div>
 
 <div class="container">
 
-    <aside class="sidebar">
+<div class="sidebar">
 
-        <a href="#generalites" class="menu-card">
-            01. Généralités
-        </a>
-
-        <a href="#comportement" class="menu-card">
-            02. Comportement
-        </a>
-
-        <a href="#moderation" class="menu-card">
-            03. Modération
-        </a>
-
-        <a href="#communication" class="menu-card">
-            04. Communication
-        </a>
-
-        <a href="#confidentialite" class="menu-card">
-            05. Confidentialité
-        </a>
-
-        <a href="#sanctions" class="menu-card">
-            06. Sanctions
-        </a>
-
-    </aside>
-
-    <main>
-
-        <section id="generalites" class="content-card">
-
-            <h2>01. GÉNÉRALITÉS</h2>
-
-            <ul>
-                <li>Le staff représente SOLARYS à tout moment.</li>
-                <li>Comportement exemplaire et professionnel exigé.</li>
-                <li>Respect des joueurs et de l'équipe.</li>
-                <li>Neutralité totale dans toutes les décisions.</li>
-            </ul>
-
-        </section>
-
-        <section id="comportement" class="content-card">
-
-            <h2>02. COMPORTEMENT</h2>
-
-            <ul>
-                <li>Respecter tous les joueurs sans exception.</li>
-                <li>Ne jamais abuser de ses permissions.</li>
-                <li>Rester impartial dans les tickets.</li>
-                <li>Garder son calme en toute circonstance.</li>
-            </ul>
-
-        </section>
-
-        <section id="moderation" class="content-card">
-
-            <h2>03. MODÉRATION</h2>
-
-            <ul>
-                <li>Appliquer le règlement avec justesse.</li>
-                <li>Vérifier les preuves avant toute sanction.</li>
-                <li>Être disponible et à l'écoute.</li>
-                <li>Éviter les erreurs et les abus.</li>
-            </ul>
-
-        </section>
-
-        <section id="communication" class="content-card">
-
-            <h2>04. COMMUNICATION</h2>
-
-            <ul>
-                <li>Utiliser un langage professionnel.</li>
-                <li>Informer clairement les joueurs.</li>
-                <li>Respecter la hiérarchie.</li>
-                <li>Ne jamais créer de conflit.</li>
-            </ul>
-
-        </section>
-
-        <section id="confidentialite" class="content-card">
-
-            <h2>05. CONFIDENTIALITÉ</h2>
-
-            <ul>
-                <li>Ne pas divulguer d'informations internes.</li>
-                <li>Protéger les données des joueurs.</li>
-                <li>Respecter la confidentialité du staff.</li>
-                <li>Ne jamais partager d'accès privés.</li>
-            </ul>
-
-        </section>
-
-        <section id="sanctions" class="content-card">
-
-            <h2>06. SANCTIONS STAFF</h2>
-
-            <ul>
-                <li>Avertissement verbal.</li>
-                <li>Avertissement écrit.</li>
-                <li>Suspension temporaire.</li>
-                <li>Retrait définitif du grade.</li>
-            </ul>
-
-        </section>
-
-    </main>
+<a href="#g">01. Généralités</a>
+<a href="#c">02. Comportement</a>
+<a href="#m">03. Modération</a>
+<a href="#co">04. Communication</a>
+<a href="#cf">05. Confidentialité</a>
+<a href="#s">06. Sanctions</a>
 
 </div>
 
-<a href="#" class="top-button">
-    ↑
-</a>
+<div>
+
+<div class="card" id="g">
+<h2>01. Généralités</h2>
+
+<ul>
+<li>Le staff représente Solarys RP.</li>
+<li>Faire preuve d'exemplarité.</li>
+<li>Respect de tous les joueurs.</li>
+<li>Aucune forme d'abus.</li>
+</ul>
+</div>
+
+<div class="card" id="c">
+<h2>02. Comportement</h2>
+
+<ul>
+<li>Respect et politesse.</li>
+<li>Rester neutre.</li>
+<li>Garder son calme.</li>
+<li>Éviter les conflits.</li>
+</ul>
+</div>
+
+<div class="card" id="m">
+<h2>03. Modération</h2>
+
+<ul>
+<li>Appliquer les règles.</li>
+<li>Vérifier les preuves.</li>
+<li>Être disponible.</li>
+<li>Écouter les joueurs.</li>
+</ul>
+</div>
+
+<div class="card" id="co">
+<h2>04. Communication</h2>
+
+<ul>
+<li>Langage professionnel.</li>
+<li>Informations claires.</li>
+<li>Respect de la hiérarchie.</li>
+</ul>
+</div>
+
+<div class="card" id="cf">
+<h2>05. Confidentialité</h2>
+
+<ul>
+<li>Ne pas divulguer les informations internes.</li>
+<li>Protection des données.</li>
+<li>Respect des accès privés.</li>
+</ul>
+</div>
+
+<div class="card" id="s">
+<h2>06. Sanctions</h2>
+
+<ul>
+<li>Avertissement verbal.</li>
+<li>Avertissement écrit.</li>
+<li>Suspension.</li>
+<li>Retrait du grade.</li>
+</ul>
+</div>
+
+</div>
+
+</div>
 
 <footer>
-
-    © 2025 SOLARYS RP • TOUS DROITS RÉSERVÉS
-
+© 2025 SOLARYS RP
 </footer>
 
 </body>
