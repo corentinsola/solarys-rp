@@ -3,10 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Notions RP - Solarys RP</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 
@@ -14,131 +13,151 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
+font-family:'Poppins',sans-serif;
 }
 
 body{
-font-family:'Poppins',sans-serif;
-background:#050505;
+background:#04070f;
 color:white;
-overflow-x:hidden;
 }
 
 .hero{
-background:linear-gradient(
-90deg,
-#ff4fd8 0%,
-#bc7bff 50%,
-#6fa8ff 100%
-);
-padding:70px 20px;
+height:500px;
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.85)),
+url("rue-solarys.png");
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
 text-align:center;
 }
 
 .hero h1{
-font-size:72px;
+font-size:5rem;
 font-weight:800;
-margin-bottom:15px;
+text-transform:uppercase;
+text-shadow:0 0 35px #1b6cff;
 }
 
 .hero p{
-font-size:26px;
+margin-top:15px;
+font-size:1.3rem;
 }
 
 .container{
-width:95%;
 max-width:1800px;
-margin:40px auto;
+margin:auto;
+padding:40px;
 }
 
 .accordion{
-background:#0b0b0b;
-border:1px solid rgba(255,255,255,.08);
-border-radius:30px;
-margin-bottom:20px;
-overflow:hidden;
-box-shadow:
-0 0 0 1px rgba(255,255,255,.03),
-0 10px 35px rgba(0,0,0,.35);
+margin-bottom:25px;
 }
 
 .accordion-header{
+
 width:100%;
-background:none;
-border:none;
-color:white;
-cursor:pointer;
-padding:35px 45px;
+padding:30px;
+
 display:flex;
+justify-content:space-between;
 align-items:center;
+
+background:
+linear-gradient(
+90deg,
+#020612,
+#02172d
+);
+
+border:2px solid rgba(255,45,146,.3);
+border-radius:35px;
+
+font-size:2rem;
+font-weight:700;
+color:white;
+
+cursor:pointer;
+
+box-shadow:
+0 0 25px rgba(255,45,146,.15),
+0 0 25px rgba(27,108,255,.15);
 }
 
 .accordion-header:hover{
-background:rgba(255,255,255,.02);
+transform:translateY(-2px);
 }
 
-.left{
-display:flex;
-align-items:center;
-gap:20px;
-}
-
-.emoji{
-font-size:38px;
-}
-
-.left h2{
-font-size:28px;
-font-weight:700;
+.icon{
+font-size:2rem;
+color:#ff2d92;
 }
 
 .accordion-content{
-max-height:0;
-overflow:hidden;
-transition:max-height .4s ease;
-}
-
-.accordion.active .accordion-content{
-max-height:5000px;
-}
-
-.content{
-padding:0 50px 40px;
-}
-
-.content ul{
-padding-left:25px;
-}
-
-.content li{
-margin-bottom:10px;
-font-size:20px;
-line-height:1.8;
-}
-
-.content p{
-font-size:20px;
+display:none;
+padding:35px;
+background:#050912;
+border-left:2px solid #ff2d92;
+border-right:2px solid #ff2d92;
+border-bottom:2px solid #ff2d92;
+border-radius:0 0 30px 30px;
 line-height:1.9;
 }
 
-@media(max-width:768px){
-
-.hero h1{
-font-size:40px;
+.accordion-content.active{
+display:block;
 }
 
-.hero p{
-font-size:18px;
+.accordion-content ul{
+padding-left:20px;
 }
 
-.left h2{
-font-size:20px;
+.accordion-content li{
+margin-bottom:12px;
 }
 
-.content li,
-.content p{
-font-size:16px;
+.navigation{
+display:flex;
+gap:25px;
+margin-top:35px;
 }
 
+.navigation a{
+flex:1;
+padding:20px;
+text-align:center;
+text-decoration:none;
+font-weight:700;
+border-radius:20px;
+transition:.3s;
+}
+
+.prev{
+border:2px solid #ff2d92;
+color:#ff2d92;
+}
+
+.prev:hover{
+background:#ff2d92;
+color:white;
+}
+
+.next{
+border:2px solid #1b6cff;
+color:#1b6cff;
+}
+
+.next:hover{
+background:#1b6cff;
+color:white;
+}
+
+footer{
+padding:40px;
+text-align:center;
+color:#aaa;
 }
 
 </style>
@@ -148,164 +167,175 @@ font-size:16px;
 
 <header class="hero">
 
-<h1><h1>NOTIONS RP</h1>
+<div>
 
-<p>Les bases essentielles du RolePlay sur Solarys RP.</p></h1>
+<h1>NOTIONS RP</h1>
 
-<p>Merci de respecter l'ensemble des règles du serveur.</p>
+<p>Guide complet du RolePlay Solarys RP</p>
+
+</div>
 
 </header>
 
 <div class="container">
 
-<!-- NOTIONS -->
+<!-- NOTIONS PRINCIPALES -->
 
-<div class="accordion active">
+<div class="accordion">
 
-<button class="accordion-header">
+<div class="accordion-header">
 
-<div class="left">
-<div class="emoji">📚</div>
-<h2>NOTIONS PRINCIPALES</h2>
+<span>📖 NOTIONS PRINCIPALES</span>
+
+<span class="icon">⌄</span>
+
 </div>
-
-</button>
 
 <div class="accordion-content">
 
-<div class="content">
-
-<ul>
-<li><strong>Mass RP :</strong> prendre en compte la population invisible autour de vous.</li>
-<li><strong>RolePlay :</strong> Incarner un personnage dans un univers fictif.</li>
-<li><strong>HRP :</strong> Tout ce qui est hors du jeu.</li>
-<li><strong>Metagaming :</strong> Utiliser une information obtenue hors RP.</li>
-<li><strong>Powergaming :</strong> Réaliser une action irréaliste.</li>
-<li><strong>No Fear RP :</strong> Ne pas craindre une arme.</li>
-<li><strong>Force RP :</strong> Forcer une action à un joueur.</li>
-<li><strong>Freekill :</strong> Tuer sans raison RP valable.</li>
-</ul>
+COLLE ICI TOUT TON TEXTE NOTIONS PRINCIPALES
 
 </div>
-</div>
+
 </div>
 
 <!-- LEXIQUE -->
 
 <div class="accordion">
 
-<button class="accordion-header">
+<div class="accordion-header">
 
-<div class="left">
-<div class="emoji">📖</div>
-<h2>LEXIQUE RP</h2>
+<span>💬 LEXIQUE RP</span>
+
+<span class="icon">⌄</span>
+
 </div>
-
-</button>
 
 <div class="accordion-content">
 
-<div class="content">
-
-<ul>
-<li>🧠 J'ai un bug = J'ai un mal de tête</li>
-<li>😵 J'ai crash = Je me suis évanoui</li>
-<li>🧊 Je freeze = Je suis figé</li>
-<li>😴 Je déco = Je vais dormir</li>
-</ul>
+COLLE ICI TOUT TON TEXTE LEXIQUE RP
 
 </div>
-</div>
+
 </div>
 
-<!-- JOUER -->
+<!-- JOUER SANS EXCES -->
 
 <div class="accordion">
 
-<button class="accordion-header">
+<div class="accordion-header">
 
-<div class="left">
-<div class="emoji">🎮</div>
-<h2>JOUER SANS EXCÈS</h2>
+<span>🎭 JOUER SANS EXCÈS</span>
+
+<span class="icon">⌄</span>
+
 </div>
-
-</button>
 
 <div class="accordion-content">
 
-<div class="content">
-
-<p>
-Le RP est un jeu. Respectez les autres joueurs et gardez toujours une attitude fair-play.
-</p>
+COLLE ICI TON TEXTE
 
 </div>
+
 </div>
+
+<!-- DEFAITE -->
+
+<div class="accordion">
+
+<div class="accordion-header">
+
+<span>⚖️ JOUER LA DÉFAITE INTELLIGEMMENT</span>
+
+<span class="icon">⌄</span>
+
+</div>
+
+<div class="accordion-content">
+
+COLLE ICI TON TEXTE
+
+</div>
+
 </div>
 
 <!-- RECUL -->
 
 <div class="accordion">
 
-<button class="accordion-header">
+<div class="accordion-header">
 
-<div class="left">
-<div class="emoji">🧠</div>
-<h2>GARDER DU RECUL</h2>
+<span>🧠 GARDER DU RECUL</span>
+
+<span class="icon">⌄</span>
+
 </div>
-
-</button>
 
 <div class="accordion-content">
 
-<div class="content">
-
-<p>
-Ne mélangez jamais le RP et la réalité. Les conflits RP restent dans le jeu.
-</p>
+COLLE ICI TON TEXTE
 
 </div>
-</div>
+
 </div>
 
 <!-- FAQ -->
 
 <div class="accordion">
 
-<button class="accordion-header">
+<div class="accordion-header">
 
-<div class="left">
-<div class="emoji">❓</div>
-<h2>QUESTIONS FRÉQUENTES</h2>
+<span>❓ QUESTIONS FRÉQUENTES</span>
+
+<span class="icon">⌄</span>
+
 </div>
-
-</button>
 
 <div class="accordion-content">
 
-<div class="content">
+COLLE ICI TOUTES TES QUESTIONS
 
-<ul>
-<li>Comment signaler un joueur ? → Ticket Discord.</li>
-<li>Comment rejoindre un groupe ? → Faire une candidature RP.</li>
-<li>Puis-je contester une sanction ? → Oui via ticket.</li>
-</ul>
-
-</div>
-</div>
 </div>
 
 </div>
+
+<div class="navigation">
+
+<a href="reglement.html" class="prev">
+⬅ PAGE PRÉCÉDENTE
+</a>
+
+<a href="ESSAI.html" class="next">
+PAGE SUIVANTE ➜
+</a>
+
+</div>
+
+</div>
+
+<footer>
+© 2026 Solarys RP
+</footer>
 
 <script>
 
-document.querySelectorAll(".accordion-header").forEach(header => {
+document.querySelectorAll('.accordion-header').forEach(header=>{
 
-header.addEventListener("click", () => {
+header.addEventListener('click',()=>{
 
-const accordion = header.parentElement;
+const content=
+header.nextElementSibling;
 
-accordion.classList.toggle("active");
+content.classList.toggle('active');
+
+const icon=
+header.querySelector('.icon');
+
+if(content.classList.contains('active')){
+icon.innerHTML='⌃';
+}else{
+icon.innerHTML='⌄';
+}
 
 });
 
@@ -315,4 +345,3 @@ accordion.classList.toggle("active");
 
 </body>
 </html>
-```
