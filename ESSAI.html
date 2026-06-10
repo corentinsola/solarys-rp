@@ -1,3 +1,95 @@
+
+
+Dans la partie CSS, remplace entièrement le bloc `.hero` par :
+
+```css
+.hero{
+height:650px;
+
+background-image:
+linear-gradient(
+rgba(0,0,0,.45),
+rgba(0,0,0,.80)
+),
+url("rue-solarys.png");
+
+background-size:cover;
+background-position:center center;
+background-repeat:no-repeat;
+
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+
+box-shadow:
+inset 0 -150px 150px rgba(5,7,13,.95);
+}
+
+.hero-logo{
+width:180px;
+margin-bottom:25px;
+
+filter:
+drop-shadow(0 0 20px #ff2d92)
+drop-shadow(0 0 35px #8b5cf6);
+
+animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(0px);}
+50%{transform:translateY(-10px);}
+100%{transform:translateY(0px);}
+}
+```
+
+Puis remplace entièrement ton bloc :
+
+```html
+<header class="hero">
+
+<div class="hero-content">
+
+<h1>RÈGLEMENT PACK GRAPHIQUE</h1>
+
+<p>
+Modifications graphiques autorisées et interdites sur Solarys RP
+</p>
+
+<div class="neon-divider"></div>
+
+</div>
+
+</header>
+```
+
+par :
+
+```html
+<header class="hero">
+
+<div class="hero-content">
+
+<img src="logo-solarys.png"
+alt="Solarys RP"
+class="hero-logo">
+
+<h1>RÈGLEMENT PACK GRAPHIQUE</h1>
+
+<p>
+Modifications graphiques autorisées et interdites sur Solarys RP
+</p>
+
+<div class="neon-divider"></div>
+
+</div>
+
+</header>
+```
+
+
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
