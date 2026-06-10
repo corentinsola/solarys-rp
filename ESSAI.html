@@ -95,44 +95,83 @@ background:linear-gradient(
 /* Accordéons */
 
 .container{
-max-width:1600px;
+width:95%;
+max-width:1700px;
 margin:auto;
 padding:40px;
 }
 
 .accordion{
+
 margin-bottom:25px;
 
-border-radius:25px;
+border-radius:30px;
+
 overflow:hidden;
 
 background:
 linear-gradient(
 90deg,
-#030510,
-#041225
+#020510,
+#03182d
 );
 
-box-shadow:
-0 0 25px rgba(255,45,146,.15),
-0 0 25px rgba(27,108,255,.15);
+border:1px solid rgba(255,255,255,.08);
 }
 
 .accordion-header{
+
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:30px;
+
+padding:35px;
+
 cursor:pointer;
 }
 
-.accordion-header h2{
-font-size:2.8rem;
-font-weight:700;
-};
+.left{
+font-size:2.6rem;
+font-weight:800;
+}
 
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
+.pink .left{
+color:#ff2d92;
+}
+
+.purple .left{
+color:#8b5cf6;
+}
+
+.toggle-btn{
+
+width:90px;
+height:90px;
+
+border-radius:50%;
+border:none;
+
+background:#1f1b4f;
+
+color:#9f6fff;
+
+font-size:42px;
+
+box-shadow:
+0 0 30px #8b5cf6;
+}
+
+.accordion-content{
+
+display:none;
+
+padding:40px;
+
+line-height:2;
+}
+
+.accordion.active .accordion-content{
+display:block;
 }
 
 .toggle-btn{
@@ -242,7 +281,53 @@ color:#aaa;
 </div>
 
 </header>
+<div class="container">
 
+<!-- NOTIONS -->
+
+<div class="accordion pink">
+
+<div class="accordion-header">
+
+<div class="left">
+📖 NOTIONS PRINCIPALES
+</div>
+
+<button class="toggle-btn">∨</button>
+
+</div>
+
+<div class="accordion-content">
+
+TON TEXTE
+
+</div>
+
+</div>
+
+<!-- LEXIQUE -->
+
+<div class="accordion purple">
+
+<div class="accordion-header">
+
+<div class="left">
+💬 LEXIQUE RP
+</div>
+
+<button class="toggle-btn">∨</button>
+
+</div>
+
+<div class="accordion-content">
+
+TON TEXTE
+
+</div>
+
+</div>
+
+</div>
 <div class="container">
 
 <!-- NOTIONS PRINCIPALES -->
@@ -464,7 +549,18 @@ PAGE SUIVANTE ➜
 <script>
 
 /* ========================= */
-/* JAVASCRIPT ICI */
+document
+.querySelectorAll(".accordion-header")
+.forEach(header=>{
+
+header.addEventListener("click",()=>{
+
+header.parentElement
+.classList.toggle("active");
+
+});
+
+});
 /* ========================= */
 
 document
