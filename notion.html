@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Notions RP - Solarys RP</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
+
+/* ========================= */
+/* CSS ICI */
+/* ========================= */
 
 *{
 margin:0;
@@ -17,111 +23,144 @@ font-family:'Poppins',sans-serif;
 }
 
 body{
-background:#04070f;
+background:#05070d;
 color:white;
 }
 
+/* Bannière */
+
 .hero{
-height:500px;
+height:700px;
+
 background:
-linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.85)),
+linear-gradient(
+rgba(0,0,0,.55),
+rgba(0,0,0,.85)
+),
 url("rue-solarys.png");
+
 background-size:cover;
 background-position:center;
+
 display:flex;
 justify-content:center;
 align-items:center;
 text-align:center;
 }
 
+.hero-logo{
+width:140px;
+margin-bottom:20px;
+}
+
 .hero h1{
 font-size:5rem;
 font-weight:800;
-text-transform:uppercase;
-text-shadow:0 0 35px #1b6cff;
+text-shadow:0 0 25px #1b6cff;
 }
 
 .hero p{
+font-size:1.4rem;
 margin-top:15px;
-font-size:1.3rem;
 }
 
+.neon-divider{
+width:500px;
+height:4px;
+margin:30px auto;
+
+background:linear-gradient(
+90deg,
+#ff2d92,
+#8b5cf6,
+#1b6cff
+);
+}
+
+/* Accordéons */
+
 .container{
-max-width:1800px;
+max-width:1600px;
 margin:auto;
 padding:40px;
 }
 
 .accordion{
 margin-bottom:25px;
-}
 
-.accordion-header{
-
-width:100%;
-padding:30px;
-
-display:flex;
-justify-content:space-between;
-align-items:center;
+border-radius:25px;
+overflow:hidden;
 
 background:
 linear-gradient(
 90deg,
-#020612,
-#02172d
+#030510,
+#041225
 );
-
-border:2px solid rgba(255,45,146,.3);
-border-radius:35px;
-
-font-size:2rem;
-font-weight:700;
-color:white;
-
-cursor:pointer;
 
 box-shadow:
 0 0 25px rgba(255,45,146,.15),
 0 0 25px rgba(27,108,255,.15);
 }
 
-.accordion-header:hover{
-transform:translateY(-2px);
+.accordion-header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:30px;
+cursor:pointer;
 }
 
-.icon{
+.accordion-header h2{
 font-size:2rem;
-color:#ff2d92;
+
+background:
+linear-gradient(
+90deg,
+#ff2d92,
+#8b5cf6,
+#1b6cff
+);
+
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.toggle-btn{
+width:70px;
+height:70px;
+
+border:none;
+border-radius:50%;
+
+font-size:28px;
+color:white;
+cursor:pointer;
+
+background:
+linear-gradient(
+135deg,
+rgba(255,45,146,.25),
+rgba(27,108,255,.25)
+);
 }
 
 .accordion-content{
 display:none;
-padding:35px;
-background:#050912;
-border-left:2px solid #ff2d92;
-border-right:2px solid #ff2d92;
-border-bottom:2px solid #ff2d92;
-border-radius:0 0 30px 30px;
-line-height:1.9;
+padding:30px;
+line-height:2;
 }
 
-.accordion-content.active{
+.accordion.active .accordion-content{
 display:block;
 }
 
-.accordion-content ul{
-padding-left:20px;
-}
-
-.accordion-content li{
-margin-bottom:12px;
-}
+/* Navigation */
 
 .navigation{
 display:flex;
-gap:25px;
-margin-top:35px;
+gap:20px;
+margin-top:40px;
 }
 
 .navigation a{
@@ -129,9 +168,8 @@ flex:1;
 padding:20px;
 text-align:center;
 text-decoration:none;
-font-weight:700;
+font-weight:600;
 border-radius:20px;
-transition:.3s;
 }
 
 .prev{
@@ -139,28 +177,19 @@ border:2px solid #ff2d92;
 color:#ff2d92;
 }
 
-.prev:hover{
-background:#ff2d92;
-color:white;
-}
-
 .next{
 border:2px solid #1b6cff;
 color:#1b6cff;
 }
 
-.next:hover{
-background:#1b6cff;
-color:white;
-}
-
 footer{
-padding:40px;
 text-align:center;
+padding:30px;
 color:#aaa;
 }
 
 </style>
+
 </head>
 
 <body>
@@ -169,9 +198,13 @@ color:#aaa;
 
 <div>
 
+<img src="logo-solarys.png" class="hero-logo">
+
 <h1>NOTIONS RP</h1>
 
-<p>Guide complet du RolePlay Solarys RP</p>
+<p>Guide complet du RolePlay sur Solarys RP</p>
+
+<div class="neon-divider"></div>
 
 </div>
 
@@ -185,9 +218,9 @@ color:#aaa;
 
 <div class="accordion-header">
 
-<span>📖 NOTIONS PRINCIPALES</span>
+<h2>NOTIONS PRINCIPALES</h2>
 
-<span class="icon">⌄</span>
+<button class="toggle-btn">⌄</button>
 
 </div>
 
@@ -199,15 +232,15 @@ COLLE ICI TOUT TON TEXTE NOTIONS PRINCIPALES
 
 </div>
 
-<!-- LEXIQUE -->
+<!-- LEXIQUE RP -->
 
 <div class="accordion">
 
 <div class="accordion-header">
 
-<span>💬 LEXIQUE RP</span>
+<h2>LEXIQUE RP</h2>
 
-<span class="icon">⌄</span>
+<button class="toggle-btn">⌄</button>
 
 </div>
 
@@ -219,81 +252,81 @@ COLLE ICI TOUT TON TEXTE LEXIQUE RP
 
 </div>
 
-<!-- JOUER SANS EXCES -->
+<!-- JOUER SANS EXCÈS -->
 
 <div class="accordion">
 
 <div class="accordion-header">
 
-<span>🎭 JOUER SANS EXCÈS</span>
+<h2>JOUER SANS EXCÈS</h2>
 
-<span class="icon">⌄</span>
+<button class="toggle-btn">⌄</button>
 
 </div>
 
 <div class="accordion-content">
 
-COLLE ICI TON TEXTE
+COLLE LE TEXTE
 
 </div>
 
 </div>
 
-<!-- DEFAITE -->
+<!-- JOUER LA DÉFAITE -->
 
 <div class="accordion">
 
 <div class="accordion-header">
 
-<span>⚖️ JOUER LA DÉFAITE INTELLIGEMMENT</span>
+<h2>JOUER LA DÉFAITE INTELLIGEMMENT</h2>
 
-<span class="icon">⌄</span>
+<button class="toggle-btn">⌄</button>
 
 </div>
 
 <div class="accordion-content">
 
-COLLE ICI TON TEXTE
+COLLE LE TEXTE
 
 </div>
 
 </div>
 
-<!-- RECUL -->
+<!-- GARDER DU RECUL -->
 
 <div class="accordion">
 
 <div class="accordion-header">
 
-<span>🧠 GARDER DU RECUL</span>
+<h2>GARDER DU RECUL</h2>
 
-<span class="icon">⌄</span>
+<button class="toggle-btn">⌄</button>
 
 </div>
 
 <div class="accordion-content">
 
-COLLE ICI TON TEXTE
+COLLE LE TEXTE
 
 </div>
 
 </div>
 
-<!-- FAQ -->
+<!-- QUESTIONS -->
 
 <div class="accordion">
 
 <div class="accordion-header">
 
-<span>❓ QUESTIONS FRÉQUENTES</span>
+<h2>QUESTIONS FRÉQUENTES</h2>
 
-<span class="icon">⌄</span>
+<button class="toggle-btn">⌄</button>
 
 </div>
 
 <div class="accordion-content">
 
-COLLE ICI TOUTES TES QUESTIONS
+COLLE LE TEXTE
 
 </div>
 
@@ -305,7 +338,7 @@ COLLE ICI TOUTES TES QUESTIONS
 ⬅ PAGE PRÉCÉDENTE
 </a>
 
-<a href="ESSAI.html" class="next">
+<a href="packgraphique.html" class="next">
 PAGE SUIVANTE ➜
 </a>
 
@@ -319,23 +352,18 @@ PAGE SUIVANTE ➜
 
 <script>
 
-document.querySelectorAll('.accordion-header').forEach(header=>{
+/* ========================= */
+/* JAVASCRIPT ICI */
+/* ========================= */
 
-header.addEventListener('click',()=>{
+document
+.querySelectorAll(".accordion-header")
+.forEach(header=>{
 
-const content=
-header.nextElementSibling;
+header.addEventListener("click",()=>{
 
-content.classList.toggle('active');
-
-const icon=
-header.querySelector('.icon');
-
-if(content.classList.contains('active')){
-icon.innerHTML='⌃';
-}else{
-icon.innerHTML='⌄';
-}
+header.parentElement
+.classList.toggle("active");
 
 });
 
