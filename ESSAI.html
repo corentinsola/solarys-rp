@@ -1,33 +1,14 @@
+```html
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Notions RP - Solarys RP</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
-
-/* ========================= */
-.pink{
-color:#ff2d92;
-}
-
-.purple{
-color:#9c4dff;
-}
-
-.blue{
-color:#1b6cff;
-}
-
-.orange{
-color:#ffae00;
-}
-/* ========================= */
 
 *{
 margin:0;
@@ -41,37 +22,25 @@ background:#05070d;
 color:white;
 }
 
-/* Bannière */
-
 .hero{
 height:450px;
-
 background:
-linear-gradient(
-rgba(0,0,0,.35),
-rgba(0,0,0,.80)
-),
+linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.85)),
 url("plage-solarys.png");
-
 background-size:cover;
 background-position:center;
-background-attachment:fixed;
-
 display:flex;
 justify-content:center;
 align-items:center;
 text-align:center;
 }
 
-.hero-logo{
-width:140px;
-margin-bottom:20px;
-}
-
 .hero h1{
 font-size:5rem;
 font-weight:800;
-text-shadow:0 0 25px #1b6cff;
+background:linear-gradient(90deg,#ff2d92,#8b5cf6,#1b6cff);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
 }
 
 .hero p{
@@ -82,152 +51,79 @@ margin-top:15px;
 .neon-divider{
 width:500px;
 height:4px;
-margin:30px auto;
-
-background:linear-gradient(
-90deg,
-#ff2d92,
-#8b5cf6,
-#1b6cff
-);
+margin:25px auto;
+background:linear-gradient(90deg,#ff2d92,#8b5cf6,#1b6cff);
 }
-
-/* Accordéons */
 
 .container{
 width:95%;
-max-width:1700px;
+max-width:1600px;
 margin:auto;
 padding:40px;
 }
 
 .accordion{
-
 margin-bottom:25px;
-
 border-radius:30px;
-
 overflow:hidden;
-
-background:
-linear-gradient(
-90deg,
-#020510,
-#03182d
-);
-
+background:linear-gradient(90deg,#020510,#03182d);
 border:1px solid rgba(255,255,255,.08);
 }
 
 .accordion-header{
-
 display:flex;
 justify-content:space-between;
 align-items:center;
-
 padding:35px;
-
 cursor:pointer;
 }
 
-.left{
-font-size:2.6rem;
+.title{
+font-size:2.2rem;
 font-weight:800;
 }
 
-.pink .left{
-color:#ff2d92;
-}
-
-.purple .left{
-color:#8b5cf6;
-}
+.pink{color:#ff2d92;}
+.purple{color:#8b5cf6;}
+.blue{color:#1b6cff;}
+.orange{color:#ff9f1a;}
+.green{color:#00d8b6;}
 
 .toggle-btn{
-
-width:90px;
-height:90px;
-
-border-radius:50%;
-border:none;
-
-background:#1f1b4f;
-
-color:#9f6fff;
-
-font-size:42px;
-
-box-shadow:
-0 0 30px #8b5cf6;
-}
-
-.accordion-content{
-
-display:none;
-
-padding:40px;
-
-line-height:2;
-}
-
-.accordion.active .accordion-content{
-display:block;
-}
-
-.toggle-btn{
-
 width:80px;
 height:80px;
-
-display:flex;
-align-items:center;
-justify-content:center;
-
-border-radius:50%;
-
 border:none;
-
+border-radius:50%;
 font-size:34px;
 font-weight:700;
-
-cursor:pointer;
-
 color:white;
-
-background:
-linear-gradient(
-135deg,
-rgba(255,45,146,.20),
-rgba(27,108,255,.20)
-);
-
-box-shadow:
-0 0 20px rgba(255,45,146,.35),
-0 0 30px rgba(27,108,255,.35);
-
-transition:.3s;
+cursor:pointer;
+background:rgba(65,45,130,.5);
+box-shadow:0 0 25px rgba(140,90,255,.5);
 }
-.accordion:hover{
 
-transform:translateY(-3px);
-
-box-shadow:
-0 0 30px rgba(255,45,146,.25),
-0 0 30px rgba(27,108,255,.25);
-
-transition:.3s;
-}
 .accordion-content{
 display:none;
-padding:30px;
+padding:35px;
 line-height:2;
+font-size:18px;
 }
 
 .accordion.active .accordion-content{
 display:block;
 }
 
-/* Navigation */
+.grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:40px;
+}
+
+@media(max-width:1000px){
+.grid{
+grid-template-columns:1fr;
+}
+}
 
 .navigation{
 display:flex;
@@ -257,20 +153,16 @@ color:#1b6cff;
 footer{
 text-align:center;
 padding:30px;
-color:#aaa;
+color:#999;
 }
 
 </style>
-
 </head>
 
 <body>
 
 <header class="hero">
-
 <div>
-
-<img src="logo-solarys.png" class="hero-logo">
 
 <h1>NOTIONS RP</h1>
 
@@ -279,210 +171,16 @@ color:#aaa;
 <div class="neon-divider"></div>
 
 </div>
-
 </header>
+
 <div class="container">
 
-<!-- NOTIONS -->
-
-<div class="accordion pink">
-
+<div class="accordion">
 <div class="accordion-header">
-
-<div class="left">
-📖 NOTIONS PRINCIPALES
-</div>
-
+<div class="title pink">📖 NOTIONS PRINCIPALES</div>
 <button class="toggle-btn">∨</button>
-
 </div>
 
-<div class="accordion-content">
-
-TON TEXTE
-
-</div>
-
-</div>
-
-<!-- LEXIQUE -->
-
-<div class="accordion purple">
-
-<div class="accordion-header">
-
-<div class="left">
-💬 LEXIQUE RP
-</div>
-
-<button class="toggle-btn">∨</button>
-
-</div>
-
-<div class="accordion-content">
-
-TON TEXTE
-
-</div>
-
-</div>
-
-</div>
-<div class="container">
-
-<!-- NOTIONS PRINCIPALES -->
-
-
-<div class="accordion-content">
-
-<div class="grid">
-.grid{
-
-display:grid;
-
-grid-template-columns:
-1fr 1fr 1fr;
-
-gap:40px;
-}
-<div>
-
-Mass RP
-
-RolePlay
-
-HRP
-
-Metagaming
-
-Powergaming
-
-No Fear RP
-
-</div>
-
-<div>
-
-Force RP
-
-Freekill
-
-Revenge Kill
-
-New Life Rule
-
-Win RP
-
-Pain RP
-
-</div>
-
-<div>
-
-Car Kill
-
-Bunny Hop
-
-No RP
-
-Scene RP
-
-Usebug
-
-Streamhack
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- LEXIQUE RP -->
-
-<div class="accordion">
-
-<div class="accordion-header">
-
-<h2>LEXIQUE RP</h2>
-
-<button class="toggle-btn">⌄</button>
-
-</div>
-
-<div class="accordion-content">
-
-COLLE ICI TOUT TON TEXTE LEXIQUE RP
-
-</div>
-
-</div>
-
-<!-- JOUER SANS EXCÈS -->
-
-<div class="accordion">
-
-<div class="accordion-header">
-
-<h2>JOUER SANS EXCÈS</h2>
-
-<button class="toggle-btn">⌄</button>
-
-</div>
-
-<div class="accordion-content">
-
-<ul>
-
-<li>Je peux contester une sanction ? Oui, via ticket avec preuves.</li>
-
-<li>Signaler un joueur ou un Staff ? Ticket Discord avec pseudo, preuve et contexte.</li>
-
-<li>Créer un groupe ? Procédure en ticket "Illégal" auprès d'un Référent Illégal.</li>
-
-<li>Accessible aux débutants ? Oui ! Tutoriel en jeu + staff disponible.</li>
-
-<li>Je peux utiliser une info Discord en jeu ? Non, sauf si elle est obtenue via une scène RP.</li>
-
-<li>Comment rejoindre le serveur ? Discord ➜ FiveM ➜ SOLARYS.</li>
-
-</ul>
-
-</div>
-
-</div>
-
-<!-- JOUER LA DÉFAITE -->
-
-<div class="accordion">
-
-<div class="accordion-header">
-
-<h2>JOUER LA DÉFAITE INTELLIGEMMENT</h2>
-
-<button class="toggle-btn">⌄</button>
-
-</div>
-
-<div class="accordion-content">
-
-COLLE LE TEXTE
-
-</div>
-
-</div>
-
-<!-- GARDER DU RECUL -->
-
-<div class="accordion">
-
-<div class="accordion-header">
-
-<h2>GARDER DU RECUL</h2>
-
-  
-<button class="toggle-btn">⌄</button>
 <div class="accordion-content">
 
 <div class="grid">
@@ -499,14 +197,14 @@ COLLE LE TEXTE
 <div>
 • Force RP<br>
 • Freekill<br>
-• Revenge Kill (RK)<br>
-• New Life Rule (NLR)<br>
+• Revenge Kill<br>
+• New Life Rule<br>
 • Win RP<br>
 • Pain RP
 </div>
 
 <div>
-• Car Kill (CK)<br>
+• Car Kill<br>
 • Bunny Hop<br>
 • No RP<br>
 • Scene RP<br>
@@ -519,36 +217,64 @@ COLLE LE TEXTE
 </div>
 </div>
 
-<!-- QUESTIONS -->
-
 <div class="accordion">
-
 <div class="accordion-header">
-
-<h2>QUESTIONS FRÉQUENTES</h2>
-
-<button class="toggle-btn">⌄</button>
-
+<div class="title purple">💬 LEXIQUE RP</div>
+<button class="toggle-btn">∨</button>
 </div>
 
 <div class="accordion-content">
-
-COLLE LE TEXTE
-
+Ajoute ici ton lexique RP.
+</div>
 </div>
 
+<div class="accordion">
+<div class="accordion-header">
+<div class="title blue">🎭 JOUER SANS EXCÈS</div>
+<button class="toggle-btn">∨</button>
+</div>
+
+<div class="accordion-content">
+Ne prenez pas le RP trop au sérieux.
+</div>
+</div>
+
+<div class="accordion">
+<div class="accordion-header">
+<div class="title orange">⚖️ JOUER LA DÉFAITE INTELLIGEMMENT</div>
+<button class="toggle-btn">∨</button>
+</div>
+
+<div class="accordion-content">
+Accepter de perdre crée souvent les meilleures scènes RP.
+</div>
+</div>
+
+<div class="accordion">
+<div class="accordion-header">
+<div class="title green">🧠 GARDER DU RECUL</div>
+<button class="toggle-btn">∨</button>
+</div>
+
+<div class="accordion-content">
+RP et réalité sont deux choses différentes.
+</div>
+</div>
+
+<div class="accordion">
+<div class="accordion-header">
+<div class="title purple">❓ QUESTIONS FRÉQUENTES</div>
+<button class="toggle-btn">∨</button>
+</div>
+
+<div class="accordion-content">
+Ajoute ici tes questions fréquentes.
+</div>
 </div>
 
 <div class="navigation">
-
-<a href="reglement.html" class="prev">
-⬅ PAGE PRÉCÉDENTE
-</a>
-
-<a href="packgraphique.html" class="next">
-PAGE SUIVANTE ➜
-</a>
-
+<a href="reglement.html" class="prev">⬅ PAGE PRÉCÉDENTE</a>
+<a href="packgraphique.html" class="next">PAGE SUIVANTE ➜</a>
 </div>
 
 </div>
@@ -559,28 +285,11 @@ PAGE SUIVANTE ➜
 
 <script>
 
-/* ========================= */
-
-.forEach(header=>{
+document.querySelectorAll(".accordion-header").forEach(header=>{
 
 header.addEventListener("click",()=>{
 
-header.parentElement
-.classList.toggle("active");
-
-});
-
-});
-/* ========================= */
-
-document
-.querySelectorAll(".accordion-header")
-.forEach(header=>{
-
-header.addEventListener("click",()=>{
-
-header.parentElement
-.classList.toggle("active");
+header.parentElement.classList.toggle("active");
 
 });
 
@@ -590,3 +299,4 @@ header.parentElement
 
 </body>
 </html>
+```
