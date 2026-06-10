@@ -1,47 +1,4 @@
-
-<header class="hero">
-
-<div class="hero-content">
-
-<h1>RÈGLEMENT PACK GRAPHIQUE</h1>
-
-<p>
-Modifications graphiques autorisées et interdites sur Solarys RP
-</p>
-
-<div class="neon-divider"></div>
-
-</div>
-
-</header>
-```
-
-par :
-
 ```html
-<header class="hero">
-
-<div class="hero-content">
-
-<img src="logo-solarys.png"
-alt="Solarys RP"
-class="hero-logo">
-
-<h1>RÈGLEMENT PACK GRAPHIQUE</h1>
-
-<p>
-Modifications graphiques autorisées et interdites sur Solarys RP
-</p>
-
-<div class="neon-divider"></div>
-
-</div>
-
-</header>
-```
-
-
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -50,7 +7,7 @@ Modifications graphiques autorisées et interdites sur Solarys RP
 
 <title>Règlement Pack Graphique - Solarys RP</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 
@@ -64,21 +21,22 @@ font-family:'Poppins',sans-serif;
 body{
 background:#05070d;
 color:#fff;
+overflow-x:hidden;
 }
 
 /* ========================= */
-/* BANNIÈRE */
+/* HERO */
 /* ========================= */
 
 .hero{
-height:550px;
+height:700px;
 
 background-image:
 linear-gradient(
-rgba(0,0,0,.35),
-rgba(0,0,0,.70)
+rgba(0,0,0,.45),
+rgba(0,0,0,.85)
 ),
-url("https://reglement.solarys-rp.fr/banniere-packgraphique.png");
+url("rue-solarys.png");
 
 background-size:cover;
 background-position:center;
@@ -88,28 +46,53 @@ display:flex;
 justify-content:center;
 align-items:center;
 text-align:center;
+
+box-shadow:
+inset 0 -150px 150px rgba(5,7,13,.95);
 }
 
-.hero-content h1{
+.hero-content{
+max-width:1000px;
+padding:20px;
+}
+
+.hero-logo{
+width:180px;
+margin-bottom:25px;
+
+filter:
+drop-shadow(0 0 25px #ff2d92)
+drop-shadow(0 0 40px #8b5cf6);
+
+animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(0);}
+50%{transform:translateY(-10px);}
+100%{transform:translateY(0);}
+}
+
+.hero h1{
 font-size:4.5rem;
-font-weight:700;
+font-weight:800;
 text-transform:uppercase;
 
 text-shadow:
 0 0 20px rgba(255,255,255,.15),
-0 0 40px rgba(0,119,255,.45);
+0 0 50px rgba(27,108,255,.45);
 }
 
-.hero-content p{
+.hero p{
 margin-top:20px;
-font-size:1.4rem;
-color:#e5e5e5;
+font-size:1.3rem;
+color:#ddd;
 }
 
 .neon-divider{
 width:420px;
-height:3px;
-margin:25px auto;
+height:4px;
+margin:30px auto;
 
 background:
 linear-gradient(
@@ -121,34 +104,33 @@ linear-gradient(
 
 box-shadow:
 0 0 15px #ff2d92,
-0 0 20px #1b6cff;
+0 0 25px #1b6cff;
 }
 
 /* ========================= */
-/* CONTENU */
-/* ========================= */
 
 .container{
-max-width:1600px;
+max-width:1500px;
 margin:auto;
 padding:40px;
 }
 
 .section{
-background:linear-gradient(
-90deg,
-#04060d,
-#041225
+background:
+linear-gradient(
+135deg,
+rgba(10,15,30,.95),
+rgba(5,10,20,.95)
 );
 
-border:1px solid rgba(255,255,255,.06);
+border:1px solid rgba(255,255,255,.08);
 border-radius:25px;
 
 margin-bottom:25px;
 
 box-shadow:
-0 0 20px rgba(255,45,146,.08),
-0 0 20px rgba(27,108,255,.08);
+0 0 25px rgba(255,45,146,.08),
+0 0 25px rgba(27,108,255,.08);
 
 overflow:hidden;
 }
@@ -160,6 +142,10 @@ justify-content:space-between;
 align-items:center;
 cursor:pointer;
 transition:.3s;
+}
+
+.section-header:hover{
+background:rgba(255,255,255,.03);
 }
 
 .section-header h2{
@@ -178,13 +164,9 @@ color:#9c4dff;
 color:#ffae00;
 }
 
-/* ========================= */
-/* FLÈCHES NÉON */
-/* ========================= */
-
 .accordion-arrow{
-width:60px;
-height:60px;
+width:55px;
+height:55px;
 
 display:flex;
 align-items:center;
@@ -199,40 +181,14 @@ rgba(255,45,146,.15),
 rgba(27,108,255,.15)
 );
 
-border:2px solid rgba(255,255,255,.08);
-
 box-shadow:
 0 0 15px rgba(255,45,146,.35),
 0 0 25px rgba(27,108,255,.35);
-
-transition:.3s;
 }
 
 .accordion-arrow span{
-font-size:30px;
-font-weight:700;
-
-background:
-linear-gradient(
-90deg,
-#ff2d92,
-#8b5cf6,
-#1b6cff
-);
-
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
+font-size:28px;
 }
-
-.section-header:hover .accordion-arrow{
-transform:scale(1.08);
-
-box-shadow:
-0 0 25px rgba(255,45,146,.55),
-0 0 35px rgba(27,108,255,.55);
-}
-
-/* ========================= */
 
 .section-content{
 padding:0 30px 30px;
@@ -241,7 +197,7 @@ padding:0 30px 30px;
 .grid{
 display:grid;
 grid-template-columns:1fr 1fr;
-gap:50px;
+gap:40px;
 }
 
 ul{
@@ -251,25 +207,29 @@ list-style:none;
 li{
 padding:14px 0;
 border-bottom:1px solid rgba(255,255,255,.05);
-font-size:1.1rem;
 }
 
 li::before{
-content:"• ";
+content:"◆ ";
 color:#ff2d92;
-font-weight:bold;
 }
 
 .message{
 margin-top:25px;
 padding:18px;
-border:1px solid #1b6cff;
 border-radius:15px;
+
+background:
+linear-gradient(
+90deg,
+rgba(255,45,146,.10),
+rgba(27,108,255,.10)
+);
+
+border:1px solid rgba(27,108,255,.35);
 text-align:center;
 }
 
-/* ========================= */
-/* NAVIGATION */
 /* ========================= */
 
 .navigation{
@@ -295,7 +255,7 @@ color:#ff2d92;
 
 .prev:hover{
 background:#ff2d92;
-color:white;
+color:#fff;
 }
 
 .next{
@@ -305,15 +265,15 @@ color:#1b6cff;
 
 .next:hover{
 background:#1b6cff;
-color:white;
+color:#fff;
 }
 
 footer{
 margin-top:40px;
 padding:30px;
 text-align:center;
+color:#999;
 border-top:1px solid rgba(255,255,255,.08);
-color:#aaa;
 }
 
 .hidden{
@@ -323,15 +283,19 @@ display:none;
 @media(max-width:900px){
 
 .hero{
-height:380px;
+height:500px;
 }
 
-.hero-content h1{
+.hero h1{
 font-size:2.3rem;
 }
 
-.hero-content p{
+.hero p{
 font-size:1rem;
+}
+
+.hero-logo{
+width:120px;
 }
 
 .neon-divider{
@@ -357,11 +321,13 @@ flex-direction:column;
 
 <div class="hero-content">
 
+<img src="logo-solarys.png"
+alt="Solarys RP"
+class="hero-logo">
+
 <h1>RÈGLEMENT PACK GRAPHIQUE</h1>
 
-<p>
-Modifications graphiques autorisées et interdites sur Solarys RP
-</p>
+<p>Modifications graphiques autorisées et interdites sur Solarys RP</p>
 
 <div class="neon-divider"></div>
 
@@ -375,11 +341,7 @@ Modifications graphiques autorisées et interdites sur Solarys RP
 
 <div class="section-header" onclick="toggle(this)">
 <h2>MODIFICATIONS INTERDITES</h2>
-
-<div class="accordion-arrow">
-<span>⌃</span>
-</div>
-
+<div class="accordion-arrow"><span>⌃</span></div>
 </div>
 
 <div class="section-content">
@@ -391,19 +353,19 @@ Modifications graphiques autorisées et interdites sur Solarys RP
 <li>No element</li>
 <li>No water</li>
 <li>No bush</li>
-<li>Suppression d'objets ou d'éléments de décors</li>
+<li>Suppression d'objets ou d'éléments du décor</li>
 <li>Modification de la FOV</li>
 <li>Fichiers donnant un avantage visuel</li>
 </ul>
 
 <ul>
-<li>Réduction d'effets pour voir à travers certains éléments</li>
-<li>Suppression de végétation, eau, fumée ou props</li>
+<li>Réduction d'effets visuels</li>
+<li>Suppression de végétation</li>
 <li>Full stamina</li>
 <li>Réduction de recul</li>
-<li>Modifications de luminosité abusives</li>
+<li>Luminosité abusive</li>
 <li>Packs donnant un avantage compétitif</li>
-<li>Optimisations abusives modifiant le gameplay</li>
+<li>Optimisations abusives du gameplay</li>
 </ul>
 
 </div>
@@ -416,15 +378,10 @@ Modifications graphiques autorisées et interdites sur Solarys RP
 
 <div class="section-header" onclick="toggle(this)">
 <h2>SYSTÈMES FACILITANT LES TIRS</h2>
-
-<div class="accordion-arrow">
-<span>⌃</span>
-</div>
-
+<div class="accordion-arrow"><span>⌃</span></div>
 </div>
 
 <div class="section-content">
-
 <ul>
 <li>Crosshairs externes</li>
 <li>Tracers</li>
@@ -432,7 +389,6 @@ Modifications graphiques autorisées et interdites sur Solarys RP
 <li>Kill Effects</li>
 <li>Blood Effects</li>
 </ul>
-
 </div>
 
 </div>
@@ -441,11 +397,7 @@ Modifications graphiques autorisées et interdites sur Solarys RP
 
 <div class="section-header" onclick="toggle(this)">
 <h2>SANCTIONS</h2>
-
-<div class="accordion-arrow">
-<span>⌃</span>
-</div>
-
+<div class="accordion-arrow"><span>⌃</span></div>
 </div>
 
 <div class="section-content">
@@ -458,7 +410,7 @@ Modifications graphiques autorisées et interdites sur Solarys RP
 </ul>
 
 <div class="message">
-Nous vous remercions de respecter ce règlement afin de préserver une expérience de jeu saine sur le serveur.
+Nous vous remercions de respecter ce règlement afin de préserver une expérience de jeu saine sur Solarys RP.
 </div>
 
 </div>
@@ -487,9 +439,7 @@ PAGE SUIVANTE ➜
 
 function toggle(element){
 
-const content =
-element.nextElementSibling;
-
+const content = element.nextElementSibling;
 content.classList.toggle("hidden");
 
 const arrow =
@@ -507,3 +457,4 @@ arrow.innerHTML="⌃";
 
 </body>
 </html>
+```
