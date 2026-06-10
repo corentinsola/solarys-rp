@@ -793,7 +793,28 @@ btn.innerHTML = "∨";
 });
 
 </script>
+<script>
 
+document.querySelectorAll(".accordion-header").forEach(header => {
+
+header.addEventListener("click", () => {
+
+const accordion = header.parentElement;
+const btn = header.querySelector(".toggle-btn");
+
+accordion.classList.toggle("active");
+
+if(accordion.classList.contains("active")){
+btn.innerHTML = "∧";
+}else{
+btn.innerHTML = "∨";
+}
+
+});
+
+});
+
+</script>
 </script>
 
 </body>
