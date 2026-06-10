@@ -10,108 +10,23 @@
 
 <style>
 
-*{.hero{
-    position:relative;
-    height:500px;
-
-    background:
-    linear-gradient(
-        rgba(0,0,0,.45),
-        rgba(0,0,0,.75)
-    ),
-    url("hacker-banner.png");
-
-    background-size:cover;
-    background-position:center;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    text-align:center;
-
-    overflow:hidden;
-}
-
-.hero::before{
-    content:"";
-
-    position:absolute;
-    inset:0;
-
-    background:
-    radial-gradient(
-        circle at center,
-        rgba(255,0,140,.12),
-        transparent 60%
-    );
-
-    pointer-events:none;
-}
-
-.hero-content{
-    position:relative;
-    z-index:2;
-}
-
-.hero h1{
-    font-size:4.5rem;
-    font-weight:700;
-
-    color:white;
-
-    text-shadow:
-    0 0 20px rgba(255,0,140,.5),
-    0 0 30px rgba(27,108,255,.3);
-}
-
-.hero p{
-    margin-top:15px;
-
-    font-size:1.4rem;
-
-    color:#ddd;
-}
-
-.neon-divider{
-
-    width:400px;
-    height:3px;
-
-    margin:25px auto;
-
-    background:
-    linear-gradient(
-        90deg,
-        #ff2d92,
-        #8b5cf6,
-        #1b6cff
-    );
-
-    box-shadow:
-    0 0 15px #ff2d92,
-    0 0 15px #1b6cff;
-}
+*{
 margin:0;
 padding:0;
 box-sizing:border-box;
 font-family:'Poppins',sans-serif;
 }
 
-html{
-scroll-behavior:smooth;
-}
-
 body{
 background:#05070d;
-color:#fff;
+color:white;
 }
 
 .hero{
 height:500px;
 background:
-linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.75)),
-url("packgraphique-banner.png");
+linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.75)),
+url("hacker-banner.png");
 background-size:cover;
 background-position:center;
 display:flex;
@@ -120,19 +35,29 @@ justify-content:center;
 text-align:center;
 }
 
-.hero-content{
-backdrop-filter:blur(2px);
-}
-
-.hero h1{
+.hero-content h1{
 font-size:4rem;
 font-weight:700;
 text-transform:uppercase;
+text-shadow:
+0 0 20px rgba(255,0,140,.6),
+0 0 40px rgba(27,108,255,.4);
 }
 
-.hero p{
-font-size:1.5rem;
+.hero-content p{
 margin-top:15px;
+font-size:1.3rem;
+color:#ddd;
+}
+
+.neon-divider{
+width:350px;
+height:3px;
+margin:25px auto 0;
+background:linear-gradient(90deg,#ff2d92,#8b5cf6,#1b6cff);
+box-shadow:
+0 0 15px #ff2d92,
+0 0 15px #1b6cff;
 }
 
 .container{
@@ -142,19 +67,21 @@ padding:35px;
 }
 
 .section{
-background:linear-gradient(90deg,#05070d,#071425);
+background:linear-gradient(90deg,#05070d,#071426);
 border:1px solid rgba(255,255,255,.08);
-border-radius:22px;
+border-radius:20px;
 margin-bottom:25px;
 overflow:hidden;
-box-shadow:0 0 20px rgba(0,0,0,.4);
+box-shadow:
+0 0 25px rgba(255,0,140,.08),
+0 0 25px rgba(27,108,255,.08);
 }
 
 .section-header{
+padding:25px 30px;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:25px 30px;
 cursor:pointer;
 }
 
@@ -162,12 +89,8 @@ cursor:pointer;
 font-size:2rem;
 }
 
-.section-content{
-padding:0 30px 30px;
-}
-
 .modif h2{
-color:#ff2d8f;
+color:#ff2d92;
 }
 
 .tirs h2{
@@ -178,25 +101,35 @@ color:#9c4dff;
 color:#ffae00;
 }
 
+.section-content{
+padding:0 30px 30px;
+}
+
 .grid{
 display:grid;
 grid-template-columns:1fr 1fr;
-gap:30px;
-margin-top:20px;
+gap:40px;
 }
 
 ul{
-margin-left:20px;
+list-style:none;
 }
 
 li{
-margin-bottom:10px;
+padding:10px 0;
+border-bottom:1px solid rgba(255,255,255,.05);
+}
+
+li::before{
+content:"• ";
+color:#ff2d92;
+font-weight:bold;
 }
 
 .message{
 margin-top:20px;
 padding:18px;
-border:1px solid #1e63ff;
+border:1px solid #1b6cff;
 border-radius:15px;
 text-align:center;
 }
@@ -212,59 +145,46 @@ margin-top:30px;
 flex:1;
 text-decoration:none;
 padding:18px;
+text-align:center;
 border-radius:15px;
 font-weight:600;
-font-size:1.1rem;
-text-align:center;
 transition:.3s;
 }
 
 .prev{
-border:2px solid #ff2d8f;
-color:#ff2d8f;
+border:2px solid #ff2d92;
+color:#ff2d92;
 }
 
 .prev:hover{
-background:#ff2d8f;
-color:#fff;
+background:#ff2d92;
+color:white;
 }
 
 .next{
-border:2px solid #1e63ff;
-color:#1e63ff;
+border:2px solid #1b6cff;
+color:#1b6cff;
 }
 
 .next:hover{
-background:#1e63ff;
-color:#fff;
+background:#1b6cff;
+color:white;
 }
 
 footer{
-margin-top:40px;
+margin-top:50px;
 padding:30px;
 border-top:1px solid rgba(255,255,255,.08);
-display:flex;
-justify-content:space-between;
-align-items:center;
-flex-wrap:wrap;
-gap:20px;
-}
-
-footer img{
-height:50px;
-}
-
-.arrow{
-font-size:28px;
-transition:.3s;
-}
-
-.collapsed .arrow{
-transform:rotate(-90deg);
+text-align:center;
+color:#bbb;
 }
 
 .hidden{
 display:none;
+}
+
+.arrow{
+font-size:28px;
 }
 
 @media(max-width:900px){
@@ -273,12 +193,16 @@ display:none;
 height:350px;
 }
 
-.hero h1{
-font-size:2.5rem;
+.hero-content h1{
+font-size:2.2rem;
 }
 
-.hero p{
+.hero-content p{
 font-size:1rem;
+}
+
+.neon-divider{
+width:220px;
 }
 
 .grid{
@@ -289,11 +213,6 @@ grid-template-columns:1fr;
 flex-direction:column;
 }
 
-footer{
-justify-content:center;
-text-align:center;
-}
-
 }
 
 </style>
@@ -302,69 +221,63 @@ text-align:center;
 <body>
 
 <header class="hero">
-    <div class="overlay"></div>
 
-    <div class="hero-content">
-        <h1>RÈGLEMENT PACK GRAPHIQUE</h1>
+<div class="hero-content">
 
-        <p>
-            Modifications graphiques autorisées et interdites sur Solarys RP
-        </p>
+<h1>RÈGLEMENT PACK GRAPHIQUE</h1>
 
-        <div class="neon-divider"></div>
-    </div>
+<p>
+Modifications graphiques autorisées et interdites sur Solarys RP
+</p>
+
+<div class="neon-divider"></div>
+
+</div>
+
 </header>
 
 <div class="container">
 
 <div class="section modif">
 
-<div class="section-header" onclick="toggleSection(this)">
+<div class="section-header" onclick="toggle(this)">
 <h2>MODIFICATIONS INTERDITES</h2>
 <span class="arrow">⌃</span>
 </div>
 
 <div class="section-content">
 
-<p>
-Afin de garantir une expérience de jeu équitable, immersive et équilibrée,
-certaines modifications graphiques ou fichiers modifiant le gameplay sont strictement interdits.
-</p>
-
 <div class="grid">
 
-<div>
 <ul>
 <li>No props</li>
 <li>No element</li>
 <li>No water</li>
 <li>No bush</li>
 <li>Suppression d'objets ou d'éléments de décors</li>
-<li>Modification de la FOV (champ de vision)</li>
+<li>Modification de la FOV</li>
 <li>Fichiers donnant un avantage visuel</li>
 </ul>
-</div>
 
-<div>
 <ul>
-<li>Réduction d'effets pour voir à travers certains éléments</li>
-<li>Suppression de végétation, eau, fumée ou props</li>
+<li>Réduction d'effets visuels</li>
+<li>Suppression de végétation</li>
 <li>Full stamina</li>
 <li>Réduction de recul</li>
 <li>Modifications de luminosité abusives</li>
-<li>Packs donnant un avantage compétitif</li>
-<li>Optimisations abusives modifiant le gameplay</li>
+<li>Packs compétitifs</li>
+<li>Optimisations abusives</li>
 </ul>
-</div>
 
 </div>
 
 </div>
+
 </div>
 
 <div class="section tirs">
 
-<div class="section-header" onclick="toggleSection(this)">
+<div class="section-header" onclick="toggle(this)">
 <h2>SYSTÈMES FACILITANT LES TIRS</h2>
 <span class="arrow">⌃</span>
 </div>
@@ -372,19 +285,20 @@ certaines modifications graphiques ou fichiers modifiant le gameplay sont strict
 <div class="section-content">
 
 <ul>
-<li>Crosshairs externes (viseurs)</li>
-<li>Tracers (marqueurs de tir)</li>
-<li>Hit effects</li>
-<li>Kill effects</li>
-<li>Blood effects</li>
+<li>Crosshairs externes</li>
+<li>Tracers</li>
+<li>Hit Effects</li>
+<li>Kill Effects</li>
+<li>Blood Effects</li>
 </ul>
 
 </div>
+
 </div>
 
 <div class="section sanctions">
 
-<div class="section-header" onclick="toggleSection(this)">
+<div class="section-header" onclick="toggle(this)">
 <h2>SANCTIONS</h2>
 <span class="arrow">⌃</span>
 </div>
@@ -398,24 +312,21 @@ certaines modifications graphiques ou fichiers modifiant le gameplay sont strict
 <li>⛔ Bannissement définitif</li>
 </ul>
 
-<p style="margin-top:15px;">
-Selon la gravité des faits et les antécédents du joueur.
-</p>
-
 <div class="message">
 Nous vous remercions de respecter ce règlement afin de préserver une expérience de jeu saine sur le serveur.
 </div>
 
 </div>
+
 </div>
 
 <div class="navigation">
 
-<a class="prev" href="notion.html">
+<a href="notion.html" class="prev">
 ⬅ PAGE PRÉCÉDENTE
 </a>
 
-<a class="next" href="legal.html">
+<a href="legal.html" class="next">
 PAGE SUIVANTE ➜
 </a>
 
@@ -424,27 +335,15 @@ PAGE SUIVANTE ➜
 </div>
 
 <footer>
-
-<img src="solarys-logo.png" alt="Solarys RP">
-
-<div>
 © 2026 Solarys RP - Tous droits réservés.
-</div>
-
-<div>
-Le respect des règles fait la force de notre communauté.
-</div>
-
 </footer>
 
 <script>
 
-function toggleSection(header){
-
-header.parentElement.classList.toggle("collapsed");
+function toggle(element){
 
 const content =
-header.nextElementSibling;
+element.nextElementSibling;
 
 content.classList.toggle("hidden");
 
