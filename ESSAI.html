@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -17,6 +19,10 @@ box-sizing:border-box;
 font-family:'Poppins',sans-serif;
 }
 
+html{
+scroll-behavior:smooth;
+}
+
 body{
 background:#05070d;
 color:white;
@@ -24,11 +30,12 @@ overflow-x:hidden;
 }
 
 /* ========================= */
-/* BANNIÈRE */
+/* HERO */
 /* ========================= */
 
 .hero{
-height:520px;
+
+height:550px;
 
 background:
 linear-gradient(
@@ -39,6 +46,7 @@ url("plage-solarys.png");
 
 background-size:cover;
 background-position:center;
+background-repeat:no-repeat;
 
 display:flex;
 justify-content:center;
@@ -47,10 +55,12 @@ text-align:center;
 }
 
 .hero h1{
+
 font-size:6rem;
 font-weight:800;
 
-background:linear-gradient(
+background:
+linear-gradient(
 90deg,
 #ff2d92,
 #8b5cf6,
@@ -59,17 +69,25 @@ background:linear-gradient(
 
 -webkit-background-clip:text;
 -webkit-text-fill-color:transparent;
+
+text-shadow:
+0 0 25px rgba(255,45,146,.35);
 }
 
 .hero p{
-font-size:1.5rem;
+
+font-size:1.4rem;
 margin-top:15px;
+color:#ddd;
 }
 
 .neon-divider{
-width:650px;
+
+width:600px;
 max-width:90%;
+
 height:4px;
+
 margin:30px auto;
 
 background:
@@ -79,21 +97,26 @@ linear-gradient(
 #8b5cf6,
 #1b6cff
 );
+
+border-radius:50px;
 }
 
 /* ========================= */
-/* CONTENU */
+/* CONTAINER */
 /* ========================= */
 
 .container{
+
 width:95%;
 max-width:1700px;
+
 margin:auto;
+
 padding:50px 0;
 }
 
 /* ========================= */
-/* ACCORDÉONS */
+/* ACCORDEONS */
 /* ========================= */
 
 .accordion{
@@ -111,7 +134,8 @@ linear-gradient(
 #03182d
 );
 
-border:1px solid rgba(255,255,255,.08);
+border:
+1px solid rgba(255,255,255,.08);
 
 transition:.3s;
 }
@@ -121,8 +145,8 @@ transition:.3s;
 transform:translateY(-2px);
 
 box-shadow:
-0 0 20px rgba(255,45,146,.15),
-0 0 20px rgba(27,108,255,.15);
+0 0 25px rgba(255,45,146,.15),
+0 0 25px rgba(27,108,255,.15);
 }
 
 .accordion-header{
@@ -142,25 +166,11 @@ font-size:2.3rem;
 font-weight:800;
 }
 
-.pink{
-color:#ff2d92;
-}
-
-.purple{
-color:#9c4dff;
-}
-
-.blue{
-color:#1b6cff;
-}
-
-.orange{
-color:#ff9f1a;
-}
-
-.green{
-color:#00d8b6;
-}
+.pink{color:#ff2d92;}
+.purple{color:#9c4dff;}
+.blue{color:#1b6cff;}
+.orange{color:#ff9f1a;}
+.green{color:#00d8b6;}
 
 .toggle-btn{
 
@@ -173,8 +183,9 @@ border-radius:50%;
 font-size:42px;
 font-weight:700;
 
-color:white;
 cursor:pointer;
+
+color:white;
 
 background:
 rgba(55,35,125,.55);
@@ -203,8 +214,8 @@ font-size:18px;
 display:block;
 }
 
-/* ========================= */
-/* NOTIONS */
+  /* ========================= */
+/* GRILLE */
 /* ========================= */
 
 .grid{
@@ -214,7 +225,7 @@ display:grid;
 grid-template-columns:
 1fr 1fr 1fr;
 
-gap:50px;
+gap:40px;
 }
 
 .grid div{
@@ -226,11 +237,12 @@ padding:25px;
 
 border-radius:20px;
 
-border:1px solid rgba(255,255,255,.05);
+border:
+1px solid rgba(255,255,255,.05);
 }
 
 /* ========================= */
-/* CITATIONS */
+/* QUOTES */
 /* ========================= */
 
 .quote{
@@ -257,18 +269,6 @@ border-left:4px solid #00d8b6;
 
 background:
 rgba(0,216,182,.08);
-}
-
-/* ========================= */
-/* LISTES */
-/* ========================= */
-
-ul{
-padding-left:20px;
-}
-
-li{
-margin-bottom:10px;
 }
 
 /* ========================= */
@@ -331,10 +331,6 @@ padding:30px;
 color:#999;
 }
 
-/* ========================= */
-/* MOBILE */
-/* ========================= */
-
 @media(max-width:1000px){
 
 .hero h1{
@@ -355,13 +351,10 @@ height:70px;
 font-size:30px;
 }
 
-.accordion-header{
-padding:25px;
-}
-
 }
 
 </style>
+
 </head>
 
 <body>
@@ -404,34 +397,44 @@ padding:25px;
 
 <div>
 
+<strong>RÈGLES RP</strong><br><br>
+
 • Mass RP<br>
 • RolePlay<br>
 • HRP<br>
 • Metagaming<br>
 • Powergaming<br>
-• No Fear RP
-
-</div>
-
-<div>
-
+• No Fear RP<br>
 • Force RP<br>
-• Freekill<br>
-• Revenge Kill<br>
-• New Life Rule<br>
-• Win RP<br>
-• Pain RP
+• Freekill
 
 </div>
 
 <div>
 
-• Car Kill<br>
+<strong>COMPORTEMENT</strong><br><br>
+
+• Revenge Kill (RK)<br>
+• New Life Rule (NLR)<br>
+• Win RP<br>
+• Pain RP<br>
+• Car Kill (CK)<br>
 • Bunny Hop<br>
-• No RP<br>
+• No RP
+
+</div>
+
+<div>
+
+<strong>IMMERSION</strong><br><br>
+
 • Scene RP<br>
 • Usebug<br>
-• Streamhack
+• Streamhack<br>
+• Cop Bait<br>
+• AFK Abusif<br>
+• Fair Play<br>
+• Cohérence RP
 
 </div>
 
@@ -441,77 +444,9 @@ padding:25px;
 
 </div>
 
-<!-- ========================= -->
+  <!-- ========================= -->
 <!-- LEXIQUE RP -->
 <!-- ========================= -->
-
-<div class="accordion-content">
-
-<p>
-Ne prenez pas le RP trop au sérieux...
-
-<p>
-Ne prenez pas le RP trop au sérieux : gardez toujours en tête qu’il s’agit d’un jeu et d’une communauté.
-</p>
-
-<br>
-
-<p>
-Lors d’un braquage ou d’une scène tendue, dosez vos propos :
-</p>
-
-<ul>
-<li>✔️ Les insultes légères, utilisées pour renforcer l’immersion, sont tolérées.</li>
-<li>❌ Les insultes répétées ou agressives sans but RP peuvent être sanctionnées.</li>
-</ul>
-
-<br>
-
-<p>
-Avant de parler, demandez-vous :
-</p>
-
-
-
-</div>
-</div>
-
-</div>
-<div class="accordion">
-<div class="accordion-header">
-<div class="title orange">⚖️ JOUER LA DÉFAITE INTELLIGEMMENT</div>
-<button class="toggle-btn">∨</button>
-</div>
-
-<div class="accordion-content">
-
-
-</div>
-</div>
-
-
-
-<div class="accordion">
-<div class="accordion-header">
-<div class="title green">🧠 GARDER DU RECUL</div>
-<button class="toggle-btn">∨</button>
-</div>
-
-<div class="accordion-content">
-
-<p>
-Ne confondez pas RP et réalité : les propos tenus en jeu ne visent jamais la personne derrière l’écran.
-</p>
-
-<br>
-
-<p>
-Évitez le No Fear RP et les réactions impulsives.
-</p>
-
-<br>
-
-</div>
 
 <div class="accordion">
 
@@ -532,64 +467,304 @@ Ne confondez pas RP et réalité : les propos tenus en jeu ne visent jamais la p
 </h3>
 
 <ul style="list-style:none;padding:0;line-height:2.2;">
-<li>🧠 Maux de tête : bug ou crash.</li>
+
+<li>🧠 <strong>Maux de tête</strong> : bug ou crash.</li>
+
 <li>• J’ai un bug ➜ 🧠 J’ai un mal de tête.</li>
+
 <li>• J’ai crash ➜ 😵 Je me suis évanoui.</li>
+
 <li>• Je freeze ➜ 🧊 Je suis paralysé / figé.</li>
-<li>• J’ai des lags ➜ 🌫️ J’ai des vertiges.</li>
+
+<li>• J’ai des lags ➜ 🌫️ J’ai des vertiges / ma vision est floue.</li>
+
 <li>• Mon jeu a planté ➜ 🧠 J’ai perdu connaissance.</li>
+
 <li>• Je vais déco ➜ 😴 Je vais dormir.</li>
+
 <li>• Je reviens ➜ 🔄 Je reviens de mon repos.</li>
-<li>• Va Discord ➜ 📱 Appelle-moi.</li>
+
+<li>• Va Discord ➜ 📱 Appelle-moi / prends ton téléphone.</li>
+
 <li>• Je t’écris en MP ➜ 💬 Je t’envoie un message.</li>
+
+<li>• Active ton micro ➜ 🎤 Parle plus fort / je ne t’entends pas.</li>
+
+<li>• Mute ➜ 🤫 Silence / parle doucement.</li>
+
+<li>• Appuie sur une touche ➜ 👉 Interagis avec moi, ton muscle.</li>
+
+<li>• J’ai pas le menu ➜ ❓ Je ne sais pas comment faire.</li>
+
+<li>• Mon véhicule bug ➜ 🚗 Ma voiture a un problème.</li>
+
+<li>• Je respawn le véhicule ➜ 🔧 Je récupère une autre voiture.</li>
+
+<li>• Le véhicule a disparu ➜ 👀 On me l’a volé / perdu.</li>
+
+<li>• J’appelle un staff ➜ 📞 J’appelle un responsable.</li>
+
+<li>• Ticket ➜ 📝 Plainte / demande officielle.</li>
+
+<li>• Ban / Kick ➜ 🚫 Expulsé de la ville / Parti en voyage à Monaco.</li>
+
+<li>• AFK ➜ 🚶 Je suis absent / occupé.</li>
+
+<li>• Je suis nouveau ➜ 🆕 Je viens d’arriver en ville.</li>
+
+<li>• Je comprends pas le serveur ➜ 🤔 Je découvre la ville.</li>
+
+<li>• Attends bug ➜ 🧠 Attends, je ne me sens pas bien.</li>
+
+<li>• Pause RP ➜ ⏸️ Moment de flottement / confusion.</li>
+
 </ul>
 
 </div>
+
 </div>
+
+  <!-- ========================= -->
+<!-- JOUER SANS EXCÈS -->
+<!-- ========================= -->
+
+<div class="accordion">
+
+<div class="accordion-header">
+
+<div class="title blue">
+🎭 JOUER SANS EXCÈS
+</div>
+
+<button class="toggle-btn">∨</button>
+
 </div>
 
 <div class="accordion-content">
-Ne prenez pas le RP trop au sérieux.
+
+<p>
+Ne prenez pas le RP trop au sérieux : gardez toujours en tête qu’il s’agit d’un jeu et d’une communauté.
+</p>
+
+<br>
+
+<p>
+Lors d’un braquage ou d’une scène tendue, dosez vos propos :
+</p>
+
+<ul>
+
+<li>
+✔️ Les insultes légères, utilisées pour renforcer l’immersion, sont tolérées.
+</li>
+
+<li>
+❌ Les insultes répétées ou agressives sans but RP peuvent être sanctionnées.
+</li>
+
+</ul>
+
+<div class="quote">
+
+« Si j’étais à sa place, est-ce que je me sentirais insulté ou énervé ? »
+
 </div>
+
 </div>
+
+</div>
+
+<!-- ========================= -->
+<!-- JOUER LA DÉFAITE -->
+<!-- ========================= -->
 
 <div class="accordion">
+
 <div class="accordion-header">
-<div class="title orange">⚖️ JOUER LA DÉFAITE INTELLIGEMMENT</div>
-<button class="toggle-btn">∨</button>
+
+<div class="title orange">
+⚖️ JOUER LA DÉFAITE INTELLIGEMMENT
 </div>
 
-</div>
-
-<div class="accordion">
-<div class="accordion-header">
-<div class="title purple">❓ QUESTIONS FRÉQUENTES</div>
 <button class="toggle-btn">∨</button>
+
 </div>
 
 <div class="accordion-content">
-Ajoute ici tes questions fréquentes.
+
+<p>
+Quand vous perdez une scène (par exemple lors d’un braquage), ne soyez pas susceptible.
+</p>
+
+<br>
+
+<p>
+Le « Loose RP » (accepter de perdre) peut ouvrir la porte à de nouvelles trames intéressantes.
+</p>
+
+<br>
+
+<p>
+Rester calme et jouer le jeu offre une meilleure immersion à tout le monde.
+</p>
+
 </div>
+
 </div>
+
+<!-- ========================= -->
+<!-- GARDER DU RECUL -->
+<!-- ========================= -->
+
+<div class="accordion">
+
+<div class="accordion-header">
+
+<div class="title green">
+🧠 GARDER DU RECUL
+</div>
+
+<button class="toggle-btn">∨</button>
+
+</div>
+
+<div class="accordion-content">
+
+<p>
+Ne confondez pas RP et réalité : les propos tenus en jeu ne visent jamais la personne derrière l’écran.
+</p>
+
+<br>
+
+<p>
+Évitez le No Fear RP et les réactions impulsives.
+</p>
+
+<br>
+
+<div class="quote quote-green">
+
+« Ce n’est qu’un jeu, et l’objectif est de s’amuser ensemble. »
+
+</div>
+
+<br>
+
+<p>
+🤝 Respectez les autres joueurs, même lors des conflits RP.
+</p>
+
+<p>
+🎮 Le but principal reste de créer des scènes agréables et immersives pour tous.
+</p>
+
+</div>
+
+</div>
+
+  <!-- ========================= -->
+<!-- QUESTIONS FRÉQUENTES -->
+<!-- ========================= -->
+
+<div class="accordion">
+
+<div class="accordion-header">
+
+<div class="title purple">
+❓ QUESTIONS FRÉQUENTES
+</div>
+
+<button class="toggle-btn">∨</button>
+
+</div>
+
+<div class="accordion-content">
+
+<ul style="list-style:none;padding:0;line-height:2.3;">
+
+<li>
+📌 <strong>Je peux contester une sanction ?</strong><br>
+Oui, via un ticket avec preuves à l'appui.
+</li>
+
+<br>
+
+<li>
+📌 <strong>Comment signaler un joueur ou un staff ?</strong><br>
+Ouvrez un ticket Discord avec pseudo, preuve et contexte.
+</li>
+
+<br>
+
+<li>
+📌 <strong>Comment créer un groupe illégal ?</strong><br>
+Effectuez une demande dans un ticket « Illégal » auprès d’un Référent Illégal.
+</li>
+
+<br>
+
+<li>
+📌 <strong>Le serveur est-il accessible aux débutants ?</strong><br>
+Oui, un tutoriel est disponible et les staffs peuvent vous aider.
+</li>
+
+<br>
+
+<li>
+📌 <strong>Puis-je utiliser une information Discord en RP ?</strong><br>
+Non, sauf si cette information a été obtenue via une scène RP cohérente.
+</li>
+
+<br>
+
+<li>
+📌 <strong>Comment rejoindre Solarys RP ?</strong><br>
+Discord ➜ FiveM ➜ SOLARYS RP.
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- NAVIGATION -->
+<!-- ========================= -->
 
 <div class="navigation">
-<a href="reglement.html" class="prev">⬅ PAGE PRÉCÉDENTE</a>
-<a href="packgraphique.html" class="next">PAGE SUIVANTE ➜</a>
-</div>
+
+<a href="reglement.html" class="prev">
+⬅ PAGE PRÉCÉDENTE
+</a>
+
+<a href="packgraphique.html" class="next">
+PAGE SUIVANTE ➜
+</a>
 
 </div>
 
-<footer>
-© 2026 Solarys RP
+  <footer>
+
+© 2026 Solarys RP - Tous droits réservés
+
 </footer>
+
+</div>
 
 <script>
 
-document.querySelectorAll(".accordion-header").forEach(header=>{
+document
+.querySelectorAll(".accordion-header")
+.forEach(header=>{
 
 header.addEventListener("click",()=>{
 
-header.parentElement.classList.toggle("active");
+const accordion =
+header.parentElement;
+
+accordion
+.classList.toggle("active");
 
 });
 
@@ -599,4 +774,3 @@ header.parentElement.classList.toggle("active");
 
 </body>
 </html>
-
