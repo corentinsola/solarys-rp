@@ -2,6 +2,7 @@
 <html lang="fr">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -11,24 +12,6 @@
 
 <style>
 
-/* ========================= */
-.pink{
-color:#ff2d92;
-}
-
-.purple{
-color:#9c4dff;
-}
-
-.blue{
-color:#1b6cff;
-}
-
-.orange{
-color:#ffae00;
-}
-/* ========================= */
-
 *{
 margin:0;
 padding:0;
@@ -36,26 +19,34 @@ box-sizing:border-box;
 font-family:'Poppins',sans-serif;
 }
 
+html{
+scroll-behavior:smooth;
+}
+
 body{
 background:#05070d;
 color:white;
+overflow-x:hidden;
 }
 
-/* Bannière */
+/* ========================= */
+/* HERO */
+/* ========================= */
 
 .hero{
-height:700px;
+
+height:550px;
 
 background:
 linear-gradient(
-rgba(0,0,0,.35),
-rgba(0,0,0,.80)
+rgba(0,0,0,.45),
+rgba(0,0,0,.85)
 ),
-url("plage-solarys.png");
+url("https://raw.githubusercontent.com/corentinsola/solarys-rp/main/plage%20solarys.png");
 
 background-size:cover;
 background-position:center;
-background-attachment:fixed;
+background-repeat:no-repeat;
 
 display:flex;
 justify-content:center;
@@ -63,55 +54,105 @@ align-items:center;
 text-align:center;
 }
 
-.hero-logo{
-width:140px;
-margin-bottom:20px;
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
 }
 
 .hero h1{
-font-size:5rem;
+
+font-size:6rem;
 font-weight:800;
-text-shadow:0 0 25px #1b6cff;
-}
 
-.hero p{
-font-size:1.4rem;
-margin-top:15px;
-}
-
-.neon-divider{
-width:500px;
-height:4px;
-margin:30px auto;
-
-background:linear-gradient(
+background:
+linear-gradient(
 90deg,
 #ff2d92,
 #8b5cf6,
 #1b6cff
 );
+
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+
+text-shadow:
+0 0 25px rgba(255,45,146,.35);
 }
 
-/* Accordéons */
+.hero p{
+
+font-size:1.4rem;
+margin-top:15px;
+color:#ddd;
+}
+
+.neon-divider{
+
+width:600px;
+max-width:90%;
+
+height:4px;
+
+margin:30px auto;
+
+background:
+linear-gradient(
+90deg,
+#ff2d92,
+#8b5cf6,
+#1b6cff
+);
+
+border-radius:50px;
+}
+
+/* ========================= */
+/* CONTAINER */
+/* ========================= */
 
 .container{
-max-width:1600px;
+
+width:95%;
+max-width:1700px;
+
 margin:auto;
-padding:40px;
+
+padding:50px 0;
 }
 
+/* ========================= */
+/* ACCORDEONS */
+/* ========================= */
+
 .accordion{
+
 margin-bottom:25px;
 
-border-radius:25px;
+border-radius:35px;
+
 overflow:hidden;
 
 background:
 linear-gradient(
 90deg,
-#030510,
-#041225
+#020510,
+#03182d
 );
+
+border:
+1px solid rgba(255,255,255,.08);
+
+transition:.3s;
+}
+
+.accordion:hover{
+
+transform:translateY(-2px);
 
 box-shadow:
 0 0 25px rgba(255,45,146,.15),
@@ -119,106 +160,214 @@ box-shadow:
 }
 
 .accordion-header{
+
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:30px;
+
+padding:35px 45px;
+
 cursor:pointer;
 }
 
-.accordion-header h2{
-font-size:2.8rem;
-font-weight:700;
-};
+.title{
 
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
+font-size:2.3rem;
+font-weight:800;
 }
 
-.toggle-btn{
+.pink{color:#ff2d92;}
+.purple{color:#9c4dff;}
+.blue{color:#1b6cff;}
+.orange{color:#ff9f1a;}
+.green{color:#00d8b6;}
 
-width:80px;
-height:80px;
+.toggle-btn{
+width:90px;
+height:90px;
 
 display:flex;
 align-items:center;
 justify-content:center;
 
-border-radius:50%;
-
 border:none;
-
-font-size:34px;
-font-weight:700;
-
-cursor:pointer;
-
-color:white;
+border-radius:50%;
 
 background:
 linear-gradient(
 135deg,
-rgba(255,45,146,.20),
-rgba(27,108,255,.20)
+rgba(255,45,146,.12),
+rgba(27,108,255,.12)
 );
 
-box-shadow:
-0 0 20px rgba(255,45,146,.35),
-0 0 30px rgba(27,108,255,.35);
+color:#9c4dff;
+font-size:42px;
+font-weight:700;
 
-transition:.3s;
-}
-.accordion:hover{
-
-transform:translateY(-3px);
+cursor:pointer;
 
 box-shadow:
-0 0 30px rgba(255,45,146,.25),
-0 0 30px rgba(27,108,255,.25);
+0 0 25px rgba(156,77,255,.45),
+0 0 50px rgba(156,77,255,.25);
 
-transition:.3s;
+transition:all .3s ease;
 }
+
+.accordion.active .toggle-btn{
+transform:rotate(180deg);
+}
+
 .accordion-content{
+
 display:none;
-padding:30px;
+
+padding:40px 50px;
+
 line-height:2;
+font-size:18px;
 }
 
 .accordion.active .accordion-content{
 display:block;
 }
 
-/* Navigation */
+  /* ========================= */
+/* GRILLE */
+/* ========================= */
+
+.grid{
+
+display:grid;
+
+grid-template-columns:
+1fr 1fr 1fr;
+
+gap:40px;
+}
+
+.grid div{
+
+background:
+rgba(255,255,255,.03);
+
+padding:25px;
+
+border-radius:20px;
+
+border:
+1px solid rgba(255,255,255,.05);
+}
+
+/* ========================= */
+/* QUOTES */
+/* ========================= */
+
+.quote{
+
+margin-top:20px;
+
+padding:20px;
+
+border-left:4px solid #1b6cff;
+
+background:
+rgba(27,108,255,.08);
+
+border-radius:12px;
+
+font-style:italic;
+
+color:#ddd;
+}
+
+.quote-green{
+
+border-left:4px solid #00d8b6;
+
+background:
+rgba(0,216,182,.08);
+}
+
+/* ========================= */
+/* NAVIGATION */
+/* ========================= */
 
 .navigation{
+
 display:flex;
 gap:20px;
+
 margin-top:40px;
 }
 
 .navigation a{
+
 flex:1;
+
 padding:20px;
+
 text-align:center;
+
 text-decoration:none;
-font-weight:600;
+
+font-weight:700;
+
 border-radius:20px;
+
+transition:.3s;
 }
 
 .prev{
+
 border:2px solid #ff2d92;
 color:#ff2d92;
 }
 
 .next{
+
 border:2px solid #1b6cff;
 color:#1b6cff;
 }
 
+.prev:hover{
+background:#ff2d92;
+color:white;
+}
+
+.next:hover{
+background:#1b6cff;
+color:white;
+}
+
 footer{
+
 text-align:center;
+
 padding:30px;
-color:#aaa;
+
+color:#999;
+}
+
+@media(max-width:1000px){
+
+.hero h1{
+font-size:3rem;
+}
+
+.title{
+font-size:1.5rem;
+}
+
+.grid{
+grid-template-columns:1fr;
+}
+
+.toggle-btn{
+width:70px;
+height:70px;
+font-size:30px;
+}
+
 }
 
 </style>
@@ -230,8 +379,6 @@ color:#aaa;
 <header class="hero">
 
 <div>
-
-<img src="logo-solarys.png" class="hero-logo">
 
 <h1>NOTIONS RP</h1>
 
@@ -245,81 +392,66 @@ color:#aaa;
 
 <div class="container">
 
+<!-- ========================= -->
 <!-- NOTIONS PRINCIPALES -->
+<!-- ========================= -->
 
 <div class="accordion">
 
 <div class="accordion-header">
 
-<h2 class="pink">
+<div class="title pink">
 📖 NOTIONS PRINCIPALES
-</h2><h2 class="purple">
-💬 LEXIQUE RP
-</h2><h2 class="blue">
-🎭 JOUER SANS EXCÈS
-</h2>
+</div>
 
-<button class="toggle-btn">⌄</button>
+<button class="toggle-btn">∨</button>
 
 </div>
 
 <div class="accordion-content">
 
 <div class="grid">
-.grid{
 
-display:grid;
-
-grid-template-columns:
-1fr 1fr 1fr;
-
-gap:40px;
-}
 <div>
 
-Mass RP
+<strong>RÈGLES RP</strong><br><br>
 
-RolePlay
-
-HRP
-
-Metagaming
-
-Powergaming
-
-No Fear RP
+• Mass RP<br>
+• RolePlay<br>
+• HRP<br>
+• Metagaming<br>
+• Powergaming<br>
+• No Fear RP<br>
+• Force RP<br>
+• Freekill
 
 </div>
 
 <div>
 
-Force RP
+<strong>COMPORTEMENT</strong><br><br>
 
-Freekill
-
-Revenge Kill
-
-New Life Rule
-
-Win RP
-
-Pain RP
+• Revenge Kill (RK)<br>
+• New Life Rule (NLR)<br>
+• Win RP<br>
+• Pain RP<br>
+• Car Kill (CK)<br>
+• Bunny Hop<br>
+• No RP
 
 </div>
 
 <div>
 
-Car Kill
+<strong>IMMERSION</strong><br><br>
 
-Bunny Hop
-
-No RP
-
-Scene RP
-
-Usebug
-
-Streamhack
+• Scene RP<br>
+• Usebug<br>
+• Streamhack<br>
+• Cop Bait<br>
+• AFK Abusif<br>
+• Fair Play<br>
+• Cohérence RP
 
 </div>
 
@@ -329,53 +461,79 @@ Streamhack
 
 </div>
 
+  <!-- ========================= -->
 <!-- LEXIQUE RP -->
+<!-- ========================= -->
 
 <div class="accordion">
 
 <div class="accordion-header">
 
-<h2>LEXIQUE RP</h2>
+<div class="title purple">
+💬 LEXIQUE RP
+</div>
 
-<button class="toggle-btn">⌄</button>
+<button class="toggle-btn">∨</button>
 
 </div>
 
 <div class="accordion-content">
 
-COLLE ICI TOUT TON TEXTE LEXIQUE RP
+<h3 style="color:#9c4dff;margin-bottom:20px;">
+💬 LEXIQUE RP
+</h3>
 
-</div>
+<ul style="list-style:none;padding:0;line-height:2.2;">
 
-</div>
+<li>🧠 <strong>Maux de tête</strong> : bug ou crash.</li>
 
-<!-- JOUER SANS EXCÈS -->
+<li>• J’ai un bug ➜ 🧠 J’ai un mal de tête.</li>
 
-<div class="accordion">
+<li>• J’ai crash ➜ 😵 Je me suis évanoui.</li>
 
-<div class="accordion-header">
+<li>• Je freeze ➜ 🧊 Je suis paralysé / figé.</li>
 
-<h2>JOUER SANS EXCÈS</h2>
+<li>• J’ai des lags ➜ 🌫️ J’ai des vertiges / ma vision est floue.</li>
 
-<button class="toggle-btn">⌄</button>
+<li>• Mon jeu a planté ➜ 🧠 J’ai perdu connaissance.</li>
 
-</div>
+<li>• Je vais déco ➜ 😴 Je vais dormir.</li>
 
-<div class="accordion-content">
+<li>• Je reviens ➜ 🔄 Je reviens de mon repos.</li>
 
-<ul>
+<li>• Va Discord ➜ 📱 Appelle-moi / prends ton téléphone.</li>
 
-<li>Je peux contester une sanction ? Oui, via ticket avec preuves.</li>
+<li>• Je t’écris en MP ➜ 💬 Je t’envoie un message.</li>
 
-<li>Signaler un joueur ou un Staff ? Ticket Discord avec pseudo, preuve et contexte.</li>
+<li>• Active ton micro ➜ 🎤 Parle plus fort / je ne t’entends pas.</li>
 
-<li>Créer un groupe ? Procédure en ticket "Illégal" auprès d'un Référent Illégal.</li>
+<li>• Mute ➜ 🤫 Silence / parle doucement.</li>
 
-<li>Accessible aux débutants ? Oui ! Tutoriel en jeu + staff disponible.</li>
+<li>• Appuie sur une touche ➜ 👉 Interagis avec moi, ton muscle.</li>
 
-<li>Je peux utiliser une info Discord en jeu ? Non, sauf si elle est obtenue via une scène RP.</li>
+<li>• J’ai pas le menu ➜ ❓ Je ne sais pas comment faire.</li>
 
-<li>Comment rejoindre le serveur ? Discord ➜ FiveM ➜ SOLARYS.</li>
+<li>• Mon véhicule bug ➜ 🚗 Ma voiture a un problème.</li>
+
+<li>• Je respawn le véhicule ➜ 🔧 Je récupère une autre voiture.</li>
+
+<li>• Le véhicule a disparu ➜ 👀 On me l’a volé / perdu.</li>
+
+<li>• J’appelle un staff ➜ 📞 J’appelle un responsable.</li>
+
+<li>• Ticket ➜ 📝 Plainte / demande officielle.</li>
+
+<li>• Ban / Kick ➜ 🚫 Expulsé de la ville / Parti en voyage à Monaco.</li>
+
+<li>• AFK ➜ 🚶 Je suis absent / occupé.</li>
+
+<li>• Je suis nouveau ➜ 🆕 Je viens d’arriver en ville.</li>
+
+<li>• Je comprends pas le serveur ➜ 🤔 Je découvre la ville.</li>
+
+<li>• Attends bug ➜ 🧠 Attends, je ne me sens pas bien.</li>
+
+<li>• Pause RP ➜ ⏸️ Moment de flottement / confusion.</li>
 
 </ul>
 
@@ -383,65 +541,213 @@ COLLE ICI TOUT TON TEXTE LEXIQUE RP
 
 </div>
 
+  <!-- ========================= -->
+<!-- JOUER SANS EXCÈS -->
+<!-- ========================= -->
+
+<div class="accordion">
+
+<div class="accordion-header">
+
+<div class="title blue">
+🎭 JOUER SANS EXCÈS
+</div>
+
+<button class="toggle-btn">∨</button>
+
+</div>
+
+<div class="accordion-content">
+
+<p>
+Ne prenez pas le RP trop au sérieux : gardez toujours en tête qu’il s’agit d’un jeu et d’une communauté.
+</p>
+
+<br>
+
+<p>
+Lors d’un braquage ou d’une scène tendue, dosez vos propos :
+</p>
+
+<ul>
+
+<li>
+✔️ Les insultes légères, utilisées pour renforcer l’immersion, sont tolérées.
+</li>
+
+<li>
+❌ Les insultes répétées ou agressives sans but RP peuvent être sanctionnées.
+</li>
+
+</ul>
+
+<div class="quote">
+
+« Si j’étais à sa place, est-ce que je me sentirais insulté ou énervé ? »
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
 <!-- JOUER LA DÉFAITE -->
+<!-- ========================= -->
 
 <div class="accordion">
 
 <div class="accordion-header">
 
-<h2>JOUER LA DÉFAITE INTELLIGEMMENT</h2>
+<div class="title orange">
+⚖️ JOUER LA DÉFAITE INTELLIGEMMENT
+</div>
 
-<button class="toggle-btn">⌄</button>
+<button class="toggle-btn">∨</button>
 
 </div>
 
 <div class="accordion-content">
 
-COLLE LE TEXTE
+<p>
+Quand vous perdez une scène (par exemple lors d’un braquage), ne soyez pas susceptible.
+</p>
+
+<br>
+
+<p>
+Le « Loose RP » (accepter de perdre) peut ouvrir la porte à de nouvelles trames intéressantes.
+</p>
+
+<br>
+
+<p>
+Rester calme et jouer le jeu offre une meilleure immersion à tout le monde.
+</p>
 
 </div>
 
 </div>
 
+<!-- ========================= -->
 <!-- GARDER DU RECUL -->
+<!-- ========================= -->
 
 <div class="accordion">
 
 <div class="accordion-header">
 
-<h2>GARDER DU RECUL</h2>
+<div class="title green">
+🧠 GARDER DU RECUL
+</div>
 
-<button class="toggle-btn">⌄</button>
+<button class="toggle-btn">∨</button>
 
 </div>
 
 <div class="accordion-content">
 
-COLLE LE TEXTE
+<p>
+Ne confondez pas RP et réalité : les propos tenus en jeu ne visent jamais la personne derrière l’écran.
+</p>
+
+<br>
+
+<p>
+Évitez le No Fear RP et les réactions impulsives.
+</p>
+
+<br>
+
+<div class="quote quote-green">
+
+« Ce n’est qu’un jeu, et l’objectif est de s’amuser ensemble. »
+
+</div>
+
+<br>
+
+<p>
+🤝 Respectez les autres joueurs, même lors des conflits RP.
+</p>
+
+<p>
+🎮 Le but principal reste de créer des scènes agréables et immersives pour tous.
+</p>
 
 </div>
 
 </div>
 
-<!-- QUESTIONS -->
+  <!-- ========================= -->
+<!-- QUESTIONS FRÉQUENTES -->
+<!-- ========================= -->
 
 <div class="accordion">
 
 <div class="accordion-header">
 
-<h2>QUESTIONS FRÉQUENTES</h2>
+<div class="title purple">
+❓ QUESTIONS FRÉQUENTES
+</div>
 
-<button class="toggle-btn">⌄</button>
+<button class="toggle-btn">∨</button>
 
 </div>
 
 <div class="accordion-content">
 
-COLLE LE TEXTE
+<ul style="list-style:none;padding:0;line-height:2.3;">
+
+<li>
+📌 <strong>Je peux contester une sanction ?</strong><br>
+Oui, via un ticket avec preuves à l'appui.
+</li>
+
+<br>
+
+<li>
+📌 <strong>Comment signaler un joueur ou un staff ?</strong><br>
+Ouvrez un ticket Discord avec pseudo, preuve et contexte.
+</li>
+
+<br>
+
+<li>
+📌 <strong>Comment créer un groupe illégal ?</strong><br>
+Effectuez une demande dans un ticket « Illégal » auprès d’un Référent Illégal.
+</li>
+
+<br>
+
+<li>
+📌 <strong>Le serveur est-il accessible aux débutants ?</strong><br>
+Oui, un tutoriel est disponible et les staffs peuvent vous aider.
+</li>
+
+<br>
+
+<li>
+📌 <strong>Puis-je utiliser une information Discord en RP ?</strong><br>
+Non, sauf si cette information a été obtenue via une scène RP cohérente.
+</li>
+
+<br>
+
+<li>
+📌 <strong>Comment rejoindre Solarys RP ?</strong><br>
+Discord ➜ FiveM ➜ SOLARYS RP.
+</li>
+
+</ul>
 
 </div>
 
 </div>
+
+<!-- ========================= -->
+<!-- NAVIGATION -->
+<!-- ========================= -->
 
 <div class="navigation">
 
@@ -455,31 +761,60 @@ PAGE SUIVANTE ➜
 
 </div>
 
-</div>
+  <footer>
 
-<footer>
-© 2026 Solarys RP
+© 2026 Solarys RP - Tous droits réservés
+
 </footer>
+
+</div>
 
 <script>
 
-/* ========================= */
-/* JAVASCRIPT ICI */
-/* ========================= */
+<script>
 
-document
-.querySelectorAll(".accordion-header")
-.forEach(header=>{
+document.querySelectorAll(".accordion-header").forEach(header => {
 
-header.addEventListener("click",()=>{
+header.addEventListener("click", () => {
 
-header.parentElement
-.classList.toggle("active");
+const accordion = header.parentElement;
+const btn = header.querySelector(".toggle-btn");
+
+accordion.classList.toggle("active");
+
+if(accordion.classList.contains("active")){
+btn.innerHTML = "∧";
+}else{
+btn.innerHTML = "∨";
+}
 
 });
 
 });
 
+</script>
+<script>
+
+document.querySelectorAll(".accordion-header").forEach(header => {
+
+header.addEventListener("click", () => {
+
+const accordion = header.parentElement;
+const btn = header.querySelector(".toggle-btn");
+
+accordion.classList.toggle("active");
+
+if(accordion.classList.contains("active")){
+btn.innerHTML = "∧";
+}else{
+btn.innerHTML = "∨";
+}
+
+});
+
+});
+
+</script>
 </script>
 
 </body>
