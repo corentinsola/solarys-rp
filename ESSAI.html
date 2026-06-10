@@ -1,435 +1,185 @@
 <!DOCTYPE html>
-<html lang="fr">
 
+<html lang="fr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Règlement Staff - Solarys RP</title>
+<title>Règlement Pack Graphique - Solarys RP</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
-
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 body{
-    background:#05010d;
-    color:white;
-    overflow-x:hidden;
+font-family:'Poppins',sans-serif;
+background:#050505;
+color:#fff;
+line-height:1.8;
 }
-
-body::before{
-    content:'';
-    position:fixed;
-    inset:0;
-    background:
-    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.75)),
-    url('https://images.unsplash.com/photo-1514565131-fce0801e5785?q=80&w=1920');
-    background-size:cover;
-    background-position:center;
-    z-index:-2;
-}
-
-body::after{
-    content:'';
-    position:fixed;
-    inset:0;
-    background:linear-gradient(
-        180deg,
-        rgba(130,0,255,.15),
-        rgba(255,0,150,.10)
-    );
-    z-index:-1;
-}
-
-/* HEADER */
-
-header{
-    position:sticky;
-    top:0;
-    z-index:999;
-    backdrop-filter:blur(20px);
-    background:rgba(10,0,20,.75);
-    border-bottom:1px solid rgba(255,255,255,.08);
-
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-
-    padding:20px 8%;
-}
-
-.logo{
-    font-size:3rem;
-    font-weight:800;
-    background:linear-gradient(90deg,#ff4dd2,#7f7dff);
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
-}
-
-nav{
-    display:flex;
-    gap:40px;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-}
-
-.status{
-    border:1px solid #00ffd5;
-    padding:12px 24px;
-    border-radius:40px;
-}
-
-/* HERO */
 
 .hero{
-    text-align:center;
-    padding:120px 20px 60px;
-}
-
-.hero span{
-    letter-spacing:12px;
-    opacity:.8;
+height:320px;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+background:
+linear-gradient(rgba(255,0,170,.45),rgba(100,140,255,.45)),
+url("https://images.unsplash.com/photo-1542751371-adc38448a05e?w=1600");
+background-size:cover;
+background-position:center;
 }
 
 .hero h1{
-    font-size:7rem;
-    font-weight:800;
-
-    background:linear-gradient(
-        90deg,
-        #ff67ff,
-        #7aa8ff
-    );
-
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
+font-size:4.5rem;
+font-weight:800;
+text-transform:uppercase;
+text-shadow:0 0 25px rgba(0,0,0,.7);
 }
 
 .hero p{
-    max-width:900px;
-    margin:auto;
-    font-size:1.2rem;
-    margin-top:20px;
+font-size:1.3rem;
 }
-
-/* ACCORDION */
 
 .container{
-    width:min(1200px,90%);
-    margin:auto;
-}
-
-.accordion{
-    margin-top:15px;
-    border-radius:20px;
-    overflow:hidden;
-    border:1px solid rgba(255,255,255,.1);
-    background:rgba(255,255,255,.04);
-    backdrop-filter:blur(15px);
-}
-
-.accordion-header{
-    padding:25px;
-    cursor:pointer;
-
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-
-    font-size:1.2rem;
-    font-weight:600;
-}
-
-.accordion-content{
-    display:none;
-    padding:25px;
-    border-top:1px solid rgba(255,255,255,.08);
-}
-
-.accordion.active .accordion-content{
-    display:block;
-}
-
-.accordion-content ul{
-    padding-left:20px;
-}
-
-.accordion-content li{
-    margin-bottom:10px;
-}
-
-/* SANCTIONS */
-
-.sanctions{
-    margin-top:50px;
-    padding:30px;
-    border-radius:25px;
-
-    border:1px solid rgba(255,170,0,.4);
-
-    background:rgba(255,140,0,.05);
-}
-
-.sanctions h2{
-    text-align:center;
-    margin-bottom:30px;
-    color:#ffb347;
-}
-
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
+max-width:1500px;
+margin:auto;
+padding:50px 30px;
 }
 
 .card{
-    padding:25px;
-    border-radius:20px;
-    text-align:center;
-    background:rgba(255,255,255,.05);
+background:#0f0f0f;
+border:1px solid rgba(255,255,255,.08);
+border-radius:25px;
+overflow:hidden;
+margin-bottom:30px;
 }
 
-.card h3{
-    margin-bottom:10px;
-}
-
-/* FOOTER */
-
-footer{
-    margin-top:80px;
-    padding:50px 20px;
-    text-align:center;
-    border-top:1px solid rgba(255,255,255,.08);
-    background:rgba(0,0,0,.4);
-}
-
-@media(max-width:768px){
-
-.hero h1{
-font-size:4rem;
-}
-
-.logo{
+.card-title{
+padding:25px 35px;
 font-size:2rem;
+font-weight:700;
+border-bottom:1px solid rgba(255,255,255,.08);
 }
 
-nav{
-gap:15px;
+.card-content{
+padding:35px;
 }
 
+.card-content ul{
+padding-left:25px;
 }
 
+.card-content li{
+margin-bottom:12px;
+}
+
+.warning{
+color:#ffae00;
+font-weight:700;
+}
 </style>
 
 </head>
 
 <body>
 
-<header>
-
-<div class="logo">SOLARYS</div>
-
-<nav>
-<a href="index.html">Accueil</a>
-<a href="reglement.html">Règlement</a>
-<a href="#">Discord</a>
-<div class="status">🟢 Serveur en ligne</div>
-</nav>
-
+<header class="hero">
+<div>
+<h1>RÈGLEMENT PACK GRAPHIQUE</h1>
+<p>Modifications graphiques autorisées et interdites sur Solarys RP</p>
+</div>
 </header>
-
-<section class="hero">
-
-<span>RÈGLEMENT</span>
-
-<h1>STAFF</h1>
-
-<p>
-En tant que membre du Staff de Solarys RP,
-vous représentez le serveur.
-Vous vous engagez à respecter ces règles en toutes circonstances.
-</p>
-
-</section>
 
 <div class="container">
 
-<div class="accordion active">
-<div class="accordion-header">
-🛡️ 1. Rôle du Staff
-<span>▼</span>
-</div>
-<div class="accordion-content">
-<ul>
-<li>Être disponible et à l'écoute.</li>
-<li>Aider les joueurs avec professionnalisme.</li>
-<li>Garantir une expérience RP de qualité.</li>
-<li>Faire respecter les règles du serveur.</li>
-</ul>
-</div>
-</div>
-
-<div class="accordion">
-<div class="accordion-header">
-⚖️ 2. Neutralité et impartialité
-<span>▼</span>
-</div>
-<div class="accordion-content">
-<ul>
-<li>Ne jamais favoriser un joueur.</li>
-<li>Rester neutre dans chaque ticket.</li>
-<li>Ne pas utiliser son rôle pour obtenir un avantage RP.</li>
-</ul>
-</div>
-</div>
-
-<div class="accordion">
-<div class="accordion-header">
-🔒 3. Confidentialité
-<span>▼</span>
-</div>
-<div class="accordion-content">
-<ul>
-<li>Les informations internes restent internes.</li>
-<li>Interdiction de divulguer les discussions Staff.</li>
-</ul>
-</div>
-</div>
-
-<div class="accordion">
-<div class="accordion-header">
-🎮 4. Utilisation des permissions
-<span>▼</span>
-</div>
-<div class="accordion-content">
-<ul>
-<li>Aucune utilisation abusive des commandes Staff.</li>
-<li>Les permissions servent uniquement à la modération.</li>
-</ul>
-</div>
-</div>
-
-<div class="accordion">
-<div class="accordion-header">
-📋 5. Gestion des tickets
-<span>▼</span>
-</div>
-<div class="accordion-content">
-<ul>
-<li>Être respectueux avec chaque joueur.</li>
-<li>Écouter toutes les parties avant décision.</li>
-</ul>
-</div>
-</div>
-
-<div class="accordion">
-<div class="accordion-header">
-🤝 6. Comportement attendu
-<span>▼</span>
-</div>
-<div class="accordion-content">
-<ul>
-<li>Respect.</li>
-<li>Maturité.</li>
-<li>Exemplarité.</li>
-</ul>
-</div>
-</div>
-
-<div class="accordion">
-<div class="accordion-header">
-📅 7. Activité et présence
-<span>▼</span>
-</div>
-<div class="accordion-content">
-<ul>
-<li>Rester actif.</li>
-<li>Prévenir en cas d'absence prolongée.</li>
-</ul>
-</div>
-</div>
-
-<div class="accordion">
-<div class="accordion-header">
-⚠️ 8. Sanctions
-<span>▼</span>
-</div>
-<div class="accordion-content">
-<ul>
-<li>Avertissement.</li>
-<li>Suspension.</li>
-<li>Rétrogradation.</li>
-<li>Exclusion du Staff.</li>
-</ul>
-</div>
-</div>
-
-<div class="sanctions">
-
-<h2>⚠️ SANCTIONS STAFF</h2>
-
-<div class="grid">
-
 <div class="card">
-<h3>1er Manquement</h3>
-<p>Avertissement</p>
-</div>
-
-<div class="card">
-<h3>Récidive</h3>
-<p>Suspension temporaire</p>
-</div>
-
-<div class="card">
-<h3>Faute Grave</h3>
-<p>Exclusion du Staff</p>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<footer>
-
-<h2>SOLARYS RP</h2>
+<div class="card-title">🎨 Modifications interdites</div>
+<div class="card-content">
 
 <p>
-Serveur FiveM RolePlay Nouvelle Génération
+Afin de garantir une expérience de jeu équitable, immersive et équilibrée, certaines modifications graphiques ou fichiers modifiant le gameplay sont strictement interdits sur le serveur.
 </p>
 
-<br>
+<p>Les modifications donnant un avantage visuel, auditif ou gameplay sont interdites :</p>
+
+<ul>
+<li>No props</li>
+<li>No element</li>
+<li>No water</li>
+<li>No bush</li>
+<li>Suppression d’objets ou d’éléments de décors</li>
+</ul>
+
+</div>
+</div>
+
+<div class="card">
+<div class="card-title">🎯 Aides aux tirs interdites</div>
+<div class="card-content">
+
+<ul>
+<li>Crosshairs externes (viseurs)</li>
+<li>Tracers (marqueurs de tir)</li>
+<li>Hit effects</li>
+<li>Kill effects</li>
+<li>Blood effects</li>
+</ul>
+
+</div>
+</div>
+
+<div class="card">
+<div class="card-title">⚠️ Modifications interdites</div>
+<div class="card-content">
+
+<ul>
+<li>Modification de la FOV</li>
+<li>Fichiers donnant un avantage visuel</li>
+<li>Réduction d’effets pour voir à travers certains éléments</li>
+<li>Suppression de végétation, eau, fumée ou props</li>
+<li>Full stamina</li>
+<li>Réduction de recul</li>
+<li>Modifications de luminosité abusives</li>
+<li>Packs donnant un avantage compétitif</li>
+<li>Optimisations abusives modifiant le gameplay</li>
+</ul>
+
+</div>
+</div>
+
+<div class="card">
+<div class="card-title">🔨 Sanctions</div>
+<div class="card-content">
 
 <p>
-© 2026 Solarys RP - Tous droits réservés.
+Toute utilisation de packs interdits, modifications graphiques ou outils donnant un avantage injuste pourra entraîner :
 </p>
 
-</footer>
+<ul>
+<li>⚠️ Warn</li>
+<li>⛓️ Jail / TIG</li>
+<li>🔨 Bannissement temporaire</li>
+<li>⛔ Bannissement définitif</li>
+</ul>
 
-<script>
+<p>
+Selon la gravité des faits et les antécédents du joueur.
+</p>
 
-document.querySelectorAll(".accordion-header").forEach(header=>{
+<p class="warning">
+Nous vous remercions de respecter ce règlement afin de préserver une expérience de jeu saine sur le serveur.
+</p>
 
-header.addEventListener("click",()=>{
+</div>
+</div>
 
-header.parentElement.classList.toggle("active");
-
-});
-
-});
-
-</script>
+</div>
 
 </body>
 </html>
