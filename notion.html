@@ -12,7 +12,21 @@
 <style>
 
 /* ========================= */
-/* CSS ICI */
+.pink{
+color:#ff2d92;
+}
+
+.purple{
+color:#9c4dff;
+}
+
+.blue{
+color:#1b6cff;
+}
+
+.orange{
+color:#ffae00;
+}
 /* ========================= */
 
 *{
@@ -112,39 +126,57 @@ cursor:pointer;
 }
 
 .accordion-header h2{
-font-size:2rem;
-
-background:
-linear-gradient(
-90deg,
-#ff2d92,
-#8b5cf6,
-#1b6cff
-);
+font-size:2.8rem;
+font-weight:700;
+};
 
 -webkit-background-clip:text;
 -webkit-text-fill-color:transparent;
 }
 
 .toggle-btn{
-width:70px;
-height:70px;
 
-border:none;
+width:80px;
+height:80px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
 border-radius:50%;
 
-font-size:28px;
-color:white;
+border:none;
+
+font-size:34px;
+font-weight:700;
+
 cursor:pointer;
+
+color:white;
 
 background:
 linear-gradient(
 135deg,
-rgba(255,45,146,.25),
-rgba(27,108,255,.25)
+rgba(255,45,146,.20),
+rgba(27,108,255,.20)
 );
-}
 
+box-shadow:
+0 0 20px rgba(255,45,146,.35),
+0 0 30px rgba(27,108,255,.35);
+
+transition:.3s;
+}
+.accordion:hover{
+
+transform:translateY(-3px);
+
+box-shadow:
+0 0 30px rgba(255,45,146,.25),
+0 0 30px rgba(27,108,255,.25);
+
+transition:.3s;
+}
 .accordion-content{
 display:none;
 padding:30px;
@@ -218,7 +250,13 @@ color:#aaa;
 
 <div class="accordion-header">
 
-<h2>NOTIONS PRINCIPALES</h2>
+<h2 class="pink">
+📖 NOTIONS PRINCIPALES
+</h2><h2 class="purple">
+💬 LEXIQUE RP
+</h2><h2 class="blue">
+🎭 JOUER SANS EXCÈS
+</h2>
 
 <button class="toggle-btn">⌄</button>
 
@@ -226,7 +264,65 @@ color:#aaa;
 
 <div class="accordion-content">
 
-COLLE ICI TOUT TON TEXTE NOTIONS PRINCIPALES
+<div class="grid">
+.grid{
+
+display:grid;
+
+grid-template-columns:
+1fr 1fr 1fr;
+
+gap:40px;
+}
+<div>
+
+Mass RP
+
+RolePlay
+
+HRP
+
+Metagaming
+
+Powergaming
+
+No Fear RP
+
+</div>
+
+<div>
+
+Force RP
+
+Freekill
+
+Revenge Kill
+
+New Life Rule
+
+Win RP
+
+Pain RP
+
+</div>
+
+<div>
+
+Car Kill
+
+Bunny Hop
+
+No RP
+
+Scene RP
+
+Usebug
+
+Streamhack
+
+</div>
+
+</div>
 
 </div>
 
@@ -266,7 +362,21 @@ COLLE ICI TOUT TON TEXTE LEXIQUE RP
 
 <div class="accordion-content">
 
-COLLE LE TEXTE
+<ul>
+
+<li>Je peux contester une sanction ? Oui, via ticket avec preuves.</li>
+
+<li>Signaler un joueur ou un Staff ? Ticket Discord avec pseudo, preuve et contexte.</li>
+
+<li>Créer un groupe ? Procédure en ticket "Illégal" auprès d'un Référent Illégal.</li>
+
+<li>Accessible aux débutants ? Oui ! Tutoriel en jeu + staff disponible.</li>
+
+<li>Je peux utiliser une info Discord en jeu ? Non, sauf si elle est obtenue via une scène RP.</li>
+
+<li>Comment rejoindre le serveur ? Discord ➜ FiveM ➜ SOLARYS.</li>
+
+</ul>
 
 </div>
 
