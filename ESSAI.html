@@ -1,127 +1,230 @@
 <!DOCTYPE html>
-
 <html lang="fr">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Règlement Pack Graphique - Solarys RP</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
+font-family:'Poppins',sans-serif;
 }
 
 body{
-font-family:'Poppins',sans-serif;
-background:#050505;
-color:#fff;
-line-height:1.8;
+background:#05070d;
+color:white;
 }
 
 .hero{
-height:320px;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
+height:450px;
 background:
-linear-gradient(rgba(255,0,170,.45),rgba(100,140,255,.45)),
-url("https://images.unsplash.com/photo-1542751371-adc38448a05e?w=1600");
+linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.65)),
+url("https://images.unsplash.com/photo-1514565131-fce0801e5785?q=80&w=1920");
 background-size:cover;
 background-position:center;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
 }
 
 .hero h1{
-font-size:4.5rem;
-font-weight:800;
+font-size:4rem;
+font-weight:700;
 text-transform:uppercase;
-text-shadow:0 0 25px rgba(0,0,0,.7);
 }
 
 .hero p{
-font-size:1.3rem;
+font-size:1.5rem;
+margin-top:15px;
 }
 
 .container{
-max-width:1500px;
+max-width:1200px;
 margin:auto;
-padding:50px 30px;
+padding:30px;
 }
 
 .card{
-background:#0f0f0f;
+background:linear-gradient(90deg,#05070d,#071426);
 border:1px solid rgba(255,255,255,.08);
-border-radius:25px;
+border-radius:20px;
+margin-bottom:25px;
 overflow:hidden;
-margin-bottom:30px;
 }
 
-.card-title{
-padding:25px 35px;
+.card-header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:25px 30px;
+cursor:pointer;
+}
+
+.card-header h2{
 font-size:2rem;
-font-weight:700;
-border-bottom:1px solid rgba(255,255,255,.08);
 }
 
 .card-content{
-padding:35px;
+padding:0 30px 30px;
 }
 
 .card-content ul{
-padding-left:25px;
+margin-top:15px;
+margin-left:25px;
 }
 
 .card-content li{
-margin-bottom:12px;
+margin-bottom:8px;
 }
 
-.warning{
+.modif h2{
+color:#ff2c92;
+}
+
+.tirs h2{
+color:#a855ff;
+}
+
+.sanctions h2{
 color:#ffae00;
-font-weight:700;
 }
-</style>
 
+.message{
+border:1px solid #1f5fff;
+padding:18px;
+border-radius:15px;
+margin-top:20px;
+text-align:center;
+}
+
+.navigation{
+display:flex;
+justify-content:space-between;
+gap:20px;
+margin-top:30px;
+}
+
+.navigation a{
+flex:1;
+text-align:center;
+padding:18px;
+border-radius:15px;
+text-decoration:none;
+color:white;
+font-weight:600;
+border:2px solid #2563eb;
+transition:.3s;
+}
+
+.navigation a:hover{
+background:#2563eb;
+}
+
+footer{
+margin-top:50px;
+border-top:1px solid rgba(255,255,255,.08);
+padding:30px;
+text-align:center;
+color:#bdbdbd;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.4rem;
+}
+
+.hero p{
+font-size:1rem;
+}
+
+.card-header h2{
+font-size:1.4rem;
+}
+
+.navigation{
+flex-direction:column;
+}
+
+}
+
+</style>
 </head>
 
 <body>
 
 <header class="hero">
-<div>
 <h1>RÈGLEMENT PACK GRAPHIQUE</h1>
 <p>Modifications graphiques autorisées et interdites sur Solarys RP</p>
-</div>
 </header>
 
 <div class="container">
 
-<div class="card">
-<div class="card-title">🎨 Modifications interdites</div>
+<div class="card modif">
+
+<div class="card-header">
+<h2>MODIFICATIONS INTERDITES</h2>
+</div>
+
 <div class="card-content">
 
 <p>
-Afin de garantir une expérience de jeu équitable, immersive et équilibrée, certaines modifications graphiques ou fichiers modifiant le gameplay sont strictement interdits sur le serveur.
+Afin de garantir une expérience de jeu équitable, immersive et équilibrée,
+certaines modifications graphiques ou fichiers modifiant le gameplay sont strictement interdits.
 </p>
 
-<p>Les modifications donnant un avantage visuel, auditif ou gameplay sont interdites :</p>
+<br>
+
+<p>Les modifications suivantes sont interdites :</p>
 
 <ul>
 <li>No props</li>
 <li>No element</li>
 <li>No water</li>
 <li>No bush</li>
-<li>Suppression d’objets ou d’éléments de décors</li>
+<li>Suppression d'objets ou d'éléments de décors</li>
+<li>Modification de la FOV (champ de vision)</li>
+<li>Fichiers donnant un avantage visuel</li>
+<li>Réduction d'effets pour voir à travers certains éléments</li>
+<li>Suppression de végétation, eau, fumée ou props</li>
+</ul>
+
+<br>
+
+<p>Tout fichier modifiant les capacités du jeu est interdit :</p>
+
+<ul>
+<li>Full stamina</li>
+<li>Réduction de recul</li>
+<li>Modifications de luminosité abusives</li>
+<li>Packs donnant un avantage compétitif</li>
+<li>Optimisations abusives modifiant le gameplay</li>
 </ul>
 
 </div>
+
 </div>
 
-<div class="card">
-<div class="card-title">🎯 Aides aux tirs interdites</div>
+<div class="card tirs">
+
+<div class="card-header">
+<h2>SYSTÈMES FACILITANT LES TIRS</h2>
+</div>
+
 <div class="card-content">
+
+<p>L'utilisation de systèmes facilitant les tirs est interdite :</p>
 
 <ul>
 <li>Crosshairs externes (viseurs)</li>
@@ -132,54 +235,58 @@ Afin de garantir une expérience de jeu équitable, immersive et équilibrée, c
 </ul>
 
 </div>
-</div>
-
-<div class="card">
-<div class="card-title">⚠️ Modifications interdites</div>
-<div class="card-content">
-
-<ul>
-<li>Modification de la FOV</li>
-<li>Fichiers donnant un avantage visuel</li>
-<li>Réduction d’effets pour voir à travers certains éléments</li>
-<li>Suppression de végétation, eau, fumée ou props</li>
-<li>Full stamina</li>
-<li>Réduction de recul</li>
-<li>Modifications de luminosité abusives</li>
-<li>Packs donnant un avantage compétitif</li>
-<li>Optimisations abusives modifiant le gameplay</li>
-</ul>
 
 </div>
+
+<div class="card sanctions">
+
+<div class="card-header">
+<h2>SANCTIONS</h2>
 </div>
 
-<div class="card">
-<div class="card-title">🔨 Sanctions</div>
 <div class="card-content">
 
 <p>
-Toute utilisation de packs interdits, modifications graphiques ou outils donnant un avantage injuste pourra entraîner :
+Toute utilisation de packs interdits, modifications graphiques,
+fichiers avantageux ou outils donnant un avantage injuste pourra entraîner :
 </p>
 
 <ul>
 <li>⚠️ Warn</li>
-<li>⛓️ Jail / TIG</li>
+<li>🔗 Jail / TIG</li>
 <li>🔨 Bannissement temporaire</li>
 <li>⛔ Bannissement définitif</li>
 </ul>
 
-<p>
+<p style="margin-top:15px;">
 Selon la gravité des faits et les antécédents du joueur.
 </p>
 
-<p class="warning">
+<div class="message">
 Nous vous remercions de respecter ce règlement afin de préserver une expérience de jeu saine sur le serveur.
-</p>
-
-</div>
 </div>
 
 </div>
+
+</div>
+
+<div class="navigation">
+
+<a href="notion.html">
+⬅ PAGE PRÉCÉDENTE
+</a>
+
+<a href="legal.html">
+PAGE SUIVANTE ➜
+</a>
+
+</div>
+
+</div>
+
+<footer>
+© 2026 Solarys RP - Tous droits réservés.
+</footer>
 
 </body>
 </html>
