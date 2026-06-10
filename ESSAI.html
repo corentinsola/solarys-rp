@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Règlement Pack Graphique - Solarys RP</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -21,6 +22,10 @@ background:#05070d;
 color:#fff;
 }
 
+/* ========================= */
+/* BANNIÈRE */
+/* ========================= */
+
 .hero{
 height:550px;
 
@@ -29,22 +34,12 @@ linear-gradient(
 rgba(0,0,0,.35),
 rgba(0,0,0,.70)
 ),
-url("banniere-packgraphique.png");
+url("https://reglement.solarys-rp.fr/banniere-packgraphique.png");
 
 background-size:cover;
 background-position:center;
 background-repeat:no-repeat;
 
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-}
-background-size:cover;
-background-position:center;
-background-repeat:no-repeat;
-background-position:center;
-background-repeat:no-repeat;
 display:flex;
 justify-content:center;
 align-items:center;
@@ -52,45 +47,66 @@ text-align:center;
 }
 
 .hero-content h1{
-font-size:4rem;
+font-size:4.5rem;
 font-weight:700;
 text-transform:uppercase;
+
 text-shadow:
-0 0 20px rgba(255,0,140,.5),
-0 0 30px rgba(0,119,255,.4);
+0 0 20px rgba(255,255,255,.15),
+0 0 40px rgba(0,119,255,.45);
 }
 
 .hero-content p{
-margin-top:15px;
-font-size:1.3rem;
-color:#ddd;
+margin-top:20px;
+font-size:1.4rem;
+color:#e5e5e5;
 }
 
 .neon-divider{
-width:350px;
+width:420px;
 height:3px;
-margin:25px auto 0;
-background:linear-gradient(90deg,#ff2d92,#8b5cf6,#1b6cff);
+margin:25px auto;
+
+background:
+linear-gradient(
+90deg,
+#ff2d92,
+#8b5cf6,
+#1b6cff
+);
+
 box-shadow:
 0 0 15px #ff2d92,
-0 0 15px #1b6cff;
+0 0 20px #1b6cff;
 }
 
+/* ========================= */
+/* CONTENU */
+/* ========================= */
+
 .container{
-max-width:1400px;
+max-width:1600px;
 margin:auto;
-padding:35px;
+padding:40px;
 }
 
 .section{
-background:linear-gradient(90deg,#05070d,#071426);
-border:1px solid rgba(255,255,255,.08);
-border-radius:20px;
+background:linear-gradient(
+90deg,
+#04060d,
+#041225
+);
+
+border:1px solid rgba(255,255,255,.06);
+border-radius:25px;
+
 margin-bottom:25px;
-overflow:hidden;
+
 box-shadow:
-0 0 20px rgba(255,0,140,.08),
+0 0 20px rgba(255,45,146,.08),
 0 0 20px rgba(27,108,255,.08);
+
+overflow:hidden;
 }
 
 .section-header{
@@ -99,6 +115,7 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 cursor:pointer;
+transition:.3s;
 }
 
 .section-header h2{
@@ -117,6 +134,62 @@ color:#9c4dff;
 color:#ffae00;
 }
 
+/* ========================= */
+/* FLÈCHES NÉON */
+/* ========================= */
+
+.accordion-arrow{
+width:60px;
+height:60px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+border-radius:50%;
+
+background:
+linear-gradient(
+135deg,
+rgba(255,45,146,.15),
+rgba(27,108,255,.15)
+);
+
+border:2px solid rgba(255,255,255,.08);
+
+box-shadow:
+0 0 15px rgba(255,45,146,.35),
+0 0 25px rgba(27,108,255,.35);
+
+transition:.3s;
+}
+
+.accordion-arrow span{
+font-size:30px;
+font-weight:700;
+
+background:
+linear-gradient(
+90deg,
+#ff2d92,
+#8b5cf6,
+#1b6cff
+);
+
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.section-header:hover .accordion-arrow{
+transform:scale(1.08);
+
+box-shadow:
+0 0 25px rgba(255,45,146,.55),
+0 0 35px rgba(27,108,255,.55);
+}
+
+/* ========================= */
+
 .section-content{
 padding:0 30px 30px;
 }
@@ -124,7 +197,7 @@ padding:0 30px 30px;
 .grid{
 display:grid;
 grid-template-columns:1fr 1fr;
-gap:40px;
+gap:50px;
 }
 
 ul{
@@ -132,8 +205,9 @@ list-style:none;
 }
 
 li{
-padding:10px 0;
+padding:14px 0;
 border-bottom:1px solid rgba(255,255,255,.05);
+font-size:1.1rem;
 }
 
 li::before{
@@ -143,12 +217,16 @@ font-weight:bold;
 }
 
 .message{
-margin-top:20px;
+margin-top:25px;
 padding:18px;
 border:1px solid #1b6cff;
 border-radius:15px;
 text-align:center;
 }
+
+/* ========================= */
+/* NAVIGATION */
+/* ========================= */
 
 .navigation{
 display:flex;
@@ -158,9 +236,9 @@ margin-top:30px;
 
 .navigation a{
 flex:1;
-text-decoration:none;
-text-align:center;
 padding:18px;
+text-align:center;
+text-decoration:none;
 font-weight:600;
 border-radius:15px;
 transition:.3s;
@@ -173,7 +251,7 @@ color:#ff2d92;
 
 .prev:hover{
 background:#ff2d92;
-color:#fff;
+color:white;
 }
 
 .next{
@@ -183,7 +261,7 @@ color:#1b6cff;
 
 .next:hover{
 background:#1b6cff;
-color:#fff;
+color:white;
 }
 
 footer{
@@ -201,7 +279,7 @@ display:none;
 @media(max-width:900px){
 
 .hero{
-height:350px;
+height:380px;
 }
 
 .hero-content h1{
@@ -210,6 +288,10 @@ font-size:2.3rem;
 
 .hero-content p{
 font-size:1rem;
+}
+
+.neon-divider{
+width:220px;
 }
 
 .grid{
@@ -249,7 +331,11 @@ Modifications graphiques autorisées et interdites sur Solarys RP
 
 <div class="section-header" onclick="toggle(this)">
 <h2>MODIFICATIONS INTERDITES</h2>
+
+<div class="accordion-arrow">
 <span>⌃</span>
+</div>
+
 </div>
 
 <div class="section-content">
@@ -279,13 +365,18 @@ Modifications graphiques autorisées et interdites sur Solarys RP
 </div>
 
 </div>
+
 </div>
 
 <div class="section tirs">
 
 <div class="section-header" onclick="toggle(this)">
 <h2>SYSTÈMES FACILITANT LES TIRS</h2>
+
+<div class="accordion-arrow">
 <span>⌃</span>
+</div>
+
 </div>
 
 <div class="section-content">
@@ -306,7 +397,11 @@ Modifications graphiques autorisées et interdites sur Solarys RP
 
 <div class="section-header" onclick="toggle(this)">
 <h2>SANCTIONS</h2>
+
+<div class="accordion-arrow">
 <span>⌃</span>
+</div>
+
 </div>
 
 <div class="section-content">
@@ -332,7 +427,7 @@ Nous vous remercions de respecter ce règlement afin de préserver une expérien
 ⬅ PAGE PRÉCÉDENTE
 </a>
 
-<a href="legal.html" class="next">
+<a href="reglement legal.html" class="next">
 PAGE SUIVANTE ➜
 </a>
 
@@ -348,12 +443,23 @@ PAGE SUIVANTE ➜
 
 function toggle(element){
 
-const content = element.nextElementSibling;
+const content =
+element.nextElementSibling;
 
 content.classList.toggle("hidden");
+
+const arrow =
+element.querySelector(".accordion-arrow span");
+
+if(content.classList.contains("hidden")){
+arrow.innerHTML="⌄";
+}else{
+arrow.innerHTML="⌃";
+}
 
 }
 
 </script>
 
 </body>
+</html>
