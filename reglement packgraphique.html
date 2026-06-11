@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,6 +22,10 @@ body{
     background:#05070d;
     color:white;
 }
+
+/* ========================= */
+/* BANNIERE */
+/* ========================= */
 
 .hero{
     height:550px;
@@ -58,8 +63,17 @@ body{
     width:400px;
     height:3px;
     margin:25px auto;
-    background:linear-gradient(90deg,#ff2d92,#8b5cf6,#1b6cff);
+    background:linear-gradient(
+        90deg,
+        #ff2d92,
+        #8b5cf6,
+        #1b6cff
+    );
 }
+
+/* ========================= */
+/* CONTENU */
+/* ========================= */
 
 .container{
     max-width:1400px;
@@ -68,10 +82,16 @@ body{
 }
 
 .section{
-    background:linear-gradient(90deg,#04060d,#041225);
+    background:linear-gradient(
+        90deg,
+        #04060d,
+        #041225
+    );
+
     border-radius:25px;
     margin-bottom:25px;
     overflow:hidden;
+
     border:1px solid rgba(255,255,255,.05);
 }
 
@@ -101,11 +121,13 @@ ul{
 li{
     padding:14px 0;
     border-bottom:1px solid rgba(255,255,255,.05);
+    font-size:1.05rem;
 }
 
 li::before{
     content:"• ";
     color:#ff2d92;
+    font-weight:bold;
 }
 
 .message{
@@ -115,6 +137,10 @@ li::before{
     border-radius:15px;
     text-align:center;
 }
+
+/* ========================= */
+/* BOUTONS */
+/* ========================= */
 
 .navigation{
     display:flex;
@@ -129,6 +155,7 @@ li::before{
     text-align:center;
     border-radius:15px;
     font-weight:700;
+    transition:.3s;
 }
 
 .prev{
@@ -136,16 +163,32 @@ li::before{
     color:#ff2d92;
 }
 
+.prev:hover{
+    background:#ff2d92;
+    color:white;
+}
+
 .next{
     border:2px solid #1b6cff;
     color:#1b6cff;
 }
+
+.next:hover{
+    background:#1b6cff;
+    color:white;
+}
+
+/* ========================= */
 
 footer{
     text-align:center;
     padding:40px;
     color:#aaa;
 }
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
 
 @media(max-width:900px){
 
@@ -155,6 +198,10 @@ footer{
 
     .hero-content h1{
         font-size:2.5rem;
+    }
+
+    .hero-content p{
+        font-size:1rem;
     }
 
     .grid{
