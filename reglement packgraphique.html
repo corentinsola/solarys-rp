@@ -8,60 +8,6 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
-
-}
-
-document.addEventListener("DOMContentLoaded", function(){
-
-    document.querySelectorAll(".section-content").forEach(content => {
-        content.style.display = "block";
-    });
-
-    document.querySelectorAll(".accordion-arrow span").forEach(arrow => {
-        arrow.innerHTML = "⌃";
-    });
-
-<script>
-
-function toggle(element){
-
-    const content = element.nextElementSibling;
-    const arrow = element.querySelector('.accordion-arrow span');
-
-    if(content.style.display === "none"){
-
-        content.style.display = "block";
-        arrow.innerHTML = "⌃";
-
-    }else{
-
-        content.style.display = "none";
-        arrow.innerHTML = "⌄";
-
-    }
-}
-
-document.addEventListener("DOMContentLoaded", function(){
-
-    document.querySelectorAll(".section-content").forEach(content => {
-        content.style.display = "block";
-    });
-
-    document.querySelectorAll(".accordion-arrow span").forEach(arrow => {
-        arrow.innerHTML = "⌃";
-    });
-
-});
-
-</script>
 
 </body>
 </html>
