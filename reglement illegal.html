@@ -7,30 +7,13 @@
 
 <title>Règlement Illégal - Solarys RP</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="p
+    econnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 /* HERO IMAGE */
-
-<!DOCTYPE html>
-<html lang="fr">
-
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Règlement Illégal - Solarys RP</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<style>
-
-*{
+{
 margin:0;
 padding:0;
 box-sizing:border-box;
@@ -119,6 +102,7 @@ padding:40px 0 80px;
 /* CARTES */
 
 .rule-card{
+border-radius:35px;
 
 background:linear-gradient(
 90deg,
@@ -142,7 +126,7 @@ box-shadow:
 
 .rule-card summary{
 
-padding:35px 40px;
+padding:22px 35px;
 
 display:flex;
 justify-content:space-between;
@@ -150,10 +134,12 @@ align-items:center;
 
 cursor:pointer;
 
-font-size:2rem;
-font-weight:700;
+font-size:2.3rem;
+font-weight:800;
 
 list-style:none;
+
+}
 
 }
 
@@ -165,8 +151,8 @@ display:none;
 
 .accordion-arrow{
 
-width:70px;
-height:70px;
+width:90px;
+height:90px;
 
 border-radius:50%;
 
@@ -221,7 +207,21 @@ padding-left:25px;
 .rule-content li{
 margin-bottom:12px;
 }
+.rule-content ul{
+list-style:none;
+padding-left:0;
+}
 
+.rule-content li{
+padding:12px 0;
+border-bottom:1px solid rgba(255,255,255,.05);
+}
+
+.rule-content li::before{
+content:"• ";
+color:#ff2d92;
+font-weight:bold;
+}
 .navigation{
 display:flex;
 gap:20px;
@@ -253,7 +253,17 @@ color:#ff2d92;
 border:2px solid #1b6cff;
 color:#1b6cff;
 }
+.prev:hover{
+background:#ff2d92;
+color:white;
+box-shadow:0 0 25px rgba(255,45,146,.5);
+}
 
+.next:hover{
+background:#1b6cff;
+color:white;
+box-shadow:0 0 25px rgba(27,108,255,.5);
+}
 </style>
 
 </head>
@@ -502,11 +512,11 @@ Merci de respecter l'ensemble des règles du serveur.
 <div class="navigation">
 
 <a href="https://reglement.solarys-rp.fr/reglement%20legal.html" class="prev">
-⬅ PAGE PRÉCÉDENTE
+← PAGE PRÉCÉDENTE
 </a>
 
-<a href="https://reglement.solarys-rp.fr/packgraphique.html" class="next">
-PAGE SUIVANTE ➜
+<a href="https://reglement.solarys-rp.fr/reglement%20packgraphique.html" class="next">
+PAGE SUIVANTE →
 </a>
 
 </div>
