@@ -16,42 +16,6 @@ padding:0;
 box-sizing:border-box;
 font-family:'Poppins',sans-serif;
 }
-<script>
-function toggle(element){
-
-    const section = element.parentElement;
-    const content = section.querySelector('.section-content');
-    const arrow = section.querySelector('.accordion-arrow span');
-
-    content.classList.toggle('hidden');
-
-    if(content.classList.contains('hidden')){
-        arrow.innerHTML = '⌄';
-    }else{
-        arrow.innerHTML = '⌃';
-    }
-
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-
-    document.querySelectorAll('.section').forEach(section => {
-
-        const content = section.querySelector('.section-content');
-
-        if(section.classList.contains('modif') ||
-           section.classList.contains('tirs') ||
-           section.classList.contains('sanctions')){
-
-            content.classList.remove('hidden');
-
-        }
-
-    });
-
-});
-
-</script>
 
  <script>
 
