@@ -748,15 +748,10 @@ Discord ➜ FiveM ➜ SOLARYS RP.
 <!-- ========================= -->
 
 <div class="message">
-Nous vous remercions de respecter ce règlement afin de préserver une expérience de jeu saine sur le serveur.
+    Nous vous remercions de respecter ce règlement afin de préserver une expérience de jeu saine sur le serveur.
 </div>
 
 </div>
-</div>
-
-<!-- ========================= -->
-<!-- NAVIGATION -->
-<!-- ========================= -->
 
 <section class="bottom-navigation">
 
@@ -776,8 +771,13 @@ Nous vous remercions de respecter ce règlement afin de préserver une expérien
     <p>© 2026 Solarys RP - Tous droits réservés</p>
 </footer>
 
-© 2026 Solarys RP - Tous droits réservés
+<script>
+document.querySelectorAll('.accordion-header').forEach(header => {
+    header.addEventListener('click', () => {
+        header.parentElement.classList.toggle('active');
+    });
+});
+</script>
 
-</footer>
-
-</div>
+</body>
+</html>
