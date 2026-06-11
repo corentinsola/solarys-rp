@@ -16,24 +16,7 @@ padding:0;
 box-sizing:border-box;
 font-family:'Poppins',sans-serif;
 }
-```html
 
-function toggle(element){
-
-    const content = element.nextElementSibling;
-    const arrow = element.querySelector('.accordion-arrow span');
-
-    if(content.style.display === "none"){
-
-        content.style.display = "block";
-        arrow.innerHTML = "⌃";
-
-    }else{
-
-        content.style.display = "none";
-        arrow.innerHTML = "⌄";
-
-    }
 }
 
 document.addEventListener("DOMContentLoaded", function(){
