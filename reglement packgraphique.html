@@ -50,7 +50,38 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+
 </script>
+
+ <script>
+
+document.querySelectorAll('.section-content').forEach(content=>{
+    content.style.display = 'none';
+});
+
+document.querySelectorAll('.accordion-arrow span').forEach(arrow=>{
+    arrow.innerHTML = '⌄';
+});
+
+function toggle(element){
+
+    const content = element.nextElementSibling;
+    const arrow = element.querySelector('.accordion-arrow span');
+
+    if(content.style.display === 'none'){
+
+        content.style.display = 'block';
+        arrow.innerHTML = '⌃';
+
+    }else{
+
+        content.style.display = 'none';
+        arrow.innerHTML = '⌄';
+
+    }
+}
+
+</script>   
 body{
 background:#05070d;
 color:#fff;
