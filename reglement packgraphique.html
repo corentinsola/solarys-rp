@@ -1,152 +1,16 @@
 <!DOCTYPE html>
 <html lang="fr">
-.category {
-    background: rgba(5,15,40,0.95);
-    border: 1px solid rgba(255,255,255,0.08);
-    border-radius: 30px;
-    overflow: hidden;
-    margin-bottom: 30px;
-}
 
-.category-btn {
-    width: 100%;
-    padding: 35px 40px;
-    border: none;
-    background: transparent;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-}
-
-.category-btn span:first-child {
-    font-size: 2.5rem;
-    font-weight: 800;
-    color: #ff2fa7;
-}
-
-.arrow {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background: rgba(120,80,255,0.15);
-    border: 2px solid rgba(255,255,255,0.08);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #c85fff;
-    font-size: 32px;
-    transition: .3s;
-    box-shadow: 0 0 30px rgba(150,70,255,.5);
-}
-
-.category-btn.active .arrow {
-    transform: rotate(180deg);
-}
-
-.category-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height .5s ease;
-}
-
-.category-content.active {
-    max-height: 2000px;
-}
-
-.rules-grid {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 50px;
-    padding: 0 40px 40px;
-}
-
-.rules-grid ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.rules-grid li {
-    padding: 25px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.06);
-    color: white;
-    font-size: 1.8rem;
-    position: relative;
-    padding-left: 20px;
-}
-
-.rules-grid li::before {
-    content: "•";
-    color: #ff2fa7;
-    position: absolute;
-    left: 0;
-}
-
-@media(max-width:900px){
-
-    .rules-grid{
-        grid-template-columns:1fr;
-    }
-
-    .category-btn span:first-child{
-        font-size:1.8rem;
-    }
-
-}
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Règlement Pack Graphique - Solarys RP</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
-.accordion-arrow{
-    width:60px;
-    height:60px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    border-radius:50%;
-    background:linear-gradient(
-        135deg,
-        rgba(255,45,146,.15),
-        rgba(27,108,255,.15)
-    );
-    border:2px solid rgba(255,255,255,.08);
-    box-shadow:
-    0 0 15px rgba(255,45,146,.35),
-    0 0 25px rgba(27,108,255,.35);
-    transition:.3s;
-}
 
-.accordion-arrow span{
-    font-size:30px;
-    font-weight:700;
-    background:linear-gradient(
-        90deg,
-        #ff2d92,
-        #8b5cf6,
-        #1b6cff
-    );
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
-}
-
-.section-header:hover .accordion-arrow{
-    transform:scale(1.08);
-}
-
-.section-header{
-    padding:25px 30px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    cursor:pointer;
-}
 *{
     margin:0;
     padding:0;
@@ -155,198 +19,126 @@
 }
 
 body{
-    background:#05070d;
+    background:#020817;
     color:white;
+    padding:40px 20px;
 }
 
-/* ========================= */
-/* BANNIERE */
-/* ========================= */
+.container{
+    max-width:1500px;
+    margin:auto;
+}
 
-.hero{
-    height:550px;
+.category{
+    background:linear-gradient(
+        135deg,
+        rgba(5,15,40,0.95),
+        rgba(0,20,60,0.95)
+    );
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:35px;
+    overflow:hidden;
+    box-shadow:0 0 30px rgba(0,0,0,.4);
+}
 
-    background-image:
-    linear-gradient(
-        rgba(0,0,0,.45),
-        rgba(0,0,0,.75)
-    ),
-    url("https://raw.githubusercontent.com/corentinsola/solarys-rp/main/banniere-packgraphique.png");
-
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-
+.category-btn{
+    width:100%;
+    border:none;
+    background:none;
+    padding:40px;
     display:flex;
-    justify-content:center;
+    justify-content:space-between;
     align-items:center;
-    text-align:center;
+    cursor:pointer;
 }
 
-.hero-content h1{
-    font-size:4.5rem;
-    font-weight:700;
+.category-title{
+    color:#ff2fa7;
+    font-size:3rem;
+    font-weight:800;
     text-transform:uppercase;
 }
 
-.hero-content p{
-    margin-top:20px;
-    font-size:1.3rem;
-    color:#e5e5e5;
-}
-
-.neon-divider{
-    width:400px;
-    height:3px;
-    margin:25px auto;
-    background:linear-gradient(
-        90deg,
-        #ff2d92,
-        #8b5cf6,
-        #1b6cff
-    );
-}
-
-/* ========================= */
-/* CONTENU */
-/* ========================= */
-
-.container{
-    max-width:1400px;
-    margin:auto;
-    padding:40px;
-}
-
-.section{
-    background:linear-gradient(
-        90deg,
-        #04060d,
-        #041225
-    );
-
-    border-radius:25px;
-    margin-bottom:25px;
-    overflow:hidden;
-
-    border:1px solid rgba(255,255,255,.05);
-}
-
-.section-header{
-    padding:25px 30px;
-}
-
-.section-header h2{
-    font-size:2rem;
-    color:#ff2d92;
-}
-
-.section-content{
-    padding:0 30px 30px;
-}
-
-.grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:40px;
-}
-
-ul{
-    list-style:none;
-}
-
-li{
-    padding:14px 0;
-    border-bottom:1px solid rgba(255,255,255,.05);
-    font-size:1.05rem;
-}
-
-li::before{
-    content:"• ";
-    color:#ff2d92;
-    font-weight:bold;
-}
-
-.message{
-    margin-top:25px;
-    padding:20px;
-    border:1px solid #1b6cff;
-    border-radius:15px;
-    text-align:center;
-}
-
-/* ========================= */
-/* BOUTONS */
-/* ========================= */
-
-.navigation{
+.arrow{
+    width:80px;
+    height:80px;
+    border-radius:50%;
     display:flex;
-    gap:25px;
-    margin-top:40px;
-}
+    align-items:center;
+    justify-content:center;
+    font-size:35px;
+    color:#d266ff;
 
-.navigation a{
-    flex:1;
-    padding:20px;
-    text-decoration:none;
-    text-align:center;
-    border-radius:15px;
-    font-weight:700;
+    background:rgba(120,80,255,0.15);
+    border:2px solid rgba(255,255,255,0.08);
+
+    box-shadow:
+    0 0 25px rgba(150,70,255,.6),
+    inset 0 0 15px rgba(150,70,255,.3);
+
     transition:.3s;
 }
 
-.prev{
-    border:2px solid #ff2d92;
-    color:#ff2d92;
+.category-btn.active .arrow{
+    transform:rotate(180deg);
 }
 
-.prev:hover{
-    background:#ff2d92;
-    color:white;
+.category-content{
+    max-height:2000px;
+    overflow:hidden;
+    transition:max-height .4s ease;
 }
 
-.next{
-    border:2px solid #1b6cff;
-    color:#1b6cff;
+.category-content.closed{
+    max-height:0;
 }
 
-.next:hover{
-    background:#1b6cff;
-    color:white;
+.rules-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    padding:0 40px 40px;
 }
 
-/* ========================= */
-
-footer{
-    text-align:center;
-    padding:40px;
-    color:#aaa;
+.rules-grid ul{
+    list-style:none;
 }
 
-/* ========================= */
-/* MOBILE */
-/* ========================= */
+.rules-grid li{
+    padding:25px 0;
+    border-bottom:1px solid rgba(255,255,255,0.06);
+    font-size:1.5rem;
+    position:relative;
+    padding-left:20px;
+}
+
+.rules-grid li::before{
+    content:"•";
+    color:#ff2fa7;
+    position:absolute;
+    left:0;
+}
 
 @media(max-width:900px){
 
-    .hero{
-        height:350px;
-    }
+.rules-grid{
+    grid-template-columns:1fr;
+}
 
-    .hero-content h1{
-        font-size:2.5rem;
-    }
+.category-title{
+    font-size:1.8rem;
+}
 
-    .hero-content p{
-        font-size:1rem;
-    }
+.arrow{
+    width:60px;
+    height:60px;
+    font-size:25px;
+}
 
-    .grid{
-        grid-template-columns:1fr;
-    }
+.rules-grid li{
+    font-size:1.1rem;
+}
 
-    .navigation{
-        flex-direction:column;
-    }
 }
 
 </style>
@@ -354,115 +146,64 @@ footer{
 
 <body>
 
-<header class="hero">
-    <div class="hero-content">
-        <h1>RÈGLEMENT PACK GRAPHIQUE</h1>
-        <p>Modifications graphiques autorisées et interdites sur Solarys RP</p>
-        <div class="neon-divider"></div>
-    </div>
-</header>
-
 <div class="container">
 
 <div class="category">
 
-<button class="category-btn" onclick="toggleCategory(this)">
-    <span>MODIFICATIONS INTERDITES</span>
-    <span class="arrow">⌃</span>
+<button class="category-btn active" onclick="toggleCategory(this)">
+
+<span class="category-title">
+MODIFICATIONS INTERDITES
+</span>
+
+<span class="arrow">⌃</span>
+
 </button>
 
-<div class="category-content active">
+<div class="category-content">
 
-    <div class="rules-grid">
-
-        <ul>
-            <li>No props</li>
-            <li>No element</li>
-            <li>No water</li>
-            <li>No bush</li>
-            <li>Suppression d’objets ou d’éléments de décors</li>
-            <li>Modification de la FOV</li>
-            <li>Fichiers donnant un avantage visuel</li>
-        </ul>
-
-        <ul>
-            <li>Réduction d’effets pour voir à travers certains éléments</li>
-            <li>Suppression de végétation, eau, fumée ou props</li>
-            <li>Full stamina</li>
-            <li>Réduction de recul</li>
-            <li>Modifications de luminosité abusives</li>
-            <li>Packs donnant un avantage compétitif</li>
-            <li>Optimisations abusives modifiant le gameplay</li>
-        </ul>
-
-    </div>
-
-</div>
-
-</div>
-
- </div>
-
-<div class="section">
-
-<div class="section-header">
-<h2>SYSTÈMES FACILITANT LES TIRS</h2>
-</div>
-
-<div class="section-content">
+<div class="rules-grid">
 
 <ul>
-<li>Crosshairs externes (viseurs)</li>
-<li>Tracers (marqueurs de tir)</li>
-<li>Hit effects</li>
-<li>Kill effects</li>
-<li>Blood effects</li>
+<li>No props</li>
+<li>No element</li>
+<li>No water</li>
+<li>No bush</li>
+<li>Suppression d’objets ou d’éléments de décors</li>
+<li>Modification de la FOV</li>
+<li>Fichiers donnant un avantage visuel</li>
+</ul>
+
+<ul>
+<li>Réduction d’effets pour voir à travers certains éléments</li>
+<li>Suppression de végétation, eau, fumée ou props</li>
+<li>Full stamina</li>
+<li>Réduction de recul</li>
+<li>Modifications de luminosité abusives</li>
+<li>Packs donnant un avantage compétitif</li>
+<li>Optimisations abusives modifiant le gameplay</li>
 </ul>
 
 </div>
 
 </div>
 
-<div class="section">
-
-<div class="section-header">
-<h2>SANCTIONS</h2>
-</div>
-
-<div class="section-content">
-
-<ul>
-<li>⚠️ Warn</li>
-<li>⛓️ Jail / TIG</li>
-<li>🔨 Bannissement temporaire</li>
-<li>⛔ Bannissement définitif</li>
-</ul>
-
-<div class="message">
-Nous vous remercions de respecter ce règlement afin de préserver une expérience de jeu saine sur le serveur.
 </div>
 
 </div>
 
-</div>
+<script>
 
-<div class="navigation">
+function toggleCategory(button){
 
-<a href="https://reglement.solarys-rp.fr/reglement.html" class="prev">
-⬅ PAGE PRÉCÉDENTE
-</a>
+    button.classList.toggle("active");
 
-<a href="https://reglement.solarys-rp.fr/notion.html" class="next">
-PAGE SUIVANTE ➜
-</a>
+    const content = button.nextElementSibling;
 
-</div>
+    content.classList.toggle("closed");
+}
 
-</div>
-
-<footer>
-© 2026 Solarys RP - Tous droits réservés
-</footer>
+</script>
 
 </body>
 </html>
