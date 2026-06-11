@@ -156,7 +156,7 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 
-padding:35px 45px;
+padding:22px 35px;
 
 cursor:pointer;
 }
@@ -338,7 +338,33 @@ padding:30px;
 
 color:#999;
 }
+.navigation{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:30px;
 
+max-width:1700px;
+margin:40px auto;
+padding:0 50px;
+}
+
+.navigation a{
+flex:1;
+max-width:700px;
+
+height:85px;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+font-size:1.7rem;
+font-weight:700;
+
+text-decoration:none;
+border-radius:25px;
+}
 @media(max-width:1000px){
 
 .hero h1{
@@ -346,7 +372,9 @@ font-size:3rem;
 }
 
 .title{
-font-size:1.5rem;
+
+font-size:1.8rem;
+font-weight:800;
 }
 
 .grid{
@@ -354,10 +382,8 @@ grid-template-columns:1fr;
 }
 
 .toggle-btn{
-width:70px;
-height:70px;
-font-size:30px;
-}
+width:65px;
+height:65px;
 
 }
 
@@ -526,6 +552,39 @@ font-size:30px;
 
 <li>• Pause RP ➜ ⏸️ Moment de flottement / confusion.</li>
 
+  </ul>
+
+</div>
+</div>
+
+</div>
+
+<div class="navigation">
+
+    <a href="reglement.html" class="prev">
+        ← PAGE PRÉCÉDENTE
+    </a>
+
+    <a href="legal.html" class="next">
+        PAGE SUIVANTE →
+    </a>
+
+</div>
+
+<footer>
+    <p>© 2026 Solarys RP - Tous droits réservés</p>
+</footer>
+
+<script>
+document.querySelectorAll('.accordion-header').forEach(header => {
+    header.addEventListener('click', () => {
+        header.parentElement.classList.toggle('active');
+    });
+});
+</script>
+
+</body>
+</html>
 </ul>
 
 </div>
@@ -732,17 +791,21 @@ Discord ➜ FiveM ➜ SOLARYS RP.
 
 </ul>
 
-</div>
-
-</div>
-
-</div>
-
-<!-- ========================= -->
-<!-- NAVIGATION -->
-  
 <div class="navigation">
 
+    <a href="reglement.html" class="prev">
+        ← PAGE PRÉCÉDENTE
+    </a>
+
+    <a href="legal.html" class="next">
+        PAGE SUIVANTE →
+    </a>
+
+</div>
+
+<footer>
+    <p>© 2026 Solarys RP - Tous droits réservés</p>
+</footer>
     <a href="reglement.html" class="prev">
         ← PAGE PRÉCÉDENTE
     </a>
