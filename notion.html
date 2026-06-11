@@ -283,14 +283,69 @@ rgba(0,216,182,.08);
 /* NAVIGATION */
 /* ========================= */
 
-.navigation{
+.page-navigation{
+display:flex;
+justify-content:space-between;
+gap:20px;
+margin-top:50px;
+flex-wrap:wrap;
+}
 
+.nav-btn{
+flex:1;
+min-width:250px;
+text-decoration:none;
+color:white;
+background:rgba(255,255,255,.08);
+border:1px solid rgba(255,255,255,.15);
+padding:18px 25px;
+border-radius:20px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+transition:.3s;
+}
+}
+
+.nav-btn{
+flex:1;
+min-width:250px;
+text-decoration:none;
+color:white;
+background:rgba(255,255,255,.08);
+border:1px solid rgba(255,255,255,.15);
+padding:18px 25px;
+border-radius:20px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+transition:.3s;
+}
+
+.nav-btn:hover{
+transform:translateY(-3px);
+border-color:#ff2d92;
+box-shadow:0 0 20px rgba(255,45,146,.4);
+}
+
+.nav-btn span{
+font-size:30px;
+}
+
+.nav-btn small{
+display:block;
+color:#aaa;
+}
+
+.nav-btn strong{
+font-size:18px;
+color:white;
+}
 display:flex;
 gap:20px;
 
 margin-top:40px;
 }
-
 .navigation a{
 
 flex:1;
@@ -387,6 +442,9 @@ height:65px;
 
 }
 
+}
+}
+  
 </style>
 
 </head>
@@ -394,20 +452,6 @@ height:65px;
 <body>
 
 <header class="hero">
-
-<div>
-
-<h1>NOTIONS RP</h1>
-
-<p>Guide complet du RolePlay sur Solarys RP</p>
-
-<div class="neon-divider"></div>
-
-</div>
-
-</header>
-
-<div class="container">
 
 <!-- ========================= -->
 <!-- NOTIONS PRINCIPALES -->
@@ -427,26 +471,6 @@ height:65px;
 
 <div class="accordion-content">
 
-<div class="grid">
-
-<div>
-
-<strong>RÈGLES RP</strong><br><br>
-
-• Mass RP<br>
-• RolePlay<br>
-• HRP<br>
-• Metagaming<br>
-• Powergaming<br>
-• No Fear RP<br>
-• Force RP<br>
-• Freekill
-
-</div>
-
-<div>
-
-<strong>COMPORTEMENT</strong><br><br>
 
 • Revenge Kill (RK)<br>
 • New Life Rule (NLR)<br>
@@ -558,33 +582,6 @@ height:65px;
 </div>
 
 </div>
-
-<div class="navigation">
-
-    <a href="reglement.html" class="prev">
-        ← PAGE PRÉCÉDENTE
-    </a>
-
-    <a href="legal.html" class="next">
-        PAGE SUIVANTE →
-    </a>
-
-</div>
-
-<footer>
-    <p>© 2026 Solarys RP - Tous droits réservés</p>
-</footer>
-
-<script>
-document.querySelectorAll('.accordion-header').forEach(header => {
-    header.addEventListener('click', () => {
-        header.parentElement.classList.toggle('active');
-    });
-});
-</script>
-
-</body>
-</html>
 </ul>
 
 </div>
@@ -598,8 +595,6 @@ document.querySelectorAll('.accordion-header').forEach(header => {
 <div class="accordion">
 
 <div class="accordion-header">
-
-<div class="title blue">
 🎭 JOUER SANS EXCÈS
 </div>
 
@@ -646,7 +641,9 @@ Lors d’un braquage ou d’une scène tendue, dosez vos propos :
 <!-- ========================= -->
 
 <div class="accordion">
-
+</div>
+</div>
+</div>
 <div class="accordion-header">
 
 <div class="title orange">
