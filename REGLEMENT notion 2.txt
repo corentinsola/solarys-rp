@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Règlement Pack Graphique - Solarys RP</title>
+<title>Notions RP - Solarys RP</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
@@ -34,7 +34,7 @@ linear-gradient(
 rgba(0,0,0,.35),
 rgba(0,0,0,.70)
 ),
-url("https://reglement.solarys-rp.fr/banniere-packgraphique.png");
+url("url("https://reglement.solarys-rp.fr/banniere-notion.png");");
 
 background-size:cover;
 background-position:center;
@@ -313,10 +313,10 @@ flex-direction:column;
 
 <div class="hero-content">
 
-<h1>RÈGLEMENT PACK GRAPHIQUE</h1>
+<h1>NOTIONS RP</h1>
 
 <p>
-Modifications graphiques autorisées et interdites sur Solarys RP
+Les bases essentielles du RolePlay sur Solarys RP
 </p>
 
 <div class="neon-divider"></div>
@@ -327,51 +327,10 @@ Modifications graphiques autorisées et interdites sur Solarys RP
 
 <div class="container">
 
-<div class="section modif">
+<div class="section">
 
 <div class="section-header" onclick="toggle(this)">
-<h2>MODIFICATIONS INTERDITES</h2>
-
-<div class="accordion-arrow">
-<span>⌃</span>
-</div>
-
-</div>
-
-<div class="section-content">
-
-<div class="grid">
-
-<ul>
-<li>No props</li>
-<li>No element</li>
-<li>No water</li>
-<li>No bush</li>
-<li>Suppression d'objets ou d'éléments de décors</li>
-<li>Modification de la FOV</li>
-<li>Fichiers donnant un avantage visuel</li>
-</ul>
-
-<ul>
-<li>Réduction d'effets pour voir à travers certains éléments</li>
-<li>Suppression de végétation, eau, fumée ou props</li>
-<li>Full stamina</li>
-<li>Réduction de recul</li>
-<li>Modifications de luminosité abusives</li>
-<li>Packs donnant un avantage compétitif</li>
-<li>Optimisations abusives modifiant le gameplay</li>
-</ul>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="section tirs">
-
-<div class="section-header" onclick="toggle(this)">
-<h2>SYSTÈMES FACILITANT LES TIRS</h2>
+<h2>📖 NOTIONS PRINCIPALES</h2>
 
 <div class="accordion-arrow">
 <span>⌃</span>
@@ -382,18 +341,124 @@ Modifications graphiques autorisées et interdites sur Solarys RP
 <div class="section-content">
 
 <ul>
-<li>Crosshairs externes</li>
-<li>Tracers</li>
-<li>Hit Effects</li>
-<li>Kill Effects</li>
-<li>Blood Effects</li>
+<li>Mass RP</li>
+<li>RolePlay</li>
+<li>HRP</li>
+<li>Metagaming</li>
+<li>PowerGaming</li>
+<li>Fear RP</li>
+<li>No Fear</li>
+<li>Force RP</li>
+</ul>
+<div class="section">
+
+<div class="section-header" onclick="toggle(this)">
+<h2>💬 LEXIQUE RP</h2>
+
+<div class="accordion-arrow">
+<span>⌃</span>
+</div>
+
+</div>
+
+<div class="section-content">
+
+<ul>
+<li>AFK</li>
+<li>Usebug</li>
+<li>StreamHack</li>
+<li>Cop Bait</li>
+<li>Fair Play</li>
+<li>Cohérence RP</li>
 </ul>
 
 </div>
+<div class="section">
+
+<div class="section-header" onclick="toggle(this)">
+<h2>🎮 JOUER SANS EXCÈS</h2>
+
+<div class="accordion-arrow">
+<span>⌃</span>
+</div>
 
 </div>
 
-<div class="section sanctions">
+<div class="section-content">
+
+<ul>
+<li>Le RP prime sur le farm.</li>
+<li>Évitez le Full Win.</li>
+<li>Favorisez les interactions.</li>
+<li>Respectez les autres joueurs.</li>
+</ul>
+
+</div>
+</div><div class="section">
+
+<div class="section-header" onclick="toggle(this)">
+<h2>⚖️ JOUER LA DÉFAITE INTELLIGEMMENT</h2>
+
+<div class="accordion-arrow">
+<span>⌃</span>
+</div>
+
+</div>
+
+<div class="section-content">
+
+<ul>
+<li>Accepter les conséquences RP.</li>
+<li>Ne pas chercher à gagner à tout prix.</li>
+<li>Valoriser les scènes RP.</li>
+</ul>
+
+</div>
+</div><div class="section">
+
+<div class="section-header" onclick="toggle(this)">
+<h2>🧠 GARDER DU RECUL</h2>
+
+<div class="accordion-arrow">
+<span>⌃</span>
+</div>
+
+</div>
+
+<div class="section-content">
+
+<ul>
+<li>Distinguer RP et HRP.</li>
+<li>Éviter les conflits personnels.</li>
+<li>Privilégier le dialogue.</li>
+</ul>
+
+</div>
+</div><div class="section">
+
+<div class="section-header" onclick="toggle(this)">
+<h2>❓ QUESTIONS FRÉQUENTES</h2>
+
+<div class="accordion-arrow">
+<span>⌃</span>
+</div>
+
+</div>
+
+<div class="section-content">
+
+<ul>
+<li>Comment signaler un joueur ?</li>
+<li>Que faire en cas de bug ?</li>
+<li>Comment contacter le staff ?</li>
+</ul>
+
+</div>
+</div>
+
+</div>
+
+</div>
 
 <div class="section-header" onclick="toggle(this)">
 <h2>SANCTIONS</h2>
@@ -424,11 +489,11 @@ Nous vous remercions de respecter ce règlement afin de préserver une expérien
 <!-- Navigation -->
 <div class="navigation">
 
-    <a href="https://reglement.solarys-rp.fr/" class="prev">
+<a href="https://reglement.solarys-rp.fr/reglement%20packgraphique.html" class="prev">
         ← PAGE PRÉCÉDENTE
     </a>
 
-    <a href="https://reglement.solarys-rp.fr/notion.html" class="next">
+<a href="https://reglement.solarys-rp.fr/reglement%20legal.html" class="next">
         PAGE SUIVANTE →
     </a>
 
