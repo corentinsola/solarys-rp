@@ -192,23 +192,34 @@ body{
     overflow:hidden;
 }
 
-.hero::before{
-    content:"";
-    position:absolute;
-    inset:0;
+.hero{
 
-    background:
-    radial-gradient(circle at top left,
-    rgba(255,0,180,.35),
-    transparent 40%),
+height:650px;
 
-    radial-gradient(circle at top right,
-    rgba(0,120,255,.35),
-    transparent 40%),
+background-image:
+linear-gradient(
+rgba(0,0,0,.45),
+rgba(0,0,0,.80)
+),
+url("https://raw.githubusercontent.com/corentinsola/solarys-rp/main/cote%20illegal.png");
 
-    radial-gradient(circle at bottom center,
-    rgba(180,0,255,.25),
-    transparent 50%);
+background-size:cover;
+background-position:center center;
+background-repeat:no-repeat;
+
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+
+position:relative;
+
+border-bottom:1px solid rgba(255,255,255,.08);
+
+box-shadow:
+inset 0 -120px 120px rgba(0,0,0,.75);
+
+}
 }
 
 .hero h1,
