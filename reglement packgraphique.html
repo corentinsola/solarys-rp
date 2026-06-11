@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -8,162 +9,175 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+<style>
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:
+    linear-gradient(
+        rgba(5,7,13,0.80),
+        rgba(5,7,13,0.92)
+    ),
+    url("https://reglement.solarys-rp.fr/images/sasp-fond.png");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+
+    color:#fff;
+}
+
+.hero{
+    height:550px;
+    background:
+    linear-gradient(
+        rgba(0,0,0,.35),
+        rgba(0,0,0,.70)
+    ),
+    url("https://reglement.solarys-rp.fr/images/sasp-fond.png");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero-content h1{
+    font-size:4.5rem;
+    font-weight:700;
+    text-transform:uppercase;
+}
+
+.hero-content p{
+    margin-top:20px;
+    font-size:1.4rem;
+    color:#e5e5e5;
+}
+
+.neon-divider{
+    width:420px;
+    height:3px;
+    margin:25px auto;
+    background:linear-gradient(90deg,#ff2d92,#8b5cf6,#1b6cff);
+}
+
+.container{
+    max-width:1600px;
+    margin:auto;
+    padding:40px;
+}
+
+.section{
+    background:linear-gradient(90deg,#04060d,#041225);
+    border-radius:25px;
+    margin-bottom:25px;
+    overflow:hidden;
+}
+
+.section-header{
+    padding:25px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    cursor:pointer;
+}
+
+.modif h2{color:#ff2d92;}
+.tirs h2{color:#9c4dff;}
+.sanctions h2{color:#ffae00;}
+
+.accordion-arrow{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:rgba(255,255,255,.05);
+}
+
+.accordion-arrow span{
+    font-size:30px;
+}
+
+.section-content{
+    padding:0 30px 30px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+}
+
+ul{
+    list-style:none;
+}
+
+li{
+    padding:14px 0;
+    border-bottom:1px solid rgba(255,255,255,.05);
+}
+
+li::before{
+    content:"• ";
+    color:#ff2d92;
+}
+
+.navigation{
+    display:flex;
+    gap:25px;
+    margin-top:40px;
+}
+
+.navigation a{
+    flex:1;
+    padding:24px;
+    text-align:center;
+    text-decoration:none;
+    border-radius:20px;
+    font-weight:700;
+}
+
+.prev{
+    border:2px solid #ff2d92;
+    color:#ff2d92;
+} 
+
+.next{
+    border:2px solid #1b6cff;
+    color:#1b6cff;
+}
+
+footer{
+    margin-top:40px;
+    padding:30px;
+    text-align:center;
+    color:#aaa;
+}
+
+@media(max-width:900px){
+
+    .grid{
+        grid-template-columns:1fr;
+    }
+
+    .navigation{
+        flex-direction:column;
+    }
+
+}
 </style>
 </head>
-
-<body>
-
-<header class="hero">
-
-<div class="hero-content">
-
-<h1>RÈGLEMENT PACK GRAPHIQUE</h1>
-
-<p>
-Modifications graphiques autorisées et interdites sur Solarys RP
-</p>
-
-<div class="neon-divider"></div>
-
-</div>
-
-</header>
-
-<div class="container">
-
-<div class="section modif">
-
-<div class="section-header" onclick="toggle(this)">
-<h2>MODIFICATIONS INTERDITES</h2>
-
-<div class="accordion-arrow">
-<span>⌃</span>
-</div>
-
-</div>
-
-<div class="section-content">
-
-<div class="grid">
-
-<ul>
-<li>No props</li>
-<li>No element</li>
-<li>No water</li>
-<li>No bush</li>
-<li>Suppression d'objets ou d'éléments de décors</li>
-<li>Modification de la FOV</li>
-<li>Fichiers donnant un avantage visuel</li>
-</ul>
-
-<ul>
-<li>Réduction d'effets pour voir à travers certains éléments</li>
-<li>Suppression de végétation, eau, fumée ou props</li>
-<li>Full stamina</li>
-<li>Réduction de recul</li>
-<li>Modifications de luminosité abusives</li>
-<li>Packs donnant un avantage compétitif</li>
-<li>Optimisations abusives modifiant le gameplay</li>
-</ul>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="section tirs">
-
-<div class="section-header" onclick="toggle(this)">
-<h2>SYSTÈMES FACILITANT LES TIRS</h2>
-
-<div class="accordion-arrow">
-<span>⌃</span>
-</div>
-
-</div>
-
-<div class="section-content">
-
-<ul>
-<li>Crosshairs externes</li>
-<li>Tracers</li>
-<li>Hit Effects</li>
-<li>Kill Effects</li>
-<li>Blood Effects</li>
-</ul>
-
-</div>
-
-</div>
-
-<div class="section sanctions">
-
-<div class="section-header" onclick="toggle(this)">
-<h2>SANCTIONS</h2>
-
-<div class="accordion-arrow">
-<span>⌃</span>
-</div>
-
-</div>
-
-<div class="section-content">
-
-<ul>
-<li>⚠️ Warn</li>
-<li>🔗 Jail / TIG</li>
-<li>🔨 Bannissement temporaire</li>
-<li>⛔ Bannissement définitif</li>
-</ul>
-
-<div class="message">
-Nous vous remercions de respecter ce règlement afin de préserver une expérience de jeu saine sur le serveur.
-</div>
-
-</div>
-</div>
-
-<!-- ========================= -->
-<!-- NAVIGATION -->
-<!-- ========================= -->
-
-<div class="navigation">
-
-    <a href="https://reglement.solarys-rp.fr/" class="prev">
-        ⬅ PAGE PRÉCÉDENTE
-    </a>
-
-    <a href="https://reglement.solarys-rp.fr/notion.html" class="next">
-        PAGE SUIVANTE ➜
-    </a>
-
-</div>
-
-  <footer>
-
-© 2026 Solarys RP - Tous droits réservés
-
-</footer>
-
-</body>
-</html><script>
-function toggle(element){
-
-    const content = element.nextElementSibling;
-    const arrow = element.querySelector('.accordion-arrow span');
-
-    if(content.style.display === "none"){
-        content.style.display = "block";
-        arrow.innerHTML = "⌃";
-    }else{
-        content.style.display = "none";
-        arrow.innerHTML = "⌄";
-    }
-}
-</script>
-
-</body>
-</html>
-</div>
+```
