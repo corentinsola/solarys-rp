@@ -10,7 +10,49 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
+.accordion-arrow{
+    width:60px;
+    height:60px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    background:linear-gradient(
+        135deg,
+        rgba(255,45,146,.15),
+        rgba(27,108,255,.15)
+    );
+    border:2px solid rgba(255,255,255,.08);
+    box-shadow:
+    0 0 15px rgba(255,45,146,.35),
+    0 0 25px rgba(27,108,255,.35);
+    transition:.3s;
+}
 
+.accordion-arrow span{
+    font-size:30px;
+    font-weight:700;
+    background:linear-gradient(
+        90deg,
+        #ff2d92,
+        #8b5cf6,
+        #1b6cff
+    );
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.section-header:hover .accordion-arrow{
+    transform:scale(1.08);
+}
+
+.section-header{
+    padding:25px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    cursor:pointer;
+}
 *{
     margin:0;
     padding:0;
@@ -230,8 +272,12 @@ footer{
 
 <div class="section">
 
-<div class="section-header">
+<div class="section-header" onclick="toggle(this)">
 <h2>MODIFICATIONS INTERDITES</h2>
+
+<div class="accordion-arrow">
+ <span>⌃</span>
+</div>
 </div>
 
 <div class="section-content">
