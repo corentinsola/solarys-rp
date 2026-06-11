@@ -11,7 +11,144 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
+/* HERO IMAGE */
 
+.hero{
+    position:relative;
+    height:260px;
+
+    background:
+    linear-gradient(
+    rgba(5,5,5,.35),
+    rgba(5,5,5,.65)),
+    url("illegal-bg.webp");
+
+    background-size:cover;
+    background-position:center;
+}
+
+/* CONTENEUR */
+
+.container{
+    width:95%;
+    max-width:1600px;
+    margin:-20px auto 80px;
+}
+
+/* CARTE */
+
+.rule-card{
+    background:
+    linear-gradient(
+    90deg,
+    rgba(255,0,170,.08),
+    rgba(90,183,255,.08));
+
+    border:1px solid rgba(255,0,180,.25);
+    border-radius:20px;
+    margin-bottom:18px;
+    overflow:hidden;
+
+    backdrop-filter:blur(10px);
+}
+
+/* TITRE */
+
+.rule-card summary{
+    list-style:none;
+    cursor:pointer;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:28px 35px;
+
+    font-size:1.8rem;
+    font-weight:700;
+}
+
+.rule-card summary::-webkit-details-marker{
+    display:none;
+}
+
+/* BLOC GAUCHE */
+
+.summary-left{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+/* FLECHE */
+
+.arrow{
+    width:60px;
+    height:60px;
+
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:2rem;
+    font-weight:700;
+
+    border:2px solid #ff3fc7;
+
+    color:#ff3fc7;
+
+    box-shadow:
+    0 0 15px #ff3fc7,
+    0 0 30px rgba(255,63,199,.5);
+
+    transition:.3s;
+}
+
+.rule-card[open] .arrow{
+    transform:rotate(90deg);
+}
+
+.rule-card:hover .arrow{
+    transform:scale(1.1);
+}
+
+/* CONTENU */
+
+.rule-content{
+    border-top:1px solid rgba(255,255,255,.08);
+    padding:30px;
+}
+
+.rule-content ul{
+    padding-left:25px;
+}
+
+.rule-content li{
+    margin-bottom:14px;
+}
+
+/* COULEURS DES FLECHES */
+
+.blue .arrow{
+    border-color:#2fa6ff;
+    color:#2fa6ff;
+
+    box-shadow:
+    0 0 15px #2fa6ff,
+    0 0 30px rgba(47,166,255,.5);
+}
+
+.pink .arrow{
+    border-color:#ff4dd2;
+    color:#ff4dd2;
+}
+
+.purple .arrow{
+    border-color:#b64dff;
+    color:#b64dff;
+}
 *{
     margin:0;
     padding:0;
