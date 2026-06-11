@@ -121,24 +121,23 @@ padding:50px 0;
 /* ========================= */
 
 .accordion{
-
 margin-bottom:25px;
 
-border-radius:35px;
+border-radius:25px;
 
 overflow:hidden;
 
-background:
-linear-gradient(
+background:linear-gradient(
 90deg,
-#020510,
-#03182d
+#04060d,
+#041225
 );
 
-border:
-1px solid rgba(255,255,255,.08);
+border:1px solid rgba(255,255,255,.06);
 
-transition:.3s;
+box-shadow:
+0 0 20px rgba(255,45,146,.08),
+0 0 20px rgba(27,108,255,.08);
 }
 
 .accordion:hover{
@@ -152,19 +151,19 @@ box-shadow:
 
 .accordion-header{
 
+padding:25px 30px;
+
 display:flex;
 justify-content:space-between;
 align-items:center;
-
-padding:22px 35px;
 
 cursor:pointer;
 }
 
 .title{
-
-font-size:2.3rem;
-font-weight:800;
+font-size:2rem;
+font-weight:700;
+text-transform:uppercase;
 }
 
 .pink{color:#ff2d92;}
@@ -174,34 +173,35 @@ font-weight:800;
 .green{color:#00d8b6;}
 
 .toggle-btn{
-width:90px;
-height:90px;
+
+width:60px;
+height:60px;
 
 display:flex;
 align-items:center;
 justify-content:center;
 
-border:none;
 border-radius:50%;
 
 background:
 linear-gradient(
 135deg,
-rgba(255,45,146,.12),
-rgba(27,108,255,.12)
+rgba(255,45,146,.15),
+rgba(27,108,255,.15)
 );
 
-color:#9c4dff;
-font-size:42px;
-font-weight:700;
-
-cursor:pointer;
+border:2px solid rgba(255,255,255,.08);
 
 box-shadow:
-0 0 25px rgba(156,77,255,.45),
-0 0 50px rgba(156,77,255,.25);
+0 0 15px rgba(255,45,146,.35),
+0 0 25px rgba(27,108,255,.35);
 
-transition:all .3s ease;
+font-size:30px;
+font-weight:700;
+
+color:#9c4dff;
+
+transition:.3s;
 }
 
 .accordion.active .toggle-btn{
@@ -212,7 +212,9 @@ transform:rotate(180deg);
 
 display:none;
 
-padding:40px 50px;
+padding:30px;
+
+border-top:1px solid rgba(255,255,255,.08);
 
 line-height:2;
 font-size:18px;
@@ -762,11 +764,11 @@ Discord ➜ FiveM ➜ SOLARYS RP.
 <!-- Navigation -->
 <div class="navigation">
 
-<a href="https://reglement.solarys-rp.fr/" class="prev">
+<a href="https://reglement.solarys-rp.fr/reglement%20packgraphique.html" class="prev">
 ← PAGE PRÉCÉDENTE
 </a>
 
-<a href="https://reglement.solarys-rp.fr/notion.html" class="next">
+<a href="https://reglement.solarys-rp.fr/reglement%20legal.html" class="next">
 PAGE SUIVANTE →
 </a>
 
