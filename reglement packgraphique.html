@@ -10,33 +10,25 @@
 
 <style>
 
+*{
     margin:0;
     padding:0;
     box-sizing:border-box;
     font-family:'Poppins',sans-serif;
-
-    body{
-    background:
-    linear-gradient(
-        rgba(5,7,13,0.80),
-        rgba(5,7,13,0.92)
-    ),
-    url("https://raw.githubusercontent.com/corentinsola/solarys-rp/main/banniere-packgraphique.png");
-
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-    background-attachment:fixed;
-
-    color:#fff;
 }
+
+body{
+    background:#05070d;
+    color:white;
+}
+
 .hero{
     height:550px;
 
     background-image:
     linear-gradient(
-        rgba(0,0,0,.35),
-        rgba(0,0,0,.70)
+        rgba(0,0,0,.45),
+        rgba(0,0,0,.75)
     ),
     url("https://raw.githubusercontent.com/corentinsola/solarys-rp/main/banniere-packgraphique.png");
 
@@ -49,6 +41,7 @@
     align-items:center;
     text-align:center;
 }
+
 .hero-content h1{
     font-size:4.5rem;
     font-weight:700;
@@ -57,19 +50,19 @@
 
 .hero-content p{
     margin-top:20px;
-    font-size:1.4rem;
+    font-size:1.3rem;
     color:#e5e5e5;
 }
 
 .neon-divider{
-    width:420px;
+    width:400px;
     height:3px;
     margin:25px auto;
     background:linear-gradient(90deg,#ff2d92,#8b5cf6,#1b6cff);
 }
 
 .container{
-    max-width:1600px;
+    max-width:1400px;
     margin:auto;
     padding:40px;
 }
@@ -79,32 +72,16 @@
     border-radius:25px;
     margin-bottom:25px;
     overflow:hidden;
+    border:1px solid rgba(255,255,255,.05);
 }
 
 .section-header{
     padding:25px 30px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    cursor:pointer;
 }
 
-.modif h2{color:#ff2d92;}
-.tirs h2{color:#9c4dff;}
-.sanctions h2{color:#ffae00;}
-
-.accordion-arrow{
-    width:60px;
-    height:60px;
-    border-radius:50%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    background:rgba(255,255,255,.05);
-}
-
-.accordion-arrow span{
-    font-size:30px;
+.section-header h2{
+    font-size:2rem;
+    color:#ff2d92;
 }
 
 .section-content{
@@ -114,7 +91,7 @@
 .grid{
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:50px;
+    gap:40px;
 }
 
 ul{
@@ -131,6 +108,14 @@ li::before{
     color:#ff2d92;
 }
 
+.message{
+    margin-top:25px;
+    padding:20px;
+    border:1px solid #1b6cff;
+    border-radius:15px;
+    text-align:center;
+}
+
 .navigation{
     display:flex;
     gap:25px;
@@ -139,17 +124,17 @@ li::before{
 
 .navigation a{
     flex:1;
-    padding:24px;
-    text-align:center;
+    padding:20px;
     text-decoration:none;
-    border-radius:20px;
+    text-align:center;
+    border-radius:15px;
     font-weight:700;
 }
 
 .prev{
     border:2px solid #ff2d92;
     color:#ff2d92;
-} 
+}
 
 .next{
     border:2px solid #1b6cff;
@@ -157,13 +142,20 @@ li::before{
 }
 
 footer{
-    margin-top:40px;
-    padding:30px;
     text-align:center;
+    padding:40px;
     color:#aaa;
 }
 
 @media(max-width:900px){
+
+    .hero{
+        height:350px;
+    }
+
+    .hero-content h1{
+        font-size:2.5rem;
+    }
 
     .grid{
         grid-template-columns:1fr;
@@ -172,8 +164,119 @@ footer{
     .navigation{
         flex-direction:column;
     }
-
 }
+
 </style>
 </head>
-```
+
+<body>
+
+<header class="hero">
+    <div class="hero-content">
+        <h1>RÈGLEMENT PACK GRAPHIQUE</h1>
+        <p>Modifications graphiques autorisées et interdites sur Solarys RP</p>
+        <div class="neon-divider"></div>
+    </div>
+</header>
+
+<div class="container">
+
+<div class="section">
+
+<div class="section-header">
+<h2>MODIFICATIONS INTERDITES</h2>
+</div>
+
+<div class="section-content">
+
+<div class="grid">
+
+<ul>
+<li>No props</li>
+<li>No element</li>
+<li>No water</li>
+<li>No bush</li>
+<li>Suppression d’objets ou d’éléments de décors</li>
+<li>Modification de la FOV</li>
+<li>Fichiers donnant un avantage visuel</li>
+</ul>
+
+<ul>
+<li>Réduction d’effets pour voir à travers certains éléments</li>
+<li>Suppression de végétation, eau, fumée ou props</li>
+<li>Full stamina</li>
+<li>Réduction de recul</li>
+<li>Modifications de luminosité abusives</li>
+<li>Packs donnant un avantage compétitif</li>
+<li>Optimisations abusives modifiant le gameplay</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<div class="section-header">
+<h2>SYSTÈMES FACILITANT LES TIRS</h2>
+</div>
+
+<div class="section-content">
+
+<ul>
+<li>Crosshairs externes (viseurs)</li>
+<li>Tracers (marqueurs de tir)</li>
+<li>Hit effects</li>
+<li>Kill effects</li>
+<li>Blood effects</li>
+</ul>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<div class="section-header">
+<h2>SANCTIONS</h2>
+</div>
+
+<div class="section-content">
+
+<ul>
+<li>⚠️ Warn</li>
+<li>⛓️ Jail / TIG</li>
+<li>🔨 Bannissement temporaire</li>
+<li>⛔ Bannissement définitif</li>
+</ul>
+
+<div class="message">
+Nous vous remercions de respecter ce règlement afin de préserver une expérience de jeu saine sur le serveur.
+</div>
+
+</div>
+
+</div>
+
+<div class="navigation">
+
+<a href="https://reglement.solarys-rp.fr/reglement.html" class="prev">
+⬅ PAGE PRÉCÉDENTE
+</a>
+
+<a href="https://reglement.solarys-rp.fr/notion.html" class="next">
+PAGE SUIVANTE ➜
+</a>
+
+</div>
+
+</div>
+
+<footer>
+© 2026 Solarys RP - Tous droits réservés
+</footer>
+
+</body>
+</html>
