@@ -46,7 +46,42 @@ document.addEventListener("DOMContentLoaded", function(){
         arrow.innerHTML = "⌃";
     });
 
+<script>
 
+function toggle(element){
+
+    const content = element.nextElementSibling;
+    const arrow = element.querySelector('.accordion-arrow span');
+
+    if(content.style.display === "none"){
+
+        content.style.display = "block";
+        arrow.innerHTML = "⌃";
+
+    }else{
+
+        content.style.display = "none";
+        arrow.innerHTML = "⌄";
+
+    }
+}
+
+document.addEventListener("DOMContentLoaded", function(){
+
+    document.querySelectorAll(".section-content").forEach(content => {
+        content.style.display = "block";
+    });
+
+    document.querySelectorAll(".accordion-arrow span").forEach(arrow => {
+        arrow.innerHTML = "⌃";
+    });
+
+});
+
+</script>
+
+</body>
+</html>
 </body>
 </html>
 ```
