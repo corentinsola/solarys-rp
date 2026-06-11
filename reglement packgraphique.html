@@ -1,6 +1,100 @@
 <!DOCTYPE html>
 <html lang="fr">
+.category {
+    background: rgba(5,15,40,0.95);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 30px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
 
+.category-btn {
+    width: 100%;
+    padding: 35px 40px;
+    border: none;
+    background: transparent;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.category-btn span:first-child {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #ff2fa7;
+}
+
+.arrow {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: rgba(120,80,255,0.15);
+    border: 2px solid rgba(255,255,255,0.08);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #c85fff;
+    font-size: 32px;
+    transition: .3s;
+    box-shadow: 0 0 30px rgba(150,70,255,.5);
+}
+
+.category-btn.active .arrow {
+    transform: rotate(180deg);
+}
+
+.category-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .5s ease;
+}
+
+.category-content.active {
+    max-height: 2000px;
+}
+
+.rules-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px;
+    padding: 0 40px 40px;
+}
+
+.rules-grid ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.rules-grid li {
+    padding: 25px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    color: white;
+    font-size: 1.8rem;
+    position: relative;
+    padding-left: 20px;
+}
+
+.rules-grid li::before {
+    content: "•";
+    color: #ff2fa7;
+    position: absolute;
+    left: 0;
+}
+
+@media(max-width:900px){
+
+    .rules-grid{
+        grid-template-columns:1fr;
+    }
+
+    .category-btn span:first-child{
+        font-size:1.8rem;
+    }
+
+}
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -270,45 +364,44 @@ footer{
 
 <div class="container">
 
-<div class="section">
+<div class="category">
 
-<div class="section-header" onclick="toggle(this)">
-<h2>MODIFICATIONS INTERDITES</h2>
+<button class="category-btn" onclick="toggleCategory(this)">
+    <span>MODIFICATIONS INTERDITES</span>
+    <span class="arrow">⌃</span>
+</button>
 
-<div class="accordion-arrow">
- <span>⌃</span>
-</div>
-</div>
+<div class="category-content active">
 
-<div class="section-content">
+    <div class="rules-grid">
 
-<div class="grid">
+        <ul>
+            <li>No props</li>
+            <li>No element</li>
+            <li>No water</li>
+            <li>No bush</li>
+            <li>Suppression d’objets ou d’éléments de décors</li>
+            <li>Modification de la FOV</li>
+            <li>Fichiers donnant un avantage visuel</li>
+        </ul>
 
-<ul>
-<li>No props</li>
-<li>No element</li>
-<li>No water</li>
-<li>No bush</li>
-<li>Suppression d’objets ou d’éléments de décors</li>
-<li>Modification de la FOV</li>
-<li>Fichiers donnant un avantage visuel</li>
-</ul>
+        <ul>
+            <li>Réduction d’effets pour voir à travers certains éléments</li>
+            <li>Suppression de végétation, eau, fumée ou props</li>
+            <li>Full stamina</li>
+            <li>Réduction de recul</li>
+            <li>Modifications de luminosité abusives</li>
+            <li>Packs donnant un avantage compétitif</li>
+            <li>Optimisations abusives modifiant le gameplay</li>
+        </ul>
 
-<ul>
-<li>Réduction d’effets pour voir à travers certains éléments</li>
-<li>Suppression de végétation, eau, fumée ou props</li>
-<li>Full stamina</li>
-<li>Réduction de recul</li>
-<li>Modifications de luminosité abusives</li>
-<li>Packs donnant un avantage compétitif</li>
-<li>Optimisations abusives modifiant le gameplay</li>
-</ul>
-
-</div>
+    </div>
 
 </div>
 
 </div>
+
+ </div>
 
 <div class="section">
 
