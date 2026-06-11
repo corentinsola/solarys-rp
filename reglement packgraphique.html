@@ -16,36 +16,45 @@ padding:0;
 box-sizing:border-box;
 font-family:'Poppins',sans-serif;
 }
-
- <script>
-
-document.querySelectorAll('.section-content').forEach(content=>{
-    content.style.display = 'none';
-});
-
-document.querySelectorAll('.accordion-arrow span').forEach(arrow=>{
-    arrow.innerHTML = '⌄';
-});
+```html
+<script>
 
 function toggle(element){
 
     const content = element.nextElementSibling;
     const arrow = element.querySelector('.accordion-arrow span');
 
-    if(content.style.display === 'none'){
+    if(content.style.display === "none"){
 
-        content.style.display = 'block';
-        arrow.innerHTML = '⌃';
+        content.style.display = "block";
+        arrow.innerHTML = "⌃";
 
     }else{
 
-        content.style.display = 'none';
-        arrow.innerHTML = '⌄';
+        content.style.display = "none";
+        arrow.innerHTML = "⌄";
 
     }
 }
 
-</script>   
+document.addEventListener("DOMContentLoaded", function(){
+
+    document.querySelectorAll(".section-content").forEach(content => {
+        content.style.display = "block";
+    });
+
+    document.querySelectorAll(".accordion-arrow span").forEach(arrow => {
+        arrow.innerHTML = "⌃";
+    });
+
+});
+
+</script>
+
+</body>
+</html>
+```
+   
 body{
 background:#05070d;
 color:#fff;
