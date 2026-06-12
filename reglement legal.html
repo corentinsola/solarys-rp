@@ -102,15 +102,13 @@ background:linear-gradient(
 );
 
 border:1px solid rgba(255,255,255,.06);
-border-radius:25px;
+.section{
+    border-radius:35px;
+    margin-bottom:35px;
 
-margin-bottom:25px;
-
-box-shadow:
-0 0 20px rgba(255,45,146,.08),
-0 0 20px rgba(27,108,255,.08);
-
-overflow:hidden;
+    box-shadow:
+    0 0 20px rgba(255,45,146,.10),
+    0 0 30px rgba(27,108,255,.10);
 }
 
 .section-header{
@@ -311,150 +309,203 @@ flex-direction:column;
 </style>
 </head>
 <body>
-<body>
 
 <header class="hero">
 
     <div class="hero-overlay"></div>
 
     <div class="hero-content">
-   <h1>RELATIONS OFFICIELLES</h1>
 
-<p>
-Relations entre les citoyens, le SAMD, le SASP et les entreprises sur Solarys RP
-</p>
-    </div>
+    <h1>RELATIONS OFFICIELLES</h1>
+
+    <div class="neon-divider"></div>
+
+    <p>
+        Relations entre les citoyens, le SAMD, le SASP et les entreprises sur Solarys RP
+    </p>
+
+</div>
 
 </header>
 
 <div class="container">
 
-<div class="section modif">
-    <div class="section-header" onclick="toggle(this)">
-      <h2>🤝 RELATION SAMD</h2>
-<div class="accordion-arrow">
-<span>⌃</span>
-</div>
+    <!-- RELATION SAMD -->
 
-</div>
+    <div class="section modif">
 
-<div class="section-content">
+        <div class="section-header" onclick="toggle(this)">
+            <h2>🏥 RELATION SAMD</h2>
 
-<div class="grid">
+            <div class="accordion-arrow">
+                <span>⌃</span>
+            </div>
+        </div>
 
-<ul>
-<li>No props</li>
-<li>No element</li>
-<li>No water</li>
-<li>No bush</li>
-<li>Suppression d'objets ou d'éléments de décors</li>
-<li>Modification de la FOV</li>
-<li>Fichiers donnant un avantage visuel</li>
-</ul>
+       <div class="section-content hidden">
 
-<ul>
-<li>Réduction d'effets pour voir à travers certains éléments</li>
-<li>Suppression de végétation, eau, fumée ou props</li>
-<li>Full stamina</li>
-<li>Réduction de recul</li>
-<li>Modifications de luminosité abusives</li>
-<li>Packs donnant un avantage compétitif</li>
-<li>Optimisations abusives modifiant le gameplay</li>
-</ul>
+            <ul>
+                <li>SAMD signifie San Andreas Medical Department.</li>
+                <li>Le SAMD regroupe les ambulanciers, médecins et services de secours.</li>
+                <li>Le SAMD assure la réanimation des joueurs blessés et le transport vers les hôpitaux.</li>
+                <li>Vous devez respecter les arrêts médicaux ordonnés après une prise en charge.</li>
+                <li>Lors d'une intervention EMS, décrivez vos blessures via des /me cohérents.</li>
+                <li>Si le SAMD estime qu'une hospitalisation est nécessaire, vous devez poursuivre la scène RP.</li>
+                <li>Dans un hôpital, vous êtes soumis aux consignes du personnel médical.</li>
+                <li>Le refus systématique de soins pour éviter des conséquences RP est interdit.</li>
+                <li>Toute scène médicale doit rester cohérente et immersive.</li>
+            </ul>
 
-</div>
+        </div>
 
-</div>
+    </div>
 
-</div>
+    <!-- RELATION SASP -->
 
-<div class="section tirs">
-    <div class="section-header" onclick="toggle(this)">
+    <div class="section tirs">
 
-<h2>🚔 RELATION SASP</h2>
+        <div class="section-header" onclick="toggle(this)">
+            <h2>🚔 RELATION SASP</h2>
 
-<div class="accordion-arrow">
-<span>⌃</span>
-</div>
+            <div class="accordion-arrow">
+                <span>⌃</span>
+            </div>
+        </div>
+<div class="section-content hidden">
 
-</div>
+            <ul>
+                <li>SASP signifie San Andreas State Police.</li>
+                <li>Le SASP assure les patrouilles, poursuites et interventions criminelles.</li>
+                <li>Vous devez craindre le SASP et respecter leurs décisions.</li>
+                <li>Les amendes doivent être considérées comme des opportunités RP.</li>
+                <li>Les PIT sont interdits sauf autorisation exceptionnelle.</li>
+                <li>Le Fair-Play est obligatoire et le Full Win interdit.</li>
+                <li>Les quartiers chauds ne sont pas des zones de non-droit.</li>
+                <li>Le Freekill, le No Fear et les provocations abusives sont interdits.</li>
+                <li>La hiérarchie doit être respectée.</li>
+                <li>Les armes de service et radios doivent être déposées en fin de service.</li>
+                <li>Les forces de l'ordre ne peuvent pas camper les points illégaux.</li>
+                <li>Une descente nécessite un mandat attribué par un juge ou procureur.</li>
+                <li>Une grosse somme d'argent seule ne justifie pas une arrestation.</li>
+            </ul>
 
-<div class="section-content">
+        </div>
 
-<ul>
-<li>Crosshairs externes</li>
-<li>Tracers</li>
-<li>Hit Effects</li>
-<li>Kill Effects</li>
-<li>Blood Effects</li>
-</ul>
+    </div>
 
-</div>
+    <!-- PROCÉDURES POLICIÈRES -->
 
-</div>
+    <div class="section tirs">
+
+        <div class="section-header" onclick="toggle(this)">
+            <h2>📋 PROCÉDURES POLICIÈRES</h2>
+
+            <div class="accordion-arrow">
+                <span>⌃</span>
+            </div>
+        </div>
+
+      <div class="section-content hidden">
+
+            <ul>
+                <li>Chaque arrestation, garde à vue, plainte ou intervention importante doit avoir une trace écrite.</li>
+                <li>Les droits Miranda doivent être lus clairement.</li>
+                <li>Un citoyen peut invoquer son droit au silence.</li>
+                <li>Un citoyen peut attendre son avocat.</li>
+                <li>Il est interdit de fouiller un citoyen sans justification RP cohérente.</li>
+                <li>L'argent sale est considéré comme de l'argent liquide tant qu'aucune preuve ne démontre son origine.</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <!-- RIPOUX ET INDICS -->
+
+    <div class="section sanctions">
+
+        <div class="section-header" onclick="toggle(this)">
+            <h2>🕵️ RIPOUX ET INDICS</h2>
+
+            <div class="accordion-arrow">
+                <span>⌃</span>
+            </div>
+        </div>
+
+<div class="section-content hidden">
+
+            <ul>
+                <li>Toute corruption ou aide volontaire à une organisation criminelle nécessite une validation.</li>
+                <li>Un dossier complet doit être fourni aux référents.</li>
+                <li>Les indicateurs doivent être validés par des hauts gradés.</li>
+                <li>Un indic accepte les risques liés à son rôle.</li>
+                <li>Une Mort RP peut être appliquée si son identité est découverte.</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+   <!-- ENTREPRISES -->
 
 <div class="section sanctions">
+
     <div class="section-header" onclick="toggle(this)">
-<h2>🏢 ENTREPRISES</h2>
+        <h2>🏢 ENTREPRISES</h2>
 
-<div class="accordion-arrow">
-<span>⌃</span>
-</div>
+        <div class="accordion-arrow">
+            <span>⌃</span>
+        </div>
+    </div>
 
-</div>
+  <div class="section-content hidden">
 
-<div class="section-content">
+        <ul>
+            <li>Une scène de recrutement avec le responsable est obligatoire.</li>
+            <li>Vous devez respecter la grille tarifaire fixée par le patron.</li>
+            <li>Toutes les transactions doivent être enregistrées.</li>
+            <li>Les véhicules de fonction ne sont pas des véhicules personnels sauf autorisation.</li>
+            <li>Toute entreprise doit conserver un comportement RP sérieux et cohérent.</li>
+        </ul>
 
-<ul>
-<li>⚠️ Warn</li>
-<li>🔗 Jail / TIG</li>
-<li>🔨 Bannissement temporaire</li>
-<li>⛔ Bannissement définitif</li>
-</ul>
-
-<div class="message">
-Nous vous remercions de respecter ce règlement afin de préserver une expérience de jeu saine sur le serveur.
-</div>
-
-</div>
-
+        <div class="message">
+            Nous vous remercions de respecter ce règlement afin de préserver une expérience de jeu saine sur le serveur.
+        </div>
+    </div>
 </div>
 
 <div class="navigation">
 
-<a href="https://reglement.solarys-rp.fr/reglement%20notion.html" class="prev">
-⬅ PAGE PRÉCÉDENTE
-</a>
+    <a href="https://reglement.solarys-rp.fr/reglement%20notion.html" class="prev">
+        ⬅ PAGE PRÉCÉDENTE
+    </a>
 
-<a href="https://reglement.solarys-rp.fr/reglement%20illegal.html" class="next">
-PAGE SUIVANTE ➜
-</a>
+    <a href="https://reglement.solarys-rp.fr/reglement%20illegal.html" class="next">
+        PAGE SUIVANTE ➜
+    </a>
 
 </div>
 
 </div>
 
 <footer>
-© 2026 Solarys RP - Tous droits réservés.
+    © 2026 Solarys RP - Tous droits réservés.
 </footer>
 
 <script>
 
 function toggle(element){
 
-const content =
-element.nextElementSibling;
+    const content = element.nextElementSibling;
+    const arrow = element.querySelector(".accordion-arrow span");
 
-content.classList.toggle("hidden");
+    content.classList.toggle("hidden");
 
-const arrow =
-element.querySelector(".accordion-arrow span");
-
-if(content.classList.contains("hidden")){
-arrow.innerHTML="⌄";
-}else{
-arrow.innerHTML="⌃";
-}
+    if(content.classList.contains("hidden")){
+        arrow.innerHTML = "⌄";
+    }else{
+        arrow.innerHTML = "⌃";
+    }
 
 }
 
