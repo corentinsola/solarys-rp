@@ -27,27 +27,23 @@ color:#fff;
 /* ========================= */
 
 .hero{
-
-height:650px;
+height:550px;
 
 background-image:
 linear-gradient(
-rgba(0,0,0,.45),
-rgba(0,0,0,.80)
+rgba(0,0,0,.35),
+rgba(0,0,0,.70)
 ),
-url("coté legal.png");
+url("https://reglement.solarys-rp.fr/banniere-packgraphique.png");
 
 background-size:cover;
-background-position:center center;
+background-position:center;
 background-repeat:no-repeat;
 
 display:flex;
 justify-content:center;
 align-items:center;
 text-align:center;
-
-position:relative;
-
 }
 
 .hero-content h1{
@@ -232,106 +228,86 @@ text-align:center;
 /* NAVIGATION */
 /* ========================= */
 
-.navigation{
-display:flex;
-gap:20px;
-margin-top:30px;
+.page-navigation{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:40px;
+    margin-top:50px;
+    width:100%;
 }
 
-.navigation a{
-flex:1;
-padding:18px;
-text-align:center;
-text-decoration:none;
-font-weight:600;
-border-radius:15px;
-transition:.3s;
+.nav-btn{
+    flex:1;
+    text-align:center;
+    padding:28px 20px;
+    border-radius:20px;
+    text-decoration:none;
+    font-size:1.8rem;
+    font-weight:700;
+    transition:all .3s ease;
 }
 
-.prev{
-border:2px solid #ff2d92;
-color:#ff2d92;
+.prev-btn{
+    border:3px solid #ff2ea6;
+    color:#ff2ea6;
+    box-shadow:0 0 20px rgba(255,46,166,.25);
 }
 
-.prev:hover{
-background:#ff2d92;
-color:white;
+.prev-btn:hover{
+    background:rgba(255,46,166,.12);
+    box-shadow:0 0 30px rgba(255,46,166,.5);
 }
 
-.next{
-border:2px solid #1b6cff;
-color:#1b6cff;
+.next-btn{
+    border:3px solid #7b2cff;
+    color:#7b2cff;
+    box-shadow:0 0 20px rgba(123,44,255,.25);
 }
 
-.next:hover{
-background:#1b6cff;
-color:white;
-}
-
-footer{
-margin-top:40px;
-padding:30px;
-text-align:center;
-border-top:1px solid rgba(255,255,255,.08);
-color:#aaa;
-}
-
-.hidden{
-display:none;
+.next-btn:hover{
+    background:rgba(123,44,255,.12);
+    box-shadow:0 0 30px rgba(123,44,255,.5);
 }
 
 @media(max-width:900px){
+    .page-navigation{
+        flex-direction:column;
+    }
 
-.hero{
-height:380px;
-}
-
-.hero-content h1{
-font-size:2.3rem;
-}
-
-.hero-content p{
-font-size:1rem;
-}
-
-.neon-divider{
-width:220px;
-}
-
-.grid{
-grid-template-columns:1fr;
-}
-
-.navigation{
-flex-direction:column;
-}
-
+    .nav-btn{
+        width:100%;
+    }
 }
 
 </style>
 </head>
-<body>
+
 <body>
 
 <header class="hero">
 
-    <div class="hero-overlay"></div>
+<div class="hero-content">
 
-    <div class="hero-content">
-   <h1>RELATIONS OFFICIELLES</h1>
+<h1>RÈGLEMENT PACK GRAPHIQUE</h1>
 
 <p>
-Relations entre les citoyens, le SAMD, le SASP et les entreprises sur Solarys RP
+Modifications graphiques autorisées et interdites sur Solarys RP
 </p>
-    </div>
+
+<div class="neon-divider"></div>
+
+</div>
 
 </header>
 
 <div class="container">
 
 <div class="section modif">
-    <div class="section-header" onclick="toggle(this)">
-      <h2>🤝 RELATION SAMD</h2>
+
+<div class="section-header" onclick="toggle(this)">
+<h2>MODIFICATIONS INTERDITES</h2>
+
 <div class="accordion-arrow">
 <span>⌃</span>
 </div>
@@ -340,19 +316,17 @@ Relations entre les citoyens, le SAMD, le SASP et les entreprises sur Solarys RP
 
 <div class="section-content">
 
-<ul>
-<li>SAMD signifie San Andreas Medical Department.</li>
-<li>Le SAMD regroupe les ambulanciers, médecins et services de secours.</li>
-<li>Le SAMD assure la réanimation des joueurs blessés et le transport vers les hôpitaux.</li>
-<li>Vous devez respecter les arrêts médicaux ordonnés après une prise en charge.</li>
-<li>Lors d'une intervention EMS, décrivez vos blessures via des /me cohérents.</li>
-<li>Si le SAMD estime qu'une hospitalisation est nécessaire, vous devez poursuivre la scène RP.</li>
-<li>Dans un hôpital, vous êtes soumis aux consignes du personnel médical.</li>
-<li>Le refus systématique de soins pour éviter des conséquences RP est interdit.</li>
-<li>Toute scène médicale doit rester cohérente et immersive.</li>
-</ul>
+<div class="grid">
 
-</div>
+<ul>
+<li>No props</li>
+<li>No element</li>
+<li>No water</li>
+<li>No bush</li>
+<li>Suppression d'objets ou d'éléments de décors</li>
+<li>Modification de la FOV</li>
+<li>Fichiers donnant un avantage visuel</li>
+</ul>
 
 <ul>
 <li>Réduction d'effets pour voir à travers certains éléments</li>
@@ -371,9 +345,9 @@ Relations entre les citoyens, le SAMD, le SASP et les entreprises sur Solarys RP
 </div>
 
 <div class="section tirs">
-    <div class="section-header" onclick="toggle(this)">
 
-<h2>🚔 RELATION SASP</h2>
+<div class="section-header" onclick="toggle(this)">
+<h2>SYSTÈMES FACILITANT LES TIRS</h2>
 
 <div class="accordion-arrow">
 <span>⌃</span>
@@ -383,31 +357,6 @@ Relations entre les citoyens, le SAMD, le SASP et les entreprises sur Solarys RP
 
 <div class="section-content">
 
-<ul>
-<li>SASP signifie San Andreas State Police.</li>
-<li>Le SASP assure les patrouilles, poursuites et interventions criminelles.</li>
-<li>Vous devez craindre le SASP et respecter leurs décisions, quel que soit votre background RP.</li>
-<li>Les amendes doivent être considérées comme des opportunités de scène RP.</li>
-<li>Dans un commissariat ou un bâtiment gouvernemental, vous êtes soumis aux ordres des forces de l'ordre.</li>
-<li>Les PIT sont interdits sauf autorisation exceptionnelle ou validation d'un supérieur.</li>
-<li>Le Fair-Play est obligatoire et le Full Win interdit.</li>
-<li>Après un accident important, vous devez jouer les conséquences RP.</li>
-<li>Les quartiers chauds ne sont pas des zones de non-droit.</li>
-<li>Le Freekill, le No Fear et les provocations abusives sont interdits.</li>
-<li>Le SASP peut circuler autour des quartiers chauds sans y pénétrer directement.</li>
-<li>Une intervention armée importante nécessite une validation hiérarchique.</li>
-<li>Les armes de service et radios doivent être déposées en fin de service.</li>
-<li>La hiérarchie doit être respectée en permanence.</li>
-<li>Les agents ne doivent pas abuser de leurs fonctions.</li>
-<li>Les sommations doivent être effectuées lorsque la situation le permet.</li>
-<li>Il est interdit de provoquer volontairement des scènes RP dans les quartiers chauds.</li>
-<li>Le camping des points illégaux sans enquête RP préalable est interdit.</li>
-<li>Une descente nécessite un mandat délivré par un juge ou un procureur.</li>
-<li>Une importante somme d'argent liquide seule ne justifie pas une arrestation.</li>
-</ul>
-
-</div>
-    
 <ul>
 <li>Crosshairs externes</li>
 <li>Tracers</li>
@@ -418,27 +367,12 @@ Relations entre les citoyens, le SAMD, le SASP et les entreprises sur Solarys RP
 
 </div>
 
-<div class="section tirs">
-    <div class="section-header" onclick="toggle(this)">
-
-<h2>🚔SASP</h2>
-
-<div class="accordion-arrow">
-   
-  <div class="section-content">
-
-      
-<div class="section tirs">
-    <div class="section-header" onclick="toggle(this)">
-<h2>:scales: ripoux et indic</h2>
-
-<div class="accordion-arrow">
-<div class="section-content">
+</div>
 
 <div class="section sanctions">
 
 <div class="section-header" onclick="toggle(this)">
-<h2>🕵️ RIPOUX ET INDICS</h2>
+<h2>SANCTIONS</h2>
 
 <div class="accordion-arrow">
 <span>⌃</span>
@@ -449,38 +383,10 @@ Relations entre les citoyens, le SAMD, le SASP et les entreprises sur Solarys RP
 <div class="section-content">
 
 <ul>
-<li>Toute corruption, vente d'informations ou aide volontaire à une organisation criminelle est interdite sans validation.</li>
-<li>Un dossier complet doit être transmis aux référents concernés.</li>
-<li>Les indicateurs doivent être validés par des hauts gradés.</li>
-<li>Un indic accepte les risques liés à son rôle.</li>
-<li>Une Mort RP peut être appliquée si son identité est découverte en RP.</li>
-</ul>
-
-</div>
-
-</div>
-</div>  
-    </div>
-
-<div class="section sanctions">
-
-<div class="section-header" onclick="toggle(this)">
-<h2>🏢 ENTREPRISES</h2>
-
-<div class="accordion-arrow">
-<span>⌃</span>
-</div>
-
-</div>
-
-<div class="section-content">
-
-<ul>
-<li>Une scène de recrutement avec le responsable est obligatoire.</li>
-<li>Vous devez respecter la grille tarifaire fixée par le patron.</li>
-<li>Toutes les transactions doivent être enregistrées.</li>
-<li>Les véhicules de fonction ne sont pas des véhicules personnels sauf autorisation.</li>
-<li>Toute entreprise doit conserver un comportement RP sérieux et cohérent avec son activité.</li>
+<li>⚠️ Warn</li>
+<li>🔗 Jail / TIG</li>
+<li>🔨 Bannissement temporaire</li>
+<li>⛔ Bannissement définitif</li>
 </ul>
 
 <div class="message">
@@ -491,11 +397,10 @@ Nous vous remercions de respecter ce règlement afin de préserver une expérien
 
 </div>
 
-</div>
-
+<!-- Navigation -->
 <div class="navigation">
 
-<a href="https://reglement.solarys-rp.fr/reglement%20notion.html" class="prev">
+<a href="https://reglement.solarys-rp.fr/reglement%20notion.html/ "class="prev">
 ⬅ PAGE PRÉCÉDENTE
 </a>
 
