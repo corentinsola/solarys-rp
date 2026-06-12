@@ -91,47 +91,65 @@ padding:40px;
 }
 
 .section{
-background:linear-gradient(
-90deg,
-#04060d,
-#041225
-);
+    background:linear-gradient(
+        90deg,
+        rgba(2,7,18,.95) 0%,
+        rgba(3,25,51,.95) 60%,
+        rgba(0,35,75,.95) 100%
+    );
 
-border:1px solid rgba(255,255,255,.06);
-border-radius:25px;
+    border:1px solid rgba(139,92,246,.25);
+    border-radius:35px;
 
-margin-bottom:25px;
+    margin-bottom:25px;
 
-box-shadow:
-0 0 20px rgba(255,45,146,.08),
-0 0 20px rgba(27,108,255,.08);
+    box-shadow:
+    0 0 20px rgba(255,45,146,.08),
+    0 0 30px rgba(27,108,255,.08);
 
-overflow:hidden;
+    overflow:hidden;
+}
 }
 
 .section-header{
-padding:25px 30px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-cursor:pointer;
-transition:.3s;
+    padding:20px 30px;
+    min-height:95px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    cursor:pointer;
+}
+    .section-header h2{
+    font-size:1.9rem;
+    font-weight:700;
+    letter-spacing:.5px;
+
 }
 
-.section-header h2{
-font-size:2rem;
+.modif{
+    border-color:rgba(255,45,146,.25);
 }
 
 .modif h2{
-color:#ff2d92;
+    color:#ff4da6;
+}
+
+.tirs{
+    border-color:rgba(139,92,246,.25);
 }
 
 .tirs h2{
-color:#9c4dff;
+    color:#a855f7;
+}
+
+.sanctions{
+    border-color:rgba(255,174,0,.25);
 }
 
 .sanctions h2{
-color:#ffae00;
+    color:#ffb400;
 }
 
 /* ========================= */
@@ -139,29 +157,43 @@ color:#ffae00;
 /* ========================= */
 
 .accordion-arrow{
-width:60px;
-height:60px;
 
-display:flex;
-align-items:center;
-justify-content:center;
+    width:70px;
+    height:70px;
 
-border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 
-background:
-linear-gradient(
-135deg,
-rgba(255,45,146,.15),
-rgba(27,108,255,.15)
-);
+    border-radius:50%;
 
-border:2px solid rgba(255,255,255,.08);
+    background:rgba(20,25,60,.9);
 
-box-shadow:
-0 0 15px rgba(255,45,146,.35),
-0 0 25px rgba(27,108,255,.35);
+    border:2px solid rgba(139,92,246,.25);
 
-transition:.3s;
+    box-shadow:
+    0 0 15px rgba(255,45,146,.30),
+    0 0 35px rgba(139,92,246,.35);
+
+    transition:.3s ease;
+}
+
+.accordion-arrow span{
+
+    font-size:34px;
+    font-weight:700;
+
+    color:#b15cff;
+}
+
+.section-header:hover 
+    .accordion-arrow{
+
+    transform:scale(1.08);
+
+    box-shadow:
+    0 0 25px rgba(255,45,146,.55),
+    0 0 45px rgba(139,92,246,.55);
 }
 
 .accordion-arrow span{
