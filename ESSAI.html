@@ -1,176 +1,238 @@
-<!-- ========================= -->
-<!-- RELATION SAMD -->
-<!-- ========================= -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<div class="section modif">
+<title>Règlement SOLARYS RP</title>
 
-<div class="section-header" onclick="toggle(this)">
-<h2>RELATION SAMD</h2>
-
-<div class="accordion-arrow">
-<span>⌃</span>
-</div>
-.hero{
-
-height:600px;
-
-background-image:
-linear-gradient(
-rgba(0,0,0,.55),
-rgba(0,0,0,.80)
-),
-url("https://github.com/corentinsola/solarys-rp/blob/main/cot%C3%A9%20legal.png");
-
-background-size:cover;
-background-position:center center;
-background-repeat:no-repeat;
-
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-
-border-bottom:1px solid rgba(255,255,255,.08);
-
-box-shadow:
-inset 0 -100px 100px rgba(0,0,0,.65);
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#0d0d0d;
+    color:white;
+    line-height:1.7;
 }
-</div>
 
-<div class="section-content">
+header{
+    background:linear-gradient(90deg,#ff4fd8,#6fa8ff);
+    padding:30px;
+    text-align:center;
+}
 
-<p><strong>SAMD</strong> signifie San Andreas Medical Department.</p>
+header h1{
+    margin:0;
+    font-size:3rem;
+}
 
-<br>
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:30px;
+.section{
+    background:#151515;
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:20px;
+    padding:35px;
+    margin-bottom:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.35);
+    transition:0.3s;
+}
+.section:hover{
+    transform:translateY(-4px);
+h2{
+    color:#8fc7ff;
+    font-size:32px;
+    margin-bottom:20px;
+}
+li{
+    margin-bottom:12px;
+    font-size:18px;
+}
+ul{
+    padding-left:25px;
+}
 
-<p>C'est le service médical :</p>
+.home-btn{
+    display:inline-block;
+    margin-bottom:25px;
+    padding:12px 25px;
+    background:linear-gradient(90deg,#ff4fd8,#6fa8ff);
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+}
 
-<ul>
-<li>Ambulanciers</li>
-<li>Médecins</li>
-<li>Secours</li>
-<li>Réanimation des joueurs blessés</li>
-<li>Transport à l'hôpital</li>
-<li>Gestion des scènes d'accident</li>
-</ul>
+.home-btn:hover
+    {
+    opacity:0.8;
+.menu-reglement{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-bottom:30px;
 
-<br>
+    position:sticky;
+    top:15px;
+    z-index:1000;
 
-<ul>
-<li>Vous devez respecter les arrêts médicaux ordonnés par le SAMD après avoir été soigné.</li>
-<li>Lors d'une intervention EMS, décrivez vos blessures via des /me cohérents.</li>
-<li>Si le SAMD estime qu'une hospitalisation ou des soins supplémentaires sont nécessaires, vous devez suivre la scène RP.</li>
-<li>Dans un hôpital, vous êtes soumis aux ordres du personnel médical.</li>
-<li>Le refus systématique de soins uniquement pour éviter des conséquences RP est interdit.</li>
-</ul>
+    background:rgba(15,15,15,0.85);
+    padding:15px;
+    border-radius:20px;
+    backdrop-filter:blur(10px);
+}
 
-</div>
+.menu-reglement a{
+    background:linear-gradient(90deg,#ff4fd8,#6fa8ff);
+    color:white;
+    text-decoration:none;
+    padding:16px 28px;
+    min-width:160px;
+text-align:center;
+    border-radius:14px;
+    font-weight:bold;
+    font-size:18px;
 
-</div>
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
 
-<!-- ========================= -->
-<!-- RELATION SASP -->
-<!-- ========================= -->
+    transition:all 0.3s ease;
+}
 
-<div class="section tirs">
+.menu-reglement a:hover{
+    transform:translateY(-4px) scale(1.03);
+    box-shadow:0 8px 20px rgba(111,168,255,0.4);
+filter:brightness(1.1);
+}
 
-<div class="section-header" onclick="toggle(this)">
-<h2>RELATION SASP</h2>
+.menu-reglement a:active{
+    transform:scale(0.98);
+}
+transform:translateY(-3px);
+}
+</style>
+</head>
 
-<div class="accordion-arrow">
-<span>⌃</span>
-</div>
+<body>
 
-</div>
+<header>
+<h1>RÈGLEMENT SOLARYS RP</h1>
+<p>Merci de respecter l'ensemble des règles du serveur.</p>
+</header>
 
-<div class="section-content">
+<div class="container">
 
-<p><strong>SASP</strong> signifie San Andreas State Police.</p>
 
-<br>
+<div >
 
-<p>La SASP est chargée :</p>
+<div class="section">
+<div class="section">
 
-<ul>
-<li>Des patrouilles</li>
-<li>Des poursuites</li>
-<li>De l'application des lois</li>
-<li>Des scènes criminelles importantes</li>
-<li>Du travail avec les unités spécialisées</li>
-</ul>
-
-<br>
-
-<ul>
-<li>Vous devez craindre le SASP et respecter leurs décisions.</li>
-<li>Les amendes doivent être considérées comme des ouvertures RP.</li>
-<li>Dans un commissariat vous êtes soumis aux ordres des forces de l'ordre.</li>
-<li>Les PIT sont interdits sauf validation hiérarchique.</li>
-<li>Jouez les accidents et impacts de manière cohérente.</li>
-<li>Les quartiers chauds ne sont pas des zones de non-droit.</li>
-<li>Le Freekill, le No Fear RP et les provocations abusives sont interdits.</li>
-<li>La hiérarchie doit être respectée.</li>
-<li>Les agents ne doivent pas abuser de leurs fonctions.</li>
-<li>Les sommations doivent être effectuées lorsque la situation le permet.</li>
-<li>Les descentes nécessitent un mandat valide.</li>
-<li>Une grosse somme d'argent ne justifie pas seule une arrestation.</li>
-</ul>
-
-<br>
-
-<h3 style="color:#9c4dff;">SASP</h3>
-
-<ul>
-<li>Chaque intervention importante doit avoir une trace écrite.</li>
-<li>Les droits Miranda doivent être lus.</li>
-<li>Un citoyen peut invoquer son droit au silence.</li>
-<li>Les fouilles nécessitent une raison RP cohérente.</li>
-<li>L'argent sale reste considéré comme liquide RP sans preuve contraire.</li>
-</ul>
-
-<br>
-
-<h3 style="color:#ff2d92;">RIPOUX ET INDIC</h3>
-
-<ul>
-<li>Toute corruption doit être validée par un dossier complet.</li>
-<li>Les indics doivent être approuvés par la hiérarchie.</li>
-<li>Un indic accepte les risques liés à son rôle.</li>
-</ul>
-
-</div>
-
-</div>
-
-<!-- ========================= -->
-<!-- ENTREPRISE -->
-<!-- ========================= -->
-
-<div class="section sanctions">
-
-<div class="section-header" onclick="toggle(this)">
-<h2>ENTREPRISE</h2>
-
-<div class="accordion-arrow">
-<span>⌃</span>
-</div>
-
-</div>
-
-<div class="section-content">
+<h2 id="notions">📚 NOTIONS PRINCIPALES</h2>
 
 <ul>
-<li>Une scène de recrutement avec le responsable est obligatoire.</li>
-<li>Vous devez respecter la grille tarifaire fixée par le patron.</li>
-<li>Les transactions doivent être enregistrées.</li>
-<li>Les véhicules de fonction ne sont pas des véhicules personnels sauf autorisation.</li>
-<li>Toute entreprise doit conserver un comportement RP sérieux et cohérent avec son activité.</li>
+<li><strong>Mass RP :</strong> prendre en compte la population invisible autour de vous.</li>
+<li><strong>RolePlay :</strong> Le RolePlay, c’est le fait d’incarner un personnage dans un univers fictif.</li>
+<li><strong>HRP :</strong> Tout ce qui est en dehors du jeu ou du personnage.</li>
+<li><strong>Metagaming :</strong> Utiliser des informations obtenues hors RP en jeu.</li>
+<li><strong>Powergaming :</strong> Faire des actions impossibles ou irréalistes.</li>
+<li><strong>No Fear RP :</strong> Ne pas avoir peur face à une arme.</li>
+<li><strong>Force RP :</strong> Forcer une action à un joueur sans lui laisser de choix.</li>
+<li><strong>Freekill :</strong> Tuer quelqu’un sans raison RP valable.</li>
+<li><strong>Revenge Kill (RK) :</strong> Se venger après une mort RP.</li>
+<li><strong>New Life Rule (NLR) :</strong> Après une mort RP, tu oublies la scène.</li>
+<li><strong>Win RP :</strong> Chercher à gagner à tout prix.</li>
+<li><strong>Pain RP :</strong> Jouer la douleur de ton personnage.</li>
+<li><strong>Car Kill (CK) :</strong> Écraser quelqu’un volontairement sans raison RP.</li>
+<li><strong>Bunny Hop :</strong> Sauter partout pour aller plus vite.</li>
+<li><strong>No RP :</strong> Ne pas jouer son rôle.</li>
+<li><strong>Scene RP :</strong> Une scène immersive entre joueurs.</li>
+<li><strong>Usebug / Exploit :</strong> Utiliser un bug à son avantage.</li>
+<li><strong>Streamhack :</strong> Regarder un stream pour trouver quelqu’un.</li>
+<li><strong>Cop Bait :</strong> Provoquer la police sans raison.</li>
+<li><strong>AFK Abusif :</strong> Être absent durant une scène RP.</li>
+<li><strong>Fair Play :</strong> Respecter les autres joueurs.</li>
+<li><strong>Cohérence RP :</strong> Ton personnage doit rester logique.</li>
+<li><strong>Background RP :</strong> Histoire de ton personnage.</li>
+<li><strong>Drive-By :</strong> Tirer depuis un véhicule.</li>
+<li><strong>Chicken Run :</strong> Courir dans tous les sens pour éviter les tirs.</li>
+<li><strong>Refus RP :</strong> Refuser de jouer une scène.</li>
 </ul>
 
-<div class="message">
-Respectez les règles des entreprises afin de garantir un RolePlay professionnel et cohérent.
 </div>
+<div class="section">
+<h2 id="lexique">📖 LEXIQUE RP</h2>
+
+<ul>
+<li><strong>J'ai un bug :</strong> 🧠 J'ai un mal de tête.</li>
+<li><strong>J'ai crash :</strong> 😵 Je me suis évanoui.</li>
+<li><strong>Je freeze :</strong> 🧊 Je suis paralysé / figé.</li>
+<li><strong>J'ai des lags :</strong> 🌫️ J'ai des vertiges.</li>
+<li><strong>Je vais déco :</strong> 😴 Je vais dormir.</li>
+<li><strong>Je reviens :</strong> 🔄 Je reviens de mon repos.</li>
+<li><strong>Va Discord :</strong> 📱 Appelle-moi.</li>
+<li><strong>Je t'écris en MP :</strong> 💬 Je t'envoie un message.</li>
+<li><strong>Active ton micro :</strong> 🎤 Parle plus fort.</li>
+<li><strong>Mute :</strong> 🤫 Silence.</li>
+<li><strong>J'appelle un staff :</strong> 📞 J'appelle un responsable.</li>
+<li><strong>Ticket :</strong> 📝 Demande officielle.</li>
+<li><strong>Ban / Kick :</strong> 🚫 Expulsé de la ville.</li>
+<li><strong>AFK :</strong> 🚶 Je suis absent.</li>
+<li><strong>Je suis nouveau :</strong> 🆕 Je viens d'arriver en ville.</li>
+</ul>
 
 </div>
 
+<div class="section">
+
+<h2>🎮 Jouer sans excès</h2>
+
+<p>
+Ne prenez pas le RP trop au sérieux. Gardez toujours en tête qu'il s'agit d'un jeu et d'une communauté.
+</p>
+
+<ul>
+<li>Les insultes légères sont tolérées pour l'immersion.</li>
+<li>Les insultes répétées ou agressives peuvent être sanctionnées.</li>
+<li>Respectez toujours les autres joueurs.</li>
+</ul>
+
 </div>
+
+<div class="section">
+
+<h2>🧠 Garder du recul</h2>
+
+<p>
+Ne confondez jamais RP et réalité.
+Les propos tenus en jeu ne visent pas la personne derrière l'écran.
+Le but principal reste de s'amuser ensemble.
+</p>
+
+</div>
+
+<div class="section">
+
+<h2 id="faq">❓ Questions fréquentes</h2>
+
+<ul>
+<li><strong>Je peux contester une sanction ?</strong> Oui, via ticket avec preuves.</li>
+
+<li><strong>Signaler un joueur ou un staff ?</strong> Ticket Discord avec preuve et contexte.</li>
+
+<li><strong>Créer un groupe ?</strong> Ticket "Illégal" auprès d'un Référent.</li>
+
+<li><strong>Accessible aux débutants ?</strong> Oui, tutoriel en jeu et staff disponible.</li>
+
+<li><strong>Je peux utiliser une info Discord en jeu ?</strong> Non, sauf si elle a été obtenue RP.</li>
+
+<li><strong>Comment rejoindre le serveur ?</strong> Discord → FIVEM → SYNJ LIFE.</li>
+</ul>
+
+</div>
+</div>
+
+</body>
+</body>
+</html>
