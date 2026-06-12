@@ -275,7 +275,9 @@ color:#aaa;
 .hidden{
 display:none;
 }
-
+.section-content.hidden{
+display:none;
+}
 @media(max-width:900px){
 
 .hero{
@@ -374,8 +376,7 @@ Les bases essentielles du RolePlay sur Solarys RP
 
 function toggle(element){
 
-const content =
-element.nextElementSibling;
+const content = element.nextElementSibling;
 
 content.classList.toggle("hidden");
 
@@ -390,7 +391,18 @@ arrow.innerHTML="⌃";
 
 }
 
+window.onload = function(){
+
+document.querySelectorAll('.section-content').forEach(content=>{
+content.classList.add('hidden');
+});
+
+}
+
 </script>
+</div>
+
+</div>
 
 </body>
 </html>
