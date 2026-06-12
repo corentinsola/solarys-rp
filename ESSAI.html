@@ -7,13 +7,17 @@
 
 <title>Règlement Illégal - Solarys RP</title>
 
-<link rel="p
-    econnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
-/* HERO IMAGE */
-{
+/* RESET */
+
+*{
 margin:0;
 padding:0;
 box-sizing:border-box;
@@ -126,7 +130,7 @@ box-shadow:
 
 .rule-card summary{
 
-padding:22px 35px;
+padding:28px 40px;
 
 display:flex;
 justify-content:space-between;
@@ -134,25 +138,35 @@ align-items:center;
 
 cursor:pointer;
 
-font-size:2.3rem;
+font-size:3rem;
 font-weight:800;
 
-list-style:none;
+color:white;
 
-}
+text-transform:uppercase;
+
+letter-spacing:1px;
+
+list-style:none;
 
 }
 
 .rule-card summary::-webkit-details-marker{
 display:none;
 }
+.accordion-arrow{
+transition:all .35s ease;
+}
 
+.rule-card[open] .accordion-arrow{
+transform:rotate(180deg);
+}
 /* FLÈCHE */
 
 .accordion-arrow{
 
-width:90px;
-height:90px;
+width:100px;
+height:100px;
 
 border-radius:50%;
 
@@ -160,28 +174,23 @@ display:flex;
 align-items:center;
 justify-content:center;
 
-background:
-linear-gradient(
-135deg,
-rgba(255,45,146,.15),
-rgba(27,108,255,.15)
-);
+background:rgba(20,25,60,.9);
 
-border:2px solid rgba(255,255,255,.05);
+border:2px solid rgba(139,92,246,.25);
 
 box-shadow:
-0 0 25px rgba(255,45,146,.35),
-0 0 25px rgba(27,108,255,.35);
+0 0 20px rgba(255,45,146,.35),
+0 0 40px rgba(139,92,246,.35),
+0 0 60px rgba(27,108,255,.25);
 
 }
 
 .accordion-arrow span{
 
-font-size:30px;
-font-weight:700;
+font-size:40px;
+font-weight:900;
 
-background:
-linear-gradient(
+background:linear-gradient(
 90deg,
 #ff2d92,
 #8b5cf6,
@@ -268,8 +277,6 @@ box-shadow:0 0 25px rgba(27,108,255,.5);
 
 </head>
 
-</head>
-
 <body>
 
 <header class="hero">
@@ -348,8 +355,17 @@ Merci de respecter l'ensemble des règles du serveur.
         </div>
     </details>
 
-    <details class="rule-card">
-        <summary>⚠️ GENERAL</summary>
+   <details class="rule-card">
+
+<summary>
+
+<span>⚠️ GENERAL</span>
+
+<div class="accordion-arrow">
+<span>⌄</span>
+</div>
+
+</summary>
 
         <div class="rule-content">
 
@@ -365,7 +381,15 @@ Merci de respecter l'ensemble des règles du serveur.
     </details>
 
     <details class="rule-card">
-        <summary>🎭 PRISE D'OTAGE</summary>
+   <summary>
+
+<span>🎭 PRISE D'OTAGE</span>
+
+<div class="accordion-arrow">
+<span>⌄</span>
+</div>
+
+</summary>
 
         <div class="rule-content">
 
@@ -381,7 +405,15 @@ Merci de respecter l'ensemble des règles du serveur.
     </details>
 
     <details class="rule-card">
-        <summary>🧪 DROGUES ET LABORATOIRES</summary>
+  <summary>
+
+<span>🧪 DROGUES ET LABORATOIRES</span>
+
+<div class="accordion-arrow">
+<span>⌄</span>
+</div>
+
+</summary>
 
         <div class="rule-content">
 
