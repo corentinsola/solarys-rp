@@ -235,7 +235,69 @@ text-align:center;
 /* ========================= */
 /* NAVIGATION */
 /* ========================= */
+.navigation{
+    display:flex;
+    gap:40px;
+    width:100%;
+    margin-top:50px;
+}
 
+.navigation a{
+    flex:1;
+
+    height:90px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-decoration:none;
+
+    font-size:1.8rem;
+    font-weight:700;
+
+    border-radius:25px;
+
+    transition:.3s ease;
+}
+
+.prev{
+    border:3px solid #ff2d92;
+    color:#ff2d92;
+
+    box-shadow:
+    0 0 20px rgba(255,45,146,.25);
+}
+
+.next{
+    border:3px solid #7b2cff;
+    color:#7b2cff;
+
+    box-shadow:
+    0 0 20px rgba(123,44,255,.25);
+}
+
+.prev:hover{
+    background:rgba(255,45,146,.1);
+
+    box-shadow:
+    0 0 35px rgba(255,45,146,.6);
+}
+
+.next:hover{
+    background:rgba(123,44,255,.1);
+
+    box-shadow:
+    0 0 35px rgba(123,44,255,.6);
+}
+
+@media(max-width:900px){
+
+    .navigation{
+        flex-direction:column;
+    }
+
+}
 .page-navigation{
     display:flex;
     justify-content:space-between;
@@ -428,18 +490,31 @@ PAGE SUIVANTE ➜
 
 function toggle(element){
 
-const content =
-element.nextElementSibling;
+    const content = element.nextElementSibling;
+    const arrow = element.querySelector(".accordion-arrow span");
 
-content.classList.toggle("hidden");
+    if (!content) return;
 
-const arrow =
-element.querySelector(".accordion-arrow span");
+    if(content.style.display === "none" || content.style.display === ""){
+        content.style.display = "block";
+        arrow.innerHTML = "⌃";
+    }else{
+        content.style.display = "none";
+        arrow.innerHTML = "⌄";
+    }
 
-if(content.classList.contains("hidden")){
-arrow.innerHTML="⌄";
-}else{
-arrow.innerHTML="⌃";
+}
+
+window.onload = function(){
+
+    document.querySelectorAll(".section-content").forEach(content=>{
+        content.style.display = "none";
+    });
+
+    document.querySelectorAll(".accordion-arrow span").forEach(arrow=>{
+        arrow.innerHTML = "⌄";
+    });
+
 }
 
 </script>
