@@ -24,28 +24,27 @@ body{
     overflow-x:hidden;
 }
 
-body::before{
-    content:'';
-    position:fixed;
-    inset:0;
-    background:
-    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.75)),
-    url('https://images.unsplash.com/photo-1514565131-fce0801e5785?q=80&w=1920');
-    background-size:cover;
-    background-position:center;
-    z-index:-2;
-}
+.hero{
+height:650px;
 
-body::after{
-    content:'';
-    position:fixed;
-    inset:0;
-    background:linear-gradient(
-        180deg,
-        rgba(130,0,255,.15),
-        rgba(255,0,150,.10)
-    );
-    z-index:-1;
+background-image:
+linear-gradient(
+rgba(0,0,0,.45),
+rgba(0,0,0,.80)
+),
+url("https://raw.githubusercontent.com/corentinsola/solarys-rp/main/image%20staff.png");
+
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+
+padding:20px;
 }
 
 /* HEADER */
@@ -121,7 +120,32 @@ nav a{
     font-size:1.2rem;
     margin-top:20px;
 }
+.hero h1{
+font-size:7rem;
+font-weight:800;
 
+background:linear-gradient(
+90deg,
+#ff67ff,
+#7aa8ff
+);
+
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.hero span{
+letter-spacing:12px;
+opacity:.8;
+font-weight:600;
+}
+
+.hero p{
+max-width:900px;
+margin:auto;
+font-size:1.2rem;
+margin-top:20px;
+}
 /* ACCORDION */
 
 .container{
