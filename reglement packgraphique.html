@@ -466,14 +466,14 @@ Nous vous remercions de respecter ce règlement afin de préserver une expérien
         ⬅ PAGE PRÉCÉDENTE
     </a>
 
-    <a href="https://reglement.solarys-rp.fr/reglement-notions.html" class="next">
+    <a href="https://reglement.solarys-rp.fr/reglement%20notion.html" class="next">
     PAGE SUIVANTE ➜
 </a>
 
 </div>
 
 <footer>
-   © 2026 Solarys RP - Tous droits réservés.
+    © 2026 Solarys RP - Tous droits réservés.
 </footer>
 
 <script>
@@ -483,27 +483,13 @@ function toggle(element){
     const content = element.nextElementSibling;
     const arrow = element.querySelector(".accordion-arrow span");
 
-    if (!content) return;
+    content.classList.toggle("hidden");
 
-    if(content.style.display === "none" || content.style.display === ""){
-        content.style.display = "block";
-        arrow.innerHTML = "⌃";
+    if(content.classList.contains("hidden")){
+        arrow.innerHTML = "⌄";
     }else{
-        content.style.display = "none";
-        arrow.innerHTML = "⌄";
+        arrow.innerHTML = "⌃";
     }
-
-}
-
-window.onload = function(){
-
-    document.querySelectorAll(".section-content").forEach(content=>{
-        content.style.display = "none";
-    });
-
-    document.querySelectorAll(".accordion-arrow span").forEach(arrow=>{
-        arrow.innerHTML = "⌄";
-    });
 
 }
 
