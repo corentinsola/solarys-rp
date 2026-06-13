@@ -27,27 +27,23 @@ color:#fff;
 /* ========================= */
 
 .hero{
-
-height:650px;
+height:550px;
 
 background-image:
 linear-gradient(
 rgba(0,0,0,.45),
 rgba(0,0,0,.80)
 ),
-url("coté legal.png");
+url("https://raw.githubusercontent.com/corentinsola/solarys-rp/main/plage%20solarys.png");
 
 background-size:cover;
-background-position:center center;
+background-position:center;
 background-repeat:no-repeat;
 
 display:flex;
 justify-content:center;
 align-items:center;
 text-align:center;
-
-position:relative;
-
 }
 
 .hero-content h1{
@@ -102,13 +98,15 @@ background:linear-gradient(
 );
 
 border:1px solid rgba(255,255,255,.06);
-.section{
-    border-radius:35px;
-    margin-bottom:35px;
+border-radius:25px;
 
-    box-shadow:
-    0 0 20px rgba(255,45,146,.10),
-    0 0 30px rgba(27,108,255,.10);
+margin-bottom:25px;
+
+box-shadow:
+0 0 20px rgba(255,45,146,.08),
+0 0 20px rgba(27,108,255,.08);
+
+overflow:hidden;
 }
 
 .section-header{
@@ -277,7 +275,9 @@ color:#aaa;
 .hidden{
 display:none;
 }
-
+.section-content.hidden{
+display:none;
+}
 @media(max-width:900px){
 
 .hero{
@@ -308,6 +308,7 @@ flex-direction:column;
 
 </style>
 </head>
+
 <body>
 
 <header class="hero">
