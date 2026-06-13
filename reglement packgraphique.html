@@ -293,61 +293,53 @@ text-align:center;
 
 @media(max-width:900px){
 
-    .navigation{
-        flex-direction:column;
-    }
-
-}
-.page-navigation{
+.navigation{
     display:flex;
-    justify-content:space-between;
-    align-items:center;
     gap:40px;
-    margin-top:50px;
     width:100%;
+    margin-top:50px;
 }
 
-.nav-btn{
+.navigation a{
     flex:1;
-    text-align:center;
-    padding:28px 20px;
-    border-radius:20px;
+    height:90px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
     text-decoration:none;
     font-size:1.8rem;
     font-weight:700;
-    transition:all .3s ease;
+
+    border-radius:25px;
+    transition:.3s ease;
 }
 
-.prev-btn{
-    border:3px solid #ff2ea6;
-    color:#ff2ea6;
-    box-shadow:0 0 20px rgba(255,46,166,.25);
+.prev{
+    border:3px solid #ff2d92;
+    color:#ff2d92;
+
+    box-shadow:
+    0 0 20px rgba(255,45,146,.25);
 }
 
-.prev-btn:hover{
-    background:rgba(255,46,166,.12);
-    box-shadow:0 0 30px rgba(255,46,166,.5);
-}
-
-.next-btn{
+.next{
     border:3px solid #7b2cff;
     color:#7b2cff;
-    box-shadow:0 0 20px rgba(123,44,255,.25);
+
+    box-shadow:
+    0 0 20px rgba(123,44,255,.25);
 }
 
-.next-btn:hover{
-    background:rgba(123,44,255,.12);
-    box-shadow:0 0 30px rgba(123,44,255,.5);
+.prev:hover{
+    background:rgba(255,45,146,.1);
+    box-shadow:0 0 35px rgba(255,45,146,.6);
 }
 
-@media(max-width:900px){
-    .page-navigation{
-        flex-direction:column;
-    }
-
-    .nav-btn{
-        width:100%;
-    }
+.next:hover{
+    background:rgba(123,44,255,.1);
+    box-shadow:0 0 35px rgba(123,44,255,.6);
 }
 
 </style>
@@ -468,23 +460,20 @@ Nous vous remercions de respecter ce règlement afin de préserver une expérien
 </div>
 
 <!-- Navigation -->
-
 <div class="navigation">
 
-<a href="https://reglement.solarys-rp.fr"class="prev">
-⬅ PAGE PRÉCÉDENTE
-</a>
+    <a href="https://reglement.solarys-rp.fr/" class="prev">
+        ⬅ PAGE PRÉCÉDENTE
+    </a>
 
-<a href="https://reglement.solarys-rp.fr/reglement%20notion.fr"class="next">
-PAGE SUIVANTE ➜
-</a>
-
-</div>
+    <a href="https://reglement.solarys-rp.fr/reglement%20notion.html" class="next">
+        PAGE SUIVANTE ➜
+    </a>
 
 </div>
 
 <footer>
-© 2026 Solarys RP - Tous droits réservés.
+   © 2026 Solarys RP - Tous droits réservés.
 </footer>
 
 <script>
