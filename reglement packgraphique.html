@@ -19,7 +19,8 @@ font-family:'Poppins',sans-serif;
 
 body{
 background:#05070d;
-color:#fff;
+color:white;
+overflow-x:hidden;
 }
 
 /* ========================= */
@@ -27,39 +28,107 @@ color:#fff;
 /* ========================= */
 
 .hero{
-height:550px;
+height:650px;
 
 background:
 linear-gradient(
 rgba(0,0,0,.35),
-rgba(0,0,0,.80)
+rgba(0,0,0,.75)
 ),
 url("https://raw.githubusercontent.com/corentinsola/solarys-rp/main/banniere-packgraphique.png");
 
 background-size:cover;
-background-position:center center;
+background-position:center;
 background-repeat:no-repeat;
 
 display:flex;
 justify-content:center;
 align-items:center;
 text-align:center;
+}
 
-position:relative;
+.hero-content{
+max-width:1200px;
+padding:20px;
+}
+
+.hero-content h1{
+font-size:5rem;
+font-weight:700;
+text-transform:uppercase;
+color:white;
+
+text-shadow:
+0 0 15px rgba(255,255,255,.2),
+0 0 40px rgba(27,108,255,.6);
+}
+
+.hero-content p{
+margin-top:20px;
+font-size:1.5rem;
+color:#f5f5f5;
+}
+
+.neon-divider{
+width:500px;
+height:4px;
+margin:30px auto;
+
+background:
+linear-gradient(
+90deg,
+#ff2d92,
+#8b5cf6,
+#1b6cff
+);
+
+box-shadow:
+0 0 15px #ff2d92,
+0 0 25px #1b6cff;
+}
+
+/* ========================= */
+/* CONTENU */
+/* ========================= */
+
+.container{
+max-width:1600px;
+margin:auto;
+padding:40px;
+}
+
+.section{
+background:
+linear-gradient(
+90deg,
+#04060d,
+#071427
+);
+
+border-radius:25px;
+margin-bottom:25px;
+
+border:1px solid rgba(255,255,255,.06);
+
+box-shadow:
+0 0 15px rgba(255,45,146,.10),
+0 0 15px rgba(27,108,255,.10);
+
 overflow:hidden;
 }
 
 .section-header{
-padding:25px 30px;
 display:flex;
 justify-content:space-between;
 align-items:center;
+
+padding:25px 30px;
 cursor:pointer;
-transition:.3s;
 }
 
 .section-header h2{
 font-size:2rem;
+font-weight:700;
 }
 
 .modif h2{
@@ -67,16 +136,12 @@ color:#ff2d92;
 }
 
 .tirs h2{
-color:#9c4dff;
+color:#9b5cff;
 }
 
 .sanctions h2{
-color:#ffae00;
+color:#ffb300;
 }
-
-/* ========================= */
-/* FLÈCHES NÉON */
-/* ========================= */
 
 .accordion-arrow{
 width:60px;
@@ -87,50 +152,23 @@ align-items:center;
 justify-content:center;
 
 border-radius:50%;
-.hero::before{
-content:"";
-position:absolute;
-inset:0;
 
 background:
 linear-gradient(
-to bottom,
-rgba(0,0,0,.15),
-rgba(0,0,0,.75)
+135deg,
+rgba(255,45,146,.15),
+rgba(27,108,255,.15)
 );
-
-z-index:1;
-}
-
-.hero-content{
-position:relative;
-z-index:2;
-}
-.accordion-arrow span{
-font-size:30px;
-font-weight:700;
-
-background:
-linear-gradient(
-90deg,
-#ff2d92,
-#8b5cf6,
-#1b6cff
-);
-
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
-}
-
-.section-header:hover .accordion-arrow{
-transform:scale(1.08);
 
 box-shadow:
-0 0 25px rgba(255,45,146,.55),
-0 0 35px rgba(27,108,255,.55);
+0 0 15px rgba(255,45,146,.4),
+0 0 25px rgba(27,108,255,.4);
 }
 
-/* ========================= */
+.accordion-arrow span{
+font-size:28px;
+font-weight:700;
+}
 
 .section-content{
 padding:0 30px 30px;
@@ -147,7 +185,7 @@ list-style:none;
 }
 
 li{
-padding:14px 0;
+padding:12px 0;
 border-bottom:1px solid rgba(255,255,255,.05);
 font-size:1.1rem;
 }
@@ -160,10 +198,16 @@ font-weight:bold;
 
 .message{
 margin-top:25px;
-padding:18px;
-border:1px solid #1b6cff;
+padding:20px;
+
 border-radius:15px;
+
+border:1px solid #1b6cff;
+
 text-align:center;
+
+background:
+rgba(0,0,0,.25);
 }
 
 /* ========================= */
@@ -178,11 +222,15 @@ margin-top:30px;
 
 .navigation a{
 flex:1;
+
 padding:18px;
+
 text-align:center;
 text-decoration:none;
 font-weight:600;
+
 border-radius:15px;
+
 transition:.3s;
 }
 
@@ -210,38 +258,26 @@ footer{
 margin-top:40px;
 padding:30px;
 text-align:center;
-border-top:1px solid rgba(255,255,255,.08);
 color:#aaa;
+border-top:1px solid rgba(255,255,255,.08);
 }
 
 .hidden{
 display:none;
 }
-.section-content.hidden{
-display:none;
-}
+
 @media(max-width:900px){
 
 .hero{
-height:380px;
+height:450px;
 }
 
 .hero-content h1{
-font-size:5rem;
-font-weight:700;
-color:white;
-text-transform:uppercase;
-
-text-shadow:
-0 0 15px rgba(255,255,255,.25),
-0 0 40px rgba(27,108,255,.50);
+font-size:2.5rem;
 }
 
 .hero-content p{
-margin-top:20px;
-font-size:1.5rem;
-color:#ffffff;
-text-shadow:0 0 10px rgba(0,0,0,.8);
+font-size:1rem;
 }
 
 .neon-divider{
@@ -289,7 +325,6 @@ Modifications graphiques autorisées et interdites sur Solarys RP
 <div class="accordion-arrow">
 <span>⌃</span>
 </div>
-
 </div>
 
 <div class="section-content">
@@ -317,9 +352,7 @@ Modifications graphiques autorisées et interdites sur Solarys RP
 </ul>
 
 </div>
-
 </div>
-
 </div>
 
 <div class="section tirs">
@@ -330,7 +363,6 @@ Modifications graphiques autorisées et interdites sur Solarys RP
 <div class="accordion-arrow">
 <span>⌃</span>
 </div>
-
 </div>
 
 <div class="section-content">
@@ -344,7 +376,6 @@ Modifications graphiques autorisées et interdites sur Solarys RP
 </ul>
 
 </div>
-
 </div>
 
 <div class="section sanctions">
@@ -355,7 +386,6 @@ Modifications graphiques autorisées et interdites sur Solarys RP
 <div class="accordion-arrow">
 <span>⌃</span>
 </div>
-
 </div>
 
 <div class="section-content">
@@ -372,18 +402,16 @@ Nous vous remercions de respecter ce règlement afin de préserver une expérien
 </div>
 
 </div>
-
 </div>
 
-<!-- Navigation -->
 <div class="navigation">
 
-    <a href="https://reglement.solarys-rp.fr/" class="prev">
-        ⬅ PAGE PRÉCÉDENTE
-    </a>
+<a href="https://reglement.solarys-rp.fr/" class="prev">
+⬅ PAGE PRÉCÉDENTE
+</a>
 
-    <a href="https://reglement.solarys-rp.fr/reglement%20notion.html" class="next">
-    PAGE SUIVANTE ➜
+<a href="https://reglement.solarys-rp.fr/reglement%20notion.html" class="next">
+PAGE SUIVANTE ➜
 </a>
 
 </div>
