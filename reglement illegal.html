@@ -582,143 +582,174 @@ Merci de respecter l'ensemble des règles du serveur.
 
 </details>
 
-<details class="rule-card">
+<div class="section">
 
-<summary>
-<span>🔫 ARMES</span>
+<div class="section-header" onclick="toggle(this)">
+<h2>🔫 ARMES</h2>
 
 <div class="accordion-arrow">
-<span>⌄</span>
+<span>⌃</span>
 </div>
-</summary>
 
-<div class="rule-content">
+</div>
+
+<div class="section-content hidden">
+
 <ul>
 <li>Le GunFight n'est jamais la première solution.</li>
-<li>Fear RP obligatoire.</li>
-<li>Drive-By abusifs interdits.</li>
+<li>Le Fear RP est obligatoire.</li>
+<li>Les Drive-By abusifs sont interdits.</li>
 <li>Les armes lourdes doivent rester rares.</li>
 </ul>
+
+</div>
+
 </div>
 
 </details>
 
-<details class="rule-card">
+<div class="section">
 
-<summary>
-<span>🏦 BRACAGES</span>
+<div class="section-header" onclick="toggle(this)">
+<h2>🏦 BRAQUAGES</h2>
 
 <div class="accordion-arrow">
-<span>⌄</span>
+<span>⌃</span>
 </div>
-</summary>
 
-<div class="rule-content">
+</div>
+
+<div class="section-content hidden">
+
 <ul>
-<li>Braquages préparés sérieusement.</li>
-<li>Négociations obligatoires.</li>
-<li>Full Win interdit.</li>
-<li>Maze Bank = évènement majeur.</li>
+<li>Les braquages doivent être préparés sérieusement.</li>
+<li>Les négociations sont obligatoires.</li>
+<li>Le Full Win est interdit.</li>
+<li>Le braquage de la Maze Bank est considéré comme un événement majeur.</li>
 </ul>
+
+</div>
+
 </div>
 
 </details>
 
-<details class="rule-card">
+<div class="section">
 
-<summary>
-<span>💰 LOOT • ARNAQUE • VOL</span>
+<div class="section-header" onclick="toggle(this)">
+<h2>💰 LOOT • ARNAQUE • VOL</h2>
 
 <div class="accordion-arrow">
-<span>⌄</span>
+<span>⌃</span>
 </div>
-</summary>
 
-<div class="rule-content">
+</div>
+
+<div class="section-content hidden">
+
 <ul>
-<li>Construction RP obligatoire.</li>
-<li>Fair-play obligatoire.</li>
-<li>Vols abusifs interdits.</li>
+<li>Une construction RP est obligatoire.</li>
+<li>Le Fair-Play est obligatoire.</li>
+<li>Les vols abusifs sont interdits.</li>
 </ul>
+
+</div>
+
 </div>
 
 </details>
 
-<details class="rule-card">
+<div class="section">
 
-<summary>
-<span>🛡️ DEPLOIEMENT DU SRT</span>
+<div class="section-header" onclick="toggle(this)">
+<h2>🛡️ DÉPLOIEMENT DU SRT</h2>
 
 <div class="accordion-arrow">
-<span>⌄</span>
+<span>⌃</span>
 </div>
-</summary>
 
-<div class="rule-content">
+</div>
+
+<div class="section-content hidden">
+
 <p>
 Le SRT est une unité exceptionnelle déployée uniquement sous autorisation.
 </p>
+
+</div>
+
 </div>
 
 </details>
 
-<details class="rule-card">
+<div class="section">
 
-<summary>
-<span>🕵️ CORRUPTION</span>
+<div class="section-header" onclick="toggle(this)">
+<h2>🕵️ CORRUPTION</h2>
 
 <div class="accordion-arrow">
-<span>⌄</span>
+<span>⌃</span>
 </div>
-</summary>
 
-<div class="rule-content">
+</div>
+
+<div class="section-content hidden">
+
 <ul>
 <li>Dossier obligatoire.</li>
-<li>Validation Staff.</li>
-<li>RP sérieux et cohérent.</li>
+<li>Validation du Staff obligatoire.</li>
+<li>Le RP doit rester sérieux et cohérent.</li>
 </ul>
+
 </div>
 
+</div>
 </details>
+<div class="section">
 
-<details class="rule-card">
-
-<summary>
-<span>⚖️ LOI RICO</span>
+<div class="section-header" onclick="toggle(this)">
+<h2>⚖️ LOI RICO</h2>
 
 <div class="accordion-arrow">
-<span>⌄</span>
+<span>⌃</span>
 </div>
-</summary>
 
-<div class="rule-content">
+</div>
+
+<div class="section-content hidden">
+
 <p>
-Application après validation d'un dossier complet.
+Application uniquement après validation d'un dossier complet.
 </p>
+
 </div>
 
+</div>
 </details>
 
-<details class="rule-card">
+<div class="section">
 
-<summary>
-<span>☠️ MORT RP & WIPE</span>
+<div class="section-header" onclick="toggle(this)">
+<h2>☠️ MORT RP & WIPE</h2>
 
 <div class="accordion-arrow">
-<span>⌄</span>
+<span>⌃</span>
 </div>
-</summary>
 
-<div class="rule-content">
+</div>
+
+<div class="section-content hidden">
+
 <ul>
 <li>Validation Staff obligatoire.</li>
 <li>Dossier complet requis.</li>
 <li>Le retour du même personnage est interdit.</li>
 </ul>
+
 </div>
 
-</details>
+</div>
+
 <div class="navigation">
 
     <a href="https://reglement.solarys-rp.fr/reglement%20legal.html" class="prev">
@@ -727,3 +758,38 @@ Application après validation d'un dossier complet.
 
 </div>
 </div>
+<footer>
+© 2026 Solarys RP - Tous droits réservés.
+</footer>
+
+<script>
+
+function toggle(element){
+
+const content = element.nextElementSibling;
+
+content.classList.toggle("hidden");
+
+const arrow =
+element.querySelector(".accordion-arrow span");
+
+if(content.classList.contains("hidden")){
+arrow.innerHTML="⌄";
+}else{
+arrow.innerHTML="⌃";
+}
+
+}
+
+window.onload = function(){
+
+document.querySelectorAll('.section-content').forEach(content=>{
+content.classList.add('hidden');
+});
+
+}
+
+</script>
+
+</body>
+</html>
