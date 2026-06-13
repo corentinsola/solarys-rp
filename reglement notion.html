@@ -1,110 +1,455 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Règlement Pack Graphique - Solarys RP</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 <style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
 body{
-    margin:0;
-    font-family:Arial,sans-serif;
-    background:#0d0d0d;
-    color:white;
-    line-height:1.7;
+background:#05070d;
+color:white;
+overflow-x:hidden;
 }
 
-header{
-    background:linear-gradient(90deg,#ff4fd8,#6fa8ff);
-    padding:30px;
-    text-align:center;
+/* ========================= */
+/* BANNIÈRE */
+/* ========================= */
+
+.hero{
+height:650px;
+
+background:
+linear-gradient(
+rgba(0,0,0,.35),
+rgba(0,0,0,.75)
+),
+url("https://raw.githubusercontent.com/corentinsola/solarys-rp/main/banniere-packgraphique.png");
+
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
 }
 
-header h1{
-    margin:0;
-    font-size:3rem;
+.hero-content{
+max-width:1200px;
+padding:20px;
 }
+
+.hero-content h1{
+font-size:5rem;
+font-weight:700;
+text-transform:uppercase;
+color:white;
+
+text-shadow:
+0 0 15px rgba(255,255,255,.2),
+0 0 40px rgba(27,108,255,.6);
+}
+
+.hero-content p{
+margin-top:20px;
+font-size:1.5rem;
+color:#f5f5f5;
+}
+
+.neon-divider{
+width:500px;
+height:4px;
+margin:30px auto;
+
+background:
+linear-gradient(
+90deg,
+#ff2d92,
+#8b5cf6,
+#1b6cff
+);
+
+box-shadow:
+0 0 15px #ff2d92,
+0 0 25px #1b6cff;
+}
+
+/* ========================= */
+/* CONTENU */
+/* ========================= */
 
 .container{
-    max-width:1200px;
-    margin:auto;
-    padding:30px;
+max-width:1600px;
+margin:auto;
+padding:40px;
 }
 
 .section{
-    background:#151515;
-    border:1px solid rgba(255,255,255,.08);
-    border-radius:20px;
-    padding:35px;
-    margin-bottom:25px;
-    box-shadow:0 10px 30px rgba(0,0,0,.35);
-    transition:.3s;
+background:
+linear-gradient(
+90deg,
+#04060d,
+#071427
+);
+
+border-radius:25px;
+margin-bottom:25px;
+
+border:1px solid rgba(255,255,255,.06);
+
+box-shadow:
+0 0 15px rgba(255,45,146,.10),
+0 0 15px rgba(27,108,255,.10);
+
+overflow:hidden;
 }
 
-.section:hover{
-    transform:translateY(-4px);
+.section-header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:25px 30px;
+cursor:pointer;
 }
 
-h2{
-    color:#8fc7ff;
-    font-size:32px;
-    margin-bottom:20px;
+.section-header h2{
+font-size:2rem;
+font-weight:700;
+}
+
+.modif h2{
+color:#ff2d92;
+}
+
+.tirs h2{
+color:#9b5cff;
+}
+
+.sanctions h2{
+color:#ffb300;
+}
+
+.accordion-arrow{
+width:60px;
+height:60px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+border-radius:50%;
+
+background:
+linear-gradient(
+135deg,
+rgba(255,45,146,.15),
+rgba(27,108,255,.15)
+);
+
+box-shadow:
+0 0 15px rgba(255,45,146,.4),
+0 0 25px rgba(27,108,255,.4);
+}
+
+.accordion-arrow span{
+font-size:28px;
+font-weight:700;
+}
+
+.section-content{
+padding:0 30px 30px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
 }
 
 ul{
-    padding-left:25px;
+list-style:none;
 }
 
 li{
-    margin-bottom:12px;
-    font-size:18px;
+padding:12px 0;
+border-bottom:1px solid rgba(255,255,255,.05);
+font-size:1.1rem;
 }
 
-.home-btn{
-    display:inline-block;
-    margin-bottom:25px;
-    padding:12px 25px;
-    background:linear-gradient(90deg,#ff4fd8,#6fa8ff);
-    color:white;
-    text-decoration:none;
-    border-radius:10px;
+li::before{
+content:"• ";
+color:#ff2d92;
+font-weight:bold;
 }
 
-.home-btn:hover{
-    opacity:.8;
+.message{
+margin-top:25px;
+padding:20px;
+
+border-radius:15px;
+
+border:1px solid #1b6cff;
+
+text-align:center;
+
+background:
+rgba(0,0,0,.25);
 }
 
-.menu-reglement{
-    display:flex;
-    justify-content:center;
-    gap:15px;
-    flex-wrap:wrap;
-    margin-bottom:30px;
+/* ========================= */
+/* NAVIGATION */
+/* ========================= */
 
-    position:sticky;
-    top:15px;
-    z-index:1000;
-
-    background:rgba(15,15,15,.85);
-    padding:15px;
-    border-radius:20px;
-    backdrop-filter:blur(10px);
+.navigation{
+display:flex;
+gap:20px;
+margin-top:30px;
 }
 
-.menu-reglement a{
-    background:linear-gradient(90deg,#ff4fd8,#6fa8ff);
-    color:white;
-    text-decoration:none;
-    padding:16px 28px;
-    min-width:160px;
-    text-align:center;
-    border-radius:14px;
-    font-weight:bold;
-    font-size:18px;
-    box-shadow:0 5px 15px rgba(0,0,0,.3);
-    transition:all .3s ease;
+.navigation a{
+flex:1;
+
+padding:18px;
+
+text-align:center;
+text-decoration:none;
+font-weight:600;
+
+border-radius:15px;
+
+transition:.3s;
 }
 
-.menu-reglement a:hover{
-    transform:translateY(-4px) scale(1.03);
-    box-shadow:0 8px 20px rgba(111,168,255,.4);
-    filter:brightness(1.1);
+.prev{
+border:2px solid #ff2d92;
+color:#ff2d92;
 }
 
-.menu-reglement a:active{
-    transform:scale(.98);
+.prev:hover{
+background:#ff2d92;
+color:white;
 }
+
+.next{
+border:2px solid #1b6cff;
+color:#1b6cff;
+}
+
+.next:hover{
+background:#1b6cff;
+color:white;
+}
+
+footer{
+margin-top:40px;
+padding:30px;
+text-align:center;
+color:#aaa;
+border-top:1px solid rgba(255,255,255,.08);
+}
+
+.hidden{
+display:none;
+}
+
+@media(max-width:900px){
+
+.hero{
+height:450px;
+}
+
+.hero-content h1{
+font-size:2.5rem;
+}
+
+.hero-content p{
+font-size:1rem;
+}
+
+.neon-divider{
+width:220px;
+}
+
+.grid{
+grid-template-columns:1fr;
+}
+
+.navigation{
+flex-direction:column;
+}
+
+}
+
 </style>
+</head>
+
+<body>
+
+<header class="hero">
+
+<div class="hero-content">
+
+<h1>RÈGLEMENT PACK GRAPHIQUE</h1>
+
+<p>
+Modifications graphiques autorisées et interdites sur Solarys RP
+</p>
+
+<div class="neon-divider"></div>
+
+</div>
+
+</header>
+
+<div class="container">
+
+<div class="section modif">
+
+<div class="section-header" onclick="toggle(this)">
+<h2>MODIFICATIONS INTERDITES</h2>
+
+<div class="accordion-arrow">
+<span>⌃</span>
+</div>
+</div>
+
+<div class="section-content">
+
+<div class="grid">
+
+<ul>
+<li>No props</li>
+<li>No element</li>
+<li>No water</li>
+<li>No bush</li>
+<li>Suppression d'objets ou d'éléments de décors</li>
+<li>Modification de la FOV</li>
+<li>Fichiers donnant un avantage visuel</li>
+</ul>
+
+<ul>
+<li>Réduction d'effets pour voir à travers certains éléments</li>
+<li>Suppression de végétation, eau, fumée ou props</li>
+<li>Full stamina</li>
+<li>Réduction de recul</li>
+<li>Modifications de luminosité abusives</li>
+<li>Packs donnant un avantage compétitif</li>
+<li>Optimisations abusives modifiant le gameplay</li>
+</ul>
+
+</div>
+</div>
+</div>
+
+<div class="section tirs">
+
+<div class="section-header" onclick="toggle(this)">
+<h2>SYSTÈMES FACILITANT LES TIRS</h2>
+
+<div class="accordion-arrow">
+<span>⌃</span>
+</div>
+</div>
+
+<div class="section-content">
+
+<ul>
+<li>Crosshairs externes</li>
+<li>Tracers</li>
+<li>Hit Effects</li>
+<li>Kill Effects</li>
+<li>Blood Effects</li>
+</ul>
+
+</div>
+</div>
+
+<div class="section sanctions">
+
+<div class="section-header" onclick="toggle(this)">
+<h2>SANCTIONS</h2>
+
+<div class="accordion-arrow">
+<span>⌃</span>
+</div>
+</div>
+
+<div class="section-content">
+
+<ul>
+<li>⚠️ Warn</li>
+<li>🔗 Jail / TIG</li>
+<li>🔨 Bannissement temporaire</li>
+<li>⛔ Bannissement définitif</li>
+</ul>
+
+<div class="message">
+Nous vous remercions de respecter ce règlement afin de préserver une expérience de jeu saine sur le serveur.
+</div>
+
+</div>
+</div>
+
+<div class="navigation">
+
+<a href="https://reglement.solarys-rp.fr/" class="prev">
+⬅ PAGE PRÉCÉDENTE
+</a>
+
+<a href="https://reglement.solarys-rp.fr/reglement%20notion.html" class="next">
+PAGE SUIVANTE ➜
+</a>
+
+</div>
+
+</div>
+
+<footer>
+© 2026 Solarys RP - Tous droits réservés.
+</footer>
+
+<script>
+
+function toggle(element){
+
+const content = element.nextElementSibling;
+
+content.classList.toggle("hidden");
+
+const arrow =
+element.querySelector(".accordion-arrow span");
+
+if(content.classList.contains("hidden")){
+arrow.innerHTML="⌄";
+}else{
+arrow.innerHTML="⌃";
+}
+
+}
+
+window.onload = function(){
+
+document.querySelectorAll('.section-content').forEach(content=>{
+content.classList.add('hidden');
+});
+
+}
+
+</script>
+
+</body>
+</html>
