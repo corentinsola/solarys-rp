@@ -67,6 +67,41 @@ p{
 }
 
 .btn-primary,
+.btn-reglement{
+    display:inline-block;
+
+    padding:18px 40px;
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(8px);
+    -webkit-backdrop-filter:blur(8px);
+
+    border:1px solid rgba(255,255,255,0.20);
+
+    border-radius:15px;
+
+    color:white;
+    text-decoration:none;
+    font-size:1.1rem;
+    font-weight:600;
+
+    transition:all .3s ease;
+
+    box-shadow:
+    0 0 15px rgba(255,255,255,.08);
+}
+
+.btn-reglement:hover{
+    background:rgba(255,255,255,0.15);
+
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 0 20px rgba(255,255,255,.15),
+    0 0 30px rgba(139,92,246,.25);
+}
+
 .btn-secondary{
     padding:18px 35px;
     border-radius:15px;
