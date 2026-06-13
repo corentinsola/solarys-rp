@@ -760,26 +760,30 @@ Application uniquement après validation d'un dossier complet.
 
 function toggle(element){
 
-const content = element.nextElementSibling;
-content.classList.toggle("hidden");
+    const content = element.nextElementSibling;
+    const arrow = element.querySelector(".accordion-arrow span");
 
-const arrow = element.querySelector(".accordion-arrow span");
+    content.classList.toggle("hidden");
 
-if(content.classList.contains("hidden")){
-arrow.innerHTML = "⌄";
-}else{
-arrow.innerHTML = "⌃";
+    if(content.classList.contains("hidden")){
+        arrow.innerHTML = "⌄";
+    }else{
+        arrow.innerHTML = "⌃";
+    }
+
 }
 
-}
+document.addEventListener("DOMContentLoaded", function(){
 
-window.onload = function(){
+    document.querySelectorAll(".section-content").forEach(content=>{
+        content.classList.add("hidden");
+    });
 
-document.querySelectorAll('.section-content').forEach(content=>{
-content.classList.add('hidden');
+    document.querySelectorAll(".accordion-arrow span").forEach(arrow=>{
+        arrow.innerHTML = "⌄";
+    });
+
 });
-
-}
 
 </script>
 
