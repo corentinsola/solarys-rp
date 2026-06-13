@@ -29,83 +29,23 @@ color:#fff;
 .hero{
 height:550px;
 
-background-image:
+background:
 linear-gradient(
-rgba(0,0,0,.45),
+rgba(0,0,0,.35),
 rgba(0,0,0,.80)
 ),
-url("https://raw.githubusercontent.com/corentinsola/solarys-rp/main/fond d ecran packg.png");
+url("https://raw.githubusercontent.com/corentinsola/solarys-rp/main/banniere-packgraphique.png");
 
 background-size:cover;
-background-position:center;
+background-position:center center;
 background-repeat:no-repeat;
 
 display:flex;
 justify-content:center;
 align-items:center;
 text-align:center;
-}
 
-.hero-content h1{
-font-size:4.5rem;
-font-weight:700;
-text-transform:uppercase;
-
-text-shadow:
-0 0 20px rgba(255,255,255,.15),
-0 0 40px rgba(0,119,255,.45);
-}
-
-.hero-content p{
-margin-top:20px;
-font-size:1.4rem;
-color:#e5e5e5;
-}
-
-.neon-divider{
-width:420px;
-height:3px;
-margin:25px auto;
-
-background:
-linear-gradient(
-90deg,
-#ff2d92,
-#8b5cf6,
-#1b6cff
-);
-
-box-shadow:
-0 0 15px #ff2d92,
-0 0 20px #1b6cff;
-}
-
-/* ========================= */
-/* CONTENU */
-/* ========================= */
-
-.container{
-max-width:1600px;
-margin:auto;
-padding:40px;
-}
-
-.section{
-background:linear-gradient(
-90deg,
-#04060d,
-#041225
-);
-
-border:1px solid rgba(255,255,255,.06);
-border-radius:25px;
-
-margin-bottom:25px;
-
-box-shadow:
-0 0 20px rgba(255,45,146,.08),
-0 0 20px rgba(27,108,255,.08);
-
+position:relative;
 overflow:hidden;
 }
 
@@ -147,23 +87,25 @@ align-items:center;
 justify-content:center;
 
 border-radius:50%;
+.hero::before{
+content:"";
+position:absolute;
+inset:0;
 
 background:
 linear-gradient(
-135deg,
-rgba(255,45,146,.15),
-rgba(27,108,255,.15)
+to bottom,
+rgba(0,0,0,.15),
+rgba(0,0,0,.75)
 );
 
-border:2px solid rgba(255,255,255,.08);
-
-box-shadow:
-0 0 15px rgba(255,45,146,.35),
-0 0 25px rgba(27,108,255,.35);
-
-transition:.3s;
+z-index:1;
 }
 
+.hero-content{
+position:relative;
+z-index:2;
+}
 .accordion-arrow span{
 font-size:30px;
 font-weight:700;
@@ -285,11 +227,21 @@ height:380px;
 }
 
 .hero-content h1{
-font-size:2.3rem;
+font-size:5rem;
+font-weight:700;
+color:white;
+text-transform:uppercase;
+
+text-shadow:
+0 0 15px rgba(255,255,255,.25),
+0 0 40px rgba(27,108,255,.50);
 }
 
 .hero-content p{
-font-size:1rem;
+margin-top:20px;
+font-size:1.5rem;
+color:#ffffff;
+text-shadow:0 0 10px rgba(0,0,0,.8);
 }
 
 .neon-divider{
