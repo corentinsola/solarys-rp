@@ -527,7 +527,6 @@ Merci de respecter l'ensemble des règles du serveur.
 </div>
 
 </div>
-</details>
 
 <div class="section">
 
@@ -554,7 +553,6 @@ Merci de respecter l'ensemble des règles du serveur.
 
 </div>
 
-</details>
 
 <div class="section">
 
@@ -580,7 +578,6 @@ Merci de respecter l'ensemble des règles du serveur.
 
 </div>
 
-</details>
 
 <div class="section">
 
@@ -606,7 +603,7 @@ Merci de respecter l'ensemble des règles du serveur.
 
 </div>
 
-</details>
+
 
 <div class="section">
 
@@ -632,8 +629,6 @@ Merci de respecter l'ensemble des règles du serveur.
 
 </div>
 
-</details>
-
 <div class="section">
 
 <div class="section-header" onclick="toggle(this)">
@@ -657,7 +652,6 @@ Merci de respecter l'ensemble des règles du serveur.
 
 </div>
 
-</details>
 
 <div class="section">
 
@@ -680,7 +674,6 @@ Le SRT est une unité exceptionnelle déployée uniquement sous autorisation.
 
 </div>
 
-</details>
 
 <div class="section">
 
@@ -704,7 +697,6 @@ Le SRT est une unité exceptionnelle déployée uniquement sous autorisation.
 </div>
 
 </div>
-</details>
 <div class="section">
 
 <div class="section-header" onclick="toggle(this)">
@@ -725,7 +717,6 @@ Application uniquement après validation d'un dossier complet.
 </div>
 
 </div>
-</details>
 
 <div class="section">
 
@@ -752,12 +743,12 @@ Application uniquement après validation d'un dossier complet.
 
 <div class="navigation">
 
-    <a href="https://reglement.solarys-rp.fr/reglement%20legal.html" class="prev">
-        ← PAGE PRÉCÉDENTE
-    </a>
+<a href="https://reglement.solarys-rp.fr/reglement%20legal.html" class="prev">
+← PAGE PRÉCÉDENTE
+</a>
 
 </div>
-</div>
+
 <footer>
 © 2026 Solarys RP - Tous droits réservés.
 </footer>
@@ -767,16 +758,14 @@ Application uniquement après validation d'un dossier complet.
 function toggle(element){
 
 const content = element.nextElementSibling;
-
 content.classList.toggle("hidden");
 
-const arrow =
-element.querySelector(".accordion-arrow span");
+const arrow = element.querySelector(".accordion-arrow span");
 
 if(content.classList.contains("hidden")){
-arrow.innerHTML="⌄";
+arrow.innerHTML = "⌄";
 }else{
-arrow.innerHTML="⌃";
+arrow.innerHTML = "⌃";
 }
 
 }
