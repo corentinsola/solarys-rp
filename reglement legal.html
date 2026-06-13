@@ -489,23 +489,33 @@ flex-direction:column;
 </div>
 
 <footer>
-    © 2026 Solarys RP - Tous droits réservés.
+© 2026 Solarys RP - Tous droits réservés.
 </footer>
 
 <script>
 
 function toggle(element){
 
-    const content = element.nextElementSibling;
-    const arrow = element.querySelector(".accordion-arrow span");
+const content = element.nextElementSibling;
 
-    content.classList.toggle("hidden");
+content.classList.toggle("hidden");
 
-    if(content.classList.contains("hidden")){
-        arrow.innerHTML = "⌄";
-    }else{
-        arrow.innerHTML = "⌃";
-    }
+const arrow =
+element.querySelector(".accordion-arrow span");
+
+if(content.classList.contains("hidden")){
+arrow.innerHTML="⌄";
+}else{
+arrow.innerHTML="⌃";
+}
+
+}
+
+window.onload = function(){
+
+document.querySelectorAll('.section-content').forEach(content=>{
+content.classList.add('hidden');
+});
 
 }
 
