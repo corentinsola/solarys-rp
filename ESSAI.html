@@ -203,8 +203,7 @@ color:#aaa;
 <li>MétaGaming</li>
 </ul>
 
-</div>
-</div>
+
 </div>
 <div class="section exces">
 
@@ -241,7 +240,7 @@ Avant de parler, demandez-vous :
 </p>
 
 </div>
-
+</div>
 <div class="section defaite">
 
 <div class="section-header" onclick="toggle(this)">
@@ -327,16 +326,23 @@ PAGE SUIVANTE →
 </footer>
 
 <script>
+
 function toggle(element){
+
 const content = element.nextElementSibling;
+
 content.classList.toggle("hidden");
+
 }
 
 window.onload = function(){
+
 document.querySelectorAll('.section-content').forEach(content=>{
 content.classList.add('hidden');
 });
+
 }
+
 </script>
 
 </body>
