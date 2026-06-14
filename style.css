@@ -307,6 +307,7 @@ transform:scale(1.08);
 
 .notions{
 color:#00e5ff;
+
 }
 .notions li::before{
 content:"• ";
@@ -316,21 +317,14 @@ color:#00e5ff;
 color:#9b5cff;
 }
 
-.exces{
-color:#00ff88;
-}
+.exces h2{color:#00ff88;}
 
-.defaite{
-color:#ffd700;
-}
 
-.recul{
-color:#1b6cff;
-}
+.defaite h2{color:#ffb300;}
 
-.faq{
-color:#ff2d92;
-}
+.recul h2{color:#1b6cff;}
+
+.faq h2{color:#ff2d92;}
 
 /* LEXIQUE RP */
 .rp-purple{
@@ -408,15 +402,14 @@ box-shadow:
 /* POINTS COLORES */
 /* ========================= */
 
-.notions h2{
-color:#00e5ff;
-}
+.notions h2{color:#00e5ff;}
 
 .notions li::before{
 content:"• ";
 color:#00e5ff;
 font-weight:bold;
 }
+.lexique h2{color:#9b5cff;}
 
 .lexique li::before{
 content:"• ";
