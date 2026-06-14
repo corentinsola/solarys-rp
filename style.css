@@ -40,11 +40,17 @@ nav{
 nav a{
     color:white;
     text-decoration:none;
-}
 
-main{
+    main{
+    min-height:80vh;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
     text-align:center;
-    margin-top:120px;
 }
 
 .welcome{
@@ -55,10 +61,16 @@ main{
 h1{
     font-size:5rem;
     margin:20px 0;
+    color:white;
+
+    text-shadow:
+    0 0 20px rgba(255,255,255,.2),
+    0 0 40px rgba(255,45,146,.4);
 }
 
-p{
-    font-size:1.3rem;
+p,
+.welcome{
+    color:white;
 }
 
 .buttons{
@@ -69,7 +81,8 @@ p{
 }
 
 .btn-primary,
-.btn-reglement{
+
+    .btn-reglement{
     display:inline-block;
 
     padding:18px 40px;
@@ -110,7 +123,9 @@ p{
     text-decoration:none;
     font-weight:700;
 }
-
+.bouton-centre{
+    margin-top:40px;
+}
 .btn-primary{
     background:linear-gradient(
     90deg,
