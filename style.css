@@ -53,7 +53,6 @@ main{
 
     display:flex;
     flex-direction:column;
-
     justify-content:center;
     align-items:center;
 
@@ -61,67 +60,104 @@ main{
 }
 
 .welcome{
+    color:white;
     font-size:1.2rem;
-    letter-spacing:4px;
+    letter-spacing:5px;
 }
 
 h1{
+    color:white;
     font-size:5rem;
     margin:20px 0;
-    color:white;
 
     text-shadow:
     0 0 20px rgba(255,255,255,.2),
     0 0 40px rgba(255,45,146,.4);
 }
 
-p,
-.welcome{
+p{
     color:white;
+    font-size:1.3rem;
 }
 
-.buttons{
-    display:flex;
-    justify-content:center;
-    gap:20px;
+.bouton-centre{
     margin-top:40px;
 }
 
-.btn-primary,
-
-    .btn-reglement{
+.btn-reglement{
     display:inline-block;
-
     padding:18px 40px;
 
-    background:rgba(255,255,255,0.08);
+    background:rgba(255,255,255,.08);
 
-    backdrop-filter:blur(8px);
-    -webkit-backdrop-filter:blur(8px);
-
-    border:1px solid rgba(255,255,255,0.20);
-
+    border:1px solid rgba(255,255,255,.20);
     border-radius:15px;
 
     color:white;
     text-decoration:none;
-    font-size:1.1rem;
-    font-weight:600;
 
-    transition:all .3s ease;
+    backdrop-filter:blur(8px);
 
-    box-shadow:
-    0 0 15px rgba(255,255,255,.08);
+    transition:.3s;
 }
 
 .btn-reglement:hover{
-    background:rgba(255,255,255,0.15);
+    background:rgba(255,255,255,.15);
+}main{
+    min-height:80vh;
 
-    transform:translateY(-3px);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
 
-    box-shadow:
-    0 0 20px rgba(255,255,255,.15),
-    0 0 30px rgba(139,92,246,.25);
+    text-align:center;
+}
+
+.welcome{
+    color:white;
+    font-size:1.2rem;
+    letter-spacing:5px;
+}
+
+h1{
+    color:white;
+    font-size:5rem;
+    margin:20px 0;
+
+    text-shadow:
+    0 0 20px rgba(255,255,255,.2),
+    0 0 40px rgba(255,45,146,.4);
+}
+
+p{
+    color:white;
+    font-size:1.3rem;
+}
+
+.bouton-centre{
+    margin-top:40px;
+}
+
+.btn-reglement{
+    display:inline-block;
+    padding:18px 40px;
+
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,255,255,.20);
+    border-radius:15px;
+
+    color:white;
+    text-decoration:none;
+
+    backdrop-filter:blur(8px);
+
+    transition:.3s;
+}
+
+.btn-reglement:hover{
+    background:rgba(255,255,255,.15);
 }
 
 .btn-secondary{
