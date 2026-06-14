@@ -29,22 +29,38 @@ overflow-x:hidden;
 
 .hero{
 height:650px;
-
 background:
-linear-gradient(
-rgba(0,0,0,.35),
-rgba(0,0,0,.75)
-),
-url("https://raw.githubusercontent.com/corentinsola/solarys-rp/main/banniere-packgraphique.png");
-
+linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.75)),
+url("https://raw.githubusercontent.com/corentinsola/solarys-rp/main/fond d ecran pack graphique.png");
 background-size:cover;
 background-position:center;
-background-repeat:no-repeat;
-
 display:flex;
 justify-content:center;
 align-items:center;
 text-align:center;
+}
+
+.hero-content{
+max-width:1200px;
+padding:20px;
+}
+
+.hero-content h1{
+font-size:5rem;
+font-weight:700;
+text-transform:uppercase;
+}
+
+.hero-content p{
+margin-top:20px;
+font-size:1.5rem;
+}
+
+.neon-divider{
+width:500px;
+height:4px;
+margin:30px auto;
+background:linear-gradient(90deg,#ff2d92,#8b5cf6,#1b6cff);
 }
 
 .hero-content{
@@ -90,7 +106,6 @@ box-shadow:
 /* ========================= */
 /* CONTENU */
 /* ========================= */
-
 .container{
 max-width:1600px;
 margin:auto;
@@ -98,22 +113,13 @@ padding:40px;
 }
 
 .section{
-background:
-linear-gradient(
-90deg,
-#04060d,
-#071427
-);
-
+background:linear-gradient(90deg,#04060d,#071427);
 border-radius:25px;
 margin-bottom:25px;
-
 border:1px solid rgba(255,255,255,.06);
-
 box-shadow:
 0 0 15px rgba(255,45,146,.10),
 0 0 15px rgba(27,108,255,.10);
-
 overflow:hidden;
 }
 
@@ -121,7 +127,6 @@ overflow:hidden;
 display:flex;
 justify-content:space-between;
 align-items:center;
-
 padding:25px 30px;
 cursor:pointer;
 }
@@ -131,47 +136,12 @@ font-size:2rem;
 font-weight:700;
 }
 
-.modif h2{
-color:#ff2d92;
-}
-
-.tirs h2{
-color:#9b5cff;
-}
-
-.sanctions h2{
-color:#ffb300;
-}
-
-.accordion-arrow{
-width:60px;
-height:60px;
-
-display:flex;
-align-items:center;
-justify-content:center;
-
-border-radius:50%;
-
-background:
-linear-gradient(
-135deg,
-rgba(255,45,146,.15),
-rgba(27,108,255,.15)
-);
-
-box-shadow:
-0 0 15px rgba(255,45,146,.4),
-0 0 25px rgba(27,108,255,.4);
-}
-
-.accordion-arrow span{
-font-size:28px;
-font-weight:700;
-}
+.modif h2{color:#ff2d92;}
+.tirs h2{color:#9b5cff;}
+.sanctions h2{color:#ffb300;}
 
 .section-content{
-padding:0 30px 30px;
+padding:30px;
 }
 
 .grid{
@@ -187,32 +157,64 @@ list-style:none;
 li{
 padding:12px 0;
 border-bottom:1px solid rgba(255,255,255,.05);
-font-size:1.1rem;
 }
-
-li::before{
+.modif li::before{
 content:"• ";
 color:#ff2d92;
-font-weight:bold;
+font-size:1.3rem;
+text-shadow:0 0 10px #ff2d92;
+}
+
+.tirs li::before{
+content:"• ";
+color:#9b5cff;
+font-size:1.3rem;
+text-shadow:0 0 10px #9b5cff;
+}
+
+.sanctions li::before{
+content:"• ";
+color:#ffb300;
+font-size:1.3rem;
+text-shadow:0 0 10px #ffb300;
+}
+.hidden{
+display:none;
+}
+
+.icon{
+width:70px;
+height:70px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:32px;
+border-radius:20px;
+background:rgba(255,255,255,.03);
+}
+
+.pink{
+border:2px solid #ff2d92;
+box-shadow:0 0 20px #ff2d92;
+}
+
+.purple{
+border:2px solid #9b5cff;
+box-shadow:0 0 20px #9b5cff;
+}
+
+.orange{
+border:2px solid #ffb300;
+box-shadow:0 0 20px #ffb300;
 }
 
 .message{
-margin-top:25px;
+margin-top:20px;
 padding:20px;
-
 border-radius:15px;
-
 border:1px solid #1b6cff;
-
 text-align:center;
-
-background:
-rgba(0,0,0,.25);
 }
-
-/* ========================= */
-/* NAVIGATION */
-/* ========================= */
 
 .navigation{
 display:flex;
@@ -222,16 +224,11 @@ margin-top:30px;
 
 .navigation a{
 flex:1;
-
 padding:18px;
-
 text-align:center;
 text-decoration:none;
 font-weight:600;
-
 border-radius:15px;
-
-transition:.3s;
 }
 
 .prev{
@@ -239,19 +236,9 @@ border:2px solid #ff2d92;
 color:#ff2d92;
 }
 
-.prev:hover{
-background:#ff2d92;
-color:white;
-}
-
 .next{
 border:2px solid #1b6cff;
 color:#1b6cff;
-}
-
-.next:hover{
-background:#1b6cff;
-color:white;
 }
 
 footer{
@@ -259,47 +246,14 @@ margin-top:40px;
 padding:30px;
 text-align:center;
 color:#aaa;
-border-top:1px solid rgba(255,255,255,.08);
-}
-
-.hidden{
-display:none;
-}
-
-@media(max-width:900px){
-
-.hero{
-height:450px;
-}
-
-.hero-content h1{
-font-size:2.5rem;
-}
-
-.hero-content p{
-font-size:1rem;
-}
-
-.neon-divider{
-width:220px;
-}
-
-.grid{
-grid-template-columns:1fr;
-}
-
-.navigation{
-flex-direction:column;
-}
-
 }
 
 </style>
+
 </head>
-
-<body>
-
-<header class="hero">
+<body>  
+  
+ <header class="hero">
 
 <div class="hero-content">
 
@@ -313,18 +267,14 @@ Modifications graphiques autorisées et interdites sur Solarys RP
 
 </div>
 
-</header>
-
-<div class="container">
+</header> 
+  <div class="container">
 
 <div class="section modif">
 
 <div class="section-header" onclick="toggle(this)">
 <h2>MODIFICATIONS INTERDITES</h2>
-
-<div class="accordion-arrow">
-<span>⌃</span>
-</div>
+<div class="icon pink">🚫</div>
 </div>
 
 <div class="section-content">
@@ -352,17 +302,16 @@ Modifications graphiques autorisées et interdites sur Solarys RP
 </ul>
 
 </div>
+
 </div>
+
 </div>
 
 <div class="section tirs">
 
 <div class="section-header" onclick="toggle(this)">
 <h2>SYSTÈMES FACILITANT LES TIRS</h2>
-
-<div class="accordion-arrow">
-<span>⌃</span>
-</div>
+<div class="icon purple">🎯</div>
 </div>
 
 <div class="section-content">
@@ -376,16 +325,14 @@ Modifications graphiques autorisées et interdites sur Solarys RP
 </ul>
 
 </div>
+
 </div>
 
 <div class="section sanctions">
 
 <div class="section-header" onclick="toggle(this)">
 <h2>SANCTIONS</h2>
-
-<div class="accordion-arrow">
-<span>⌃</span>
-</div>
+<div class="icon orange">🔨</div>
 </div>
 
 <div class="section-content">
@@ -402,6 +349,7 @@ Nous vous remercions de respecter ce règlement afin de préserver une expérien
 </div>
 
 </div>
+
 </div>
 
 <div class="navigation">
@@ -416,39 +364,22 @@ PAGE SUIVANTE ➜
 
 </div>
 
-</div>
 
 <footer>
 © 2026 Solarys RP - Tous droits réservés.
 </footer>
 
 <script>
-
 function toggle(element){
-
 const content = element.nextElementSibling;
-
 content.classList.toggle("hidden");
-
-const arrow =
-element.querySelector(".accordion-arrow span");
-
-if(content.classList.contains("hidden")){
-arrow.innerHTML="⌄";
-}else{
-arrow.innerHTML="⌃";
-}
-
 }
 
 window.onload = function(){
-
 document.querySelectorAll('.section-content').forEach(content=>{
 content.classList.add('hidden');
 });
-
 }
-
 </script>
 
 </body>
