@@ -1,180 +1,113 @@
-body{
-    background:
-    linear-gradient(
-        rgba(0,0,0,.35),
-        rgba(0,0,0,.55)
-    ),
-    url("https://raw.githubusercontent.com/corentinsola/solarys-rp/main/fond%20d%20ecran%20page%201.png");
+.icon{
+    width:85px;
+    height:85px;
 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-.overlay{
-    position:fixed;
-    inset:0;
-    background:rgba(0,0,0,.45);
-    z-index:-1;
-}
-
-header{
     display:flex;
-    justify-content:space-between;
     align-items:center;
-    padding:25px 60px;
-}
-
-.logo{
-    font-size:4rem;
-    font-weight:900;
-    color:#ff8cff;
-}
-
-nav{
-    display:flex;
-    gap:20px;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-}
-
-main{
-    min-height:80vh;
-
-    display:flex;
-    flex-direction:column;
     justify-content:center;
-    align-items:center;
 
-    text-align:center;
-}
+    border-radius:22px;
 
-.welcome{
-    color:white;
-    font-size:1.2rem;
-    letter-spacing:5px;
-}
-
-h1{
-    color:white;
-    font-size:5rem;
-    margin:20px 0;
-
-    text-shadow:
-    0 0 20px rgba(255,255,255,.2),
-    0 0 40px rgba(255,45,146,.4);
-}
-
-p{
-    color:white;
-    font-size:1.3rem;
-}
-
-.bouton-centre{
-    margin-top:40px;
-}
-
-.btn-reglement{
-    display:inline-block;
-    padding:18px 40px;
-
-    background:rgba(255,255,255,0.08);
-    border:1px solid rgba(255,255,255,0.25);
-
-    border-radius:18px;
-
-    color:white;
-    text-decoration:none;
-
-    backdrop-filter:blur(12px);
-
-    box-shadow:
-    0 0 15px rgba(255,45,146,.25),
-    0 0 30px rgba(139,92,246,.15);
-
-    transition:.3s;
-}
-
-.btn-reglement:hover{
-    transform:translateY(-3px);
-
-    box-shadow:
-    0 0 20px rgba(255,45,146,.45),
-    0 0 40px rgba(139,92,246,.35);
-
-    background:rgba(255,255,255,.15);
-}
-
-.welcome{
-    color:white;
-    font-size:1.2rem;
-    letter-spacing:5px;
-}
-
-h1{
-    color:white;
-    font-size:5rem;
-    margin:20px 0;
-
-    text-shadow:
-    0 0 20px rgba(255,255,255,.2),
-    0 0 40px rgba(255,45,146,.4);
-}
-
-p{
-    color:white;
-    font-size:1.3rem;
-}
-
-.bouton-centre{
-    margin-top:40px;
-}
-
-.btn-reglement{
-    display:inline-block;
-    padding:18px 40px;
-
-    background:rgba(255,255,255,.08);
-
-    border:1px solid rgba(255,255,255,.20);
-    border-radius:15px;
-
-    color:white;
-    text-decoration:none;
-
-    backdrop-filter:blur(8px);
-
-    transition:.3s;
-}
-
-.btn-reglement:hover{
-    background:rgba(255,255,255,.15);
-}
-
-.btn-secondary{
-    padding:18px 35px;
-    border-radius:15px;
-    text-decoration:none;
+    font-size:38px;
     font-weight:700;
-}
-.bouton-centre{
-    margin-top:40px;
-}
-.btn-primary{
-    background:linear-gradient(
-    90deg,
-    #ff2d92,
-    #8b5cf6,
-    #1b6cff
-    );
-    color:white;
+
+    transition:0.3s ease;
+
+    background:rgba(10,15,35,0.9);
+
+    cursor:pointer;
 }
 
-.btn-secondary{
-    border:2px solid #1b6cff;
-    color:white;
+.icon:hover{
+    transform:scale(1.08);
+}
+
+/* MODIFICATIONS INTERDITES */
+.pink{
+    color:#ff2ea6;
+    border:2px solid #ff2ea6;
+    box-shadow:
+    0 0 10px #ff2ea6,
+    0 0 25px #ff2ea6;
+}
+
+/* SYSTEMES FACILITANT LES TIRS */
+.purple{
+    color:#b14dff;
+    border:2px solid #b14dff;
+    box-shadow:
+    0 0 10px #b14dff,
+    0 0 25px #b14dff;
+}
+
+/* SANCTIONS */
+.orange{
+    color:#ff9800;
+    border:2px solid #ff9800;
+    box-shadow:
+    0 0 10px #ff9800,
+    0 0 25px #ff9800;
+}
+
+/* REGLES GENERALES */
+.blue{
+    color:#2b8cff;
+    border:2px solid #2b8cff;
+    box-shadow:
+    0 0 10px #2b8cff,
+    0 0 25px #2b8cff;
+}
+
+/* LOGICIELS INTERDITS */
+.red{
+    color:#ff4444;
+    border:2px solid #ff4444;
+    box-shadow:
+    0 0 10px #ff4444,
+    0 0 25px #ff4444;
+}
+
+/* AVANTAGES VISUELS */
+.cyan{
+    color:#00e5ff;
+    border:2px solid #00e5ff;
+    box-shadow:
+    0 0 10px #00e5ff,
+    0 0 25px #00e5ff;
+}
+
+/* MODS AUTORISES */
+.green{
+    color:#00ff88;
+    border:2px solid #00ff88;
+    box-shadow:
+    0 0 10px #00ff88,
+    0 0 25px #00ff88;
+}
+
+/* CONTROLES ET VERIFICATIONS */
+.gold{
+    color:#ffd700;
+    border:2px solid #ffd700;
+    box-shadow:
+    0 0 10px #ffd700,
+    0 0 25px #ffd700;
+}
+
+/* SIGNALEMENT */
+.magenta{
+    color:#ff4df8;
+    border:2px solid #ff4df8;
+    box-shadow:
+    0 0 10px #ff4df8,
+    0 0 25px #ff4df8;
+}
+
+/* FAQ */
+.white{
+    color:#ffffff;
+    border:2px solid #ffffff;
+    box-shadow:
+    0 0 10px rgba(255,255,255,0.8),
+    0 0 25px rgba(255,255,255,0.8);
 }
