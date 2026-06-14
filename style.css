@@ -305,13 +305,31 @@ box-shadow:0 0 10px rgba(255,255,255,.8),0 0 25px rgba(255,255,255,.8);
 transform:scale(1.08);
 }
 
-/* NOTIONS PRINCIPALES */
-.rp-cyan{
+.notions{
 color:#00e5ff;
-border:2px solid #00e5ff;
-box-shadow:
-0 0 10px #00e5ff,
-0 0 25px #00e5ff;
+}
+.notions li::before{
+content:"• ";
+color:#00e5ff;
+}
+.lexique{
+color:#9b5cff;
+}
+
+.exces{
+color:#00ff88;
+}
+
+.defaite{
+color:#ffd700;
+}
+
+.recul{
+color:#1b6cff;
+}
+
+.faq{
+color:#ff2d92;
 }
 
 /* LEXIQUE RP */
