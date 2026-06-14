@@ -140,10 +140,17 @@ font-weight:600;
 h1{
 font-size:6rem;
 font-weight:700;
+text-transform:uppercase;
+
+color:#ffffff !important;
+background:none !important;
+
+-webkit-background-clip:initial !important;
+-webkit-text-fill-color:#ffffff !important;
 
 text-shadow:
-0 0 20px rgba(255,255,255,.2),
-0 0 50px rgba(27,108,255,.5);
+0 0 15px rgba(255,255,255,.15),
+0 0 30px rgba(255,255,255,.20);
 }
 
 p{
