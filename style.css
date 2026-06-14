@@ -1,15 +1,21 @@
 body{
-    background-image:
+    margin:0;
+    padding:0;
+    min-height:100vh;
+
+    background:
     linear-gradient(
-    rgba(0,0,0,.35),
-    rgba(0,0,0,.55)
+        rgba(0,0,0,.35),
+        rgba(0,0,0,.55)
     ),
-    url("https://github.com/corentinsola/solarys-rp/blob/main/fond%20d%20ecran%20page%201.png");
+    url("https://raw.githubusercontent.com/corentinsola/solarys-rp/main/image%20fond%20d%20ecan%201%20page.png");
 
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
     background-attachment:fixed;
+
+    color:white;
 }
 
 .overlay{
