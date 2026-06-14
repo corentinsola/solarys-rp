@@ -1,9 +1,11 @@
 body{
-    margin:0;
-    font-family:Arial, sans-serif;
-    color:white;
+    background-image:
+    linear-gradient(
+    rgba(0,0,0,.35),
+    rgba(0,0,0,.55)
+    ),
+    url("https://raw.githubusercontent.com/corentinsola/solarys-rp/main/image%20fond%20d%20ecan%201%20page.png");
 
-    background-image:url("https://raw.githubusercontent.com/corentinsola/solarys-rp/main/Cote%20legal.png");
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
