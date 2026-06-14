@@ -7,23 +7,26 @@ font-family:'Poppins',sans-serif;
 }
 
 body{
-background:
+margin:0;
+padding:0;
+
+background-image:
 linear-gradient(
-rgba(0,0,0,.35),
-rgba(0,0,0,.75)
+rgba(0,0,0,0.35),
+rgba(0,0,0,0.75)
 ),
-url("https://raw.githubusercontent.com/corentinsola/solarys-rp/main/fond%20d%20ecran%20page%201");
+url("https://raw.githubusercontent.com/corentinsola/solarys-rp/main/fond%20d%20ecran%20page%201.png");
 
 background-size:cover;
 background-position:center center;
 background-repeat:no-repeat;
 background-attachment:fixed;
 
-color:white;
-overflow:hidden;
-height:100vh;
-}
+min-height:100vh;
 
+color:white;
+overflow-x:hidden;
+}
 .overlay{
 position:fixed;
 inset:0;
