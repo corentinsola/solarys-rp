@@ -1,124 +1,177 @@
-/* ========================= */
-/* ICÔNES DES ONGLETS */
-/* ========================= */
+```css
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
 
-.icon{
-width:70px;
-height:70px;
+body{
+background:#05070d;
+color:white;
+overflow:hidden;
+height:100vh;
+
+background:
+linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.75)),
+url("https://raw.githubusercontent.com/corentinsola/solarys-rp/main/fond%20d%20ecran.png");
+
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+}
+
+.overlay{
+position:fixed;
+inset:0;
+background:rgba(0,0,0,.25);
+z-index:1;
+}
+
+header{
+position:relative;
+z-index:2;
 
 display:flex;
+justify-content:space-between;
 align-items:center;
-justify-content:center;
 
-font-size:32px;
-
-border-radius:20px;
-
-background:rgba(255,255,255,0.03);
-
-transition:all .3s ease;
+padding:30px 80px;
 }
 
-.icon:hover{
-transform:scale(1.08);
+.logo{
+font-size:2rem;
+font-weight:700;
+letter-spacing:3px;
+
+background:linear-gradient(90deg,#ff2d92,#8b5cf6,#1b6cff);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
 }
 
-/* MODIFICATIONS INTERDITES */
-.pink{
+nav{
+display:flex;
+gap:20px;
+align-items:center;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
+
+nav a:hover{
 color:#ff2d92;
-border:2px solid #ff2d92;
-
-box-shadow:
-0 0 10px #ff2d92,
-0 0 25px #ff2d92;
 }
 
-/* SYSTÈMES FACILITANT LES TIRS */
-.purple{
-color:#9b5cff;
-border:2px solid #9b5cff;
-
-box-shadow:
-0 0 10px #9b5cff,
-0 0 25px #9b5cff;
+.status{
+display:flex;
+align-items:center;
+gap:10px;
 }
 
-/* SANCTIONS */
-.orange{
-color:#ffb300;
-border:2px solid #ffb300;
-
-box-shadow:
-0 0 10px #ffb300,
-0 0 25px #ffb300;
-}
-
-/* RÈGLES GÉNÉRALES */
-.blue{
-color:#1b6cff;
-border:2px solid #1b6cff;
-
-box-shadow:
-0 0 10px #1b6cff,
-0 0 25px #1b6cff;
-}
-
-/* LOGICIELS INTERDITS */
-.red{
-color:#ff4b4b;
-border:2px solid #ff4b4b;
-
-box-shadow:
-0 0 10px #ff4b4b,
-0 0 25px #ff4b4b;
-}
-
-/* AVANTAGES VISUELS */
-.cyan{
-color:#00e5ff;
-border:2px solid #00e5ff;
-
-box-shadow:
-0 0 10px #00e5ff,
-0 0 25px #00e5ff;
-}
-
-/* MODS AUTORISÉS */
-.green{
-color:#00ff88;
-border:2px solid #00ff88;
+.dot{
+width:10px;
+height:10px;
+border-radius:50%;
+background:#00ff88;
 
 box-shadow:
 0 0 10px #00ff88,
-0 0 25px #00ff88;
+0 0 20px #00ff88;
 }
 
-/* CONTRÔLES & VÉRIFICATIONS */
-.gold{
-color:#ffd700;
-border:2px solid #ffd700;
+main{
+position:relative;
+z-index:2;
+
+height:calc(100vh - 100px);
+
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+
+text-align:center;
+padding:20px;
+}
+
+.welcome{
+font-size:1rem;
+letter-spacing:4px;
+color:#ff2d92;
+margin-bottom:15px;
+}
+
+h1{
+font-size:6rem;
+font-weight:700;
+
+text-shadow:
+0 0 20px rgba(255,255,255,.2),
+0 0 50px rgba(27,108,255,.5);
+}
+
+p{
+margin-top:20px;
+font-size:1.4rem;
+max-width:800px;
+line-height:1.6;
+}
+
+.bouton-centre{
+margin-top:40px;
+}
+
+.btn-reglement{
+display:inline-block;
+
+padding:18px 40px;
+
+text-decoration:none;
+font-weight:700;
+font-size:1.1rem;
+
+color:white;
+
+border-radius:15px;
+
+background:
+linear-gradient(
+90deg,
+#ff2d92,
+#8b5cf6,
+#1b6cff
+);
 
 box-shadow:
-0 0 10px #ffd700,
-0 0 25px #ffd700;
+0 0 15px rgba(255,45,146,.5),
+0 0 30px rgba(27,108,255,.4);
+
+transition:.3s;
 }
 
-/* SIGNALEMENT */
-.magenta{
-color:#ff4df8;
-border:2px solid #ff4df8;
-
-box-shadow:
-0 0 10px #ff4df8,
-0 0 25px #ff4df8;
+.btn-reglement:hover{
+transform:translateY(-3px) scale(1.03);
 }
 
-/* FAQ */
-.white{
-color:#ffffff;
-border:2px solid #ffffff;
+@media(max-width:900px){
 
-box-shadow:
-0 0 10px rgba(255,255,255,.8),
-0 0 25px rgba(255,255,255,.8);
+header{
+padding:20px;
+flex-direction:column;
+gap:20px;
 }
+
+h1{
+font-size:3rem;
+}
+
+p{
+font-size:1rem;
+}
+
+}
+```
