@@ -56,16 +56,6 @@ padding:30px 80px;
 font-size:2rem;
 font-weight:700;
 letter-spacing:3px;
-
-background:linear-gradient(
-90deg,
-#ff2d92,
-#8b5cf6,
-#1b6cff
-);
-
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
 }
 
 nav{
