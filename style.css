@@ -1,113 +1,125 @@
+</style>
+/* ========================= */
+/* ICÔNES DES ONGLETS */
+/* ========================= */
+
 .icon{
-    width:85px;
-    height:85px;
+width:70px;
+height:70px;
 
-    display:flex;
-    align-items:center;
-    justify-content:center;
+display:flex;
+align-items:center;
+justify-content:center;
 
-    border-radius:22px;
+font-size:32px;
 
-    font-size:38px;
-    font-weight:700;
+border-radius:20px;
 
-    transition:0.3s ease;
+background:rgba(255,255,255,0.03);
 
-    background:rgba(10,15,35,0.9);
-
-    cursor:pointer;
+transition:all .3s ease;
 }
 
 .icon:hover{
-    transform:scale(1.08);
+transform:scale(1.08);
 }
 
 /* MODIFICATIONS INTERDITES */
 .pink{
-    color:#ff2ea6;
-    border:2px solid #ff2ea6;
-    box-shadow:
-    0 0 10px #ff2ea6,
-    0 0 25px #ff2ea6;
+color:#ff2d92;
+border:2px solid #ff2d92;
+
+box-shadow:
+0 0 10px #ff2d92,
+0 0 25px #ff2d92;
 }
 
-/* SYSTEMES FACILITANT LES TIRS */
+/* SYSTÈMES FACILITANT LES TIRS */
 .purple{
-    color:#b14dff;
-    border:2px solid #b14dff;
-    box-shadow:
-    0 0 10px #b14dff,
-    0 0 25px #b14dff;
+color:#9b5cff;
+border:2px solid #9b5cff;
+
+box-shadow:
+0 0 10px #9b5cff,
+0 0 25px #9b5cff;
 }
 
 /* SANCTIONS */
 .orange{
-    color:#ff9800;
-    border:2px solid #ff9800;
-    box-shadow:
-    0 0 10px #ff9800,
-    0 0 25px #ff9800;
+color:#ffb300;
+border:2px solid #ffb300;
+
+box-shadow:
+0 0 10px #ffb300,
+0 0 25px #ffb300;
 }
 
-/* REGLES GENERALES */
+/* RÈGLES GÉNÉRALES */
 .blue{
-    color:#2b8cff;
-    border:2px solid #2b8cff;
-    box-shadow:
-    0 0 10px #2b8cff,
-    0 0 25px #2b8cff;
+color:#1b6cff;
+border:2px solid #1b6cff;
+
+box-shadow:
+0 0 10px #1b6cff,
+0 0 25px #1b6cff;
 }
 
 /* LOGICIELS INTERDITS */
 .red{
-    color:#ff4444;
-    border:2px solid #ff4444;
-    box-shadow:
-    0 0 10px #ff4444,
-    0 0 25px #ff4444;
+color:#ff4b4b;
+border:2px solid #ff4b4b;
+
+box-shadow:
+0 0 10px #ff4b4b,
+0 0 25px #ff4b4b;
 }
 
 /* AVANTAGES VISUELS */
 .cyan{
-    color:#00e5ff;
-    border:2px solid #00e5ff;
-    box-shadow:
-    0 0 10px #00e5ff,
-    0 0 25px #00e5ff;
+color:#00e5ff;
+border:2px solid #00e5ff;
+
+box-shadow:
+0 0 10px #00e5ff,
+0 0 25px #00e5ff;
 }
 
-/* MODS AUTORISES */
+/* MODS AUTORISÉS */
 .green{
-    color:#00ff88;
-    border:2px solid #00ff88;
-    box-shadow:
-    0 0 10px #00ff88,
-    0 0 25px #00ff88;
+color:#00ff88;
+border:2px solid #00ff88;
+
+box-shadow:
+0 0 10px #00ff88,
+0 0 25px #00ff88;
 }
 
-/* CONTROLES ET VERIFICATIONS */
+/* CONTRÔLES & VÉRIFICATIONS */
 .gold{
-    color:#ffd700;
-    border:2px solid #ffd700;
-    box-shadow:
-    0 0 10px #ffd700,
-    0 0 25px #ffd700;
+color:#ffd700;
+border:2px solid #ffd700;
+
+box-shadow:
+0 0 10px #ffd700,
+0 0 25px #ffd700;
 }
 
 /* SIGNALEMENT */
 .magenta{
-    color:#ff4df8;
-    border:2px solid #ff4df8;
-    box-shadow:
-    0 0 10px #ff4df8,
-    0 0 25px #ff4df8;
+color:#ff4df8;
+border:2px solid #ff4df8;
+
+box-shadow:
+0 0 10px #ff4df8,
+0 0 25px #ff4df8;
 }
 
 /* FAQ */
 .white{
-    color:#ffffff;
-    border:2px solid #ffffff;
-    box-shadow:
-    0 0 10px rgba(255,255,255,0.8),
-    0 0 25px rgba(255,255,255,0.8);
+color:#ffffff;
+border:2px solid #ffffff;
+
+box-shadow:
+0 0 10px rgba(255,255,255,.8),
+0 0 25px rgba(255,255,255,.8);
 }
