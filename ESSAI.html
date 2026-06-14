@@ -665,29 +665,15 @@ Merci de respecter l'ensemble des règles du serveur.
 <script>
 
 function toggle(element){
-
-    const content = element.nextElementSibling;
-    const arrow = element.querySelector(".accordion-arrow span");
-
-    content.classList.toggle("hidden");
-
-    if(content.classList.contains("hidden")){
-        arrow.innerHTML = "⌄";
-    }else{
-        arrow.innerHTML = "⌃";
-    }
-
+const content = element.nextElementSibling;
+content.classList.toggle("hidden");
 }
 
 document.addEventListener("DOMContentLoaded", function(){
 
-    document.querySelectorAll(".section-content").forEach(content=>{
-        content.classList.add("hidden");
-    });
-
-    document.querySelectorAll(".accordion-arrow span").forEach(arrow=>{
-        arrow.innerHTML = "⌄";
-    });
+document.querySelectorAll(".section-content").forEach(content=>{
+content.classList.add("hidden");
+});
 
 });
 
