@@ -245,7 +245,37 @@ color:#ddd;
 /* ========================= */
 /* LISTES */
 /* ========================= */
+.icon{
+width:80px;
+height:80px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:38px;
+border-radius:20px;
+background:rgba(255,255,255,.03);
+}
 
+.cyan{color:#00e5ff;border:2px solid #00e5ff;box-shadow:0 0 10px #00e5ff,0 0 25px #00e5ff;}
+.purple{color:#9b5cff;border:2px solid #9b5cff;box-shadow:0 0 10px #9b5cff,0 0 25px #9b5cff;}
+.green{color:#00ff88;border:2px solid #00ff88;box-shadow:0 0 10px #00ff88,0 0 25px #00ff88;}
+.orange{color:#ffb300;border:2px solid #ffb300;box-shadow:0 0 10px #ffb300,0 0 25px #ffb300;}
+.blue{color:#1b6cff;border:2px solid #1b6cff;box-shadow:0 0 10px #1b6cff,0 0 25px #1b6cff;}
+.pink{color:#ff2d92;border:2px solid #ff2d92;box-shadow:0 0 10px #ff2d92,0 0 25px #ff2d92;}
+
+.notions h2{color:#00e5ff;}
+.lexique h2{color:#9b5cff;}
+.exces h2{color:#00ff88;}
+.defaite h2{color:#ffb300;}
+.recul h2{color:#1b6cff;}
+.faq h2{color:#ff2d92;}
+
+.notions li::before{color:#00e5ff;}
+.lexique li::before{color:#9b5cff;}
+.exces li::before{color:#00ff88;}
+.defaite li::before{color:#ffb300;}
+.recul li::before{color:#1b6cff;}
+.faq li::before{color:#ff2d92;}
 ul{
 list-style:none;
 }
