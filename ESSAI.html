@@ -5,53 +5,787 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>SOLARYS RP</title>
+<title>Règlement Illégal - Solarys RP</title>
 
-<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+/* RESET */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#05070d;
+color:#ffffff;
+background:radial-gradient(circle at top,#091b45 0%,#05070d 60%);
+}
+
+/* HERO */
+
+.hero{
+
+height:650px;
+
+background-image:
+linear-gradient(
+rgba(0,0,0,.45),
+rgba(0,0,0,.80)
+),
+url("https://raw.githubusercontent.com/corentinsola/solarys-rp/main/cote%20illegal.png");
+
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+
+}
+
+.hero-content h1{
+
+font-size:5rem;
+font-weight:800;
+
+background:linear-gradient(
+90deg,
+#ff2d92,
+#8b5cf6,
+#1b6cff
+);
+
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+
+}
+
+.hero-content p{
+
+font-size:1.3rem;
+color:#e5e5e5;
+margin-top:15px;
+
+}
+
+.neon-divider{
+
+width:450px;
+height:4px;
+margin:25px auto;
+
+background:linear-gradient(
+90deg,
+#ff2d92,
+#8b5cf6,
+#1b6cff
+);
+
+}
+
+/* CONTAINER */
+
+.container{
+width:95%;
+max-width:1600px;
+margin:auto;
+padding:40px 0 80px;
+}
+
+/* CARTES */
+
+.rule-card{
+
+background:linear-gradient(
+90deg,
+#020712 0%,
+#031933 100%
+);
+
+border:1px solid rgba(120,120,255,.12);
+
+border-radius:40px;
+
+overflow:hidden;
+
+margin-bottom:35px;
+
+box-shadow:
+0 0 20px rgba(255,45,146,.08),
+0 0 35px rgba(27,108,255,.08);
+
+}
+
+.rule-card summary{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:34px 45px;
+
+cursor:pointer;
+
+list-style:none;
+
+}
+
+.rule-card summary::-webkit-details-marker{
+display:none;
+}
+
+.rule-card summary > span{
+
+font-size:3rem;
+font-weight:800;
+
+color:white;
+
+text-transform:uppercase;
+
+letter-spacing:.5px;
+
+}
+/* FLÈCHE */
+
+.accordion-arrow{
+
+width:82px;
+height:82px;
+
+border-radius:50%;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+flex-shrink:0;
+
+background:rgba(20,25,60,.85);
+
+border:1px solid rgba(255,255,255,.05);
+
+box-shadow:
+0 0 20px rgba(255,45,146,.35),
+0 0 40px rgba(139,92,246,.35);
+
+transition:.35s ease;
+
+.accordion-arrow span{
+    font-size:28px;
+}
+.rule-card
+
+.rule-content ul{
+list-style:none;
+padding:0;
+margin:0;
+}
+
+.rule-content li{
+
+padding:14px 0;
+
+border-bottom:1px solid rgba(255,255,255,.05);
+
+}
+
+.rule-content li::before{
+
+content:"• ";
+
+color:#ff2d92;
+
+font-weight:bold;
+
+}
+.section{
+    background: linear-gradient(
+        90deg,
+        rgba(0,0,0,.95) 0%,
+        rgba(0,20,50,.95) 60%,
+        rgba(0,45,90,.95) 100%
+    );
+
+    border:1px solid rgba(100,50,255,.25);
+    border-radius:50px;
+
+    overflow:hidden;
+
+    margin-bottom:55px;
+
+    box-shadow:
+        0 0 40px rgba(123,44,255,.10),
+        inset 0 0 40px rgba(0,80,255,.08);
+}
+
+.section-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:25px 40px;
+
+    min-height:110px;
+
+    cursor:pointer;
+}
+
+.section-header h2{
+    font-size:2.2rem;
+    font-weight:800;
+    margin:0;
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.accordion-arrow{
+    width:60px;
+    height:60px;
+}
+
+.accordion-arrow span{
+    font-size:28px;
+}
+}
+
+.section-header h2{
+    font-size:2.5rem;
+    font-weight:800;
+    color:white;
+    text-transform:uppercase;
+}
+
+.section-content{
+    padding:35px 50px;
+    border-top:1px solid rgba(255,255,255,.08);
+    line-height:1.9;
+}
+
+.section-content ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+.section-content li{
+    padding:12px 0;
+    border-bottom:1px solid rgba(255,255,255,.05);
+}
+
+.section-content li::before{
+    content:"• ";
+    color:#ff2d92;
+    font-weight:bold;
+}
+
+.hidden{
+    display:none;
+}
+/* NAVIGATION */
+
+.navigation{
+
+display:flex;
+
+gap:20px;
+
+width:95%;
+
+max-width:1600px;
+
+margin:40px auto;
+
+}
+
+.navigation a{
+
+flex:1;
+
+padding:22px;
+
+text-align:center;
+
+text-decoration:none;
+
+font-weight:700;
+
+border-radius:20px;
+
+transition:.3s ease;
+
+}
+
+.prev{
+
+border:2px solid #ff2d92;
+color:#ff2d92;
+
+}
+
+.next{
+
+border:2px solid #1b6cff;
+color:#1b6cff;
+
+}
+
+.prev:hover{
+
+background:#ff2d92;
+color:white;
+
+box-shadow:
+0 0 25px rgba(255,45,146,.5);
+
+}
+
+.next:hover{
+
+background:#1b6cff;
+color:white;
+
+box-shadow:
+0 0 25px rgba(27,108,255,.5);
+
+}
+
+/* RESPONSIVE */
+footer{
+    text-align:center;
+    padding:40px 0;
+    font-size:1.2rem;
+    color:white;
+    margin-top:60px;
+}
+@media(max-width:900px){
+
+.hero{
+height:500px;
+}
+
+.hero-content h1{
+font-size:3rem;
+}
+
+.rule-card summary{
+padding:22px;
+}
+
+.rule-card summary > span{
+font-size:1.6rem;
+}
+
+.accordion-arrow{
+    width:60px;
+    height:60px;
+
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    flex-shrink:0;
+
+    margin-left:20px;
+
+    background:rgba(20,25,60,.85);
+
+    border:1px solid rgba(255,255,255,.05);
+
+    box-shadow:
+        0 0 20px rgba(255,45,146,.35),
+        0 0 40px rgba(139,92,246,.35);
+}
+
+.neon-divider{
+width:250px;
+}
+
+}
+.navigation a{
+
+flex:1;
+
+padding:22px;
+
+text-align:center;
+
+text-decoration:none;
+
+font-weight:700;
+
+border-radius:20px;
+
+}
+
+.prev{
+border:2px solid #ff2d92;
+color:#ff2d92;
+}
+
+.next{
+border:2px solid #1b6cff;
+color:#1b6cff;
+}
+.prev:hover{
+background:#ff2d92;
+color:white;
+box-shadow:0 0 25px rgba(255,45,146,.5);
+}
+
+.next:hover{
+background:#1b6cff;
+color:white;
+box-shadow:0 0 25px rgba(27,108,255,.5);
+}
+</style>
+
+</head>
+
 </head>
 
 <body>
 
-<div class="overlay"></div>
+<header class="hero">
 
-<header>
+<div class="hero-content">
 
-<div class="logo">SOLARYS</div>
-
-<nav>
-<a href="reglement.html">Règlement</a>
-
-<a href="#" class="status">
-<span class="dot"></span>
-Serveur en ligne
-</a>
-</nav>
-
-</header>
-
-<main>
-
-<span class="welcome">
-BIENVENUE
-</span>
-
-<h1>SOLARYS RP</h1>
+<h1>RÈGLEMENT ILLÉGAL</h1>
 
 <p>
-Serveur FiveM RolePlay Nouvelle Génération.<br>
-Rejoignez une communauté immersive, sérieuse et active.
+Règlement des organisations criminelles et activités illégales
 </p>
 
-<div class="bouton-centre">
-    <a href="https://reglement.solarys-rp.fr/reglement.html" class="btn-reglement">
-        📖 CONSULTER LE RÈGLEMENT
-    </a>
+<div class="neon-divider"></div>
+
+<p>
+Merci de respecter l'ensemble des règles du serveur.
+</p>
+
 </div>
 
-</main>
+</header>
+<div class="container">
+<div class="section">
 
-<script src="assets/js/script.js"></script>
+<div class="section-header" onclick="toggle(this)">
+<h2>⚠️ GÉNÉRAL</h2>
+
+<div class="accordion-arrow">
+<span>⌃</span>
+</div>
+
+</div>
+
+<div class="section-content hidden">
+
+<ul>
+<li>Fear RP obligatoire.</li>
+<li>Les quartiers ne sont pas des zones de non-droit.</li>
+<li>Les conflits doivent avoir une évolution RP.</li>
+<li>Le farm est interdit entre 21h00 et 01h00.</li>
+<li>Respect permanent du Mass RP.</li>
+</ul>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<div class="section-header" onclick="toggle(this)">
+<h2>🎭 PRISE D'OTAGE</h2>
+
+<div class="accordion-arrow">
+<span>⌃</span>
+</div>
+
+</div>
+
+<div class="section-content hidden">
+
+<ul>
+<li>Une raison RP sérieuse est obligatoire.</li>
+<li>Les négociations doivent être cohérentes.</li>
+<li>Le Full Win est interdit.</li>
+<li>Les exécutions sans RP sont interdites.</li>
+<li>Le Fair-Play est obligatoire.</li>
+</ul>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<div class="section-header" onclick="toggle(this)">
+<h2>🧪 DROGUES ET LABORATOIRES</h2>
+
+<div class="accordion-arrow">
+<span>⌃</span>
+</div>
+
+</div>
+
+<div class="section-content hidden">
+
+<ul>
+<li>Les laboratoires doivent rester rares.</li>
+<li>Le camping est interdit.</li>
+<li>Le MetaGaming est interdit.</li>
+<li>Les scènes doivent être immersives.</li>
+<li>Le Full Win est interdit.</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+
+<div class="section-header" onclick="toggle(this)">
+<h2>⚔️ GUERRE ENTRE GROUPES</h2>
+
+<div class="accordion-arrow">
+<span>⌃</span>
+</div>
+
+</div>
+
+<div class="section-content hidden">
+
+<ul>
+<li>Alliances entre groupes interdites.</li>
+<li>Alliances commerciales autorisées.</li>
+<li>Le loot de guerre nécessite validation.</li>
+<li>Les Mort RP restent à la décision du Staff.</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<div class="section-header" onclick="toggle(this)">
+<h2>🔫 ARMES</h2>
+
+<div class="accordion-arrow">
+<span>⌃</span>
+</div>
+
+</div>
+
+<div class="section-content hidden">
+
+<ul>
+<li>Le GunFight n'est jamais la première solution.</li>
+<li>Le Fear RP est obligatoire.</li>
+<li>Les Drive-By abusifs sont interdits.</li>
+<li>Les armes lourdes doivent rester rares.</li>
+</ul>
+
+</div>
+
+</div>
+
+
+
+<div class="section">
+
+<div class="section-header" onclick="toggle(this)">
+<h2>🏦 BRAQUAGES</h2>
+
+<div class="accordion-arrow">
+<span>⌃</span>
+</div>
+
+</div>
+
+<div class="section-content hidden">
+
+<ul>
+<li>Les braquages doivent être préparés sérieusement.</li>
+<li>Les négociations sont obligatoires.</li>
+<li>Le Full Win est interdit.</li>
+<li>Le braquage de la Maze Bank est considéré comme un événement majeur.</li>
+</ul>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<div class="section-header" onclick="toggle(this)">
+<h2>💰 LOOT • ARNAQUE • VOL</h2>
+
+<div class="accordion-arrow">
+<span>⌃</span>
+</div>
+
+</div>
+
+<div class="section-content hidden">
+
+<ul>
+<li>Une construction RP est obligatoire.</li>
+<li>Le Fair-Play est obligatoire.</li>
+<li>Les vols abusifs sont interdits.</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<div class="section-header" onclick="toggle(this)">
+<h2>🛡️ DÉPLOIEMENT DU SRT</h2>
+
+<div class="accordion-arrow">
+<span>⌃</span>
+</div>
+
+</div>
+
+<div class="section-content hidden">
+
+<p>
+Le SRT est une unité exceptionnelle déployée uniquement sous autorisation.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<div class="section-header" onclick="toggle(this)">
+<h2>🕵️ CORRUPTION</h2>
+
+<div class="accordion-arrow">
+<span>⌃</span>
+</div>
+
+</div>
+
+<div class="section-content hidden">
+
+<ul>
+<li>Dossier obligatoire.</li>
+<li>Validation du Staff obligatoire.</li>
+<li>Le RP doit rester sérieux et cohérent.</li>
+</ul>
+
+</div>
+
+</div>
+<div class="section">
+
+<div class="section-header" onclick="toggle(this)">
+<h2>⚖️ LOI RICO</h2>
+
+<div class="accordion-arrow">
+<span>⌃</span>
+</div>
+
+</div>
+<div class="section-content hidden">
+
+<p>
+Application uniquement après validation d'un dossier complet.
+</p>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<div class="section-header" onclick="toggle(this)">
+<h2>☠️ MORT RP & WIPE</h2>
+
+<div class="accordion-arrow">
+<span>⌃</span>
+</div>
+
+</div>
+
+<div class="section-content hidden">
+
+<ul>
+<li>Validation Staff obligatoire.</li>
+<li>Dossier complet requis.</li>
+<li>Le retour du même personnage est interdit.</li>
+</ul>
+
+</div>
+
+</div>
+
+<div class="navigation">
+
+<a href="https://reglement.solarys-rp.fr/reglement%20legal.html" class="prev">
+← PAGE PRÉCÉDENTE
+</a>
+
+</div>
+
+</div>
+
+<footer>
+© 2026 Solarys RP - Tous droits réservés.
+</footer>
+
+<script>
+
+function toggle(element){
+
+    const content = element.nextElementSibling;
+    const arrow = element.querySelector(".accordion-arrow span");
+
+    content.classList.toggle("hidden");
+
+    if(content.classList.contains("hidden")){
+        arrow.innerHTML = "⌄";
+    }else{
+        arrow.innerHTML = "⌃";
+    }
+
+}
+
+document.addEventListener("DOMContentLoaded", function(){
+
+    document.querySelectorAll(".section-content").forEach(content=>{
+        content.classList.add("hidden");
+    });
+
+    document.querySelectorAll(".accordion-arrow span").forEach(arrow=>{
+        arrow.innerHTML = "⌄";
+    });
+
+});
+
+</script>
 
 </body>
-
 </html>
