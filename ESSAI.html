@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Règlement Pack Graphique - Solarys RP</title>
+<title>Notions RP - Solarys RP</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
@@ -19,19 +19,14 @@ font-family:'Poppins',sans-serif;
 
 body{
 background:#05070d;
-color:white;
-overflow-x:hidden;
+color:#fff;
 }
 
-/* ========================= */
-/* BANNIÈRE */
-/* ========================= */
-
 .hero{
-height:650px;
+height:450px;
 background:
-linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.75)),
-url("https://raw.githubusercontent.com/corentinsola/solarys-rp/main/fond d ecran pack graphique.png");
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.85)),
+url("https://raw.githubusercontent.com/corentinsola/solarys-rp/main/plage%20solarys.png");
 background-size:cover;
 background-position:center;
 display:flex;
@@ -40,114 +35,74 @@ align-items:center;
 text-align:center;
 }
 
-.hero-content{
-max-width:1200px;
-padding:20px;
-}
-
 .hero-content h1{
-font-size:5rem;
-font-weight:700;
+font-size:4rem;
 text-transform:uppercase;
 }
 
 .hero-content p{
-margin-top:20px;
-font-size:1.5rem;
+margin-top:15px;
+font-size:1.2rem;
+color:#ddd;
 }
 
 .neon-divider{
-width:500px;
-height:4px;
-margin:30px auto;
+width:300px;
+height:3px;
+margin:20px auto;
 background:linear-gradient(90deg,#ff2d92,#8b5cf6,#1b6cff);
+box-shadow:0 0 20px #8b5cf6;
 }
 
-.hero-content{
-max-width:1200px;
-padding:20px;
-}
-
-.hero-content h1{
-font-size:5rem;
-font-weight:700;
-text-transform:uppercase;
-color:white;
-
-text-shadow:
-0 0 15px rgba(255,255,255,.2),
-0 0 40px rgba(27,108,255,.6);
-}
-
-.hero-content p{
-margin-top:20px;
-font-size:1.5rem;
-color:#f5f5f5;
-}
-
-.neon-divider{
-width:500px;
-height:4px;
-margin:30px auto;
-
-background:
-linear-gradient(
-90deg,
-#ff2d92,
-#8b5cf6,
-#1b6cff
-);
-
-box-shadow:
-0 0 15px #ff2d92,
-0 0 25px #1b6cff;
-}
-
-/* ========================= */
-/* CONTENU */
-/* ========================= */
 .container{
-max-width:1600px;
+max-width:1400px;
 margin:auto;
 padding:40px;
 }
 
 .section{
-background:linear-gradient(90deg,#04060d,#071427);
-border-radius:25px;
+background:linear-gradient(90deg,#04060d,#041225);
+border-radius:30px;
 margin-bottom:25px;
-border:1px solid rgba(255,255,255,.06);
-box-shadow:
-0 0 15px rgba(255,45,146,.10),
-0 0 15px rgba(27,108,255,.10);
 overflow:hidden;
+border:1px solid rgba(255,255,255,.05);
+box-shadow:0 0 25px rgba(80,0,255,.15);
 }
 
 .section-header{
+padding:35px;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:25px 30px;
 cursor:pointer;
 }
 
 .section-header h2{
 font-size:2rem;
-font-weight:700;
 }
 
-.modif h2{color:#ff2d92;}
-.tirs h2{color:#9b5cff;}
-.sanctions h2{color:#ffb300;}
+.accordion-arrow{
+width:80px;
+height:80px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+background:rgba(50,50,120,.9);
+box-shadow:0 0 25px rgba(180,80,255,.6);
+}
+
+.accordion-arrow span{
+font-size:42px;
+color:#b45cff;
+}
 
 .section-content{
-padding:30px;
+padding:0 35px 35px;
 }
 
-.grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:50px;
+.hidden{
+display:none;
 }
 
 ul{
@@ -158,62 +113,11 @@ li{
 padding:12px 0;
 border-bottom:1px solid rgba(255,255,255,.05);
 }
-.modif li::before{
+
+li::before{
 content:"• ";
 color:#ff2d92;
-font-size:1.3rem;
-text-shadow:0 0 10px #ff2d92;
-}
-
-.tirs li::before{
-content:"• ";
-color:#9b5cff;
-font-size:1.3rem;
-text-shadow:0 0 10px #9b5cff;
-}
-
-.sanctions li::before{
-content:"• ";
-color:#ffb300;
-font-size:1.3rem;
-text-shadow:0 0 10px #ffb300;
-}
-.hidden{
-display:none;
-}
-
-.icon{
-width:70px;
-height:70px;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:32px;
-border-radius:20px;
-background:rgba(255,255,255,.03);
-}
-
-.pink{
-border:2px solid #ff2d92;
-box-shadow:0 0 20px #ff2d92;
-}
-
-.purple{
-border:2px solid #9b5cff;
-box-shadow:0 0 20px #9b5cff;
-}
-
-.orange{
-border:2px solid #ffb300;
-box-shadow:0 0 20px #ffb300;
-}
-
-.message{
-margin-top:20px;
-padding:20px;
-border-radius:15px;
-border:1px solid #1b6cff;
-text-align:center;
+font-weight:bold;
 }
 
 .navigation{
@@ -242,111 +146,193 @@ color:#1b6cff;
 }
 
 footer{
-margin-top:40px;
 padding:30px;
 text-align:center;
 color:#aaa;
 }
 
 </style>
-
 </head>
-<body>  
-  
- <header class="hero">
 
+<body>
+
+<header class="hero">
 <div class="hero-content">
+<h1>NOTIONS RP</h1>
+<p>Les bases essentielles du RolePlay sur Solarys RP</p>
+<div class="neon-divider"></div>
+</div>
+</header>
 
-<h1>RÈGLEMENT PACK GRAPHIQUE</h1>
+<div class="container">
+
+<div class="section">
+<div class="section-header" onclick="toggle(this)">
+<h2>📖 NOTIONS PRINCIPALES</h2>
+<div class="accordion-arrow"><span>⌃</span></div>
+</div>
+
+<div class="section-content hidden">
+<ul>
+<li><strong>Mass RP :</strong> prendre en compte la population invisible autour de vous.</li>
+<li><strong>RolePlay :</strong> incarner un personnage dans un univers fictif.</li>
+<li><strong>HRP :</strong> tout ce qui est hors personnage.</li>
+<li><strong>Metagaming :</strong> utiliser des informations obtenues hors RP.</li>
+<li><strong>Powergaming :</strong> réaliser des actions impossibles ou irréalistes.</li>
+</ul>
+</div>
+</div>
+
+  
+<div class="section">
+
+<div class="section-header" onclick="toggle(this)">
+<h2>💬 LEXIQUE RP</h2>
+<div class="accordion-arrow"><span>⌃</span></div>
+</div>
+
+<div class="section-content hidden">
+
+<ul>
+<li><strong>Maux de tête :</strong> bug ou crash.</li>
+<li><strong>J'ai un bug :</strong> 🧠 J'ai un mal de tête.</li>
+<li><strong>J'ai crash :</strong> 😵 Je me suis évanoui.</li>
+<li><strong>Je freeze :</strong> 🧊 Je suis paralysé / figé.</li>
+<li><strong>J'ai des lags :</strong> 🌫️ J'ai des vertiges.</li>
+<li><strong>Je vais déco :</strong> 😴 Je vais dormir.</li>
+<li><strong>Je reviens :</strong> 🔄 Je reviens de mon repos.</li>
+<li><strong>Va Discord :</strong> 📱 Appelle-moi.</li>
+<li><strong>Je t'écris en MP :</strong> 💬 Je t'envoie un message.</li>
+<li><strong>Ticket :</strong> 📝 Demande officielle.</li>
+<li><strong>Ban / Kick :</strong> 🚫 Expulsé de la ville.</li>
+<li><strong>AFK :</strong> 🚶 Je suis absent.</li>
+<li><strong>Je suis nouveau :</strong> 🆕 Je viens d'arriver en ville.</li>
+</ul>
+
+</div>
+
+</div>
+<div class="section">
+
+<div class="section-header" onclick="toggle(this)">
+<h2>🎮 JOUER SANS EXCÈS</h2>
+<div class="accordion-arrow"><span>⌃</span></div>
+</div>
+
+<div class="section-content hidden">
 
 <p>
-Modifications graphiques autorisées et interdites sur Solarys RP
+Ne prenez pas le RP trop au sérieux. Gardez toujours en tête qu'il s'agit d'un jeu et d'une communauté.
 </p>
 
-<div class="neon-divider"></div>
+<br>
+
+<p>
+Les insultes légères utilisées pour renforcer l'immersion sont tolérées.
+</p>
+
+<br>
+
+<p>
+Les insultes répétées ou agressives sans but RP peuvent être sanctionnées.
+</p>
+
+<br>
+
+<p>
+Avant de parler, demandez-vous :
+</p>
+
+<p>
+<strong>« Si j'étais à sa place, est-ce que je me sentirais insulté ou énervé ? »</strong>
+</p>
 
 </div>
 
-</header> 
-  <div class="container">
-
-<div class="section modif">
+</div><div class="section">
 
 <div class="section-header" onclick="toggle(this)">
-<h2>MODIFICATIONS INTERDITES</h2>
-<div class="icon pink">🚫</div>
+<h2>⚖️ JOUER LA DÉFAITE INTELLIGEMMENT</h2>
+<div class="accordion-arrow"><span>⌃</span></div>
 </div>
 
-<div class="section-content">
+<div class="section-content hidden">
 
-<div class="grid">
+<p>
+Quand vous perdez une scène (par exemple lors d'un braquage), ne soyez pas susceptible.
+</p>
 
-<ul>
-<li>No props</li>
-<li>No element</li>
-<li>No water</li>
-<li>No bush</li>
-<li>Suppression d'objets ou d'éléments de décors</li>
-<li>Modification de la FOV</li>
-<li>Fichiers donnant un avantage visuel</li>
-</ul>
+<br>
 
-<ul>
-<li>Réduction d'effets pour voir à travers certains éléments</li>
-<li>Suppression de végétation, eau, fumée ou props</li>
-<li>Full stamina</li>
-<li>Réduction de recul</li>
-<li>Modifications de luminosité abusives</li>
-<li>Packs donnant un avantage compétitif</li>
-<li>Optimisations abusives modifiant le gameplay</li>
-</ul>
+<p>
+Le Loose RP (accepter de perdre) peut ouvrir la porte à de nouvelles trames RP intéressantes.
+</p>
+
+<br>
+
+<p>
+Rester calme et jouer le jeu offre une meilleure immersion à tout le monde.
+</p>
 
 </div>
 
 </div>
-
-</div>
-
-<div class="section tirs">
+<div class="section">
 
 <div class="section-header" onclick="toggle(this)">
-<h2>SYSTÈMES FACILITANT LES TIRS</h2>
-<div class="icon purple">🎯</div>
+<h2>🧠 GARDER DU RECUL</h2>
+<div class="accordion-arrow"><span>⌃</span></div>
 </div>
 
-<div class="section-content">
+<div class="section-content hidden">
 
-<ul>
-<li>Crosshairs externes</li>
-<li>Tracers</li>
-<li>Hit Effects</li>
-<li>Kill Effects</li>
-<li>Blood Effects</li>
-</ul>
+<p>
+Ne confondez jamais RP et réalité.
+</p>
+
+<br>
+
+<p>
+Les propos tenus en jeu ne visent jamais la personne derrière l'écran.
+</p>
+
+<br>
+
+<p>
+Évitez les réactions impulsives et gardez toujours votre calme.
+</p>
+
+<br>
+
+<p>
+Souvenez-vous : ce n'est qu'un jeu et l'objectif principal est de s'amuser ensemble.
+</p>
 
 </div>
 
 </div>
-
-<div class="section sanctions">
+<div class="section">
 
 <div class="section-header" onclick="toggle(this)">
-<h2>SANCTIONS</h2>
-<div class="icon orange">🔨</div>
+<h2>❓ QUESTIONS FRÉQUENTES</h2>
+<div class="accordion-arrow"><span>⌃</span></div>
 </div>
 
-<div class="section-content">
+<div class="section-content hidden">
 
 <ul>
-<li>⚠️ Warn</li>
-<li>🔗 Jail / TIG</li>
-<li>🔨 Bannissement temporaire</li>
-<li>⛔ Bannissement définitif</li>
-</ul>
+<li><strong>Je peux contester une sanction ?</strong> Oui, via ticket avec preuves.</li>
 
-<div class="message">
-Nous vous remercions de respecter ce règlement afin de préserver une expérience de jeu saine sur le serveur.
-</div>
+<li><strong>Signaler un joueur ou un staff ?</strong> Ticket Discord avec pseudo, preuve et contexte.</li>
+
+<li><strong>Créer un groupe ?</strong> Procédure en ticket "Illégal" auprès d'un Référent Illégal.</li>
+
+<li><strong>Accessible aux débutants ?</strong> Oui ! Tutoriel en jeu et staff disponible.</li>
+
+<li><strong>Je peux utiliser une information Discord en jeu ?</strong> Non, sauf si elle a été obtenue lors d'une véritable scène RP.</li>
+
+<li><strong>Comment rejoindre le serveur ?</strong> Discord → FIVEM → SOLARYS RP.</li>
+</ul>
 
 </div>
 
@@ -354,16 +340,17 @@ Nous vous remercions de respecter ce règlement afin de préserver une expérien
 
 <div class="navigation">
 
-<a href="https://reglement.solarys-rp.fr/page%20d%20acceuil%20solarys.html" class="prev">
-⬅ PAGE PRÉCÉDENTE
+<a href="https://reglement.solarys-rp.fr/reglement%20packgraphique.html" class="prev">
+← PAGE PRÉCÉDENTE
 </a>
 
-<a href="https://reglement.solarys-rp.fr/reglement%20notion.html" class="next">
-PAGE SUIVANTE ➜
+<a href="https://reglement.solarys-rp.fr/reglement%20legal.html" class="next">
+PAGE SUIVANTE →
 </a>
 
 </div>
 
+</div>
 
 <footer>
 © 2026 Solarys RP - Tous droits réservés.
@@ -373,14 +360,17 @@ PAGE SUIVANTE ➜
 function toggle(element){
 const content = element.nextElementSibling;
 content.classList.toggle("hidden");
-}
 
-window.onload = function(){
-document.querySelectorAll('.section-content').forEach(content=>{
-content.classList.add('hidden');
-});
+const arrow = element.querySelector(".accordion-arrow span");
+
+if(content.classList.contains("hidden")){
+arrow.innerHTML="⌄";
+}else{
+arrow.innerHTML="⌃";
+}
 }
 </script>
 
 </body>
 </html>
+```
