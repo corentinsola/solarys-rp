@@ -390,11 +390,14 @@ box-shadow:
 /* POINTS COLORES */
 /* ========================= */
 
+.notions h2{
+color:#00e5ff;
+}
+
 .notions li::before{
 content:"• ";
 color:#00e5ff;
-font-size:1.3rem;
-text-shadow:0 0 10px #00e5ff;
+font-weight:bold;
 }
 
 .lexique li::before{
