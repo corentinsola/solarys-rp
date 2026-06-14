@@ -31,33 +31,56 @@ text-shadow:0 0 15px #1b6cff;
 color:#ff2d92;
 text-shadow:0 0 15px #ff2d92;
 }
-.yellow{
+
+/* ========================= */
+/* AUTRES CATÉGORIES */
+/* ========================= */
+
+.general .section-header h2{
 color:#ffc107;
-border:2px solid #ffc107;
-box-shadow:0 0 10px #ffc107,0 0 25px #ffc107;
+text-shadow:0 0 15px #ffc107;
 }
 
-.red{
+.otage .section-header h2{
+color:#9b5cff;
+text-shadow:0 0 15px #9b5cff;
+}
+
+.vehicule .section-header h2{
+color:#1b6cff;
+text-shadow:0 0 15px #1b6cff;
+}
+
+.illegal .section-header h2{
 color:#ff3b3b;
-border:2px solid #ff3b3b;
-box-shadow:0 0 10px #ff3b3b,0 0 25px #ff3b3b;
+text-shadow:0 0 15px #ff3b3b;
 }
 
-.turquoise{
+.police .section-header h2{
+color:#00e5ff;
+text-shadow:0 0 15px #00e5ff;
+}
+
+.ems .section-header h2{
+color:#00ff88;
+text-shadow:0 0 15px #00ff88;
+}
+
+.economie .section-header h2{
+color:#ff9800;
+text-shadow:0 0 15px #ff9800;
+}
+
+.entreprise .section-header h2{
 color:#00d4aa;
-border:2px solid #00d4aa;
-box-shadow:0 0 10px #00d4aa,0 0 25px #00d4aa;
+text-shadow:0 0 15px #00d4aa;
 }
 
-.general h2{color:#ffc107;}
-.otage h2{color:#9b5cff;}
-.vehicule h2{color:#1b6cff;}
-.illegal h2{color:#ff3b3b;}
-.police h2{color:#00e5ff;}
-.ems h2{color:#00ff88;}
-.economie h2{color:#ff9800;}
-.entreprise h2{color:#00d4aa;}
-.sanctions h2{color:#ff2d92;}
+.sanctions .section-header h2{
+color:#ff2d92;
+text-shadow:0 0 15px #ff2d92;
+}
+
 /* ========================= */
 /* ICÔNES */
 /* ========================= */
@@ -70,13 +93,15 @@ align-items:center;
 justify-content:center;
 font-size:42px;
 border-radius:25px;
-background:rgba(255,255,255,.03);
-transition:.3s ease;
+background:rgba(255,255,255,0.03);
+transition:0.3s ease;
 }
 
 .icon:hover{
 transform:scale(1.05);
 }
+
+/* Cyan */
 
 .cyan{
 color:#00e5ff;
@@ -84,11 +109,15 @@ border:2px solid #00e5ff;
 box-shadow:0 0 15px #00e5ff,0 0 30px #00e5ff;
 }
 
+/* Violet */
+
 .purple{
 color:#9b5cff;
 border:2px solid #9b5cff;
 box-shadow:0 0 15px #9b5cff,0 0 30px #9b5cff;
 }
+
+/* Vert */
 
 .green{
 color:#00ff88;
@@ -96,11 +125,15 @@ border:2px solid #00ff88;
 box-shadow:0 0 15px #00ff88,0 0 30px #00ff88;
 }
 
+/* Orange */
+
 .orange{
 color:#ffb300;
 border:2px solid #ffb300;
 box-shadow:0 0 15px #ffb300,0 0 30px #ffb300;
 }
+
+/* Bleu */
 
 .blue{
 color:#1b6cff;
@@ -108,10 +141,36 @@ border:2px solid #1b6cff;
 box-shadow:0 0 15px #1b6cff,0 0 30px #1b6cff;
 }
 
+/* Rose */
+
 .pink{
 color:#ff2d92;
 border:2px solid #ff2d92;
 box-shadow:0 0 15px #ff2d92,0 0 30px #ff2d92;
+}
+
+/* Jaune */
+
+.yellow{
+color:#ffc107;
+border:2px solid #ffc107;
+box-shadow:0 0 15px #ffc107,0 0 30px #ffc107;
+}
+
+/* Rouge */
+
+.red{
+color:#ff3b3b;
+border:2px solid #ff3b3b;
+box-shadow:0 0 15px #ff3b3b,0 0 30px #ff3b3b;
+}
+
+/* Turquoise */
+
+.turquoise{
+color:#00d4aa;
+border:2px solid #00d4aa;
+box-shadow:0 0 15px #00d4aa,0 0 30px #00d4aa;
 }
 
 /* ========================= */
@@ -124,3 +183,21 @@ box-shadow:0 0 15px #ff2d92,0 0 30px #ff2d92;
 .defaite li::before{color:#ffb300;}
 .recul li::before{color:#1b6cff;}
 .faq li::before{color:#ff2d92;}
+
+.general li::before{color:#ffc107;}
+.otage li::before{color:#9b5cff;}
+.vehicule li::before{color:#1b6cff;}
+.illegal li::before{color:#ff3b3b;}
+.police li::before{color:#00e5ff;}
+.ems li::before{color:#00ff88;}
+.economie li::before{color:#ff9800;}
+.entreprise li::before{color:#00d4aa;}
+.sanctions li::before{color:#ff2d92;}
+
+/* ========================= */
+/* ACCORDÉON */
+/* ========================= */
+
+.hidden{
+display:none;
+}
