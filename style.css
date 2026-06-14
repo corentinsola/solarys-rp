@@ -1,42 +1,173 @@
-/* HERO CONTENT */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
 
-.hero-content h1{
+body{
+background:
+linear-gradient(
+rgba(0,0,0,0.35),
+rgba(0,0,0,0.75)
+),
+url("https://raw.githubusercontent.com/corentinsola/solarys-rp/main/fond%20d%20ecran%20page%201.png");
 
-font-size:5rem;
-font-weight:800;
-text-transform:uppercase;
-letter-spacing:2px;
-line-height:1.1;
+background-size:cover;
+background-position:center center;
+background-repeat:no-repeat;
+background-attachment:fixed;
 
-color:#ffffff !important;
+min-height:100vh;
 
-background:none !important;
-background-image:none !important;
+color:white;
+overflow-x:hidden;
+}
 
--webkit-background-clip:initial !important;
-background-clip:initial !important;
+/* Overlay */
 
--webkit-text-fill-color:#ffffff !important;
+.overlay{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+
+background:rgba(0,0,0,0.15);
+
+pointer-events:none;
+z-index:1;
+}
+
+/* Header */
+
+header{
+position:relative;
+z-index:2;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:30px 80px;
+}
+
+.logo{
+font-size:2rem;
+font-weight:700;
+letter-spacing:3px;
+
+background:linear-gradient(
+90deg,
+#ff2d92,
+#8b5cf6,
+#1b6cff
+);
+
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+nav{
+display:flex;
+align-items:center;
+gap:25px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#ff2d92;
+}
+
+/* Statut serveur */
+
+.status{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.dot{
+width:10px;
+height:10px;
+
+border-radius:50%;
+
+background:#00ff88;
+
+box-shadow:
+0 0 10px #00ff88,
+0 0 20px #00ff88;
+}
+
+/* Contenu principal */
+
+main{
+position:relative;
+z-index:2;
+
+min-height:calc(100vh - 100px);
+
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+
+text-align:center;
+
+padding:20px;
+}
+
+.welcome{
+font-size:1rem;
+letter-spacing:5px;
+color:#ff2d92;
+margin-bottom:20px;
+font-weight:600;
+}
+
+h1{
+font-size:6rem;
+font-weight:700;
 
 text-shadow:
-0 0 15px rgba(255,255,255,.15),
-0 0 30px rgba(255,255,255,.20);
-
+0 0 20px rgba(255,255,255,.2),
+0 0 50px rgba(27,108,255,.5);
 }
 
-.hero-content p{
+p{
+margin-top:25px;
 
-font-size:1.3rem;
-color:#e5e5e5;
-margin-top:15px;
+font-size:1.4rem;
+line-height:1.8;
 
+max-width:850px;
 }
 
-.neon-divider{
+/* Bouton */
 
-width:450px;
-height:4px;
-margin:25px auto;
+.bouton-centre{
+margin-top:50px;
+}
+
+.btn-reglement{
+display:inline-block;
+
+padding:18px 40px;
+
+text-decoration:none;
+font-weight:700;
+font-size:1.1rem;
+
+color:white;
+
+border-radius:15px;
 
 background:
 linear-gradient(
@@ -47,25 +178,50 @@ linear-gradient(
 );
 
 box-shadow:
-0 0 15px #ff2d92,
-0 0 25px #1b6cff;
+0 0 15px rgba(255,45,146,.5),
+0 0 30px rgba(27,108,255,.4);
 
+transition:all .3s ease;
 }
 
-/* FORCE LE TITRE EN BLANC */
+.btn-reglement:hover{
+transform:translateY(-4px) scale(1.04);
 
-.hero h1,
-.hero-content h1,
+box-shadow:
+0 0 25px rgba(255,45,146,.7),
+0 0 40px rgba(27,108,255,.6);
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+header{
+padding:20px;
+flex-direction:column;
+gap:20px;
+}
+
+.logo{
+font-size:1.8rem;
+}
+
 h1{
+font-size:3rem;
+}
 
-color:#ffffff !important;
+p{
+font-size:1rem;
+}
 
-background:none !important;
-background-image:none !important;
+nav{
+flex-direction:column;
+gap:15px;
+}
 
--webkit-text-fill-color:#ffffff !important;
-
--webkit-background-clip:border-box !important;
-background-clip:border-box !important;
+.btn-reglement{
+padding:15px 30px;
+font-size:1rem;
+}
 
 }
