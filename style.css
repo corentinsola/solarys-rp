@@ -23,22 +23,7 @@ min-height:100vh;
 color:white;
 overflow-x:hidden;
 }
-.hero-content h1{
-font-size:6rem;
-font-weight:700;
-text-transform:uppercase;
-line-height:1.05;
 
-color:#ffffff !important;
-background:none !important;
-
--webkit-background-clip:initial !important;
--webkit-text-fill-color:#ffffff !important;
-
-text-shadow:
-0 0 15px rgba(255,255,255,.15),
-0 0 30px rgba(255,255,255,.20);
-}
 /* Overlay */
 
 .overlay{
