@@ -79,13 +79,18 @@ border:1px solid rgba(255,255,255,.05);
 box-shadow:0 0 25px rgba(80,0,255,.15);
 }
 
-.section-header{
-padding:35px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-cursor:pointer;
-}
+<div class="section-header" onclick="toggle(this)">
+
+    <div class="title-box">
+        <span class="title-icon">💬</span>
+        <h2>LEXIQUE RP</h2>
+    </div>
+
+    <div class="accordion-arrow">
+        <span>⌃</span>
+    </div>
+
+</div>
 
 .section-header h2{
 font-size:2rem;
