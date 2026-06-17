@@ -23,16 +23,11 @@ color:#fff;
 }
 
 .hero{
-    height:550px;
-
-    background-image:
-    linear-gradient(
-        rgba(0,0,0,.45),
-        rgba(0,0,0,.65)
-    ),
-    url("https://raw.githubusercontent.com/corentinsola/solarys-rp/main/plage solarys.png");
-
-   background-size:cover;
+height:450px;
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.85)),
+url("https://raw.githubusercontent.com/corentinsola/solarys-rp/main/plage%20solarys.png");
+background-size:cover;
 background-position:center;
 display:flex;
 justify-content:center;
@@ -40,28 +35,23 @@ align-items:center;
 text-align:center;
 }
 
-.hero-content{
-max-width:1200px;
-padding:20px;
-}
-
 .hero-content h1{
-font-size:5rem;
-font-weight:700;
+font-size:4rem;
 text-transform:uppercase;
 }
 
 .hero-content p{
-margin-top:20px;
-font-size:1.5rem;
+margin-top:15px;
+font-size:1.2rem;
+color:#ddd;
 }
 
 .neon-divider{
-width:500px;
-height:4px;
-margin:30px auto;
+width:300px;
+height:3px;
+margin:20px auto;
 background:linear-gradient(90deg,#ff2d92,#8b5cf6,#1b6cff);
-}cff;
+box-shadow:0 0 20px #8b5cf6;
 }
 
 .container{
@@ -77,6 +67,14 @@ margin-bottom:25px;
 overflow:hidden;
 border:1px solid rgba(255,255,255,.05);
 box-shadow:0 0 25px rgba(80,0,255,.15);
+}
+
+.section-header{
+padding:35px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+cursor:pointer;
 }
 
 .section-header h2{
@@ -159,32 +157,22 @@ color:#aaa;
 <body>
 
 <header class="hero">
+<div class="hero-content">
+<h1>NOTIONS RP</h1>
+<p>Les bases essentielles du RolePlay sur Solarys RP</p>
+<div class="neon-divider"></div>
+</div>
+</header>
 
-<!-- NOTIONS PRINCIPALES -->
+<div class="container">
 
-<div class="section modif">
-
-    <div class="section-header" onclick="toggle(this)">
-        <h2>📖 NOTIONS PRINCIPALES</h2>
-
-        <div class="accordion-arrow">
-            <span>📖</span>
-        </div>
-    </div>
-
-</header> 
-  <div class="container">
-
-<div class="section modif">
-
+<div class="section">
 <div class="section-header" onclick="toggle(this)">
-<h2>NOTIONS PRINCIPALES</h2>
-<div class="icon pink">🚫</div>
+<h2>📖 NOTIONS PRINCIPALES</h2>
+<div class="accordion-arrow"><span>⌃</span></div>
 </div>
 
-<div class="section-content">
-
-<div class="grid">
+<div class="section-content hidden">
 <ul>
 <li><strong>Mass RP :</strong> prendre en compte la population invisible autour de vous.</li>
 <li><strong>RolePlay :</strong> incarner un personnage dans un univers fictif.</li>
