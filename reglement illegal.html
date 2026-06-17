@@ -115,18 +115,22 @@ box-shadow:
 .section{
     background:linear-gradient(
         90deg,
-        rgba(2,7,18,.98) 0%,
+        rgba(2,7,18,.95) 0%,
         rgba(3,25,51,.95) 60%,
-        rgba(0,35,75,.92) 100%
+        rgba(0,35,75,.95) 100%
     );
 
+    border:1px solid rgba(139,92,246,.18);
+
     border-radius:35px;
+
     margin-bottom:30px;
+
     overflow:hidden;
 
     box-shadow:
-    0 0 25px rgba(255,45,146,.08),
-    0 0 35px rgba(27,108,255,.08);
+    0 0 20px rgba(255,45,146,.08),
+    0 0 30px rgba(27,108,255,.08);
 }
 
 .section-header{
@@ -141,9 +145,10 @@ box-shadow:
 }
 
 .section-header h2{
-    font-size:3rem;
+    font-size:2.6rem;
     font-weight:800;
     text-transform:uppercase;
+    letter-spacing:.5px;
 }
 
 .modif h2{
@@ -159,15 +164,24 @@ box-shadow:
 }
 
 .accordion-arrow{
-    width:90px;
-    height:90px;
+
+    width:85px;
+    height:85px;
 
     display:flex;
     align-items:center;
     justify-content:center;
 
-    border-radius:25px;
+    border-radius:22px;
+
     background:#071328;
+
+    transition:.3s ease;
+}
+ .section-header:hover .accordion-arrow{
+
+    transform:scale(1.08);
+
 }
 
 .modif .accordion-arrow{
@@ -360,8 +374,6 @@ box-shadow:0 0 25px rgba(27,108,255,.5);
 
 </head>
 
-</head>
-
 <body>
 
 <header class="hero">
@@ -384,7 +396,7 @@ Merci de respecter l'ensemble des règles du serveur.
 
 </header>
 <div class="container">
-<div class="section">
+<div class="section modif">
 
 <div class="section-header" onclick="toggle(this)">
 <h2>⚠️ GÉNÉRAL</h2>
@@ -409,7 +421,7 @@ Merci de respecter l'ensemble des règles du serveur.
 
 </div>
 
-<div class="section">
+<div class="section tirs">
 
 <div class="section-header" onclick="toggle(this)">
 <h2>🎭 PRISE D'OTAGE</h2>
@@ -434,7 +446,7 @@ Merci de respecter l'ensemble des règles du serveur.
 
 </div>
 
-<div class="section">
+<div class="section tirs">
 
 <div class="section-header" onclick="toggle(this)">
 <h2>🧪 DROGUES ET LABORATOIRES</h2>
@@ -460,7 +472,7 @@ Merci de respecter l'ensemble des règles du serveur.
 </div>
 
 
-<div class="section">
+<div class="section tirs">
 
 
 <div class="section-header" onclick="toggle(this)">
@@ -486,7 +498,7 @@ Merci de respecter l'ensemble des règles du serveur.
 </div>
 
 
-<div class="section">
+<div class="section tirs">
 
 <div class="section-header" onclick="toggle(this)">
 <h2>🔫 ARMES</h2>
@@ -511,8 +523,7 @@ Merci de respecter l'ensemble des règles du serveur.
 </div>
 
 
-
-<div class="section">
+<div class="section sanctions">
 
 <div class="section-header" onclick="toggle(this)">
 <h2>🏦 BRAQUAGES</h2>
@@ -536,7 +547,7 @@ Merci de respecter l'ensemble des règles du serveur.
 
 </div>
 
-<div class="section">
+<div class="section sanctions">
 
 <div class="section-header" onclick="toggle(this)">
 <h2>💰 LOOT • ARNAQUE • VOL</h2>
@@ -560,7 +571,7 @@ Merci de respecter l'ensemble des règles du serveur.
 </div>
 
 
-<div class="section">
+<div class="section sanctions">
 
 <div class="section-header" onclick="toggle(this)">
 <h2>🛡️ DÉPLOIEMENT DU SRT</h2>
@@ -582,7 +593,7 @@ Le SRT est une unité exceptionnelle déployée uniquement sous autorisation.
 </div>
 
 
-<div class="section">
+<div class="section sanctions">
 
 <div class="section-header" onclick="toggle(this)">
 <h2>🕵️ CORRUPTION</h2>
@@ -603,8 +614,7 @@ Le SRT est une unité exceptionnelle déployée uniquement sous autorisation.
 
 </div>
 
-</div>
-<div class="section">
+<div class="section sanctions">
 
 <div class="section-header" onclick="toggle(this)">
 <h2>⚖️ LOI RICO</h2>
@@ -624,7 +634,7 @@ Application uniquement après validation d'un dossier complet.
 
 </div>
 
-<div class="section">
+<div class="section sanctions">
 
 <div class="section-header" onclick="toggle(this)">
 <h2>☠️ MORT RP & WIPE</h2>
